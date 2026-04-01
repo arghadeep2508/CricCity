@@ -1,0 +1,1163 @@
+[
+{
+  "id": "afg_mohammad_nabi",
+  "personal_info": {"name": "Mohammad Nabi", "country": "Afghanistan", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 3, "innings": 6, "runs": 33, "highest_score": "24", "average": 5.50, "strike_rate": 48.52, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 176, "innings": 154, "runs": 3762, "highest_score": "136", "average": 27.66, "strike_rate": 88.08, "centuries": 2, "fifties": 18},
+      "T20": {"matches": 152, "innings": 140, "runs": 2448, "highest_score": "89", "average": 22.25, "strike_rate": 136.37, "centuries": 0, "fifties": 7}
+    },
+    "bowling": {
+      "TEST": {"matches": 3, "wickets": 8, "best_bowling": "3/36", "economy": 2.79},
+      "ODI": {"matches": 176, "wickets": 176, "best_bowling": "5/17", "economy": 4.30},
+      "T20": {"matches": 152, "wickets": 109, "best_bowling": "4/7", "economy": 7.31}
+    },
+    "fielding": {
+      "TEST": {"catches": 2, "run_outs": null},
+      "ODI": {"catches": 85, "run_outs": null},
+      "T20": {"catches": 82, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_rashid_khan",
+  "personal_info": {"name": "Rashid Khan", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 6, "innings": 9, "runs": 154, "highest_score": "51", "average": 17.11, "strike_rate": 85.55, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 117, "innings": 89, "runs": 1393, "highest_score": "60*", "average": 19.08, "strike_rate": 104.89, "centuries": 0, "fifties": 5},
+      "T20": {"matches": 115, "innings": 70, "runs": 622, "highest_score": "48*", "average": 14.80, "strike_rate": 132.34, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 6, "wickets": 45, "best_bowling": "7/66", "economy": 2.96},
+      "ODI": {"matches": 117, "wickets": 210, "best_bowling": "7/18", "economy": 4.20},
+      "T20": {"matches": 115, "wickets": 193, "best_bowling": "5/3", "economy": 6.04}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 35, "run_outs": null},
+      "T20": {"catches": 45, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_mujeeb_ur_rahman",
+  "personal_info": {"name": "Mujeeb Ur Rahman", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 18, "highest_score": "15", "average": 9.00, "strike_rate": 105.88, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 75, "innings": 40, "runs": 236, "highest_score": "64", "average": 9.07, "strike_rate": 90.07, "centuries": 0, "fifties": 1},
+      "T20": {"matches": 65, "innings": 18, "runs": 85, "highest_score": "23*", "average": 9.44, "strike_rate": 113.33, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 1, "best_bowling": "1/75", "economy": 5.00},
+      "ODI": {"matches": 75, "wickets": 101, "best_bowling": "5/50", "economy": 4.32},
+      "T20": {"matches": 65, "wickets": 87, "best_bowling": "5/20", "economy": 6.51}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 11, "run_outs": null},
+      "T20": {"catches": 17, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_asghar_afghan",
+  "personal_info": {"name": "Asghar Afghan", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2021, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 6, "innings": 10, "runs": 440, "highest_score": "164", "average": 44.00, "strike_rate": 57.06, "centuries": 1, "fifties": 3},
+      "ODI": {"matches": 114, "innings": 108, "runs": 2424, "highest_score": "101", "average": 24.73, "strike_rate": 66.77, "centuries": 1, "fifties": 12},
+      "T20": {"matches": 75, "innings": 68, "runs": 1382, "highest_score": "62", "average": 21.93, "strike_rate": 110.82, "centuries": 0, "fifties": 4}
+    },
+    "bowling": {
+      "TEST": {"matches": 6, "wickets": 0, "best_bowling": null, "economy": 5.66},
+      "ODI": {"matches": 114, "wickets": 3, "best_bowling": "1/1", "economy": 3.92},
+      "T20": {"matches": 75, "wickets": 1, "best_bowling": "1/4", "economy": 6.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 2, "run_outs": null},
+      "ODI": {"catches": 24, "run_outs": null},
+      "T20": {"catches": 20, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_gulbadin_naib",
+  "personal_info": {"name": "Gulbadin Naib", "country": "Afghanistan", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 89, "innings": 78, "runs": 1332, "highest_score": "82*", "average": 19.88, "strike_rate": 75.38, "centuries": 0, "fifties": 5},
+      "T20": {"matches": 85, "innings": 72, "runs": 1070, "highest_score": "63", "average": 20.57, "strike_rate": 122.84, "centuries": 0, "fifties": 4}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 89, "wickets": 74, "best_bowling": "6/43", "economy": 5.56},
+      "T20": {"matches": 85, "wickets": 35, "best_bowling": "4/20", "economy": 7.96}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 28, "run_outs": null},
+      "T20": {"catches": 31, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_najibullah_zadran",
+  "personal_info": {"name": "Najibullah Zadran", "country": "Afghanistan", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 92, "innings": 84, "runs": 2060, "highest_score": "104*", "average": 29.01, "strike_rate": 89.10, "centuries": 1, "fifties": 15},
+      "T20": {"matches": 107, "innings": 95, "runs": 1830, "highest_score": "73", "average": 29.51, "strike_rate": 137.80, "centuries": 0, "fifties": 8}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 92, "wickets": 0, "best_bowling": null, "economy": 6.00},
+      "T20": {"matches": 107, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 40, "run_outs": null},
+      "T20": {"catches": 44, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_rahmat_shah",
+  "personal_info": {"name": "Rahmat Shah", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 11, "innings": 21, "runs": 970, "highest_score": "234", "average": 46.19, "strike_rate": 53.29, "centuries": 3, "fifties": 5},
+      "ODI": {"matches": 125, "innings": 120, "runs": 4034, "highest_score": "114", "average": 35.38, "strike_rate": 71.25, "centuries": 5, "fifties": 32},
+      "T20": {"matches": 1, "innings": 1, "runs": 3, "highest_score": "3", "average": 3.00, "strike_rate": 50.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 11, "wickets": 1, "best_bowling": "1/30", "economy": 3.78},
+      "ODI": {"matches": 125, "wickets": 15, "best_bowling": "5/32", "economy": 5.87},
+      "T20": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 8, "run_outs": null},
+      "ODI": {"catches": 29, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "afg_hashmatullah_shahidi",
+  "personal_info": {"name": "Hashmatullah Shahidi", "country": "Afghanistan", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 11, "innings": 21, "runs": 771, "highest_score": "246", "average": 48.18, "strike_rate": 47.32, "centuries": 2, "fifties": 2},
+      "ODI": {"matches": 93, "innings": 91, "runs": 2474, "highest_score": "97*", "average": 32.98, "strike_rate": 67.19, "centuries": 0, "fifties": 22},
+      "T20": {"matches": 6, "innings": 4, "runs": 48, "highest_score": "36", "average": 24.00, "strike_rate": 87.27, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 11, "wickets": 0, "best_bowling": null, "economy": 3.65},
+      "ODI": {"matches": 93, "wickets": 0, "best_bowling": null, "economy": 8.33},
+      "T20": {"matches": 6, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 4, "run_outs": null},
+      "ODI": {"catches": 20, "run_outs": null},
+      "T20": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_noor_ali_zadran",
+  "personal_info": {"name": "Noor Ali Zadran", "country": "Afghanistan", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 2, "innings": 4, "runs": 117, "highest_score": "47", "average": 29.25, "strike_rate": 41.63, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 51, "innings": 50, "runs": 1216, "highest_score": "114", "average": 24.81, "strike_rate": 63.23, "centuries": 1, "fifties": 7},
+      "T20": {"matches": 23, "innings": 23, "runs": 597, "highest_score": "63", "average": 27.13, "strike_rate": 101.87, "centuries": 0, "fifties": 4}
+    },
+    "bowling": {
+      "TEST": {"matches": 2, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 51, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 23, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 1, "run_outs": null},
+      "ODI": {"catches": 15, "run_outs": null},
+      "T20": {"catches": 4, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_samiullah_shinwari",
+  "personal_info": {"name": "Samiullah Shinwari", "country": "Afghanistan", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 84, "innings": 74, "runs": 1811, "highest_score": "96", "average": 29.20, "strike_rate": 65.49, "centuries": 0, "fifties": 11},
+      "T20": {"matches": 65, "innings": 56, "runs": 1013, "highest_score": "61", "average": 22.02, "strike_rate": 118.06, "centuries": 0, "fifties": 2}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 84, "wickets": 46, "best_bowling": "4/31", "economy": 4.91},
+      "T20": {"matches": 65, "wickets": 28, "best_bowling": "5/13", "economy": 6.51}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 21, "run_outs": null},
+      "T20": {"catches": 19, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_karim_janat",
+  "personal_info": {"name": "Karim Janat", "country": "Afghanistan", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 2, "innings": 4, "runs": 95, "highest_score": "41*", "average": 31.66, "strike_rate": 52.19, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 3, "innings": 3, "runs": 32, "highest_score": "22", "average": 10.66, "strike_rate": 68.08, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 75, "innings": 56, "runs": 759, "highest_score": "56*", "average": 16.86, "strike_rate": 117.67, "centuries": 0, "fifties": 4}
+    },
+    "bowling": {
+      "TEST": {"matches": 2, "wickets": 0, "best_bowling": null, "economy": 4.20},
+      "ODI": {"matches": 3, "wickets": 0, "best_bowling": null, "economy": 6.92},
+      "T20": {"matches": 75, "wickets": 42, "best_bowling": "5/11", "economy": 8.22}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 17, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_azmatullah_omarzai",
+  "personal_info": {"name": "Azmatullah Omarzai", "country": "Afghanistan", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 1, "runs": 0, "highest_score": "0", "average": 0.00, "strike_rate": 0.00, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 42, "innings": 34, "runs": 1093, "highest_score": "149*", "average": 43.72, "strike_rate": 97.41, "centuries": 1, "fifties": 8},
+      "T20": {"matches": 66, "innings": 55, "runs": 808, "highest_score": "53", "average": 17.95, "strike_rate": 126.05, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 1, "best_bowling": "1/66", "economy": 3.36},
+      "ODI": {"matches": 42, "wickets": 44, "best_bowling": "5/58", "economy": 5.36},
+      "T20": {"matches": 66, "wickets": 54, "best_bowling": "4/9", "economy": 8.18}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 8, "run_outs": null},
+      "T20": {"catches": 21, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_ibrahim_zadran",
+  "personal_info": {"name": "Ibrahim Zadran", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 8, "innings": 16, "runs": 602, "highest_score": "114", "average": 37.62, "strike_rate": 48.78, "centuries": 1, "fifties": 4},
+      "ODI": {"matches": 39, "innings": 39, "runs": 1869, "highest_score": "177", "average": 51.91, "strike_rate": 82.37, "centuries": 6, "fifties": 9},
+      "T20": {"matches": 65, "innings": 65, "runs": 1865, "highest_score": "95*", "average": 33.30, "strike_rate": 114.83, "centuries": 0, "fifties": 16}
+    },
+    "bowling": {
+      "TEST": {"matches": 8, "wickets": 1, "best_bowling": "1/13", "economy": 6.50},
+      "ODI": {"matches": 39, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 65, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 11, "run_outs": null},
+      "ODI": {"catches": 13, "run_outs": null},
+      "T20": {"catches": 30, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_rahmanullah_gurbaz",
+  "personal_info": {"name": "Rahmanullah Gurbaz", "country": "Afghanistan", "role": "wicketkeeper-batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 2, "innings": 4, "runs": 97, "highest_score": "46", "average": 24.25, "strike_rate": 56.72, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 52, "innings": 52, "runs": 1888, "highest_score": "151", "average": 37.01, "strike_rate": 87.24, "centuries": 8, "fifties": 7},
+      "T20": {"matches": 87, "innings": 87, "runs": 2280, "highest_score": "100", "average": 26.20, "strike_rate": 135.55, "centuries": 1, "fifties": 13}
+    },
+    "bowling": {
+      "TEST": {"matches": 2, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 52, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 87, "wickets": 1, "best_bowling": "1/2", "economy": 8.25}
+    },
+    "fielding": {
+      "TEST": {"catches": 2, "run_outs": null},
+      "ODI": {"catches": 27, "run_outs": null},
+      "T20": {"catches": 51, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+
+{
+  "id": "afg_usman_ghani",
+  "personal_info": {"name": "Usman Ghani", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 17, "innings": 17, "runs": 435, "highest_score": "118", "average": 25.58, "strike_rate": 75.25, "centuries": 1, "fifties": 2},
+      "T20": {"matches": 35, "innings": 34, "runs": 786, "highest_score": "73", "average": 25.35, "strike_rate": 107.23, "centuries": 0, "fifties": 4}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 17, "wickets": 1, "best_bowling": "1/21", "economy": 5.36},
+      "T20": {"matches": 35, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 3, "run_outs": null},
+      "T20": {"catches": 15, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_shafiqullah",
+  "personal_info": {"name": "Shafiqullah", "country": "Afghanistan", "role": "wicketkeeper-batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 24, "innings": 21, "runs": 430, "highest_score": "56", "average": 22.63, "strike_rate": 105.39, "centuries": 0, "fifties": 2},
+      "T20": {"matches": 46, "innings": 42, "runs": 494, "highest_score": "51*", "average": 16.46, "strike_rate": 145.29, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 24, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 46, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 11, "run_outs": null},
+      "T20": {"catches": 14, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_afsar_zazai",
+  "personal_info": {"name": "Afsar Zazai", "country": "Afghanistan", "role": "wicketkeeper-batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 9, "innings": 15, "runs": 367, "highest_score": "113", "average": 26.21, "strike_rate": 51.61, "centuries": 1, "fifties": 0},
+      "ODI": {"matches": 17, "innings": 16, "runs": 264, "highest_score": "60", "average": 17.60, "strike_rate": 54.09, "centuries": 0, "fifties": 2},
+      "T20": {"matches": 8, "innings": 8, "runs": 141, "highest_score": "48", "average": 17.62, "strike_rate": 81.97, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 9, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 17, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 8, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 19, "run_outs": null},
+      "ODI": {"catches": 20, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_ikram_alikhil",
+  "personal_info": {"name": "Ikram Alikhil", "country": "Afghanistan", "role": "wicketkeeper-batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 2, "innings": 3, "runs": 29, "highest_score": "21", "average": 9.66, "strike_rate": 30.20, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 32, "innings": 23, "runs": 386, "highest_score": "86", "average": 21.44, "strike_rate": 66.55, "centuries": 0, "fifties": 3},
+      "T20": {"matches": 46, "innings": 35, "runs": 400, "highest_score": "51", "average": 19.04, "strike_rate": 109.28, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 2, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 32, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 46, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 5, "run_outs": null},
+      "ODI": {"catches": 23, "run_outs": null},
+      "T20": {"catches": 17, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_mohammad_shahzad",
+  "personal_info": {"name": "Mohammad Shahzad", "country": "Afghanistan", "role": "wicketkeeper-batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 2, "innings": 4, "runs": 69, "highest_score": "40", "average": 17.25, "strike_rate": 51.87, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 84, "innings": 84, "runs": 2727, "highest_score": "131*", "average": 33.66, "strike_rate": 88.48, "centuries": 6, "fifties": 14},
+      "T20": {"matches": 73, "innings": 73, "runs": 2048, "highest_score": "118*", "average": 29.25, "strike_rate": 132.12, "centuries": 1, "fifties": 12}
+    },
+    "bowling": {
+      "TEST": {"matches": 2, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 84, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 73, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 64, "run_outs": null},
+      "T20": {"catches": 33, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_darwish_rasooli",
+  "personal_info": {"name": "Darwish Rasooli", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 28, "innings": 26, "runs": 515, "highest_score": "84", "average": 22.39, "strike_rate": 124.39, "centuries": 0, "fifties": 4}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 28, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 9, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_naveen_ul_haq",
+  "personal_info": {"name": "Naveen-ul-Haq", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 15, "innings": 10, "runs": 37, "highest_score": "10*", "average": 7.40, "strike_rate": 68.51, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 48, "innings": 14, "runs": 44, "highest_score": "13", "average": 4.88, "strike_rate": 67.69, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 15, "wickets": 22, "best_bowling": "4/42", "economy": 6.14},
+      "T20": {"matches": 48, "wickets": 67, "best_bowling": "4/20", "economy": 7.78}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 4, "run_outs": null},
+      "T20": {"catches": 10, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "afg_fazalhaq_farooqi",
+  "personal_info": {"name": "Fazalhaq Farooqi", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 42, "innings": 21, "runs": 21, "highest_score": "6*", "average": 3.50, "strike_rate": 31.34, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 54, "innings": 16, "runs": 17, "highest_score": "4*", "average": 4.25, "strike_rate": 45.94, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 42, "wickets": 52, "best_bowling": "4/34", "economy": 5.88},
+      "T20": {"matches": 54, "wickets": 66, "best_bowling": "5/9", "economy": 7.02}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 3, "run_outs": null},
+      "T20": {"catches": 7, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_hamid_hassan",
+  "personal_info": {"name": "Hamid Hassan", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 38, "innings": 22, "runs": 107, "highest_score": "17", "average": 6.68, "strike_rate": 54.87, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 25, "innings": 9, "runs": 50, "highest_score": "22", "average": 16.66, "strike_rate": 108.69, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 38, "wickets": 59, "best_bowling": "5/45", "economy": 4.60},
+      "T20": {"matches": 25, "wickets": 35, "best_bowling": "4/22", "economy": 6.39}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 5, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_dawlat_zadran",
+  "personal_info": {"name": "Dawlat Zadran", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 82, "innings": 56, "runs": 513, "highest_score": "47*", "average": 17.68, "strike_rate": 77.25, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 34, "innings": 17, "runs": 68, "highest_score": "13", "average": 7.55, "strike_rate": 161.90, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 82, "wickets": 115, "best_bowling": "4/22", "economy": 5.44},
+      "T20": {"matches": 34, "wickets": 40, "best_bowling": "4/44", "economy": 7.93}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 16, "run_outs": null},
+      "T20": {"catches": 7, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_fareed_ahmad",
+  "personal_info": {"name": "Fareed Ahmad", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 19, "highest_score": "17", "average": 19.00, "strike_rate": 76.00, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 19, "innings": 8, "runs": 46, "highest_score": "17", "average": 11.50, "strike_rate": 52.87, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 38, "innings": 6, "runs": 33, "highest_score": "24*", "average": 16.50, "strike_rate": 84.61, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 2, "best_bowling": "2/27", "economy": 2.73},
+      "ODI": {"matches": 19, "wickets": 25, "best_bowling": "3/56", "economy": 5.40},
+      "T20": {"matches": 38, "wickets": 47, "best_bowling": "3/14", "economy": 8.65}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 3, "run_outs": null},
+      "T20": {"catches": 6, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_yamin_ahmadzai",
+  "personal_info": {"name": "Yamin Ahmadzai", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 8, "innings": 15, "runs": 77, "highest_score": "19", "average": 5.92, "strike_rate": 37.37, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 9, "innings": 5, "runs": 9, "highest_score": "5", "average": 3.00, "strike_rate": 28.12, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 2, "innings": 1, "runs": 1, "highest_score": "1*", "average": null, "strike_rate": 100.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 8, "wickets": 16, "best_bowling": "3/41", "economy": 3.09},
+      "ODI": {"matches": 9, "wickets": 7, "best_bowling": "2/34", "economy": 5.36},
+      "T20": {"matches": 2, "wickets": 5, "best_bowling": "3/34", "economy": 9.06}
+    },
+    "fielding": {
+      "TEST": {"catches": 1, "run_outs": null},
+      "ODI": {"catches": 4, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_zaheer_khan",
+  "personal_info": {"name": "Zaheer Khan", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 92, "innings": 127, "runs": 1231, "highest_score": "75", "average": 11.95, "strike_rate": 51.70, "centuries": 0, "fifties": 3},
+      "ODI": {"matches": 200, "innings": 101, "runs": 792, "highest_score": "34*", "average": 12.00, "strike_rate": 73.46, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 17, "innings": 4, "runs": 13, "highest_score": "9", "average": 6.50, "strike_rate": 130.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 92, "wickets": 311, "best_bowling": "7/87", "economy": 3.27},
+      "ODI": {"matches": 200, "wickets": 282, "best_bowling": "5/42", "economy": 4.93},
+      "T20": {"matches": 17, "wickets": 17, "best_bowling": "4/19", "economy": 7.63}
+    },
+    "fielding": {
+      "TEST": {"catches": 19, "run_outs": null},
+      "ODI": {"catches": 43, "run_outs": null},
+      "T20": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "afg_shapoor_zadran",
+  "personal_info": {"name": "Shapoor Zadran", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 44, "innings": 27, "runs": 67, "highest_score": "17", "average": 6.70, "strike_rate": 41.87, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 36, "innings": 13, "runs": 27, "highest_score": "13", "average": 3.85, "strike_rate": 41.53, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 44, "wickets": 43, "best_bowling": "4/24", "economy": 4.80},
+      "T20": {"matches": 36, "wickets": 37, "best_bowling": "3/40", "economy": 7.83}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 5, "run_outs": null},
+      "T20": {"catches": 5, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+
+{
+  "id": "afg_noor_ahmad",
+  "personal_info": {"name": "Noor Ahmad", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm wrist spin"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 13, "innings": 6, "runs": 46, "highest_score": "26", "average": 9.20, "strike_rate": 71.87, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 26, "innings": 13, "runs": 85, "highest_score": "15*", "average": 9.44, "strike_rate": 100.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 13, "wickets": 10, "best_bowling": "3/49", "economy": 6.08},
+      "T20": {"matches": 26, "wickets": 20, "best_bowling": "4/10", "economy": 7.46}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 1, "run_outs": null},
+      "T20": {"catches": 5, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_qais_ahmad",
+  "personal_info": {"name": "Qais Ahmad", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 2, "innings": 4, "runs": 45, "highest_score": "21", "average": 11.25, "strike_rate": 51.13, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 3, "innings": 2, "runs": 12, "highest_score": "11", "average": 6.00, "strike_rate": 150.00, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 12, "innings": 6, "runs": 33, "highest_score": "18", "average": 6.60, "strike_rate": 110.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 2, "wickets": 3, "best_bowling": "2/98", "economy": 4.27},
+      "ODI": {"matches": 3, "wickets": 6, "best_bowling": "3/32", "economy": 6.13},
+      "T20": {"matches": 12, "wickets": 17, "best_bowling": "3/16", "economy": 6.88}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 8, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_sharafuddin_ashraf",
+  "personal_info": {"name": "Sharafuddin Ashraf", "country": "Afghanistan", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 9, "highest_score": "9", "average": 4.50, "strike_rate": 45.00, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 20, "innings": 12, "runs": 70, "highest_score": "21", "average": 8.75, "strike_rate": 64.22, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 23, "innings": 13, "runs": 63, "highest_score": "18", "average": 10.50, "strike_rate": 94.02, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 1, "best_bowling": "1/65", "economy": 3.82},
+      "ODI": {"matches": 20, "wickets": 13, "best_bowling": "3/29", "economy": 4.42},
+      "T20": {"matches": 23, "wickets": 12, "best_bowling": "3/24", "economy": 7.45}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 6, "run_outs": null},
+      "T20": {"catches": 4, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_waqar_salamkheil",
+  "personal_info": {"name": "Waqar Salamkheil", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm wrist spin"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 1, "runs": 1, "highest_score": "1*", "average": null, "strike_rate": 25.00, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 101, "innings": 16, "runs": 24, "highest_score": "7", "average": 8.00, "strike_rate": 51.06, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 4, "best_bowling": "2/35", "economy": 3.25},
+      "ODI": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 101, "wickets": 133, "best_bowling": "4/14", "economy": 8.09}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 9, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_shabir_noori",
+  "personal_info": {"name": "Shabir Noori", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 10, "innings": 10, "runs": 191, "highest_score": "94", "average": 19.10, "strike_rate": 63.66, "centuries": 0, "fifties": 1},
+      "T20": {"matches": 1, "innings": 1, "runs": 15, "highest_score": "15", "average": 15.00, "strike_rate": 83.33, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 10, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 6, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_javed_ahmadi",
+  "personal_info": {"name": "Javed Ahmadi", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 3, "innings": 6, "runs": 113, "highest_score": "62", "average": 18.83, "strike_rate": 55.94, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 47, "innings": 44, "runs": 1049, "highest_score": "81", "average": 23.84, "strike_rate": 76.01, "centuries": 0, "fifties": 7},
+      "T20": {"matches": 3, "innings": 2, "runs": 6, "highest_score": "6", "average": 3.00, "strike_rate": 85.71, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 3, "wickets": 1, "best_bowling": "1/40", "economy": 2.76},
+      "ODI": {"matches": 47, "wickets": 9, "best_bowling": "4/37", "economy": 4.81},
+      "T20": {"matches": 3, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 1, "run_outs": null},
+      "ODI": {"catches": 11, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_nawroz_mangal",
+  "personal_info": {"name": "Nawroz Mangal", "country": "Afghanistan", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 49, "innings": 48, "runs": 1139, "highest_score": "129", "average": 27.11, "strike_rate": 75.33, "centuries": 2, "fifties": 4},
+      "T20": {"matches": 32, "innings": 32, "runs": 505, "highest_score": "65*", "average": 18.03, "strike_rate": 111.47, "centuries": 0, "fifties": 2}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 49, "wickets": 8, "best_bowling": "3/35", "economy": 4.81},
+      "T20": {"matches": 32, "wickets": 4, "best_bowling": "3/23", "economy": 8.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 19, "run_outs": null},
+      "T20": {"catches": 16, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+
+{
+  "id": "afg_riaz_hassan",
+  "personal_info": {"name": "Riaz Hassan", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 23, "highest_score": "12", "average": 11.50, "strike_rate": 43.39, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 7, "innings": 6, "runs": 165, "highest_score": "50", "average": 27.50, "strike_rate": 60.66, "centuries": 0, "fifties": 1},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 7, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 1, "run_outs": null},
+      "ODI": {"catches": 3, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_mirwais_ashraf",
+  "personal_info": {"name": "Mirwais Ashraf", "country": "Afghanistan", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 46, "innings": 38, "runs": 387, "highest_score": "52*", "average": 14.33, "strike_rate": 71.27, "centuries": 0, "fifties": 1},
+      "T20": {"matches": 25, "innings": 19, "runs": 128, "highest_score": "28*", "average": 11.63, "strike_rate": 111.30, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 46, "wickets": 46, "best_bowling": "4/35", "economy": 4.06},
+      "T20": {"matches": 25, "wickets": 14, "best_bowling": "2/6", "economy": 6.79}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 8, "run_outs": null},
+      "T20": {"catches": 5, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_aftab_alam",
+  "personal_info": {"name": "Aftab Alam", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 27, "innings": 17, "runs": 80, "highest_score": "16*", "average": 11.42, "strike_rate": 74.76, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 12, "innings": 5, "runs": 2, "highest_score": "1*", "average": 1.00, "strike_rate": 22.22, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 27, "wickets": 41, "best_bowling": "4/25", "economy": 4.93},
+      "T20": {"matches": 12, "wickets": 11, "best_bowling": "2/23", "economy": 7.93}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 6, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_munir_ahmad",
+  "personal_info": {"name": "Munir Ahmad", "country": "Afghanistan", "role": "wicketkeeper-batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 13, "highest_score": "12", "average": 6.50, "strike_rate": 39.39, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_sayed_shirzad",
+  "personal_info": {"name": "Sayed Shirzad", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 2, "innings": 1, "runs": 25, "highest_score": "25", "average": 25.00, "strike_rate": 147.05, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 4, "innings": 1, "runs": 1, "highest_score": "1", "average": 1.00, "strike_rate": 50.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 3, "best_bowling": "2/48", "economy": 2.30},
+      "ODI": {"matches": 2, "wickets": 1, "best_bowling": "1/56", "economy": 7.00},
+      "T20": {"matches": 4, "wickets": 7, "best_bowling": "3/16", "economy": 7.73}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_najeeb_tarakai",
+  "personal_info": {"name": "Najeeb Tarakai", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2020, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 1, "innings": 1, "runs": 5, "highest_score": "5", "average": 5.00, "strike_rate": 27.77, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 12, "innings": 12, "runs": 258, "highest_score": "90", "average": 21.50, "strike_rate": 122.85, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 12, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+
+
+{
+  "id": "afg_bashir_ahmad",
+  "personal_info": {"name": "Bashir Ahmad", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 2, "innings": 1, "runs": 0, "highest_score": "0*", "average": null, "strike_rate": 0.00, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 1, "innings": 1, "runs": 2, "highest_score": "2*", "average": null, "strike_rate": 40.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 2, "wickets": 0, "best_bowling": null, "economy": 7.83},
+      "T20": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": 12.66}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 2, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_abdul_wasi",
+  "personal_info": {"name": "Abdul Wasi", "country": "Afghanistan", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 12, "highest_score": "9", "average": 6.00, "strike_rate": 17.14, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": 2.60},
+      "ODI": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_fareed_ahmad",
+  "personal_info": {"name": "Fareed Ahmad", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 19, "highest_score": "17", "average": 19.00, "strike_rate": 76.00, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 19, "innings": 8, "runs": 46, "highest_score": "17", "average": 11.50, "strike_rate": 52.87, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 38, "innings": 6, "runs": 33, "highest_score": "24*", "average": 16.50, "strike_rate": 84.61, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 2, "best_bowling": "2/27", "economy": 2.73},
+      "ODI": {"matches": 19, "wickets": 25, "best_bowling": "3/56", "economy": 5.40},
+      "T20": {"matches": 38, "wickets": 47, "best_bowling": "3/14", "economy": 8.65}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 3, "run_outs": null},
+      "T20": {"catches": 6, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_izatullah_dawlatzai",
+  "personal_info": {"name": "Izatullah Dawlatzai", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 5, "innings": 3, "runs": 7, "highest_score": "6*", "average": 3.50, "strike_rate": 25.92, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 16, "innings": 4, "runs": 26, "highest_score": "24*", "average": 26.00, "strike_rate": 162.50, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 5, "wickets": 8, "best_bowling": "4/38", "economy": 4.17},
+      "T20": {"matches": 16, "wickets": 18, "best_bowling": "3/23", "economy": 6.96}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 1, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_mohammad_saleem",
+  "personal_info": {"name": "Mohammad Saleem", "country": "Afghanistan", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 2, "highest_score": "2", "average": 1.00, "strike_rate": 18.18, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 2, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 1, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": 4.68},
+      "ODI": {"matches": 2, "wickets": 0, "best_bowling": null, "economy": 6.77},
+      "T20": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": 14.33}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 1, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_ihsanullah_janat",
+  "personal_info": {"name": "Ihsanullah Janat", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 3, "innings": 6, "runs": 110, "highest_score": "65*", "average": 22.00, "strike_rate": 43.47, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 16, "innings": 16, "runs": 307, "highest_score": "57*", "average": 21.92, "strike_rate": 69.77, "centuries": 0, "fifties": 3},
+      "T20": {"matches": 1, "innings": 1, "runs": 20, "highest_score": "20", "average": 20.00, "strike_rate": 142.85, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 3, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 16, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 4, "run_outs": null},
+      "ODI": {"catches": 10, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_bahir_shah",
+  "personal_info": {"name": "Bahir Shah", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 2, "innings": 3, "runs": 51, "highest_score": "32", "average": 17.00, "strike_rate": 67.10, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 2, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+
+{
+  "id": "afg_amir_hamza",
+  "personal_info": {"name": "Amir Hamza", "country": "Afghanistan", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 4, "innings": 6, "runs": 83, "highest_score": "34", "average": 20.75, "strike_rate": 38.78, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 31, "innings": 16, "runs": 23, "highest_score": "7", "average": 3.28, "strike_rate": 24.46, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 33, "innings": 9, "runs": 40, "highest_score": "21", "average": 10.00, "strike_rate": 105.26, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 4, "wickets": 18, "best_bowling": "6/75", "economy": 3.15},
+      "ODI": {"matches": 31, "wickets": 40, "best_bowling": "4/17", "economy": 3.92},
+      "T20": {"matches": 33, "wickets": 30, "best_bowling": "3/39", "economy": 6.77}
+    },
+    "fielding": {
+      "TEST": {"catches": 2, "run_outs": null},
+      "ODI": {"catches": 10, "run_outs": null},
+      "T20": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "afg_nasir_jamal",
+  "personal_info": {"name": "Nasir Jamal", "country": "Afghanistan", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 5, "innings": 10, "runs": 160, "highest_score": "55*", "average": 22.85, "strike_rate": 51.11, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 16, "innings": 14, "runs": 352, "highest_score": "53", "average": 27.07, "strike_rate": 65.54, "centuries": 0, "fifties": 3},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 5, "wickets": 0, "best_bowling": null, "economy": 2.00},
+      "ODI": {"matches": 16, "wickets": 0, "best_bowling": null, "economy": 7.00},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 4, "run_outs": null},
+      "ODI": {"catches": 4, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+}
+
+]

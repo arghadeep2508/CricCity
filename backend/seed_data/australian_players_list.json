@@ -1,0 +1,1503 @@
+[
+{
+  "id": "aus_don_bradman",
+  "personal_info": {"name": "Don Bradman", "country": "Australia", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 52, "innings": 80, "runs": 6996, "highest_score": "334", "average": 99.94, "strike_rate": null, "centuries": 29, "fifties": 13}
+    },
+    "bowling": {
+      "TEST": {"matches": 52, "wickets": 2, "best_bowling": "1/8", "economy": 2.69}
+    },
+    "fielding": {
+      "TEST": {"catches": 32, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_shane_warne",
+  "personal_info": {"name": "Shane Warne", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 145, "innings": 199, "runs": 3154, "highest_score": "99", "average": 17.32, "strike_rate": 57.65, "centuries": 0, "fifties": 12},
+      "ODI": {"matches": 194, "innings": 107, "runs": 1018, "highest_score": "55", "average": 13.05, "strike_rate": 72.04, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 145, "wickets": 708, "best_bowling": "8/71", "economy": 2.65},
+      "ODI": {"matches": 194, "wickets": 293, "best_bowling": "5/33", "economy": 4.25}
+    },
+    "fielding": {
+      "TEST": {"catches": 125, "run_outs": null},
+      "ODI": {"catches": 80, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_glenn_mcgrath",
+  "personal_info": {"name": "Glenn McGrath", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 124, "innings": 138, "runs": 641, "highest_score": "61", "average": 7.36, "strike_rate": 40.82, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 250, "innings": 68, "runs": 115, "highest_score": "11", "average": 3.83, "strike_rate": 48.72, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 2, "innings": 1, "runs": 5, "highest_score": "5", "average": 5.00, "strike_rate": 41.66, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 124, "wickets": 563, "best_bowling": "8/24", "economy": 2.49},
+      "ODI": {"matches": 250, "wickets": 381, "best_bowling": "7/15", "economy": 3.88},
+      "T20I": {"matches": 2, "wickets": 5, "best_bowling": "3/31", "economy": 9.87}
+    },
+    "fielding": {
+      "TEST": {"catches": 38, "run_outs": null},
+      "ODI": {"catches": 37, "run_outs": null},
+      "T20I": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_ricky_ponting",
+  "personal_info": {"name": "Ricky Ponting", "country": "Australia", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 168, "innings": 287, "runs": 13378, "highest_score": "257", "average": 51.85, "strike_rate": 58.72, "centuries": 41, "fifties": 62},
+      "ODI": {"matches": 375, "innings": 365, "runs": 13704, "highest_score": "164", "average": 42.03, "strike_rate": 80.39, "centuries": 30, "fifties": 82},
+      "T20I": {"matches": 17, "innings": 16, "runs": 401, "highest_score": "98*", "average": 28.64, "strike_rate": 132.78, "centuries": 0, "fifties": 2}
+    },
+    "bowling": {
+      "TEST": {"matches": 168, "wickets": 5, "best_bowling": "1/0", "economy": 2.82},
+      "ODI": {"matches": 375, "wickets": 3, "best_bowling": "1/12", "economy": 4.16},
+      "T20I": {"matches": 17, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 196, "run_outs": null},
+      "ODI": {"catches": 160, "run_outs": null},
+      "T20I": {"catches": 8, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_steve_waugh",
+  "personal_info": {"name": "Steve Waugh", "country": "Australia", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 168, "innings": 260, "runs": 10927, "highest_score": "200", "average": 51.06, "strike_rate": 48.64, "centuries": 32, "fifties": 50},
+      "ODI": {"matches": 325, "innings": 288, "runs": 7569, "highest_score": "120*", "average": 32.90, "strike_rate": 75.91, "centuries": 3, "fifties": 45}
+    },
+    "bowling": {
+      "TEST": {"matches": 168, "wickets": 92, "best_bowling": "5/28", "economy": 2.64},
+      "ODI": {"matches": 325, "wickets": 195, "best_bowling": "4/33", "economy": 4.56}
+    },
+    "fielding": {
+      "TEST": {"catches": 112, "run_outs": null},
+      "ODI": {"catches": 111, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "aus_adam_gilchrist",
+  "personal_info": {"name": "Adam Gilchrist", "country": "Australia", "role": "wicket-keeper batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 96, "innings": 137, "runs": 5570, "highest_score": "204*", "average": 47.60, "strike_rate": 81.95, "centuries": 17, "fifties": 26},
+      "ODI": {"matches": 287, "innings": 279, "runs": 9619, "highest_score": "172", "average": 35.89, "strike_rate": 96.94, "centuries": 16, "fifties": 55},
+      "T20I": {"matches": 13, "innings": 13, "runs": 272, "highest_score": "48", "average": 22.66, "strike_rate": 141.66, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 96, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 287, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20I": {"matches": 13, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 379, "run_outs": null},
+      "ODI": {"catches": 417, "run_outs": null},
+      "T20I": {"catches": 17, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_allan_border",
+  "personal_info": {"name": "Allan Border", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 156, "innings": 265, "runs": 11174, "highest_score": "205", "average": 50.56, "strike_rate": null, "centuries": 27, "fifties": 63},
+      "ODI": {"matches": 273, "innings": 252, "runs": 6524, "highest_score": "127*", "average": 30.62, "strike_rate": 71.42, "centuries": 3, "fifties": 39}
+    },
+    "bowling": {
+      "TEST": {"matches": 156, "wickets": 39, "best_bowling": "7/46", "economy": 2.28},
+      "ODI": {"matches": 273, "wickets": 73, "best_bowling": "3/20", "economy": 4.66}
+    },
+    "fielding": {
+      "TEST": {"catches": 156, "run_outs": null},
+      "ODI": {"catches": 127, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_greg_chappell",
+  "personal_info": {"name": "Greg Chappell", "country": "Australia", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 87, "innings": 151, "runs": 7110, "highest_score": "247*", "average": 53.86, "strike_rate": null, "centuries": 24, "fifties": 31},
+      "ODI": {"matches": 74, "innings": 72, "runs": 2331, "highest_score": "138*", "average": 40.18, "strike_rate": 75.70, "centuries": 3, "fifties": 14}
+    },
+    "bowling": {
+      "TEST": {"matches": 87, "wickets": 47, "best_bowling": "5/61", "economy": 2.15},
+      "ODI": {"matches": 74, "wickets": 72, "best_bowling": "5/15", "economy": 4.04}
+    },
+    "fielding": {
+      "TEST": {"catches": 122, "run_outs": null},
+      "ODI": {"catches": 23, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_neil_harvey",
+  "personal_info": {"name": "Neil Harvey", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 79, "innings": 137, "runs": 6149, "highest_score": "205", "average": 48.41, "strike_rate": null, "centuries": 21, "fifties": 24}
+    },
+    "bowling": {
+      "TEST": {"matches": 79, "wickets": 3, "best_bowling": "1/8", "economy": 1.73}
+    },
+    "fielding": {
+      "TEST": {"catches": 64, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_mark_waugh",
+  "personal_info": {"name": "Mark Waugh", "country": "Australia", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 128, "innings": 209, "runs": 8029, "highest_score": "153*", "average": 41.81, "strike_rate": 52.27, "centuries": 20, "fifties": 47},
+      "ODI": {"matches": 244, "innings": 236, "runs": 8500, "highest_score": "173", "average": 39.35, "strike_rate": 76.90, "centuries": 18, "fifties": 50}
+    },
+    "bowling": {
+      "TEST": {"matches": 128, "wickets": 59, "best_bowling": "5/40", "economy": 3.00},
+      "ODI": {"matches": 244, "wickets": 85, "best_bowling": "5/24", "economy": 4.78}
+    },
+    "fielding": {
+      "TEST": {"catches": 181, "run_outs": null},
+      "ODI": {"catches": 108, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_victor_trumper",
+  "personal_info": {"name": "Victor Trumper", "country": "Australia", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 48, "innings": 89, "runs": 3163, "highest_score": "214*", "average": 39.04, "strike_rate": null, "centuries": 8, "fifties": 13}
+    },
+    "bowling": {
+      "TEST": {"matches": 48, "wickets": 8, "best_bowling": "3/60", "economy": 3.48}
+    },
+    "fielding": {
+      "TEST": {"catches": 31, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_bill_oreilly",
+  "personal_info": {"name": "Bill O'Reilly", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 27, "innings": 39, "runs": 410, "highest_score": "56*", "average": 12.81, "strike_rate": null, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 27, "wickets": 144, "best_bowling": "7/54", "economy": 1.94}
+    },
+    "fielding": {
+      "TEST": {"catches": 7, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_dennis_lillee",
+  "personal_info": {"name": "Dennis Lillee", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 70, "innings": 90, "runs": 905, "highest_score": "73*", "average": 13.71, "strike_rate": null, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 63, "innings": 34, "runs": 240, "highest_score": "42*", "average": 9.23, "strike_rate": 75.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 70, "wickets": 355, "best_bowling": "7/83", "economy": 2.75},
+      "ODI": {"matches": 63, "wickets": 103, "best_bowling": "5/34", "economy": 3.58}
+    },
+    "fielding": {
+      "TEST": {"catches": 23, "run_outs": null},
+      "ODI": {"catches": 10, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_matthew_hayden",
+  "personal_info": {"name": "Matthew Hayden", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 103, "innings": 184, "runs": 8625, "highest_score": "380", "average": 50.73, "strike_rate": 60.10, "centuries": 30, "fifties": 29},
+      "ODI": {"matches": 161, "innings": 155, "runs": 6133, "highest_score": "181*", "average": 43.80, "strike_rate": 78.96, "centuries": 10, "fifties": 36},
+      "T20": {"matches": 9, "innings": 9, "runs": 308, "highest_score": "73*", "average": 51.33, "strike_rate": 143.92, "centuries": 0, "fifties": 4}
+    },
+    "bowling": {
+      "TEST": {"matches": 103, "wickets": 0, "best_bowling": "-", "economy": 4.44},
+      "ODI": {"matches": 161, "wickets": 0, "best_bowling": "-", "economy": 18.00},
+      "T20": {"matches": 9, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 128, "run_outs": null},
+      "ODI": {"catches": 68, "run_outs": null},
+      "T20": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_steve_smith",
+  "personal_info": {"name": "Steven Smith", "country": "Australia", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 123, "innings": 220, "runs": 10763, "highest_score": "239", "average": 56.05, "strike_rate": 53.90, "centuries": 37, "fifties": 44},
+      "ODI": {"matches": 170, "innings": 154, "runs": 5800, "highest_score": "164", "average": 43.28, "strike_rate": 86.96, "centuries": 12, "fifties": 35},
+      "T20": {"matches": 67, "innings": 55, "runs": 1094, "highest_score": "90", "average": 24.86, "strike_rate": 125.45, "centuries": 0, "fifties": 5}
+    },
+    "bowling": {
+      "TEST": {"matches": 123, "wickets": 19, "best_bowling": "3/18", "economy": 4.11},
+      "ODI": {"matches": 170, "wickets": 28, "best_bowling": "3/16", "economy": 5.41},
+      "T20": {"matches": 67, "wickets": 17, "best_bowling": "3/20", "economy": 7.77}
+    },
+    "fielding": {
+      "TEST": {"catches": 215, "run_outs": null},
+      "ODI": {"catches": 90, "run_outs": null},
+      "T20": {"catches": 41, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_michael_clarke",
+  "personal_info": {"name": "Michael Clarke", "country": "Australia", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2015, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 115, "innings": 198, "runs": 8643, "highest_score": "329*", "average": 49.10, "strike_rate": 55.92, "centuries": 28, "fifties": 27},
+      "ODI": {"matches": 245, "innings": 223, "runs": 7981, "highest_score": "130", "average": 44.58, "strike_rate": 78.98, "centuries": 8, "fifties": 58},
+      "T20": {"matches": 34, "innings": 28, "runs": 488, "highest_score": "67", "average": 21.21, "strike_rate": 103.17, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 115, "wickets": 31, "best_bowling": "6/9", "economy": 2.91},
+      "ODI": {"matches": 245, "wickets": 57, "best_bowling": "5/35", "economy": 4.98},
+      "T20": {"matches": 34, "wickets": 6, "best_bowling": "1/2", "economy": 8.65}
+    },
+    "fielding": {
+      "TEST": {"catches": 134, "run_outs": null},
+      "ODI": {"catches": 106, "run_outs": null},
+      "T20": {"catches": 13, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_david_warner",
+  "personal_info": {"name": "David Warner", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 112, "innings": 205, "runs": 8786, "highest_score": "335*", "average": 44.59, "strike_rate": 70.19, "centuries": 26, "fifties": 37},
+      "ODI": {"matches": 161, "innings": 159, "runs": 6932, "highest_score": "179", "average": 45.30, "strike_rate": 97.26, "centuries": 22, "fifties": 33},
+      "T20": {"matches": 110, "innings": 110, "runs": 3277, "highest_score": "100*", "average": 33.43, "strike_rate": 142.47, "centuries": 1, "fifties": 28}
+    },
+    "bowling": {
+      "TEST": {"matches": 112, "wickets": 4, "best_bowling": "2/45", "economy": 4.71},
+      "ODI": {"matches": 161, "wickets": 0, "best_bowling": "-", "economy": 8.00},
+      "T20": {"matches": 110, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 91, "run_outs": null},
+      "ODI": {"catches": 71, "run_outs": null},
+      "T20": {"catches": 62, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_ray_lindwall",
+  "personal_info": {"name": "Ray Lindwall", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 61, "innings": 84, "runs": 1502, "highest_score": "118", "average": 21.15, "strike_rate": null, "centuries": 2, "fifties": 5}
+    },
+    "bowling": {
+      "TEST": {"matches": 61, "wickets": 228, "best_bowling": "7/38", "economy": 2.30}
+    },
+    "fielding": {
+      "TEST": {"catches": 26, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_clarrie_grimmett",
+  "personal_info": {"name": "Clarrie Grimmett", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 37, "innings": 50, "runs": 557, "highest_score": "50", "average": 13.92, "strike_rate": null, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 37, "wickets": 216, "best_bowling": "7/40", "economy": 2.16}
+    },
+    "fielding": {
+      "TEST": {"catches": 17, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_jason_gillespie",
+  "personal_info": {"name": "Jason Gillespie", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 71, "innings": 93, "runs": 1218, "highest_score": "201*", "average": 18.73, "strike_rate": 31.96, "centuries": 1, "fifties": 2},
+      "ODI": {"matches": 97, "innings": 39, "runs": 289, "highest_score": "44*", "average": 12.56, "strike_rate": 78.74, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 1, "innings": 1, "runs": 24, "highest_score": "24", "average": 24.00, "strike_rate": 133.33, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 71, "wickets": 259, "best_bowling": "7/37", "economy": 2.85},
+      "ODI": {"matches": 97, "wickets": 142, "best_bowling": "5/22", "economy": 4.21},
+      "T20": {"matches": 1, "wickets": 1, "best_bowling": "1/49", "economy": 12.25}
+    },
+    "fielding": {
+      "TEST": {"catches": 27, "run_outs": null},
+      "ODI": {"catches": 10, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_pat_cummins",
+  "personal_info": {"name": "Pat Cummins", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 72, "innings": 107, "runs": 1567, "highest_score": "64*", "average": 16.67, "strike_rate": 47.31, "centuries": 0, "fifties": 3},
+      "ODI": {"matches": 90, "innings": 59, "runs": 537, "highest_score": "37", "average": 14.51, "strike_rate": 76.38, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 57, "innings": 27, "runs": 158, "highest_score": "28", "average": 10.53, "strike_rate": 118.79, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 72, "wickets": 315, "best_bowling": "6/23", "economy": 2.89},
+      "ODI": {"matches": 90, "wickets": 143, "best_bowling": "5/70", "economy": 5.27},
+      "T20": {"matches": 57, "wickets": 66, "best_bowling": "3/15", "economy": 7.44}
+    },
+    "fielding": {
+      "TEST": {"catches": 36, "run_outs": null},
+      "ODI": {"catches": 24, "run_outs": null},
+      "T20": {"catches": 16, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_bill_ponsford",
+  "personal_info": {"name": "Bill Ponsford", "country": "Australia", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 29, "innings": 48, "runs": 2122, "highest_score": "266", "average": 48.22, "strike_rate": null, "centuries": 7, "fifties": 6}
+    },
+    "bowling": {
+      "TEST": {"matches": 29, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 21, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_mitchell_starc",
+  "personal_info": {"name": "Mitchell Starc", "country": "Australia", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Left-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 105, "innings": 154, "runs": 2478, "highest_score": "99", "average": 20.47, "strike_rate": 59.32, "centuries": 0, "fifties": 13},
+      "ODI": {"matches": 130, "innings": 77, "runs": 583, "highest_score": "52*", "average": 11.66, "strike_rate": 77.11, "centuries": 0, "fifties": 1},
+      "T20": {"matches": 65, "innings": 21, "runs": 98, "highest_score": "14", "average": 9.80, "strike_rate": 98.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 105, "wickets": 433, "best_bowling": "7/58", "economy": 3.44},
+      "ODI": {"matches": 130, "wickets": 247, "best_bowling": "6/28", "economy": 5.26},
+      "T20": {"matches": 65, "wickets": 79, "best_bowling": "4/20", "economy": 7.74}
+    },
+    "fielding": {
+      "TEST": {"catches": 46, "run_outs": null},
+      "ODI": {"catches": 47, "run_outs": null},
+      "T20": {"catches": 22, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_josh_hazlewood",
+  "personal_info": {"name": "Josh Hazlewood", "country": "Australia", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 76, "innings": 96, "runs": 565, "highest_score": "39", "average": 11.53, "strike_rate": 44.10, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 96, "innings": 38, "runs": 135, "highest_score": "23*", "average": 15.00, "strike_rate": 81.32, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 60, "innings": 12, "runs": 29, "highest_score": "13*", "average": 9.66, "strike_rate": 103.57, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 76, "wickets": 295, "best_bowling": "6/67", "economy": 2.77},
+      "ODI": {"matches": 96, "wickets": 142, "best_bowling": "6/52", "economy": 4.73},
+      "T20": {"matches": 60, "wickets": 79, "best_bowling": "4/12", "economy": 7.47}
+    },
+    "fielding": {
+      "TEST": {"catches": 30, "run_outs": null},
+      "ODI": {"catches": 32, "run_outs": null},
+      "T20": {"catches": 13, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+{
+  "id": "aus_arthur_morris",
+  "personal_info": {"name": "Arthur Morris", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 46, "innings": 79, "runs": 3533, "highest_score": "206", "average": 46.48, "strike_rate": null, "centuries": 12, "fifties": 12}
+    },
+    "bowling": {
+      "TEST": {"matches": 46, "wickets": 2, "best_bowling": "1/5", "economy": 2.70}
+    },
+    "fielding": {
+      "TEST": {"catches": 15, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{    
+  "id": "aus_mitchell_johnson",    
+  "personal_info": {"name": "Mitchell Johnson", "country": "Australia", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Left-arm fast"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 73, "innings": 109, "runs": 2065, "highest_score": "123*", "average": 22.20, "strike_rate": 58.39, "centuries": 1, "fifties": 11},    
+      "ODI": {"matches": 153, "innings": 91, "runs": 951, "highest_score": "73*", "average": 16.11, "strike_rate": 96.35, "centuries": 0, "fifties": 2},    
+      "T20": {"matches": 30, "innings": 17, "runs": 109, "highest_score": "28*", "average": 10.90, "strike_rate": 114.73, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 73, "wickets": 313, "best_bowling": "8/61", "economy": 3.33},    
+      "ODI": {"matches": 153, "wickets": 239, "best_bowling": "6/31", "economy": 4.83},    
+      "T20": {"matches": 30, "wickets": 38, "best_bowling": "3/15", "economy": 7.28}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 27, "run_outs": null},    
+      "ODI": {"catches": 35, "run_outs": null},    
+      "T20": {"catches": 5, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_nathan_lyon",    
+  "personal_info": {"name": "Nathan Lyon", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 141, "innings": 180, "runs": 1651, "highest_score": "47", "average": 12.60, "strike_rate": 50.36, "centuries": 0, "fifties": 0},    
+      "ODI": {"matches": 29, "innings": 14, "runs": 77, "highest_score": "30", "average": 19.25, "strike_rate": 92.77, "centuries": 0, "fifties": 0},    
+      "T20": {"matches": 2, "innings": 1, "runs": 4, "highest_score": "4*", "average": null, "strike_rate": 100.00, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 141, "wickets": 567, "best_bowling": "8/50", "economy": 2.94},    
+      "ODI": {"matches": 29, "wickets": 29, "best_bowling": "4/44", "economy": 4.92},    
+      "T20": {"matches": 2, "wickets": 1, "best_bowling": "1/33", "economy": 9.60}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 64, "run_outs": null},    
+      "ODI": {"catches": 7, "run_outs": null},    
+      "T20": {"catches": 0, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_ken_suttle",    
+  "personal_info": {"name": "Ken Suttle", "country": "Australia", "role": "all_rounder", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": []},    
+  "stats": {    
+    "batting": {},    
+    "bowling": {},    
+    "fielding": {}    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_bill_lawry",    
+  "personal_info": {"name": "Bill Lawry", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": null},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 67, "innings": 123, "runs": 5234, "highest_score": "210", "average": 47.15, "strike_rate": null, "centuries": 13, "fifties": 27},    
+      "ODI": {"matches": 1, "innings": 1, "runs": 27, "highest_score": "27", "average": 27.00, "strike_rate": 55.10, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 67, "wickets": 0, "best_bowling": "-", "economy": 2.57},    
+      "ODI": {"matches": 1, "wickets": 0, "best_bowling": "-", "economy": null}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 30, "run_outs": null},    
+      "ODI": {"catches": 1, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_richie_benaud",    
+  "personal_info": {"name": "Richie Benaud", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 63, "innings": 97, "runs": 2201, "highest_score": "122", "average": 24.45, "strike_rate": null, "centuries": 3, "fifties": 9}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 63, "wickets": 248, "best_bowling": "7/72", "economy": 2.10}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 65, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},
+
+{    
+  "id": "aus_ian_healy",    
+  "personal_info": {"name": "Ian Healy", "country": "Australia", "role": "wicket_keeper", "batting_style": "Right-hand bat", "bowling_style": null},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 119, "innings": 182, "runs": 4356, "highest_score": "161*", "average": 27.39, "strike_rate": 49.72, "centuries": 4, "fifties": 22},    
+      "ODI": {"matches": 168, "innings": 120, "runs": 1764, "highest_score": "56", "average": 21.00, "strike_rate": 83.84, "centuries": 0, "fifties": 4}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 119, "wickets": 0, "best_bowling": "-", "economy": null},    
+      "ODI": {"matches": 168, "wickets": 0, "best_bowling": "-", "economy": null}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 366, "run_outs": null},    
+      "ODI": {"catches": 194, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_bob_simpson",    
+  "personal_info": {"name": "Bob Simpson", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 62, "innings": 111, "runs": 4869, "highest_score": "311", "average": 46.81, "strike_rate": null, "centuries": 10, "fifties": 27},    
+      "ODI": {"matches": 2, "innings": 2, "runs": 36, "highest_score": "23", "average": 18.00, "strike_rate": 67.92, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 62, "wickets": 71, "best_bowling": "5/57", "economy": 2.61},    
+      "ODI": {"matches": 2, "wickets": 2, "best_bowling": "2/30", "economy": 5.58}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 110, "run_outs": null},    
+      "ODI": {"catches": 4, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_stan_mccabe",    
+  "personal_info": {"name": "Stan McCabe", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 39, "innings": 62, "runs": 2748, "highest_score": "232", "average": 48.21, "strike_rate": null, "centuries": 6, "fifties": 13}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 39, "wickets": 36, "best_bowling": "4/13", "economy": 2.47}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 41, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_michael_hussey",    
+  "personal_info": {"name": "Michael Hussey", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 79, "innings": 137, "runs": 6235, "highest_score": "195", "average": 51.52, "strike_rate": 50.13, "centuries": 19, "fifties": 29},    
+      "ODI": {"matches": 185, "innings": 157, "runs": 5442, "highest_score": "109*", "average": 48.15, "strike_rate": 87.16, "centuries": 3, "fifties": 39},    
+      "T20": {"matches": 38, "innings": 30, "runs": 721, "highest_score": "60*", "average": 37.94, "strike_rate": 136.29, "centuries": 0, "fifties": 4}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 79, "wickets": 7, "best_bowling": "1/0", "economy": 3.12},    
+      "ODI": {"matches": 185, "wickets": 2, "best_bowling": "1/22", "economy": 5.87},    
+      "T20": {"matches": 38, "wickets": 0, "best_bowling": "-", "economy": 5.00}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 85, "run_outs": null},    
+      "ODI": {"catches": 105, "run_outs": null},    
+      "T20": {"catches": 20, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},
+
+{    
+  "id": "aus_craig_mcdermott",    
+  "personal_info": {"name": "Craig McDermott", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 71, "innings": 90, "runs": 940, "highest_score": "42*", "average": 12.20, "strike_rate": 54.77, "centuries": 0, "fifties": 0},    
+      "ODI": {"matches": 138, "innings": 78, "runs": 432, "highest_score": "37", "average": 7.08, "strike_rate": 87.80, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 71, "wickets": 291, "best_bowling": "8/97", "economy": 3.01},    
+      "ODI": {"matches": 138, "wickets": 203, "best_bowling": "5/44", "economy": 4.03}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 19, "run_outs": null},    
+      "ODI": {"catches": 27, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_aaron_finch",    
+  "personal_info": {"name": "Aaron Finch", "country": "Australia", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},    
+  "career": {"debut_year": null, "retirement_year": 2023, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 5, "innings": 10, "runs": 278, "highest_score": "62", "average": 27.80, "strike_rate": 44.98, "centuries": 0, "fifties": 2},    
+      "ODI": {"matches": 146, "innings": 142, "runs": 5406, "highest_score": "153*", "average": 38.89, "strike_rate": 87.73, "centuries": 17, "fifties": 30},    
+      "T20": {"matches": 103, "innings": 103, "runs": 3120, "highest_score": "172", "average": 34.28, "strike_rate": 142.53, "centuries": 2, "fifties": 19}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 5, "wickets": 0, "best_bowling": "-", "economy": 4.00},    
+      "ODI": {"matches": 146, "wickets": 4, "best_bowling": "1/2", "economy": 5.47},    
+      "T20": {"matches": 103, "wickets": 0, "best_bowling": "-", "economy": 13.50}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 7, "run_outs": null},    
+      "ODI": {"catches": 71, "run_outs": null},    
+      "T20": {"catches": 50, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_justin_langer",    
+  "personal_info": {"name": "Justin Langer", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},    
+  "career": {"debut_year": null, "retirement_year": 2007, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 105, "innings": 182, "runs": 7696, "highest_score": "250", "average": 45.27, "strike_rate": 54.22, "centuries": 23, "fifties": 30},    
+      "ODI": {"matches": 8, "innings": 7, "runs": 160, "highest_score": "36", "average": 32.00, "strike_rate": 88.88, "centuries": 0, "fifties": 0},    
+      "T20": {"matches": 41, "innings": 38, "runs": 1015, "highest_score": "97", "average": 28.19, "strike_rate": 136.42, "centuries": 0, "fifties": 5}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 105, "wickets": 0, "best_bowling": "-", "economy": 3.00},    
+      "ODI": {"matches": 8, "wickets": 0, "best_bowling": "-", "economy": null},    
+      "T20": {"matches": 41, "wickets": 0, "best_bowling": "-", "economy": null}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 73, "run_outs": null},    
+      "ODI": {"catches": 2, "run_outs": null},    
+      "T20": {"catches": 9, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_merv_hughes",    
+  "personal_info": {"name": "Merv Hughes", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 53, "innings": 70, "runs": 1032, "highest_score": "72*", "average": 16.64, "strike_rate": 46.21, "centuries": 0, "fifties": 2},    
+      "ODI": {"matches": 33, "innings": 17, "runs": 100, "highest_score": "20", "average": 11.11, "strike_rate": 74.62, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 53, "wickets": 212, "best_bowling": "8/87", "economy": 2.93},    
+      "ODI": {"matches": 33, "wickets": 38, "best_bowling": "4/44", "economy": 4.08}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 23, "run_outs": null},    
+      "ODI": {"catches": 6, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_geoff_lawson",    
+  "personal_info": {"name": "Geoff Lawson", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 46, "innings": 68, "runs": 894, "highest_score": "74", "average": 15.96, "strike_rate": null, "centuries": 0, "fifties": 4},    
+      "ODI": {"matches": 79, "innings": 52, "runs": 378, "highest_score": "33*", "average": 11.11, "strike_rate": 75.60, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 46, "wickets": 180, "best_bowling": "8/112", "economy": 2.96},    
+      "ODI": {"matches": 79, "wickets": 88, "best_bowling": "4/26", "economy": 3.65}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 10, "run_outs": null},    
+      "ODI": {"catches": 18, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},
+
+{    
+  "id": "aus_travis_head",    
+  "personal_info": {"name": "Travis Head", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 65, "innings": 111, "runs": 4592, "highest_score": "175", "average": 43.73, "strike_rate": 69.82, "centuries": 12, "fifties": 20},    
+      "ODI": {"matches": 79, "innings": 76, "runs": 3007, "highest_score": "154*", "average": 43.57, "strike_rate": 105.73, "centuries": 7, "fifties": 17},    
+      "T20": {"matches": 53, "innings": 51, "runs": 1335, "highest_score": "91", "average": 28.40, "strike_rate": 156.69, "centuries": 0, "fifties": 6}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 65, "wickets": 16, "best_bowling": "4/10", "economy": 3.72},    
+      "ODI": {"matches": 79, "wickets": 28, "best_bowling": "4/28", "economy": 5.74},    
+      "T20": {"matches": 53, "wickets": 1, "best_bowling": "1/16", "economy": 9.33}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 34, "run_outs": null},    
+      "ODI": {"catches": 19, "run_outs": null},    
+      "T20": {"catches": 9, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_marcus_harris",    
+  "personal_info": {"name": "Marcus Harris", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": null},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 14, "innings": 26, "runs": 607, "highest_score": "79", "average": 25.29, "strike_rate": 45.91, "centuries": 0, "fifties": 3}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 14, "wickets": 0, "best_bowling": "-", "economy": null}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 8, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_alex_carey",    
+  "personal_info": {"name": "Alex Carey", "country": "Australia", "role": "wicket_keeper", "batting_style": "Left-hand bat", "bowling_style": null},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 48, "innings": 73, "runs": 2333, "highest_score": "156", "average": 35.89, "strike_rate": 65.14, "centuries": 3, "fifties": 13},    
+      "ODI": {"matches": 85, "innings": 77, "runs": 2245, "highest_score": "106", "average": 35.07, "strike_rate": 90.67, "centuries": 1, "fifties": 13},    
+      "T20": {"matches": 42, "innings": 29, "runs": 267, "highest_score": "37*", "average": 11.12, "strike_rate": 109.87, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 48, "wickets": 0, "best_bowling": "-", "economy": null},    
+      "ODI": {"matches": 85, "wickets": 0, "best_bowling": "-", "economy": null},    
+      "T20": {"matches": 42, "wickets": 0, "best_bowling": "-", "economy": null}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 186, "run_outs": null},    
+      "ODI": {"catches": 95, "run_outs": null},    
+      "T20": {"catches": 22, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_geoff_marsh",    
+  "personal_info": {"name": "Geoff Marsh", "country": "Australia", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 50, "innings": 93, "runs": 2854, "highest_score": "138", "average": 33.18, "strike_rate": 35.13, "centuries": 4, "fifties": 15},    
+      "ODI": {"matches": 117, "innings": 115, "runs": 4357, "highest_score": "126*", "average": 39.97, "strike_rate": 55.93, "centuries": 9, "fifties": 22}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 50, "wickets": 0, "best_bowling": "-", "economy": null},    
+      "ODI": {"matches": 117, "wickets": 0, "best_bowling": "-", "economy": 4.00}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 38, "run_outs": null},    
+      "ODI": {"catches": 31, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_terry_alderman",    
+  "personal_info": {"name": "Terry Alderman", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 41, "innings": 53, "runs": 203, "highest_score": "26*", "average": 6.54, "strike_rate": null, "centuries": 0, "fifties": 0},    
+      "ODI": {"matches": 65, "innings": 18, "runs": 32, "highest_score": "9*", "average": 2.66, "strike_rate": 32.98, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 41, "wickets": 170, "best_bowling": "6/47", "economy": 2.72},    
+      "ODI": {"matches": 65, "wickets": 88, "best_bowling": "5/17", "economy": 3.65}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 27, "run_outs": null},    
+      "ODI": {"catches": 29, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},
+
+{    
+  "id": "aus_tim_david",    
+  "personal_info": {"name": "Tim David", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "ODI": {"matches": 4, "innings": 4, "runs": 45, "highest_score": "35", "average": 11.25, "strike_rate": 84.90, "centuries": 0, "fifties": 0},    
+      "T20": {"matches": 71, "innings": 60, "runs": 1602, "highest_score": "102*", "average": 34.82, "strike_rate": 168.27, "centuries": 1, "fifties": 9}    
+    },    
+    "bowling": {    
+      "ODI": {"matches": 4, "wickets": 1, "best_bowling": "1/20", "economy": 10.00},    
+      "T20": {"matches": 71, "wickets": 5, "best_bowling": "1/18", "economy": 9.32}    
+    },    
+    "fielding": {    
+      "ODI": {"catches": 0, "run_outs": null},    
+      "T20": {"catches": 41, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_glenn_maxwell",    
+  "personal_info": {"name": "Glenn Maxwell", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 7, "innings": 14, "runs": 339, "highest_score": "104", "average": 26.07, "strike_rate": 59.47, "centuries": 1, "fifties": 0},    
+      "ODI": {"matches": 149, "innings": 136, "runs": 3990, "highest_score": "201*", "average": 33.81, "strike_rate": 126.70, "centuries": 4, "fifties": 23},    
+      "T20": {"matches": 130, "innings": 118, "runs": 2897, "highest_score": "145*", "average": 28.97, "strike_rate": 154.42, "centuries": 5, "fifties": 12}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 7, "wickets": 8, "best_bowling": "4/127", "economy": 4.42},    
+      "ODI": {"matches": 149, "wickets": 77, "best_bowling": "4/40", "economy": 5.46},    
+      "T20": {"matches": 130, "wickets": 51, "best_bowling": "3/10", "economy": 8.13}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 5, "run_outs": null},    
+      "ODI": {"catches": 91, "run_outs": null},    
+      "T20": {"catches": 62, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_brett_lee",    
+  "personal_info": {"name": "Brett Lee", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 76, "innings": 90, "runs": 1451, "highest_score": "64", "average": 20.15, "strike_rate": 52.97, "centuries": 0, "fifties": 5},    
+      "ODI": {"matches": 221, "innings": 110, "runs": 1176, "highest_score": "59", "average": 17.81, "strike_rate": 83.58, "centuries": 0, "fifties": 3},    
+      "T20": {"matches": 25, "innings": 12, "runs": 101, "highest_score": "43*", "average": 16.83, "strike_rate": 142.25, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 76, "wickets": 310, "best_bowling": "5/30", "economy": 3.46},    
+      "ODI": {"matches": 221, "wickets": 380, "best_bowling": "5/22", "economy": 4.76},    
+      "T20": {"matches": 25, "wickets": 28, "best_bowling": "3/23", "economy": 7.86}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 23, "run_outs": null},    
+      "ODI": {"catches": 54, "run_outs": null},    
+      "T20": {"catches": 6, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_mitchell_marsh",    
+  "personal_info": {"name": "Mitchell Marsh", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 46, "innings": 80, "runs": 2083, "highest_score": "181", "average": 28.53, "strike_rate": 56.29, "centuries": 3, "fifties": 9},    
+      "ODI": {"matches": 99, "innings": 95, "runs": 3098, "highest_score": "177*", "average": 37.32, "strike_rate": 94.56, "centuries": 4, "fifties": 20},    
+      "T20": {"matches": 85, "innings": 80, "runs": 2220, "highest_score": "103*", "average": 33.63, "strike_rate": 141.67, "centuries": 1, "fifties": 13}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 46, "wickets": 51, "best_bowling": "5/46", "economy": 3.55},    
+      "ODI": {"matches": 99, "wickets": 57, "best_bowling": "5/33", "economy": 5.52},    
+      "T20": {"matches": 85, "wickets": 17, "best_bowling": "3/24", "economy": 7.74}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 27, "run_outs": null},    
+      "ODI": {"catches": 36, "run_outs": null},    
+      "T20": {"catches": 37, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_marnus_labuschagne",    
+  "personal_info": {"name": "Marnus Labuschagne", "country": "Australia", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 63, "innings": 114, "runs": 4694, "highest_score": "215", "average": 44.70, "strike_rate": 52.23, "centuries": 11, "fifties": 25},    
+      "ODI": {"matches": 66, "innings": 58, "runs": 1871, "highest_score": "124", "average": 34.64, "strike_rate": 83.56, "centuries": 2, "fifties": 12},    
+      "T20": {"matches": 1, "innings": 1, "runs": 2, "highest_score": "2", "average": 2.00, "strike_rate": 50.00, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 63, "wickets": 14, "best_bowling": "3/45", "economy": 3.80},    
+      "ODI": {"matches": 66, "wickets": 10, "best_bowling": "3/39", "economy": 6.65},    
+      "T20": {"matches": 1, "wickets": 0, "best_bowling": "-", "economy": null}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 51, "run_outs": null},    
+      "ODI": {"catches": 41, "run_outs": null},    
+      "T20": {"catches": 1, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_usman_khawaja",    
+  "personal_info": {"name": "Usman Khawaja", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 88, "innings": 159, "runs": 6229, "highest_score": "232", "average": 42.95, "strike_rate": 48.82, "centuries": 16, "fifties": 28},    
+      "ODI": {"matches": 40, "innings": 39, "runs": 1554, "highest_score": "104", "average": 42.00, "strike_rate": 84.09, "centuries": 2, "fifties": 12},    
+      "T20": {"matches": 9, "innings": 9, "runs": 241, "highest_score": "58", "average": 26.77, "strike_rate": 132.41, "centuries": 0, "fifties": 1}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 88, "wickets": 0, "best_bowling": "-", "economy": 2.66},    
+      "ODI": {"matches": 40, "wickets": 0, "best_bowling": "-", "economy": null},    
+      "T20": {"matches": 9, "wickets": 0, "best_bowling": "-", "economy": null}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 68, "run_outs": null},    
+      "ODI": {"catches": 13, "run_outs": null},    
+      "T20": {"catches": 5, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_daniel_sams",    
+  "personal_info": {"name": "Daniel Sams", "country": "Australia", "role": "all_rounder", "batting_style": "Left-hand bat", "bowling_style": "Left-arm medium-fast"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["T20"]},    
+  "stats": {    
+    "batting": {    
+      "T20": {"matches": 10, "innings": 7, "runs": 106, "highest_score": "41", "average": 26.50, "strike_rate": 170.96, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "T20": {"matches": 10, "wickets": 7, "best_bowling": "2/33", "economy": 10.16}    
+    },    
+    "fielding": {    
+      "T20": {"catches": 4, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},
+
+{    
+  "id": "aus_cameron_green",    
+  "personal_info": {"name": "Cameron Green", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 37, "innings": 59, "runs": 1736, "highest_score": "174*", "average": 32.75, "strike_rate": 49.43, "centuries": 2, "fifties": 7},    
+      "ODI": {"matches": 31, "innings": 27, "runs": 782, "highest_score": "118*", "average": 43.44, "strike_rate": 89.57, "centuries": 1, "fifties": 2},    
+      "T20": {"matches": 28, "innings": 26, "runs": 638, "highest_score": "62*", "average": 29.00, "strike_rate": 151.90, "centuries": 0, "fifties": 6}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 37, "wickets": 39, "best_bowling": "5/27", "economy": 3.55},    
+      "ODI": {"matches": 31, "wickets": 20, "best_bowling": "5/33", "economy": 5.77},    
+      "T20": {"matches": 28, "wickets": 14, "best_bowling": "3/35", "economy": 9.09}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 38, "run_outs": null},    
+      "ODI": {"catches": 21, "run_outs": null},    
+      "T20": {"catches": 25, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_marcus_stoinis",    
+  "personal_info": {"name": "Marcus Stoinis", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "ODI": {"matches": 71, "innings": 64, "runs": 1495, "highest_score": "146*", "average": 26.69, "strike_rate": 93.96, "centuries": 1, "fifties": 6},    
+      "T20": {"matches": 87, "innings": 70, "runs": 1416, "highest_score": "78", "average": 30.78, "strike_rate": 146.28, "centuries": 0, "fifties": 6}    
+    },    
+    "bowling": {    
+      "ODI": {"matches": 71, "wickets": 48, "best_bowling": "3/16", "economy": 5.99},    
+      "T20": {"matches": 87, "wickets": 53, "best_bowling": "4/23", "economy": 8.86}    
+    },    
+    "fielding": {    
+      "ODI": {"catches": 18, "run_outs": null},    
+      "T20": {"catches": 24, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_ashton_agar",    
+  "personal_info": {"name": "Ashton Agar", "country": "Australia", "role": "all_rounder", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 5, "innings": 7, "runs": 195, "highest_score": "98", "average": 32.50, "strike_rate": 55.55, "centuries": 0, "fifties": 1},    
+      "ODI": {"matches": 22, "innings": 18, "runs": 322, "highest_score": "48*", "average": 24.76, "strike_rate": 82.98, "centuries": 0, "fifties": 0},    
+      "T20": {"matches": 49, "innings": 29, "runs": 279, "highest_score": "29", "average": 11.62, "strike_rate": 100.35, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 5, "wickets": 9, "best_bowling": "3/46", "economy": 2.79},    
+      "ODI": {"matches": 22, "wickets": 21, "best_bowling": "2/31", "economy": 5.23},    
+      "T20": {"matches": 49, "wickets": 49, "best_bowling": "6/30", "economy": 6.50}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 0, "run_outs": null},    
+      "ODI": {"catches": 10, "run_outs": null},    
+      "T20": {"catches": 32, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_matthew_wade",    
+  "personal_info": {"name": "Matthew Wade", "country": "Australia", "role": "wicket_keeper", "batting_style": "Left-hand bat", "bowling_style": null},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 36, "innings": 63, "runs": 1613, "highest_score": "117", "average": 29.87, "strike_rate": 50.35, "centuries": 4, "fifties": 5},    
+      "ODI": {"matches": 97, "innings": 83, "runs": 1867, "highest_score": "100*", "average": 26.29, "strike_rate": 81.59, "centuries": 1, "fifties": 11},    
+      "T20": {"matches": 92, "innings": 68, "runs": 1202, "highest_score": "80", "average": 26.13, "strike_rate": 134.15, "centuries": 0, "fifties": 3}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 36, "wickets": 0, "best_bowling": "-", "economy": 5.60},    
+      "ODI": {"matches": 97, "wickets": 0, "best_bowling": "-", "economy": null},    
+      "T20": {"matches": 92, "wickets": 0, "best_bowling": "-", "economy": null}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 74, "run_outs": null},    
+      "ODI": {"catches": 108, "run_outs": null},    
+      "T20": {"catches": 58, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_josh_inglis",    
+  "personal_info": {"name": "Josh Inglis", "country": "Australia", "role": "wicket_keeper", "batting_style": "Right-hand bat", "bowling_style": null},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 5, "innings": 7, "runs": 184, "highest_score": "102", "average": 26.28, "strike_rate": 80.70, "centuries": 1, "fifties": 0},    
+      "ODI": {"matches": 33, "innings": 29, "runs": 766, "highest_score": "120*", "average": 29.46, "strike_rate": 106.38, "centuries": 1, "fifties": 4},    
+      "T20": {"matches": 46, "innings": 43, "runs": 1000, "highest_score": "110", "average": 27.77, "strike_rate": 159.48, "centuries": 2, "fifties": 2}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 5, "wickets": 0, "best_bowling": "-", "economy": null},    
+      "ODI": {"matches": 33, "wickets": 0, "best_bowling": "-", "economy": null},    
+      "T20": {"matches": 46, "wickets": 0, "best_bowling": "-", "economy": null}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 2, "run_outs": null},    
+      "ODI": {"catches": 30, "run_outs": null},    
+      "T20": {"catches": 29, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},
+
+{    
+  "id": "aus_sean_abbott",    
+  "personal_info": {"name": "Sean Abbott", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "ODI": {"matches": 29, "innings": 21, "runs": 374, "highest_score": "69", "average": 19.68, "strike_rate": 96.39, "centuries": 0, "fifties": 2},    
+      "T20": {"matches": 29, "innings": 13, "runs": 50, "highest_score": "13*", "average": 7.14, "strike_rate": 102.04, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "ODI": {"matches": 29, "wickets": 35, "best_bowling": "3/23", "economy": 5.72},    
+      "T20": {"matches": 29, "wickets": 34, "best_bowling": "4/31", "economy": 9.32}    
+    },    
+    "fielding": {    
+      "ODI": {"catches": 14, "run_outs": null},    
+      "T20": {"catches": 16, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_scott_boland",    
+  "personal_info": {"name": "Scott Boland", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 19, "innings": 24, "runs": 125, "highest_score": "21*", "average": 8.33, "strike_rate": 31.80, "centuries": 0, "fifties": 0},    
+      "ODI": {"matches": 14, "innings": 4, "runs": 9, "highest_score": "4", "average": 3.00, "strike_rate": 40.90, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 19, "wickets": 82, "best_bowling": "6/7", "economy": 2.86},    
+      "ODI": {"matches": 14, "wickets": 16, "best_bowling": "3/67", "economy": 6.07},    
+      "T20": {"matches": 3, "wickets": 3, "best_bowling": "3/26", "economy": 8.18}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 9, "run_outs": null},    
+      "ODI": {"catches": 3, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_peter_siddle",    
+  "personal_info": {"name": "Peter Siddle", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 67, "innings": 94, "runs": 1164, "highest_score": "51", "average": 14.73, "strike_rate": 47.16, "centuries": 0, "fifties": 2},    
+      "ODI": {"matches": 20, "innings": 6, "runs": 31, "highest_score": "10*", "average": 10.33, "strike_rate": 103.33, "centuries": 0, "fifties": 0},    
+      "T20": {"matches": 2, "innings": 1, "runs": 1, "highest_score": "1*", "average": null, "strike_rate": 100.00, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 67, "wickets": 221, "best_bowling": "6/54", "economy": 2.92},    
+      "ODI": {"matches": 20, "wickets": 17, "best_bowling": "3/55", "economy": 4.94},    
+      "T20": {"matches": 2, "wickets": 3, "best_bowling": "2/24", "economy": 7.25}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 19, "run_outs": null},    
+      "ODI": {"catches": 1, "run_outs": null},    
+      "T20": {"catches": 0, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_ryan_harris",    
+  "personal_info": {"name": "Ryan Harris", "country": "Australia", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 27, "innings": 39, "runs": 603, "highest_score": "74", "average": 21.53, "strike_rate": 63.14, "centuries": 0, "fifties": 3},    
+      "ODI": {"matches": 21, "innings": 13, "runs": 48, "highest_score": "21", "average": 8.00, "strike_rate": 100.00, "centuries": 0, "fifties": 0},    
+      "T20": {"matches": 3, "innings": 1, "runs": 2, "highest_score": "2*", "average": null, "strike_rate": 200.00, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 27, "wickets": 113, "best_bowling": "7/117", "economy": 2.78},    
+      "ODI": {"matches": 21, "wickets": 44, "best_bowling": "5/19", "economy": 4.84},    
+      "T20": {"matches": 3, "wickets": 4, "best_bowling": "2/27", "economy": 8.14}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 13, "run_outs": null},    
+      "ODI": {"catches": 6, "run_outs": null},    
+      "T20": {"catches": 0, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},    
+
+{    
+  "id": "aus_brad_haddin",    
+  "personal_info": {"name": "Brad Haddin", "country": "Australia", "role": "wicket_keeper", "batting_style": "Right-hand bat", "bowling_style": null},    
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},    
+  "stats": {    
+    "batting": {    
+      "TEST": {"matches": 66, "innings": 112, "runs": 3266, "highest_score": "169", "average": 32.98, "strike_rate": 58.45, "centuries": 4, "fifties": 18},    
+      "ODI": {"matches": 126, "innings": 115, "runs": 3122, "highest_score": "110", "average": 31.53, "strike_rate": 84.24, "centuries": 2, "fifties": 16},    
+      "T20": {"matches": 34, "innings": 29, "runs": 402, "highest_score": "47", "average": 17.47, "strike_rate": 114.52, "centuries": 0, "fifties": 0}    
+    },    
+    "bowling": {    
+      "TEST": {"matches": 66, "wickets": 0, "best_bowling": "-", "economy": null},    
+      "ODI": {"matches": 126, "wickets": 0, "best_bowling": "-", "economy": null},    
+      "T20": {"matches": 34, "wickets": 0, "best_bowling": "-", "economy": null}    
+    },    
+    "fielding": {    
+      "TEST": {"catches": 262, "run_outs": null},    
+      "ODI": {"catches": 170, "run_outs": null},    
+      "T20": {"catches": 17, "run_outs": null}    
+    }    
+  },    
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}    
+},
+
+{
+  "id": "aus_shaun_marsh",
+  "personal_info": {"name": "Shaun Marsh", "country": "Australia", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 38, "innings": 68, "runs": 2265, "highest_score": "182", "average": 34.31, "strike_rate": 43.85, "centuries": 6, "fifties": 10},
+      "ODI": {"matches": 73, "innings": 72, "runs": 2773, "highest_score": "151", "average": 40.77, "strike_rate": 81.41, "centuries": 7, "fifties": 15},
+      "T20": {"matches": 15, "innings": 15, "runs": 255, "highest_score": "47*", "average": 18.21, "strike_rate": 102.82, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 38, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 73, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 15, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 23, "run_outs": null},
+      "ODI": {"catches": 22, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_doug_bollinger",
+  "personal_info": {"name": "Doug Bollinger", "country": "Australia", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 12, "innings": 14, "runs": 54, "highest_score": "21", "average": 7.71, "strike_rate": 33.96, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 39, "innings": 8, "runs": 50, "highest_score": "30", "average": 8.33, "strike_rate": 92.59, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 9, "innings": 2, "runs": 1, "highest_score": "1*", "average": null, "strike_rate": 100.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 12, "wickets": 50, "best_bowling": "5/28", "economy": 3.23},
+      "ODI": {"matches": 39, "wickets": 62, "best_bowling": "5/35", "economy": 4.57},
+      "T20": {"matches": 9, "wickets": 9, "best_bowling": "1/22", "economy": 7.11}
+    },
+    "fielding": {
+      "TEST": {"catches": 2, "run_outs": null},
+      "ODI": {"catches": 12, "run_outs": null},
+      "T20": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_xavier_doherty",
+  "personal_info": {"name": "Xavier Doherty", "country": "Australia", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 4, "innings": 7, "runs": 51, "highest_score": "18*", "average": 12.75, "strike_rate": 32.07, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 60, "innings": 23, "runs": 101, "highest_score": "15*", "average": 14.42, "strike_rate": 54.89, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 11, "innings": 4, "runs": 18, "highest_score": "9*", "average": 18.00, "strike_rate": 105.88, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 4, "wickets": 7, "best_bowling": "3/131", "economy": 3.58},
+      "ODI": {"matches": 60, "wickets": 55, "best_bowling": "4/28", "economy": 4.77},
+      "T20": {"matches": 11, "wickets": 10, "best_bowling": "3/20", "economy": 7.89}
+    },
+    "fielding": {
+      "TEST": {"catches": 2, "run_outs": null},
+      "ODI": {"catches": 19, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_moises_henriques",
+  "personal_info": {"name": "Moises Henriques", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 4, "innings": 8, "runs": 164, "highest_score": "81*", "average": 23.42, "strike_rate": 47.39, "centuries": 0, "fifties": 2},
+      "ODI": {"matches": 16, "innings": 15, "runs": 117, "highest_score": "22", "average": 9.00, "strike_rate": 60.93, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 24, "innings": 21, "runs": 355, "highest_score": "62*", "average": 20.88, "strike_rate": 124.56, "centuries": 0, "fifties": 2}
+    },
+    "bowling": {
+      "TEST": {"matches": 4, "wickets": 2, "best_bowling": "1/48", "economy": 2.98},
+      "ODI": {"matches": 16, "wickets": 8, "best_bowling": "3/32", "economy": 5.17},
+      "T20": {"matches": 24, "wickets": 7, "best_bowling": "3/22", "economy": 8.43}
+    },
+    "fielding": {
+      "TEST": {"catches": 1, "run_outs": null},
+      "ODI": {"catches": 6, "run_outs": null},
+      "T20": {"catches": 6, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_james_faulkner",
+  "personal_info": {"name": "James Faulkner", "country": "Australia", "role": "all_rounder", "batting_style": "Left-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 45, "highest_score": "23", "average": 22.50, "strike_rate": 104.65, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 69, "innings": 52, "runs": 1032, "highest_score": "116", "average": 34.40, "strike_rate": 104.24, "centuries": 1, "fifties": 4},
+      "T20": {"matches": 24, "innings": 18, "runs": 159, "highest_score": "41*", "average": 14.45, "strike_rate": 115.21, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 6, "best_bowling": "4/51", "economy": 3.54},
+      "ODI": {"matches": 69, "wickets": 96, "best_bowling": "4/32", "economy": 5.53},
+      "T20": {"matches": 24, "wickets": 36, "best_bowling": "5/27", "economy": 7.96}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 21, "run_outs": null},
+      "T20": {"catches": 11, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_andrew_symonds",
+  "personal_info": {"name": "Andrew Symonds", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium / off-spin"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 26, "innings": 41, "runs": 1462, "highest_score": "162*", "average": 40.61, "strike_rate": 64.80, "centuries": 2, "fifties": 10},
+      "ODI": {"matches": 198, "innings": 161, "runs": 5088, "highest_score": "156", "average": 39.75, "strike_rate": 92.44, "centuries": 6, "fifties": 30},
+      "T20": {"matches": 14, "innings": 11, "runs": 337, "highest_score": "85*", "average": 48.14, "strike_rate": 169.34, "centuries": 0, "fifties": 2}
+    },
+    "bowling": {
+      "TEST": {"matches": 26, "wickets": 24, "best_bowling": "3/50", "economy": 2.56},
+      "ODI": {"matches": 198, "wickets": 133, "best_bowling": "5/18", "economy": 5.00},
+      "T20": {"matches": 14, "wickets": 8, "best_bowling": "2/14", "economy": 8.98}
+    },
+    "fielding": {
+      "TEST": {"catches": 22, "run_outs": null},
+      "ODI": {"catches": 82, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_keith_miller",
+  "personal_info": {"name": "Keith Miller", "country": "Australia", "role": "all_rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 55, "innings": 87, "runs": 2958, "highest_score": "147", "average": 36.97, "strike_rate": null, "centuries": 7, "fifties": 13}
+    },
+    "bowling": {
+      "TEST": {"matches": 55, "wickets": 170, "best_bowling": "7/60", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 38, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "aus_damien_martyn",
+  "personal_info": {"name": "Damien Martyn", "country": "Australia", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 67, "innings": 109, "runs": 4406, "highest_score": "165", "average": 46.37, "strike_rate": 51.41, "centuries": 13, "fifties": 23},
+      "ODI": {"matches": 208, "innings": 182, "runs": 5346, "highest_score": "144*", "average": 40.80, "strike_rate": 77.73, "centuries": 5, "fifties": 37},
+      "T20": {"matches": 4, "innings": 4, "runs": 120, "highest_score": "96", "average": 30.00, "strike_rate": 162.16, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 67, "wickets": 2, "best_bowling": "1/0", "economy": 2.89},
+      "ODI": {"matches": 208, "wickets": 12, "best_bowling": "2/21", "economy": 5.31},
+      "T20": {"matches": 4, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 36, "run_outs": null},
+      "ODI": {"catches": 69, "run_outs": null},
+      "T20": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+}
+]

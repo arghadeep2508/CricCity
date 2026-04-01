@@ -1,0 +1,2217 @@
+[
+  {
+    "id": "ind_sachin_tendulkar",
+    "personal_info": {"name": "Sachin Tendulkar", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+    "career": {"debut_year": null, "retirement_year": 2013, "formats_played": ["TEST", "ODI", "T20"]},
+    "stats": {
+      "batting": {
+        "TEST": {"matches": 200, "innings": 329, "runs": 15921, "highest_score": "248*", "average": 53.78, "strike_rate": null, "centuries": 51, "fifties": 68},
+        "ODI": {"matches": 463, "innings": 452, "runs": 18426, "highest_score": "200*", "average": 44.83, "strike_rate": 86.23, "centuries": 49, "fifties": 96},
+        "T20": {"matches": 1, "innings": 1, "runs": 10, "highest_score": "10", "average": 10.0, "strike_rate": 83.33, "centuries": 0, "fifties": 0}
+      },
+      "bowling": {
+        "TEST": {"matches": 200, "wickets": 46, "best_bowling": "3/10", "economy": 3.52},
+        "ODI": {"matches": 463, "wickets": 154, "best_bowling": "5/32", "economy": 5.10},
+        "T20": {"matches": 1, "wickets": 1, "best_bowling": "1/12", "economy": 4.80}
+      },
+      "fielding": {
+        "TEST": {"catches": 115, "run_outs": null},
+        "ODI": {"catches": 140, "run_outs": null},
+        "T20": {"catches": 1, "run_outs": null}
+      }
+    },
+    "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+  },
+
+  {
+    "id": "ind_virat_kohli",
+    "personal_info": {"name": "Virat Kohli", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+    "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+    "stats": {
+      "batting": {
+        "TEST": {"matches": 123, "innings": 210, "runs": 9230, "highest_score": "254*", "average": 46.85, "strike_rate": 55.57, "centuries": 30, "fifties": 31},
+        "ODI": {"matches": 311, "innings": 299, "runs": 14797, "highest_score": "183", "average": 58.71, "strike_rate": 93.82, "centuries": 54, "fifties": 77},
+        "T20": {"matches": 125, "innings": 117, "runs": 4188, "highest_score": "122*", "average": 48.69, "strike_rate": 137.04, "centuries": 1, "fifties": 38}
+      },
+      "bowling": {
+        "TEST": {"matches": 123, "wickets": 0, "best_bowling": "-", "economy": 2.88},
+        "ODI": {"matches": 311, "wickets": 5, "best_bowling": "1/13", "economy": 6.16},
+        "T20": {"matches": 125, "wickets": 4, "best_bowling": "1/13", "economy": 8.05}
+      },
+      "fielding": {
+        "TEST": {"catches": 121, "run_outs": null},
+        "ODI": {"catches": 167, "run_outs": null},
+        "T20": {"catches": 54, "run_outs": null}
+      }
+    },
+    "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+  },
+
+  {
+    "id": "ind_ms_dhoni",
+    "personal_info": {"name": "MS Dhoni", "country": "India", "role": "wicketkeeper", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+    "career": {"debut_year": null, "retirement_year": 2020, "formats_played": ["TEST", "ODI", "T20"]},
+    "stats": {
+      "batting": {
+        "TEST": {"matches": 90, "innings": 144, "runs": 4876, "highest_score": "224", "average": 38.09, "strike_rate": 59.11, "centuries": 6, "fifties": 33},
+        "ODI": {"matches": 350, "innings": 297, "runs": 10773, "highest_score": "183*", "average": 50.57, "strike_rate": 87.56, "centuries": 10, "fifties": 73},
+        "T20": {"matches": 98, "innings": 85, "runs": 1617, "highest_score": "56", "average": 37.60, "strike_rate": 126.13, "centuries": 0, "fifties": 2}
+      },
+      "bowling": {
+        "TEST": {"matches": 90, "wickets": 0, "best_bowling": "-", "economy": 4.18},
+        "ODI": {"matches": 350, "wickets": 1, "best_bowling": "1/14", "economy": 5.16},
+        "T20": {"matches": 98, "wickets": 0, "best_bowling": "-", "economy": null}
+      },
+      "fielding": {
+        "TEST": {"catches": 256, "run_outs": null},
+        "ODI": {"catches": 321, "run_outs": null},
+        "T20": {"catches": 57, "run_outs": null}
+      }
+    },
+    "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+  },
+
+  {
+    "id": "ind_rohit_sharma",
+    "personal_info": {"name": "Rohit Sharma", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+    "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+    "stats": {
+      "batting": {
+        "TEST": {"matches": 67, "innings": 116, "runs": 4301, "highest_score": "212", "average": 40.57, "strike_rate": 57.05, "centuries": 12, "fifties": 18},
+        "ODI": {"matches": 282, "innings": 274, "runs": 11577, "highest_score": "264", "average": 48.84, "strike_rate": 92.74, "centuries": 33, "fifties": 61},
+        "T20": {"matches": 159, "innings": 151, "runs": 4231, "highest_score": "121*", "average": 32.05, "strike_rate": 140.89, "centuries": 5, "fifties": 32}
+      },
+      "bowling": {
+        "TEST": {"matches": 67, "wickets": 2, "best_bowling": "1/26", "economy": 3.50},
+        "ODI": {"matches": 282, "wickets": 9, "best_bowling": "2/27", "economy": 5.24},
+        "T20": {"matches": 159, "wickets": 1, "best_bowling": "1/22", "economy": 9.97}
+      },
+      "fielding": {
+        "TEST": {"catches": 68, "run_outs": null},
+        "ODI": {"catches": 103, "run_outs": null},
+        "T20": {"catches": 65, "run_outs": null}
+      }
+    },
+    "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+  },
+
+  {
+    "id": "ind_rahul_dravid",
+    "personal_info": {"name": "Rahul Dravid", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+    "career": {"debut_year": null, "retirement_year": 2012, "formats_played": ["TEST", "ODI", "T20"]},
+    "stats": {
+      "batting": {
+        "TEST": {"matches": 164, "innings": 286, "runs": 13288, "highest_score": "270", "average": 52.31, "strike_rate": 42.51, "centuries": 36, "fifties": 63},
+        "ODI": {"matches": 344, "innings": 318, "runs": 10889, "highest_score": "153", "average": 39.16, "strike_rate": 71.23, "centuries": 12, "fifties": 83},
+        "T20": {"matches": 1, "innings": 1, "runs": 31, "highest_score": "31", "average": 31.0, "strike_rate": 147.61, "centuries": 0, "fifties": 0}
+      },
+      "bowling": {
+        "TEST": {"matches": 164, "wickets": 1, "best_bowling": "1/18", "economy": 1.95},
+        "ODI": {"matches": 344, "wickets": 4, "best_bowling": "2/43", "economy": 5.48},
+        "T20": {"matches": 1, "wickets": 0, "best_bowling": "-", "economy": null}
+      },
+      "fielding": {
+        "TEST": {"catches": 210, "run_outs": null},
+        "ODI": {"catches": 196, "run_outs": null},
+        "T20": {"catches": 0, "run_outs": null}
+      }
+    },
+    "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+  },
+
+  
+{
+  "id": "ind_sourav_ganguly",
+  "personal_info": {"name": "Sourav Ganguly", "country": "India", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2008, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 113, "innings": 188, "runs": 7212, "highest_score": "239", "average": 42.17, "strike_rate": 51.25, "centuries": 16, "fifties": 35},
+      "ODI": {"matches": 311, "innings": 300, "runs": 11363, "highest_score": "183", "average": 41.02, "strike_rate": 73.70, "centuries": 22, "fifties": 72}
+    },
+    "bowling": {
+      "TEST": {"matches": 113, "wickets": 32, "best_bowling": "3/28", "economy": 3.23},
+      "ODI": {"matches": 311, "wickets": 100, "best_bowling": "5/16", "economy": 5.06}
+    },
+    "fielding": {
+      "TEST": {"catches": 71, "run_outs": null},
+      "ODI": {"catches": 100, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_kapil_dev",
+  "personal_info": {"name": "Kapil Dev", "country": "India", "role": "allrounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": 1994, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 131, "innings": 184, "runs": 5248, "highest_score": "163", "average": 31.05, "strike_rate": null, "centuries": 8, "fifties": 27},
+      "ODI": {"matches": 225, "innings": 198, "runs": 3783, "highest_score": "175*", "average": 23.79, "strike_rate": 95.07, "centuries": 1, "fifties": 14}
+    },
+    "bowling": {
+      "TEST": {"matches": 131, "wickets": 434, "best_bowling": "9/83", "economy": 2.78},
+      "ODI": {"matches": 225, "wickets": 253, "best_bowling": "5/43", "economy": 3.71}
+    },
+    "fielding": {
+      "TEST": {"catches": 64, "run_outs": null},
+      "ODI": {"catches": 71, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_sunil_gavaskar",
+  "personal_info": {"name": "Sunil Gavaskar", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 1987, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 125, "innings": 214, "runs": 10122, "highest_score": "236*", "average": 51.12, "strike_rate": null, "centuries": 34, "fifties": 45},
+      "ODI": {"matches": 108, "innings": 102, "runs": 3092, "highest_score": "103*", "average": 35.13, "strike_rate": 62.26, "centuries": 1, "fifties": 27}
+    },
+    "bowling": {
+      "TEST": {"matches": 125, "wickets": 1, "best_bowling": "1/34", "economy": 3.25},
+      "ODI": {"matches": 108, "wickets": 1, "best_bowling": "1/10", "economy": 7.50}
+    },
+    "fielding": {
+      "TEST": {"catches": 108, "run_outs": null},
+      "ODI": {"catches": 22, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_anil_kumble",
+  "personal_info": {"name": "Anil Kumble", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": 2008, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 132, "innings": 173, "runs": 2506, "highest_score": "110*", "average": 17.77, "strike_rate": 38.82, "centuries": 1, "fifties": 5},
+      "ODI": {"matches": 271, "innings": 136, "runs": 938, "highest_score": "26", "average": 10.53, "strike_rate": 61.06, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 132, "wickets": 619, "best_bowling": "10/74", "economy": 2.69},
+      "ODI": {"matches": 271, "wickets": 337, "best_bowling": "6/12", "economy": 4.30}
+    },
+    "fielding": {
+      "TEST": {"catches": 60, "run_outs": null},
+      "ODI": {"catches": 85, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_vvs_laxman",
+  "personal_info": {"name": "VVS Laxman", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2012, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 134, "innings": 225, "runs": 8781, "highest_score": "281", "average": 45.97, "strike_rate": 49.37, "centuries": 17, "fifties": 56},
+      "ODI": {"matches": 86, "innings": 83, "runs": 2338, "highest_score": "131", "average": 30.76, "strike_rate": 71.23, "centuries": 6, "fifties": 10}
+    },
+    "bowling": {
+      "TEST": {"matches": 134, "wickets": 2, "best_bowling": "1/2", "economy": 2.33},
+      "ODI": {"matches": 86, "wickets": 0, "best_bowling": "-", "economy": 5.71}
+    },
+    "fielding": {
+      "TEST": {"catches": 135, "run_outs": null},
+      "ODI": {"catches": 39, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_virender_sehwag",
+  "personal_info": {"name": "Virender Sehwag", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2015, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 104, "innings": 180, "runs": 8586, "highest_score": "319", "average": 49.34, "strike_rate": 82.23, "centuries": 23, "fifties": 32},
+      "ODI": {"matches": 251, "innings": 245, "runs": 8273, "highest_score": "219", "average": 35.05, "strike_rate": 104.33, "centuries": 15, "fifties": 38},
+      "T20": {"matches": 19, "innings": 18, "runs": 394, "highest_score": "68", "average": 21.88, "strike_rate": 145.38, "centuries": 0, "fifties": 2}
+    },
+    "bowling": {
+      "TEST": {"matches": 104, "wickets": 40, "best_bowling": "5/104", "economy": 3.04},
+      "ODI": {"matches": 251, "wickets": 96, "best_bowling": "4/6", "economy": 5.26},
+      "T20": {"matches": 19, "wickets": 0, "best_bowling": "-", "economy": 20.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 91, "run_outs": null},
+      "ODI": {"catches": 93, "run_outs": null},
+      "T20": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_jasprit_bumrah",
+  "personal_info": {"name": "Jasprit Bumrah", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 52, "innings": 78, "runs": 348, "highest_score": "34*", "average": 6.56, "strike_rate": 41.28, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 89, "innings": 26, "runs": 91, "highest_score": "16", "average": 7.58, "strike_rate": 57.23, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 95, "innings": 12, "runs": 12, "highest_score": "7", "average": 2.00, "strike_rate": 66.66, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 52, "wickets": 234, "best_bowling": "6/27", "economy": 2.77},
+      "ODI": {"matches": 89, "wickets": 149, "best_bowling": "6/19", "economy": 4.59},
+      "T20": {"matches": 95, "wickets": 121, "best_bowling": "4/15", "economy": 6.51}
+    },
+    "fielding": {
+      "TEST": {"catches": 17, "run_outs": null},
+      "ODI": {"catches": 18, "run_outs": null},
+      "T20": {"catches": 15, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_ravichandran_ashwin",
+  "personal_info": {"name": "Ravichandran Ashwin", "country": "India", "role": "allrounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 106, "innings": 151, "runs": 3503, "highest_score": "124", "average": 25.75, "strike_rate": 54.53, "centuries": 6, "fifties": 14},
+      "ODI": {"matches": 116, "innings": 63, "runs": 707, "highest_score": "65", "average": 16.44, "strike_rate": 86.96, "centuries": 0, "fifties": 1},
+      "T20": {"matches": 65, "innings": 19, "runs": 184, "highest_score": "31*", "average": 26.28, "strike_rate": 114.99, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 106, "wickets": 537, "best_bowling": "7/59", "economy": 2.83},
+      "ODI": {"matches": 116, "wickets": 156, "best_bowling": "4/25", "economy": 4.93},
+      "T20": {"matches": 65, "wickets": 72, "best_bowling": "4/8", "economy": 6.90}
+    },
+    "fielding": {
+      "TEST": {"catches": 36, "run_outs": null},
+      "ODI": {"catches": 31, "run_outs": null},
+      "T20": {"catches": 11, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_ravindra_jadeja",
+  "personal_info": {"name": "Ravindra Jadeja", "country": "India", "role": "allrounder", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 89, "innings": 133, "runs": 4095, "highest_score": "175*", "average": 38.27, "strike_rate": 55.42, "centuries": 6, "fifties": 28},
+      "ODI": {"matches": 210, "innings": 142, "runs": 2905, "highest_score": "87", "average": 32.27, "strike_rate": 85.54, "centuries": 0, "fifties": 13},
+      "T20": {"matches": 74, "innings": 41, "runs": 515, "highest_score": "46*", "average": 21.45, "strike_rate": 127.16, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 89, "wickets": 348, "best_bowling": "7/42", "economy": 2.59},
+      "ODI": {"matches": 210, "wickets": 232, "best_bowling": "5/33", "economy": 4.88},
+      "T20": {"matches": 74, "wickets": 54, "best_bowling": "3/15", "economy": 7.13}
+    },
+    "fielding": {
+      "TEST": {"catches": 49, "run_outs": null},
+      "ODI": {"catches": 79, "run_outs": null},
+      "T20": {"catches": 28, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_mohammed_shami",
+  "personal_info": {"name": "Mohammed Shami", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 64, "innings": 89, "runs": 750, "highest_score": "56*", "average": 12.09, "strike_rate": 74.62, "centuries": 0, "fifties": 2},
+      "ODI": {"matches": 108, "innings": 49, "runs": 225, "highest_score": "25", "average": 7.75, "strike_rate": 82.41, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 25, "innings": 5, "runs": 6, "highest_score": "6", "average": 3.00, "strike_rate": 60.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 64, "wickets": 229, "best_bowling": "6/56", "economy": 3.30},
+      "ODI": {"matches": 108, "wickets": 206, "best_bowling": "7/57", "economy": 5.58},
+      "T20": {"matches": 25, "wickets": 27, "best_bowling": "3/15", "economy": 8.95}
+    },
+    "fielding": {
+      "TEST": {"catches": 16, "run_outs": null},
+      "ODI": {"catches": 32, "run_outs": null},
+      "T20": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_kl_rahul",
+  "personal_info": {"name": "KL Rahul", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 67, "innings": 118, "runs": 4053, "highest_score": "199", "average": 35.86, "strike_rate": 51.89, "centuries": 11, "fifties": 20},
+      "ODI": {"matches": 94, "innings": 86, "runs": 3360, "highest_score": "112*", "average": 50.90, "strike_rate": 90.44, "centuries": 8, "fifties": 20},
+      "T20": {"matches": 72, "innings": 68, "runs": 2265, "highest_score": "110*", "average": 37.75, "strike_rate": 139.12, "centuries": 2, "fifties": 22}
+    },
+    "bowling": {
+      "TEST": {"matches": 67, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 94, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 72, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 85, "run_outs": null},
+      "ODI": {"catches": 80, "run_outs": null},
+      "T20": {"catches": 23, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+}, 
+
+
+{
+  "id": "ind_cheteshwar_pujara",
+  "personal_info": {"name": "Cheteshwar Pujara", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 103, "innings": 176, "runs": 7195, "highest_score": "206*", "average": 43.60, "strike_rate": 44.36, "centuries": 19, "fifties": 35},
+      "ODI": {"matches": 5, "innings": 5, "runs": 51, "highest_score": "27", "average": 10.20, "strike_rate": 39.23, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 103, "wickets": 0, "best_bowling": "-", "economy": 1.50},
+      "ODI": {"matches": 5, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 66, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_ajinkya_rahane",
+  "personal_info": {"name": "Ajinkya Rahane", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 85, "innings": 144, "runs": 5077, "highest_score": "188", "average": 38.46, "strike_rate": 49.50, "centuries": 12, "fifties": 26},
+      "ODI": {"matches": 90, "innings": 87, "runs": 2962, "highest_score": "111", "average": 35.26, "strike_rate": 78.63, "centuries": 3, "fifties": 24},
+      "T20": {"matches": 20, "innings": 20, "runs": 375, "highest_score": "61", "average": 20.83, "strike_rate": 113.29, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 85, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 90, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 20, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 102, "run_outs": null},
+      "ODI": {"catches": 48, "run_outs": null},
+      "T20": {"catches": 16, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_rishabh_pant",
+  "personal_info": {"name": "Rishabh Pant", "country": "India", "role": "wicketkeeper-batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 49, "innings": 86, "runs": 3476, "highest_score": "159*", "average": 42.91, "strike_rate": 74.24, "centuries": 8, "fifties": 18},
+      "ODI": {"matches": 31, "innings": 27, "runs": 871, "highest_score": "125*", "average": 33.50, "strike_rate": 106.21, "centuries": 1, "fifties": 5},
+      "T20": {"matches": 76, "innings": 66, "runs": 1209, "highest_score": "65*", "average": 23.25, "strike_rate": 127.26, "centuries": 0, "fifties": 3}
+    },
+    "bowling": {
+      "TEST": {"matches": 49, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 31, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 76, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 160, "run_outs": null},
+      "ODI": {"catches": 27, "run_outs": null},
+      "T20": {"catches": 40, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_hardik_pandya",
+  "personal_info": {"name": "Hardik Pandya", "country": "India", "role": "allrounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 11, "innings": 18, "runs": 532, "highest_score": "108", "average": 31.29, "strike_rate": 73.88, "centuries": 1, "fifties": 4},
+      "ODI": {"matches": 94, "innings": 68, "runs": 1904, "highest_score": "92*", "average": 32.82, "strike_rate": 110.89, "centuries": 0, "fifties": 11},
+      "T20": {"matches": 138, "innings": 109, "runs": 2288, "highest_score": "71*", "average": 28.24, "strike_rate": 145.91, "centuries": 0, "fifties": 9}
+    },
+    "bowling": {
+      "TEST": {"matches": 11, "wickets": 17, "best_bowling": "5/28", "economy": 3.38},
+      "ODI": {"matches": 94, "wickets": 91, "best_bowling": "4/24", "economy": 5.60},
+      "T20": {"matches": 138, "wickets": 114, "best_bowling": "4/16", "economy": 8.34}
+    },
+    "fielding": {
+      "TEST": {"catches": 7, "run_outs": null},
+      "ODI": {"catches": 35, "run_outs": null},
+      "T20": {"catches": 64, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_yuvraj_singh",
+  "personal_info": {"name": "Yuvraj Singh", "country": "India", "role": "allrounder", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": 2019, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 40, "innings": 62, "runs": 1900, "highest_score": "169", "average": 33.92, "strike_rate": 57.97, "centuries": 3, "fifties": 11},
+      "ODI": {"matches": 304, "innings": 278, "runs": 8701, "highest_score": "150", "average": 36.55, "strike_rate": 87.67, "centuries": 14, "fifties": 52},
+      "T20": {"matches": 58, "innings": 51, "runs": 1177, "highest_score": "77*", "average": 28.02, "strike_rate": 136.38, "centuries": 0, "fifties": 8}
+    },
+    "bowling": {
+      "TEST": {"matches": 40, "wickets": 9, "best_bowling": "2/9", "economy": 3.52},
+      "ODI": {"matches": 304, "wickets": 111, "best_bowling": "5/31", "economy": 5.10},
+      "T20": {"matches": 58, "wickets": 28, "best_bowling": "3/17", "economy": 7.06}
+    },
+    "fielding": {
+      "TEST": {"catches": 31, "run_outs": null},
+      "ODI": {"catches": 94, "run_outs": null},
+      "T20": {"catches": 12, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_zaheer_khan",
+  "personal_info": {"name": "Zaheer Khan", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": 2015, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 92, "innings": 127, "runs": 1231, "highest_score": "75", "average": 11.95, "strike_rate": 51.70, "centuries": 0, "fifties": 3},
+      "ODI": {"matches": 200, "innings": 101, "runs": 792, "highest_score": "34*", "average": 12.00, "strike_rate": 73.46, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 17, "innings": 4, "runs": 13, "highest_score": "9", "average": 6.50, "strike_rate": 130.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 92, "wickets": 311, "best_bowling": "7/87", "economy": 3.27},
+      "ODI": {"matches": 200, "wickets": 282, "best_bowling": "5/42", "economy": 4.93},
+      "T20": {"matches": 17, "wickets": 17, "best_bowling": "4/19", "economy": 7.63}
+    },
+    "fielding": {
+      "TEST": {"catches": 19, "run_outs": null},
+      "ODI": {"catches": 43, "run_outs": null},
+      "T20": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_harbhajan_singh",
+  "personal_info": {"name": "Harbhajan Singh", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2021, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 103, "innings": 145, "runs": 2224, "highest_score": "115", "average": 18.22, "strike_rate": 64.80, "centuries": 2, "fifties": 9},
+      "ODI": {"matches": 236, "innings": 128, "runs": 1237, "highest_score": "49", "average": 13.30, "strike_rate": 81.06, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 28, "innings": 13, "runs": 108, "highest_score": "21", "average": 13.50, "strike_rate": 124.13, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 103, "wickets": 417, "best_bowling": "8/84", "economy": 2.84},
+      "ODI": {"matches": 236, "wickets": 269, "best_bowling": "5/31", "economy": 4.31},
+      "T20": {"matches": 28, "wickets": 25, "best_bowling": "4/12", "economy": 6.20}
+    },
+    "fielding": {
+      "TEST": {"catches": 42, "run_outs": null},
+      "ODI": {"catches": 71, "run_outs": null},
+      "T20": {"catches": 7, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_suresh_raina",
+  "personal_info": {"name": "Suresh Raina", "country": "India", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2020, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 18, "innings": 31, "runs": 768, "highest_score": "120", "average": 26.48, "strike_rate": 53.14, "centuries": 1, "fifties": 7},
+      "ODI": {"matches": 226, "innings": 194, "runs": 5615, "highest_score": "116*", "average": 35.31, "strike_rate": 93.50, "centuries": 5, "fifties": 36},
+      "T20": {"matches": 78, "innings": 66, "runs": 1605, "highest_score": "101", "average": 29.18, "strike_rate": 134.87, "centuries": 1, "fifties": 5}
+    },
+    "bowling": {
+      "TEST": {"matches": 18, "wickets": 13, "best_bowling": "2/1", "economy": 3.47},
+      "ODI": {"matches": 226, "wickets": 36, "best_bowling": "3/34", "economy": 5.11},
+      "T20": {"matches": 78, "wickets": 13, "best_bowling": "2/6", "economy": 7.59}
+    },
+    "fielding": {
+      "TEST": {"catches": 23, "run_outs": null},
+      "ODI": {"catches": 102, "run_outs": null},
+      "T20": {"catches": 42, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_gautam_gambhir",
+  "personal_info": {"name": "Gautam Gambhir", "country": "India", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": 2018, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 58, "innings": 104, "runs": 4154, "highest_score": "206", "average": 41.95, "strike_rate": 51.49, "centuries": 9, "fifties": 22},
+      "ODI": {"matches": 147, "innings": 143, "runs": 5238, "highest_score": "150*", "average": 39.68, "strike_rate": 85.25, "centuries": 11, "fifties": 34},
+      "T20": {"matches": 37, "innings": 36, "runs": 932, "highest_score": "75", "average": 27.41, "strike_rate": 119.02, "centuries": 0, "fifties": 7}
+    },
+    "bowling": {
+      "TEST": {"matches": 58, "wickets": 0, "best_bowling": "-", "economy": 2.00},
+      "ODI": {"matches": 147, "wickets": 0, "best_bowling": "-", "economy": 13.00},
+      "T20": {"matches": 37, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 38, "run_outs": null},
+      "ODI": {"catches": 36, "run_outs": null},
+      "T20": {"catches": 11, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+}, 
+
+
+{
+  "id": "ind_shikhar_dhawan",
+  "personal_info": {"name": "Shikhar Dhawan", "country": "India", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 34, "innings": 58, "runs": 2315, "highest_score": "190", "average": 40.61, "strike_rate": 66.94, "centuries": 7, "fifties": 5},
+      "ODI": {"matches": 167, "innings": 164, "runs": 6793, "highest_score": "143", "average": 44.11, "strike_rate": 91.35, "centuries": 17, "fifties": 39},
+      "T20": {"matches": 68, "innings": 66, "runs": 1759, "highest_score": "92", "average": 27.92, "strike_rate": 126.36, "centuries": 0, "fifties": 11}
+    },
+    "bowling": {
+      "TEST": {"matches": 34, "wickets": 0, "best_bowling": "-", "economy": 2.00},
+      "ODI": {"matches": 167, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 68, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 28, "run_outs": null},
+      "ODI": {"catches": 83, "run_outs": null},
+      "T20": {"catches": 19, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_ishant_sharma",
+  "personal_info": {"name": "Ishant Sharma", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 105, "innings": 142, "runs": 785, "highest_score": "57", "average": 8.26, "strike_rate": 30.56, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 80, "innings": 28, "runs": 72, "highest_score": "13", "average": 4.80, "strike_rate": 35.46, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 14, "innings": 3, "runs": 8, "highest_score": "5*", "average": 8.00, "strike_rate": 88.88, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 105, "wickets": 311, "best_bowling": "7/74", "economy": 3.15},
+      "ODI": {"matches": 80, "wickets": 115, "best_bowling": "4/34", "economy": 5.72},
+      "T20": {"matches": 14, "wickets": 8, "best_bowling": "2/34", "economy": 8.63}
+    },
+    "fielding": {
+      "TEST": {"catches": 23, "run_outs": null},
+      "ODI": {"catches": 19, "run_outs": null},
+      "T20": {"catches": 4, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_mohammed_siraj",
+  "personal_info": {"name": "Mohammed Siraj", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 45, "innings": 61, "runs": 154, "highest_score": "16*", "average": 4.40, "strike_rate": 33.99, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 50, "innings": 21, "runs": 57, "highest_score": "9*", "average": 7.12, "strike_rate": 42.53, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 17, "innings": 4, "runs": 14, "highest_score": "7*", "average": 7.00, "strike_rate": 87.50, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 45, "wickets": 139, "best_bowling": "6/15", "economy": 3.53},
+      "ODI": {"matches": 50, "wickets": 76, "best_bowling": "6/21", "economy": 5.13},
+      "T20": {"matches": 17, "wickets": 17, "best_bowling": "4/17", "economy": 7.75}
+    },
+    "fielding": {
+      "TEST": {"catches": 22, "run_outs": null},
+      "ODI": {"catches": 7, "run_outs": null},
+      "T20": {"catches": 7, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_kuldeep_yadav",
+  "personal_info": {"name": "Kuldeep Yadav", "country": "India", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Left-arm chinaman"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 17, "innings": 21, "runs": 225, "highest_score": "40", "average": 11.84, "strike_rate": 25.25, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 120, "innings": 44, "runs": 212, "highest_score": "19", "average": 9.63, "strike_rate": 51.58, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 54, "innings": 10, "runs": 48, "highest_score": "23*", "average": 8.00, "strike_rate": 67.60, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 17, "wickets": 76, "best_bowling": "5/40", "economy": 3.53},
+      "ODI": {"matches": 120, "wickets": 194, "best_bowling": "6/25", "economy": 5.08},
+      "T20": {"matches": 54, "wickets": 95, "best_bowling": "5/17", "economy": 6.95}
+    },
+    "fielding": {
+      "TEST": {"catches": 5, "run_outs": null},
+      "ODI": {"catches": 20, "run_outs": null},
+      "T20": {"catches": 14, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_yuzvendra_chahal",
+  "personal_info": {"name": "Yuzvendra Chahal", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 72, "innings": 14, "runs": 77, "highest_score": "18*", "average": 8.55, "strike_rate": 54.60, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 80, "innings": 6, "runs": 6, "highest_score": "3*", "average": 3.00, "strike_rate": 46.15, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "ODI": {"matches": 72, "wickets": 121, "best_bowling": "6/42", "economy": 5.26},
+      "T20": {"matches": 80, "wickets": 96, "best_bowling": "6/25", "economy": 8.19}
+    },
+    "fielding": {
+      "ODI": {"catches": 16, "run_outs": null},
+      "T20": {"catches": 14, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_bishan_bedi",
+  "personal_info": {"name": "Bishan Singh Bedi", "country": "India", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 67, "innings": 101, "runs": 656, "highest_score": "50*", "average": 8.98, "strike_rate": null, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 10, "innings": 7, "runs": 31, "highest_score": "13", "average": 6.20, "strike_rate": 44.28, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 67, "wickets": 266, "best_bowling": "7/98", "economy": 2.14},
+      "ODI": {"matches": 10, "wickets": 7, "best_bowling": "2/44", "economy": 3.45}
+    },
+    "fielding": {
+      "TEST": {"catches": 26, "run_outs": null},
+      "ODI": {"catches": 4, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_erapalli_prasanna",
+  "personal_info": {"name": "Erapalli Prasanna", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 49, "innings": 84, "runs": 735, "highest_score": "37", "average": 11.48, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 49, "wickets": 189, "best_bowling": "8/76", "economy": 2.40}
+    },
+    "fielding": {
+      "TEST": {"catches": 18, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_bhagwath_chandrasekhar",
+  "personal_info": {"name": "Bhagwath Chandrasekhar", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 58, "innings": 80, "runs": 167, "highest_score": "22", "average": 4.07, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 1, "innings": 1, "runs": 11, "highest_score": "11*", "average": null, "strike_rate": 84.61, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 58, "wickets": 242, "best_bowling": "8/79", "economy": 2.70},
+      "ODI": {"matches": 1, "wickets": 3, "best_bowling": "3/36", "economy": 5.14}
+    },
+    "fielding": {
+      "TEST": {"catches": 25, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_dilip_vengsarkar",
+  "personal_info": {"name": "Dilip Vengsarkar", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 116, "innings": 185, "runs": 6868, "highest_score": "166", "average": 42.13, "strike_rate": null, "centuries": 17, "fifties": 35},
+      "ODI": {"matches": 129, "innings": 120, "runs": 3508, "highest_score": "105", "average": 34.73, "strike_rate": 67.73, "centuries": 1, "fifties": 23}
+    },
+    "bowling": {
+      "TEST": {"matches": 116, "wickets": 0, "best_bowling": "-", "economy": 4.59},
+      "ODI": {"matches": 129, "wickets": 0, "best_bowling": "-", "economy": 4.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 78, "run_outs": null},
+      "ODI": {"catches": 37, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_mohinder_amarnath",
+  "personal_info": {"name": "Mohinder Amarnath", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 69, "innings": 113, "runs": 4378, "highest_score": "138", "average": 42.50, "strike_rate": null, "centuries": 11, "fifties": 24},
+      "ODI": {"matches": 85, "innings": 75, "runs": 1924, "highest_score": "102*", "average": 30.53, "strike_rate": 57.70, "centuries": 2, "fifties": 13}
+    },
+    "bowling": {
+      "TEST": {"matches": 69, "wickets": 32, "best_bowling": "4/63", "economy": 2.90},
+      "ODI": {"matches": 85, "wickets": 46, "best_bowling": "3/12", "economy": 4.33}
+    },
+    "fielding": {
+      "TEST": {"catches": 47, "run_outs": null},
+      "ODI": {"catches": 23, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_kris_srikkanth",
+  "personal_info": {"name": "Kris Srikkanth", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 43, "innings": 72, "runs": 2062, "highest_score": "123", "average": 29.88, "strike_rate": null, "centuries": 2, "fifties": 12},
+      "ODI": {"matches": 146, "innings": 145, "runs": 4091, "highest_score": "123", "average": 29.01, "strike_rate": 71.74, "centuries": 4, "fifties": 27}
+    },
+    "bowling": {
+      "TEST": {"matches": 43, "wickets": 0, "best_bowling": "-", "economy": 3.16},
+      "ODI": {"matches": 146, "wickets": 25, "best_bowling": "5/27", "economy": 5.40}
+    },
+    "fielding": {
+      "TEST": {"catches": 40, "run_outs": null},
+      "ODI": {"catches": 42, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_ravi_shastri",
+  "personal_info": {"name": "Ravi Shastri", "country": "India", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 80, "innings": 121, "runs": 3830, "highest_score": "206", "average": 35.79, "strike_rate": null, "centuries": 11, "fifties": 12},
+      "ODI": {"matches": 150, "innings": 128, "runs": 3108, "highest_score": "109", "average": 29.04, "strike_rate": 61.07, "centuries": 4, "fifties": 18}
+    },
+    "bowling": {
+      "TEST": {"matches": 80, "wickets": 151, "best_bowling": "5/75", "economy": 2.35},
+      "ODI": {"matches": 150, "wickets": 129, "best_bowling": "5/15", "economy": 4.21}
+    },
+    "fielding": {
+      "TEST": {"catches": 36, "run_outs": null},
+      "ODI": {"catches": 40, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_roger_binny",
+  "personal_info": {"name": "Roger Binny", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 27, "innings": 41, "runs": 830, "highest_score": "83*", "average": 23.05, "strike_rate": null, "centuries": 0, "fifties": 5},
+      "ODI": {"matches": 72, "innings": 49, "runs": 629, "highest_score": "57", "average": 16.12, "strike_rate": 60.13, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 27, "wickets": 47, "best_bowling": "6/56", "economy": 3.20},
+      "ODI": {"matches": 72, "wickets": 77, "best_bowling": "4/29", "economy": 4.58}
+    },
+    "fielding": {
+      "TEST": {"catches": 11, "run_outs": null},
+      "ODI": {"catches": 12, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_syed_kirmani",
+  "personal_info": {"name": "Syed Kirmani", "country": "India", "role": "wicketkeeper", "batting_style": "Right-hand bat", "bowling_style": "-"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 88, "innings": 124, "runs": 2759, "highest_score": "102", "average": 27.04, "strike_rate": null, "centuries": 2, "fifties": 12},
+      "ODI": {"matches": 49, "innings": 31, "runs": 373, "highest_score": "48*", "average": 20.72, "strike_rate": 60.55, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 88, "wickets": 1, "best_bowling": "1/9", "economy": 4.10},
+      "ODI": {"matches": 49, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 160, "run_outs": null},
+      "ODI": {"catches": 27, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_madan_lal",
+  "personal_info": {"name": "Madan Lal", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 39, "innings": 62, "runs": 1042, "highest_score": "74", "average": 22.65, "strike_rate": null, "centuries": 0, "fifties": 5},
+      "ODI": {"matches": 67, "innings": 35, "runs": 401, "highest_score": "53*", "average": 19.09, "strike_rate": 62.17, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 39, "wickets": 71, "best_bowling": "5/23", "economy": 2.84},
+      "ODI": {"matches": 67, "wickets": 73, "best_bowling": "4/20", "economy": 4.05}
+    },
+    "fielding": {
+      "TEST": {"catches": 15, "run_outs": null},
+      "ODI": {"catches": 18, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_shubman_gill",
+  "personal_info": {"name": "Shubman Gill", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 40, "innings": 73, "runs": 2843, "highest_score": "269", "average": 43.07, "strike_rate": 61.49, "centuries": 10, "fifties": 8},
+      "ODI": {"matches": 61, "innings": 61, "runs": 2953, "highest_score": "208", "average": 55.71, "strike_rate": 99.02, "centuries": 8, "fifties": 17},
+      "T20I": {"matches": 36, "innings": 36, "runs": 869, "highest_score": "126*", "average": 28.03, "strike_rate": 138.59, "centuries": 1, "fifties": 3}
+    },
+    "bowling": {
+      "TEST": {"matches": 40, "wickets": 0, "best_bowling": "-", "economy": 0.85},
+      "ODI": {"matches": 61, "wickets": 0, "best_bowling": "-", "economy": 8.33},
+      "T20I": {"matches": 36, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 30, "run_outs": null},
+      "ODI": {"catches": 38, "run_outs": null},
+      "T20I": {"catches": 9, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_shreyas_iyer",
+  "personal_info": {"name": "Shreyas Iyer", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 14, "innings": 24, "runs": 811, "highest_score": "105", "average": 36.86, "strike_rate": 63.01, "centuries": 1, "fifties": 5},
+      "ODI": {"matches": 76, "innings": 70, "runs": 2977, "highest_score": "128*", "average": 46.51, "strike_rate": 98.57, "centuries": 5, "fifties": 23},
+      "T20I": {"matches": 51, "innings": 47, "runs": 1104, "highest_score": "74*", "average": 30.66, "strike_rate": 136.12, "centuries": 0, "fifties": 8}
+    },
+    "bowling": {
+      "TEST": {"matches": 14, "wickets": 0, "best_bowling": "-", "economy": 2.00},
+      "ODI": {"matches": 76, "wickets": 0, "best_bowling": "-", "economy": 6.32},
+      "T20I": {"matches": 51, "wickets": 0, "best_bowling": "-", "economy": 6.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 15, "run_outs": null},
+      "ODI": {"catches": 29, "run_outs": null},
+      "T20I": {"catches": 16, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_suryakumar_yadav",
+  "personal_info": {"name": "Suryakumar Yadav", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 1, "runs": 8, "highest_score": "8", "average": 8.00, "strike_rate": 40.00, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 37, "innings": 35, "runs": 773, "highest_score": "72*", "average": 25.76, "strike_rate": 105.02, "centuries": 0, "fifties": 4},
+      "T20I": {"matches": 113, "innings": 107, "runs": 3272, "highest_score": "117", "average": 36.35, "strike_rate": 162.94, "centuries": 4, "fifties": 25}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 37, "wickets": 0, "best_bowling": "-", "economy": 8.50},
+      "T20I": {"matches": 113, "wickets": 2, "best_bowling": "2/5", "economy": 5.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 17, "run_outs": null},
+      "T20I": {"catches": 58, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_ishan_kishan",
+  "personal_info": {"name": "Ishan Kishan", "country": "India", "role": "wicketkeeper", "batting_style": "Left-hand bat", "bowling_style": "-"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 2, "innings": 3, "runs": 78, "highest_score": "52*", "average": 78.00, "strike_rate": 85.71, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 27, "innings": 24, "runs": 933, "highest_score": "210", "average": 42.40, "strike_rate": 102.19, "centuries": 1, "fifties": 7},
+      "T20I": {"matches": 45, "innings": 45, "runs": 1328, "highest_score": "103", "average": 30.18, "strike_rate": 148.04, "centuries": 1, "fifties": 10}
+    },
+    "bowling": {
+      "TEST": {"matches": 2, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 27, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20I": {"matches": 45, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 5, "run_outs": null},
+      "ODI": {"catches": 13, "run_outs": null},
+      "T20I": {"catches": 20, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_axar_patel",
+  "personal_info": {"name": "Axar Patel", "country": "India", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 15, "innings": 24, "runs": 688, "highest_score": "84", "average": 34.40, "strike_rate": 53.04, "centuries": 0, "fifties": 4},
+      "ODI": {"matches": 71, "innings": 49, "runs": 858, "highest_score": "64*", "average": 23.18, "strike_rate": 91.76, "centuries": 0, "fifties": 3},
+      "T20I": {"matches": 94, "innings": 57, "runs": 702, "highest_score": "65", "average": 18.47, "strike_rate": 133.96, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 15, "wickets": 57, "best_bowling": "6/38", "economy": 2.52},
+      "ODI": {"matches": 71, "wickets": 75, "best_bowling": "3/24", "economy": 4.49},
+      "T20I": {"matches": 94, "wickets": 97, "best_bowling": "3/9", "economy": 7.40}
+    },
+    "fielding": {
+      "TEST": {"catches": 4, "run_outs": null},
+      "ODI": {"catches": 29, "run_outs": null},
+      "T20I": {"catches": 36, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_arshdeep_singh",
+  "personal_info": {"name": "Arshdeep Singh", "country": "India", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 15, "innings": 10, "runs": 56, "highest_score": "18", "average": 7.00, "strike_rate": 107.69, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 84, "innings": 29, "runs": 89, "highest_score": "12", "average": 5.93, "strike_rate": 103.48, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "ODI": {"matches": 15, "wickets": 25, "best_bowling": "5/37", "economy": 5.38},
+      "T20I": {"matches": 84, "wickets": 127, "best_bowling": "5/51", "economy": 8.52}
+    },
+    "fielding": {
+      "ODI": {"catches": 3, "run_outs": null},
+      "T20I": {"catches": 19, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_prasidh_krishna",
+  "personal_info": {"name": "Prasidh Krishna", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 6, "innings": 10, "runs": 10, "highest_score": "5*", "average": 2.00, "strike_rate": 15.38, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 23, "innings": 7, "runs": 2, "highest_score": "2*", "average": 1.00, "strike_rate": 11.76, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 5, "innings": 0, "runs": 0, "highest_score": "-", "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 6, "wickets": 22, "best_bowling": "4/62", "economy": 4.72},
+      "ODI": {"matches": 23, "wickets": 40, "best_bowling": "4/12", "economy": 6.02},
+      "T20I": {"matches": 5, "wickets": 8, "best_bowling": "3/41", "economy": 11.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 4, "run_outs": null},
+      "T20I": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_sanju_samson",
+  "personal_info": {"name": "Sanju Samson", "country": "India", "role": "wicketkeeper", "batting_style": "Right-hand bat", "bowling_style": "-"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 16, "innings": 14, "runs": 510, "highest_score": "108", "average": 56.66, "strike_rate": 99.60, "centuries": 1, "fifties": 3},
+      "T20I": {"matches": 62, "innings": 54, "runs": 1399, "highest_score": "111", "average": 28.55, "strike_rate": 156.83, "centuries": 3, "fifties": 6}
+    },
+    "bowling": {
+      "ODI": {"matches": 16, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20I": {"matches": 62, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "ODI": {"catches": 9, "run_outs": null},
+      "T20I": {"catches": 40, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_washington_sundar",
+  "personal_info": {"name": "Washington Sundar", "country": "India", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 17, "innings": 29, "runs": 885, "highest_score": "101*", "average": 42.14, "strike_rate": 45.85, "centuries": 1, "fifties": 5},
+      "ODI": {"matches": 29, "innings": 20, "runs": 372, "highest_score": "51", "average": 20.66, "strike_rate": 82.30, "centuries": 0, "fifties": 1},
+      "T20I": {"matches": 60, "innings": 25, "runs": 265, "highest_score": "50", "average": 16.56, "strike_rate": 132.50, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 17, "wickets": 36, "best_bowling": "7/59", "economy": 3.25},
+      "ODI": {"matches": 29, "wickets": 29, "best_bowling": "3/30", "economy": 4.95},
+      "T20I": {"matches": 60, "wickets": 51, "best_bowling": "3/3", "economy": 6.98}
+    },
+    "fielding": {
+      "TEST": {"catches": 6, "run_outs": null},
+      "ODI": {"catches": 7, "run_outs": null},
+      "T20I": {"catches": 23, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_deepak_chahar",
+  "personal_info": {"name": "Deepak Chahar", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 13, "innings": 9, "runs": 203, "highest_score": "69*", "average": 33.83, "strike_rate": 98.06, "centuries": 0, "fifties": 2},
+      "T20I": {"matches": 25, "innings": 7, "runs": 53, "highest_score": "31", "average": 26.50, "strike_rate": 189.28, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "ODI": {"matches": 13, "wickets": 16, "best_bowling": "3/27", "economy": 5.75},
+      "T20I": {"matches": 25, "wickets": 31, "best_bowling": "6/7", "economy": 8.30}
+    },
+    "fielding": {
+      "ODI": {"catches": 1, "run_outs": null},
+      "T20I": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_umesh_yadav",
+  "personal_info": {"name": "Umesh Yadav", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 57, "innings": 68, "runs": 460, "highest_score": "31", "average": 11.21, "strike_rate": 52.09, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 75, "innings": 24, "runs": 79, "highest_score": "18*", "average": 7.90, "strike_rate": 58.95, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 9, "innings": 2, "runs": 22, "highest_score": "20*", "average": 22.00, "strike_rate": 104.76, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 57, "wickets": 170, "best_bowling": "6/88", "economy": 3.51},
+      "ODI": {"matches": 75, "wickets": 106, "best_bowling": "4/31", "economy": 6.01},
+      "T20I": {"matches": 9, "wickets": 12, "best_bowling": "2/19", "economy": 9.33}
+    },
+    "fielding": {
+      "TEST": {"catches": 19, "run_outs": null},
+      "ODI": {"catches": 22, "run_outs": null},
+      "T20I": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_bhuvneshwar_kumar",
+  "personal_info": {"name": "Bhuvneshwar Kumar", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 21, "innings": 29, "runs": 552, "highest_score": "63*", "average": 22.08, "strike_rate": 45.06, "centuries": 0, "fifties": 3},
+      "ODI": {"matches": 121, "innings": 55, "runs": 552, "highest_score": "53*", "average": 14.15, "strike_rate": 73.89, "centuries": 0, "fifties": 1},
+      "T20I": {"matches": 87, "innings": 21, "runs": 67, "highest_score": "16", "average": 8.37, "strike_rate": 71.27, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 21, "wickets": 63, "best_bowling": "6/82", "economy": 2.94},
+      "ODI": {"matches": 121, "wickets": 141, "best_bowling": "5/42", "economy": 5.08},
+      "T20I": {"matches": 87, "wickets": 90, "best_bowling": "5/4", "economy": 6.96}
+    },
+    "fielding": {
+      "TEST": {"catches": 8, "run_outs": null},
+      "ODI": {"catches": 29, "run_outs": null},
+      "T20I": {"catches": 15, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_dinesh_karthik",
+  "personal_info": {"name": "Dinesh Karthik", "country": "India", "role": "wicketkeeper", "batting_style": "Right-hand bat", "bowling_style": "-"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 26, "innings": 42, "runs": 1025, "highest_score": "129", "average": 25.00, "strike_rate": 49.27, "centuries": 1, "fifties": 7},
+      "ODI": {"matches": 94, "innings": 79, "runs": 1752, "highest_score": "79", "average": 30.20, "strike_rate": 73.24, "centuries": 0, "fifties": 9},
+      "T20I": {"matches": 60, "innings": 48, "runs": 686, "highest_score": "55", "average": 26.38, "strike_rate": 142.61, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 26, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 94, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20I": {"matches": 60, "wickets": 1, "best_bowling": "1/10", "economy": 9.33}
+    },
+    "fielding": {
+      "TEST": {"catches": 57, "run_outs": null},
+      "ODI": {"catches": 64, "run_outs": null},
+      "T20I": {"catches": 30, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_wriddhiman_saha",
+  "personal_info": {"name": "Wriddhiman Saha", "country": "India", "role": "wicketkeeper", "batting_style": "Right-hand bat", "bowling_style": "-"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 40, "innings": 56, "runs": 1353, "highest_score": "117", "average": 29.41, "strike_rate": 45.50, "centuries": 3, "fifties": 6},
+      "ODI": {"matches": 9, "innings": 5, "runs": 41, "highest_score": "16", "average": 13.66, "strike_rate": 73.21, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 40, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 9, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 92, "run_outs": null},
+      "ODI": {"catches": 17, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_murali_vijay",
+  "personal_info": {"name": "Murali Vijay", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 61, "innings": 105, "runs": 3982, "highest_score": "167", "average": 38.28, "strike_rate": 46.29, "centuries": 12, "fifties": 15},
+      "ODI": {"matches": 17, "innings": 16, "runs": 339, "highest_score": "72", "average": 21.18, "strike_rate": 66.99, "centuries": 0, "fifties": 1},
+      "T20I": {"matches": 9, "innings": 9, "runs": 169, "highest_score": "48", "average": 18.77, "strike_rate": 109.74, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 61, "wickets": 1, "best_bowling": "1/12", "economy": 3.09},
+      "ODI": {"matches": 17, "wickets": 1, "best_bowling": "1/19", "economy": 6.16},
+      "T20I": {"matches": 9, "wickets": 0, "best_bowling": "-", "economy": 4.50}
+    },
+    "fielding": {
+      "TEST": {"catches": 49, "run_outs": null},
+      "ODI": {"catches": 9, "run_outs": null},
+      "T20I": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_mayank_agarwal",
+  "personal_info": {"name": "Mayank Agarwal", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 21, "innings": 36, "runs": 1488, "highest_score": "243", "average": 41.33, "strike_rate": 53.48, "centuries": 4, "fifties": 6},
+      "ODI": {"matches": 5, "innings": 5, "runs": 86, "highest_score": "32", "average": 17.20, "strike_rate": 103.61, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 21, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 5, "wickets": 0, "best_bowling": "-", "economy": 10.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 14, "run_outs": null},
+      "ODI": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_karun_nair",
+  "personal_info": {"name": "Karun Nair", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 10, "innings": 15, "runs": 579, "highest_score": "303*", "average": 41.35, "strike_rate": 64.62, "centuries": 1, "fifties": 1},
+      "ODI": {"matches": 2, "innings": 2, "runs": 46, "highest_score": "39", "average": 23.00, "strike_rate": 52.27, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 10, "wickets": 0, "best_bowling": "-", "economy": 5.50},
+      "ODI": {"matches": 2, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 10, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_hanuma_vihari",
+  "personal_info": {"name": "Hanuma Vihari", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 16, "innings": 28, "runs": 839, "highest_score": "111", "average": 33.56, "strike_rate": 42.20, "centuries": 1, "fifties": 5}
+    },
+    "bowling": {
+      "TEST": {"matches": 16, "wickets": 5, "best_bowling": "3/37", "economy": 3.13}
+    },
+    "fielding": {
+      "TEST": {"catches": 4, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_navdeep_saini",
+  "personal_info": {"name": "Navdeep Saini", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 2, "innings": 3, "runs": 8, "highest_score": "5", "average": 4.00, "strike_rate": 29.62, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 8, "innings": 5, "runs": 107, "highest_score": "45", "average": 53.50, "strike_rate": 78.10, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 11, "innings": 3, "runs": 12, "highest_score": "11*", "average": null, "strike_rate": 109.09, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 2, "wickets": 4, "best_bowling": "2/54", "economy": 4.11},
+      "ODI": {"matches": 8, "wickets": 6, "best_bowling": "2/58", "economy": 6.87},
+      "T20I": {"matches": 11, "wickets": 13, "best_bowling": "3/17", "economy": 7.15}
+    },
+    "fielding": {
+      "TEST": {"catches": 1, "run_outs": null},
+      "ODI": {"catches": 3, "run_outs": null},
+      "T20I": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_shardul_thakur",
+  "personal_info": {"name": "Shardul Thakur", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 13, "innings": 21, "runs": 377, "highest_score": "67", "average": 18.85, "strike_rate": 59.84, "centuries": 0, "fifties": 4},
+      "ODI": {"matches": 47, "innings": 25, "runs": 329, "highest_score": "50*", "average": 17.31, "strike_rate": 105.11, "centuries": 0, "fifties": 1},
+      "T20I": {"matches": 25, "innings": 6, "runs": 69, "highest_score": "22*", "average": 23.00, "strike_rate": 181.57, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 13, "wickets": 33, "best_bowling": "7/61", "economy": 3.81},
+      "ODI": {"matches": 47, "wickets": 65, "best_bowling": "4/37", "economy": 6.22},
+      "T20I": {"matches": 25, "wickets": 33, "best_bowling": "4/27", "economy": 9.15}
+    },
+    "fielding": {
+      "TEST": {"catches": 6, "run_outs": null},
+      "ODI": {"catches": 9, "run_outs": null},
+      "T20I": {"catches": 7, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_irfan_pathan",
+  "personal_info": {"name": "Irfan Pathan", "country": "India", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Left-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": 2020, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 29, "innings": 40, "runs": 1105, "highest_score": "102", "average": 31.57, "strike_rate": 53.22, "centuries": 1, "fifties": 6},
+      "ODI": {"matches": 120, "innings": 87, "runs": 1544, "highest_score": "83", "average": 23.39, "strike_rate": 79.54, "centuries": 0, "fifties": 5},
+      "T20I": {"matches": 24, "innings": 14, "runs": 172, "highest_score": "33*", "average": 24.57, "strike_rate": 119.44, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 29, "wickets": 100, "best_bowling": "7/59", "economy": 3.28},
+      "ODI": {"matches": 120, "wickets": 173, "best_bowling": "5/27", "economy": 5.26},
+      "T20I": {"matches": 24, "wickets": 28, "best_bowling": "3/16", "economy": 8.02}
+    },
+    "fielding": {
+      "TEST": {"catches": 8, "run_outs": null},
+      "ODI": {"catches": 21, "run_outs": null},
+      "T20I": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_yusuf_pathan",
+  "personal_info": {"name": "Yusuf Pathan", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2021, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 57, "innings": 41, "runs": 810, "highest_score": "123*", "average": 27.00, "strike_rate": 113.60, "centuries": 2, "fifties": 3},
+      "T20I": {"matches": 22, "innings": 18, "runs": 236, "highest_score": "37*", "average": 18.15, "strike_rate": 146.58, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "ODI": {"matches": 57, "wickets": 33, "best_bowling": "3/49", "economy": 5.49},
+      "T20I": {"matches": 22, "wickets": 13, "best_bowling": "2/22", "economy": 8.61}
+    },
+    "fielding": {
+      "ODI": {"catches": 17, "run_outs": null},
+      "T20I": {"catches": 9, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_robin_uthappa",
+  "personal_info": {"name": "Robin Uthappa", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2022, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 46, "innings": 42, "runs": 934, "highest_score": "86", "average": 25.94, "strike_rate": 90.59, "centuries": 0, "fifties": 6},
+      "T20I": {"matches": 13, "innings": 12, "runs": 249, "highest_score": "50", "average": 24.90, "strike_rate": 118.00, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "ODI": {"matches": 46, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20I": {"matches": 13, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "ODI": {"catches": 19, "run_outs": null},
+      "T20I": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_parthiv_patel",
+  "personal_info": {"name": "Parthiv Patel", "country": "India", "role": "wicket-keeper", "batting_style": "Left-hand bat", "bowling_style": "-"},
+  "career": {"debut_year": null, "retirement_year": 2020, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 25, "innings": 38, "runs": 934, "highest_score": "71", "average": 31.13, "strike_rate": 48.46, "centuries": 0, "fifties": 6},
+      "ODI": {"matches": 38, "innings": 34, "runs": 736, "highest_score": "95", "average": 23.74, "strike_rate": 76.50, "centuries": 0, "fifties": 4},
+      "T20I": {"matches": 2, "innings": 2, "runs": 36, "highest_score": "26", "average": 18.00, "strike_rate": 112.50, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {},
+    "fielding": {
+      "TEST": {"catches": 62, "run_outs": null},
+      "ODI": {"catches": 30, "run_outs": null},
+      "T20I": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_naman_ojha",
+  "personal_info": {"name": "Naman Ojha", "country": "India", "role": "wicket-keeper", "batting_style": "Right-hand bat", "bowling_style": "-"},
+  "career": {"debut_year": null, "retirement_year": 2021, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 56, "highest_score": "35", "average": 28.00, "strike_rate": 47.86, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 1, "innings": 1, "runs": 1, "highest_score": "1", "average": 1.00, "strike_rate": 14.28, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 2, "innings": 2, "runs": 12, "highest_score": "10", "average": 6.00, "strike_rate": 44.44, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {},
+    "fielding": {
+      "TEST": {"catches": 4, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20I": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_stuart_binny",
+  "personal_info": {"name": "Stuart Binny", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2021, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 6, "innings": 10, "runs": 194, "highest_score": "78", "average": 21.55, "strike_rate": 58.25, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 14, "innings": 11, "runs": 230, "highest_score": "77", "average": 28.75, "strike_rate": 93.49, "centuries": 0, "fifties": 1},
+      "T20I": {"matches": 3, "innings": 2, "runs": 35, "highest_score": "24", "average": 17.50, "strike_rate": 120.68, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 6, "wickets": 3, "best_bowling": "2/24", "economy": 3.44},
+      "ODI": {"matches": 14, "wickets": 20, "best_bowling": "6/4", "economy": 5.37},
+      "T20I": {"matches": 3, "wickets": 1, "best_bowling": "1/14", "economy": 10.80}
+    },
+    "fielding": {
+      "TEST": {"catches": 4, "run_outs": null},
+      "ODI": {"catches": 3, "run_outs": null},
+      "T20I": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_manoj_tiwary",
+  "personal_info": {"name": "Manoj Tiwary", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2022, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 12, "innings": 12, "runs": 287, "highest_score": "104*", "average": 26.09, "strike_rate": 71.21, "centuries": 1, "fifties": 1},
+      "T20I": {"matches": 3, "innings": 1, "runs": 15, "highest_score": "15", "average": 15.00, "strike_rate": 88.23, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "ODI": {"matches": 12, "wickets": 5, "best_bowling": "4/61", "economy": 6.81},
+      "T20I": {"matches": 3, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "ODI": {"catches": 4, "run_outs": null},
+      "T20I": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_ambati_rayudu",
+  "personal_info": {"name": "Ambati Rayudu", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2019, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 55, "innings": 50, "runs": 1694, "highest_score": "124*", "average": 47.05, "strike_rate": 79.04, "centuries": 3, "fifties": 10},
+      "T20I": {"matches": 6, "innings": 5, "runs": 42, "highest_score": "20", "average": 10.50, "strike_rate": 84.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "ODI": {"matches": 55, "wickets": 3, "best_bowling": "1/5", "economy": 6.14},
+      "T20I": {"matches": 6, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "ODI": {"catches": 17, "run_outs": null},
+      "T20I": {"catches": 4, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_kedar_jadhav",
+  "personal_info": {"name": "Kedar Jadhav", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 73, "innings": 52, "runs": 1389, "highest_score": "120", "average": 42.09, "strike_rate": 101.60, "centuries": 2, "fifties": 6},
+      "T20I": {"matches": 9, "innings": 6, "runs": 122, "highest_score": "58", "average": 20.33, "strike_rate": 123.23, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "ODI": {"matches": 73, "wickets": 27, "best_bowling": "3/23", "economy": 5.15},
+      "T20I": {"matches": 9, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "ODI": {"catches": 33, "run_outs": null},
+      "T20I": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_lala_amarnath",
+  "personal_info": {"name": "Lala Amarnath", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 24, "innings": 40, "runs": 878, "highest_score": "118", "average": 24.38, "strike_rate": null, "centuries": 1, "fifties": 4}
+    },
+    "bowling": {
+      "TEST": {"matches": 24, "wickets": 45, "best_bowling": "5/96", "economy": 2.09}
+    },
+    "fielding": {
+      "TEST": {"catches": 13, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_vijay_hazare",
+  "personal_info": {"name": "Vijay Hazare", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 30, "innings": 52, "runs": 2192, "highest_score": "164*", "average": 47.65, "strike_rate": null, "centuries": 7, "fifties": 9}
+    },
+    "bowling": {
+      "TEST": {"matches": 30, "wickets": 20, "best_bowling": "4/29", "economy": 2.57}
+    },
+    "fielding": {
+      "TEST": {"catches": 11, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_polly_umrigar",
+  "personal_info": {"name": "Polly Umrigar", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 59, "innings": 94, "runs": 3631, "highest_score": "223", "average": 42.22, "strike_rate": null, "centuries": 12, "fifties": 14}
+    },
+    "bowling": {
+      "TEST": {"matches": 59, "wickets": 35, "best_bowling": "6/74", "economy": 1.87}
+    },
+    "fielding": {
+      "TEST": {"catches": 33, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_vinoo_mankad",
+  "personal_info": {"name": "Vinoo Mankad", "country": "India", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 44, "innings": 72, "runs": 2109, "highest_score": "231", "average": 31.47, "strike_rate": null, "centuries": 5, "fifties": 6}
+    },
+    "bowling": {
+      "TEST": {"matches": 44, "wickets": 162, "best_bowling": "8/52", "economy": 2.13}
+    },
+    "fielding": {
+      "TEST": {"catches": 33, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_gundappa_viswanath",
+  "personal_info": {"name": "Gundappa Viswanath", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 91, "innings": 155, "runs": 6080, "highest_score": "222", "average": 41.93, "strike_rate": null, "centuries": 14, "fifties": 35},
+      "ODI": {"matches": 25, "innings": 23, "runs": 439, "highest_score": "75", "average": 19.95, "strike_rate": 52.89, "centuries": 0, "fifties": 2}
+    },
+    "bowling": {
+      "TEST": {"matches": 91, "wickets": 1, "best_bowling": "1/11", "economy": 3.94},
+      "ODI": {"matches": 25, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 63, "run_outs": null},
+      "ODI": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_chetan_sharma",
+  "personal_info": {"name": "Chetan Sharma", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 23, "innings": 27, "runs": 396, "highest_score": "54", "average": 22.00, "strike_rate": null, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 65, "innings": 35, "runs": 456, "highest_score": "101*", "average": 24.00, "strike_rate": 90.47, "centuries": 1, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 23, "wickets": 61, "best_bowling": "6/58", "economy": 3.74},
+      "ODI": {"matches": 65, "wickets": 67, "best_bowling": "3/22", "economy": 4.94}
+    },
+    "fielding": {
+      "TEST": {"catches": 7, "run_outs": null},
+      "ODI": {"catches": 7, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_ajit_agarkar",
+  "personal_info": {"name": "Ajit Agarkar", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 26, "innings": 39, "runs": 571, "highest_score": "109*", "average": 16.79, "strike_rate": 52.82, "centuries": 1, "fifties": 0},
+      "ODI": {"matches": 191, "innings": 113, "runs": 1269, "highest_score": "95", "average": 14.58, "strike_rate": 80.62, "centuries": 0, "fifties": 3},
+      "T20I": {"matches": 4, "innings": 2, "runs": 15, "highest_score": "14", "average": 7.50, "strike_rate": 136.36, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 26, "wickets": 58, "best_bowling": "6/41", "economy": 3.39},
+      "ODI": {"matches": 191, "wickets": 288, "best_bowling": "6/42", "economy": 5.07},
+      "T20I": {"matches": 4, "wickets": 3, "best_bowling": "2/10", "economy": 8.09}
+    },
+    "fielding": {
+      "TEST": {"catches": 6, "run_outs": null},
+      "ODI": {"catches": 52, "run_outs": null},
+      "T20I": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_javagal_srinath",
+  "personal_info": {"name": "Javagal Srinath", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 67, "innings": 92, "runs": 1009, "highest_score": "76", "average": 14.21, "strike_rate": 49.53, "centuries": 0, "fifties": 4},
+      "ODI": {"matches": 229, "innings": 121, "runs": 883, "highest_score": "53", "average": 10.63, "strike_rate": 79.62, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 67, "wickets": 236, "best_bowling": "8/86", "economy": 2.85},
+      "ODI": {"matches": 229, "wickets": 315, "best_bowling": "5/23", "economy": 4.44}
+    },
+    "fielding": {
+      "TEST": {"catches": 22, "run_outs": null},
+      "ODI": {"catches": 32, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_venkatapathy_raju",
+  "personal_info": {"name": "Venkatapathy Raju", "country": "India", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 28, "innings": 34, "runs": 240, "highest_score": "31", "average": 10.00, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 53, "innings": 16, "runs": 32, "highest_score": "8", "average": 4.00, "strike_rate": 47.76, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 28, "wickets": 93, "best_bowling": "6/12", "economy": 2.25},
+      "ODI": {"matches": 53, "wickets": 63, "best_bowling": "4/46", "economy": 4.36}
+    },
+    "fielding": {
+      "TEST": {"catches": 6, "run_outs": null},
+      "ODI": {"catches": 8, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_rp_singh",
+  "personal_info": {"name": "RP Singh", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 14, "innings": 19, "runs": 116, "highest_score": "30", "average": 7.25, "strike_rate": 42.02, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 58, "innings": 20, "runs": 104, "highest_score": "23", "average": 10.40, "strike_rate": 42.97, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 10, "innings": 2, "runs": 3, "highest_score": "2*", "average": null, "strike_rate": 100.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 14, "wickets": 40, "best_bowling": "5/59", "economy": 3.98},
+      "ODI": {"matches": 58, "wickets": 69, "best_bowling": "4/35", "economy": 5.48},
+      "T20I": {"matches": 10, "wickets": 15, "best_bowling": "4/13", "economy": 6.81}
+    },
+    "fielding": {
+      "TEST": {"catches": 6, "run_outs": null},
+      "ODI": {"catches": 13, "run_outs": null},
+      "T20I": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_ashish_nehra",
+  "personal_info": {"name": "Ashish Nehra", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": 2017, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 17, "innings": 25, "runs": 77, "highest_score": "19", "average": 5.50, "strike_rate": 30.07, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 120, "innings": 46, "runs": 141, "highest_score": "24", "average": 5.64, "strike_rate": 57.31, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 27, "innings": 5, "runs": 28, "highest_score": "22", "average": 5.60, "strike_rate": 71.79, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 17, "wickets": 44, "best_bowling": "4/72", "economy": 3.24},
+      "ODI": {"matches": 120, "wickets": 157, "best_bowling": "6/23", "economy": 5.19},
+      "T20I": {"matches": 27, "wickets": 34, "best_bowling": "3/19", "economy": 7.73}
+    },
+    "fielding": {
+      "TEST": {"catches": 5, "run_outs": null},
+      "ODI": {"catches": 18, "run_outs": null},
+      "T20I": {"catches": 4, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_sreesanth",
+  "personal_info": {"name": "Sreesanth", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 27, "innings": 40, "runs": 281, "highest_score": "35", "average": 10.40, "strike_rate": 52.13, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 53, "innings": 21, "runs": 44, "highest_score": "10*", "average": 4.00, "strike_rate": 36.36, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 10, "innings": 3, "runs": 20, "highest_score": "19*", "average": 20.00, "strike_rate": 142.85, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 27, "wickets": 87, "best_bowling": "5/40", "economy": 3.62},
+      "ODI": {"matches": 53, "wickets": 75, "best_bowling": "6/55", "economy": 6.07},
+      "T20I": {"matches": 10, "wickets": 7, "best_bowling": "2/12", "economy": 8.47}
+    },
+    "fielding": {
+      "TEST": {"catches": 5, "run_outs": null},
+      "ODI": {"catches": 7, "run_outs": null},
+      "T20I": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_varun_aaron",
+  "personal_info": {"name": "Varun Aaron", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 9, "innings": 14, "runs": 35, "highest_score": "9", "average": 3.88, "strike_rate": 31.81, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 9, "innings": 3, "runs": 8, "highest_score": "6*", "average": 8.00, "strike_rate": 53.33, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 9, "wickets": 18, "best_bowling": "3/97", "economy": 4.77},
+      "ODI": {"matches": 9, "wickets": 11, "best_bowling": "3/24", "economy": 6.61}
+    },
+    "fielding": {
+      "TEST": {"catches": 1, "run_outs": null},
+      "ODI": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_t_natarajan",
+  "personal_info": {"name": "T Natarajan", "country": "India", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 1, "runs": 1, "highest_score": "1*", "average": null, "strike_rate": 11.11, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 2, "innings": 1, "runs": 0, "highest_score": "0*", "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 4, "innings": null, "runs": null, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 3, "best_bowling": "3/78", "economy": 3.10},
+      "ODI": {"matches": 2, "wickets": 3, "best_bowling": "2/70", "economy": 7.15},
+      "T20I": {"matches": 4, "wickets": 7, "best_bowling": "3/30", "economy": 7.62}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20I": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_avesh_khan",
+  "personal_info": {"name": "Avesh Khan", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 8, "innings": 4, "runs": 23, "highest_score": "10", "average": 7.66, "strike_rate": 79.31, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 25, "innings": 5, "runs": 27, "highest_score": "16", "average": 13.50, "strike_rate": 135.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "ODI": {"matches": 8, "wickets": 9, "best_bowling": "4/27", "economy": 5.54},
+      "T20I": {"matches": 25, "wickets": 27, "best_bowling": "4/18", "economy": 9.04}
+    },
+    "fielding": {
+      "ODI": {"catches": 3, "run_outs": null},
+      "T20I": {"catches": 11, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_umran_malik",
+  "personal_info": {"name": "Umran Malik", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 10, "innings": 4, "runs": 2, "highest_score": "2*", "average": 2.00, "strike_rate": 18.18, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 8, "innings": 2, "runs": 5, "highest_score": "4*", "average": null, "strike_rate": 250.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "ODI": {"matches": 10, "wickets": 13, "best_bowling": "3/57", "economy": 6.54},
+      "T20I": {"matches": 8, "wickets": 11, "best_bowling": "3/48", "economy": 10.48}
+    },
+    "fielding": {
+      "ODI": {"catches": 2, "run_outs": null},
+      "T20I": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_harshal_patel",
+  "personal_info": {"name": "Harshal Patel", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["T20I"]},
+  "stats": {
+    "batting": {
+      "T20I": {"matches": 25, "innings": 10, "runs": 77, "highest_score": "18", "average": 12.83, "strike_rate": 135.08, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "T20I": {"matches": 25, "wickets": 29, "best_bowling": "4/25", "economy": 9.18}
+    },
+    "fielding": {
+      "T20I": {"catches": 5, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_deepak_hooda",
+  "personal_info": {"name": "Deepak Hooda", "country": "India", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 10, "innings": 7, "runs": 153, "highest_score": "33", "average": 25.50, "strike_rate": 80.95, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 21, "innings": 17, "runs": 368, "highest_score": "104", "average": 30.66, "strike_rate": 147.20, "centuries": 1, "fifties": 0}
+    },
+    "bowling": {
+      "ODI": {"matches": 10, "wickets": 3, "best_bowling": "1/6", "economy": 4.76},
+      "T20I": {"matches": 21, "wickets": 6, "best_bowling": "4/10", "economy": 4.80}
+    },
+    "fielding": {
+      "ODI": {"catches": 3, "run_outs": null},
+      "T20I": {"catches": 12, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_ruturaj_gaikwad",
+  "personal_info": {"name": "Ruturaj Gaikwad", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 9, "innings": 8, "runs": 228, "highest_score": "105", "average": 28.50, "strike_rate": 89.76, "centuries": 1, "fifties": 1},
+      "T20I": {"matches": 23, "innings": 20, "runs": 633, "highest_score": "123*", "average": 39.56, "strike_rate": 143.53, "centuries": 1, "fifties": 4}
+    },
+    "bowling": {
+      "ODI": {"matches": 9, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20I": {"matches": 23, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "ODI": {"catches": 4, "run_outs": null},
+      "T20I": {"catches": 11, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_tilak_varma",
+  "personal_info": {"name": "Tilak Varma", "country": "India", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 5, "innings": 4, "runs": 68, "highest_score": "52", "average": 22.66, "strike_rate": 57.14, "centuries": 0, "fifties": 1},
+      "T20I": {"matches": 49, "innings": 46, "runs": 1390, "highest_score": "120*", "average": 44.83, "strike_rate": 145.54, "centuries": 2, "fifties": 6}
+    },
+    "bowling": {
+      "ODI": {"matches": 5, "wickets": 0, "best_bowling": null, "economy": 6.80},
+      "T20I": {"matches": 49, "wickets": 4, "best_bowling": "1/1", "economy": 5.78}
+    },
+    "fielding": {
+      "ODI": {"catches": 1, "run_outs": null},
+      "T20I": {"catches": 35, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_rinku_singh",
+  "personal_info": {"name": "Rinku Singh", "country": "India", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 2, "innings": 2, "runs": 55, "highest_score": "38", "average": 27.50, "strike_rate": 134.14, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 45, "innings": 33, "runs": 665, "highest_score": "69*", "average": 39.11, "strike_rate": 155.73, "centuries": 0, "fifties": 3}
+    },
+    "bowling": {
+      "ODI": {"matches": 2, "wickets": 1, "best_bowling": "1/2", "economy": 2.00},
+      "T20I": {"matches": 45, "wickets": 3, "best_bowling": "2/3", "economy": 7.12}
+    },
+    "fielding": {
+      "ODI": {"catches": 1, "run_outs": null},
+      "T20I": {"catches": 37, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_jitesh_sharma",
+  "personal_info": {"name": "Jitesh Sharma", "country": "India", "role": "wicketkeeper-batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["T20I"]},
+  "stats": {
+    "batting": {
+      "T20I": {"matches": 16, "innings": 12, "runs": 162, "highest_score": "35", "average": 18.00, "strike_rate": 151.40, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "T20I": {"matches": 16, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "T20I": {"catches": 9, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_mukesh_kumar",
+  "personal_info": {"name": "Mukesh Kumar", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 3, "innings": 4, "runs": 0, "highest_score": "0*", "average": 0.00, "strike_rate": 0.00, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 6, "innings": 2, "runs": 10, "highest_score": "6", "average": 10.00, "strike_rate": 62.50, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 17, "innings": 4, "runs": 5, "highest_score": "4*", "average": 5.00, "strike_rate": 100.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 3, "wickets": 7, "best_bowling": "2/0", "economy": 3.78},
+      "ODI": {"matches": 6, "wickets": 5, "best_bowling": "3/30", "economy": 5.56},
+      "T20I": {"matches": 17, "wickets": 20, "best_bowling": "4/22", "economy": 9.01}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 1, "run_outs": null},
+      "T20I": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_ravi_bishnoi",
+  "personal_info": {"name": "Ravi Bishnoi", "country": "India", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "ODI": {"matches": 1, "innings": 1, "runs": 4, "highest_score": "4*", "average": null, "strike_rate": 200.00, "centuries": 0, "fifties": 0},
+      "T20I": {"matches": 44, "innings": 14, "runs": 65, "highest_score": "10*", "average": 9.28, "strike_rate": 125.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "ODI": {"matches": 1, "wickets": 1, "best_bowling": "1/69", "economy": 8.62},
+      "T20I": {"matches": 44, "wickets": 64, "best_bowling": "4/13", "economy": 7.40}
+    },
+    "fielding": {
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20I": {"catches": 16, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_rajat_patidar",
+  "personal_info": {"name": "Rajat Patidar", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 3, "innings": 6, "runs": 63, "highest_score": "32", "average": 10.50, "strike_rate": 38.41, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 1, "innings": 1, "runs": 22, "highest_score": "22", "average": 22.00, "strike_rate": 137.50, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 3, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 4, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_sai_sudharsan",
+  "personal_info": {"name": "Sai Sudharsan", "country": "India", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 6, "innings": 11, "runs": 302, "highest_score": "87", "average": 27.45, "strike_rate": 38.71, "centuries": 0, "fifties": 2},
+      "ODI": {"matches": 3, "innings": 3, "runs": 127, "highest_score": "62", "average": 63.50, "strike_rate": 89.43, "centuries": 0, "fifties": 2},
+      "T20I": {"matches": 1, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 6, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 3, "wickets": 0, "best_bowling": null, "economy": 16.00},
+      "T20I": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 4, "run_outs": null},
+      "ODI": {"catches": 1, "run_outs": null},
+      "T20I": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+
+{
+  "id": "ind_yashasvi_jaiswal",
+  "personal_info": {"name": "Yashasvi Jaiswal", "country": "India", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 28, "innings": 53, "runs": 2511, "highest_score": "214*", "average": 49.23, "strike_rate": 66.02, "centuries": 7, "fifties": 13},
+      "ODI": {"matches": 4, "innings": 4, "runs": 171, "highest_score": "116*", "average": 57.00, "strike_rate": 86.80, "centuries": 1, "fifties": 0},
+      "T20I": {"matches": 23, "innings": 22, "runs": 723, "highest_score": "100", "average": 36.15, "strike_rate": 164.31, "centuries": 1, "fifties": 5}
+    },
+    "bowling": {
+      "TEST": {"matches": 28, "wickets": 0, "best_bowling": null, "economy": 6.00},
+      "ODI": {"matches": 4, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20I": {"matches": 23, "wickets": 0, "best_bowling": null, "economy": 11.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 25, "run_outs": null},
+      "ODI": {"catches": 2, "run_outs": null},
+      "T20I": {"catches": 15, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_sarfaraz_khan",
+  "personal_info": {"name": "Sarfaraz Khan", "country": "India", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 6, "innings": 11, "runs": 371, "highest_score": "150", "average": 37.10, "strike_rate": 74.94, "centuries": 1, "fifties": 3}
+    },
+    "bowling": {
+      "TEST": {"matches": 6, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_devdutt_padikkal",
+  "personal_info": {"name": "Devdutt Padikkal", "country": "India", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "T20I"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 2, "innings": 3, "runs": 90, "highest_score": "65", "average": 30.00, "strike_rate": 45.68, "centuries": 0, "fifties": 1},
+      "T20I": {"matches": 2, "innings": 2, "runs": 38, "highest_score": "29", "average": 19.00, "strike_rate": 100.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 2, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20I": {"matches": 2, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 2, "run_outs": null},
+      "T20I": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_rahul_tewatia",
+  "personal_info": {"name": "Rahul Tewatia", "country": "India", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": []},
+  "stats": {
+    "batting": {},
+    "bowling": {},
+    "fielding": {}
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+},
+
+{
+  "id": "ind_abhishek_sharma",
+  "personal_info": {"name": "Abhishek Sharma", "country": "India", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["T20I"]},
+  "stats": {
+    "batting": {
+      "T20I": {"matches": 46, "innings": 45, "runs": 1438, "highest_score": "135", "average": 33.44, "strike_rate": 190.46, "centuries": 2, "fifties": 10}
+    },
+    "bowling": {
+      "T20I": {"matches": 46, "wickets": 7, "best_bowling": "2/3", "economy": 8.69}
+    },
+    "fielding": {
+      "T20I": {"catches": 20, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-27", "source": "manual_verified"}
+}
+]

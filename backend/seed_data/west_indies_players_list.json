@@ -1,0 +1,1573 @@
+[
+{
+  "id": "wi_viv_richards",
+  "personal_info": {"name": "Viv Richards", "country": "West Indies", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 121, "innings": 182, "runs": 8540, "highest_score": "291", "average": 50.23, "strike_rate": null, "centuries": 24, "fifties": 45},
+      "ODI": {"matches": 187, "innings": 167, "runs": 6721, "highest_score": "189*", "average": 47.00, "strike_rate": 90.20, "centuries": 11, "fifties": 45}
+    },
+    "bowling": {
+      "TEST": {"matches": 121, "wickets": 32, "best_bowling": "2/17", "economy": 2.27},
+      "ODI": {"matches": 187, "wickets": 118, "best_bowling": "6/41", "economy": 4.49}
+    },
+    "fielding": {
+      "TEST": {"catches": 122, "run_outs": null},
+      "ODI": {"catches": 100, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "wi_brian_lara",
+  "personal_info": {"name": "Brian Lara", "country": "West Indies", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 131, "innings": 232, "runs": 11953, "highest_score": "400*", "average": 52.88, "strike_rate": 60.51, "centuries": 34, "fifties": 48},
+      "ODI": {"matches": 299, "innings": 289, "runs": 10405, "highest_score": "169", "average": 40.48, "strike_rate": 79.51, "centuries": 19, "fifties": 63},
+      "T20": {"matches": 3, "innings": 3, "runs": 99, "highest_score": "65", "average": 33.00, "strike_rate": 115.11, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 131, "wickets": 0, "best_bowling": "-", "economy": 2.80},
+      "ODI": {"matches": 299, "wickets": 4, "best_bowling": "2/5", "economy": 7.46},
+      "T20": {"matches": 3, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 164, "run_outs": null},
+      "ODI": {"catches": 120, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "wi_clive_lloyd",
+  "personal_info": {"name": "Clive Lloyd", "country": "West Indies", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 110, "innings": 175, "runs": 7515, "highest_score": "242*", "average": 46.67, "strike_rate": null, "centuries": 19, "fifties": 39},
+      "ODI": {"matches": 87, "innings": 69, "runs": 1977, "highest_score": "102", "average": 39.54, "strike_rate": 81.22, "centuries": 1, "fifties": 11}
+    },
+    "bowling": {
+      "TEST": {"matches": 110, "wickets": 10, "best_bowling": "2/13", "economy": 2.17},
+      "ODI": {"matches": 87, "wickets": 8, "best_bowling": "2/4", "economy": 3.51}
+    },
+    "fielding": {
+      "TEST": {"catches": 90, "run_outs": null},
+      "ODI": {"catches": 39, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "wi_gordon_greenidge",
+  "personal_info": {"name": "Gordon Greenidge", "country": "West Indies", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 108, "innings": 185, "runs": 7558, "highest_score": "226", "average": 44.72, "strike_rate": null, "centuries": 19, "fifties": 34},
+      "ODI": {"matches": 128, "innings": 127, "runs": 5134, "highest_score": "133*", "average": 45.03, "strike_rate": 64.92, "centuries": 11, "fifties": 31}
+    },
+    "bowling": {
+      "TEST": {"matches": 108, "wickets": 0, "best_bowling": "-", "economy": 0.92},
+      "ODI": {"matches": 128, "wickets": 1, "best_bowling": "1/21", "economy": 4.50}
+    },
+    "fielding": {
+      "TEST": {"catches": 96, "run_outs": null},
+      "ODI": {"catches": 45, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "wi_desmond_haynes",
+  "personal_info": {"name": "Desmond Haynes", "country": "West Indies", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 116, "innings": 202, "runs": 7487, "highest_score": "184", "average": 42.29, "strike_rate": null, "centuries": 18, "fifties": 39},
+      "ODI": {"matches": 238, "innings": 237, "runs": 8648, "highest_score": "152*", "average": 41.37, "strike_rate": 63.09, "centuries": 17, "fifties": 57}
+    },
+    "bowling": {
+      "TEST": {"matches": 116, "wickets": 1, "best_bowling": "1/2", "economy": 2.66},
+      "ODI": {"matches": 238, "wickets": 0, "best_bowling": "-", "economy": 4.80}
+    },
+    "fielding": {
+      "TEST": {"catches": 65, "run_outs": null},
+      "ODI": {"catches": 59, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "wi_richie_richardson",
+  "personal_info": {"name": "Richie Richardson", "country": "West Indies", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 86, "innings": 146, "runs": 5949, "highest_score": "194", "average": 44.39, "strike_rate": null, "centuries": 16, "fifties": 27},
+      "ODI": {"matches": 224, "innings": 217, "runs": 6248, "highest_score": "122", "average": 33.41, "strike_rate": 63.74, "centuries": 5, "fifties": 44}
+    },
+    "bowling": {
+      "TEST": {"matches": 86, "wickets": 0, "best_bowling": "-", "economy": 1.63},
+      "ODI": {"matches": 224, "wickets": 1, "best_bowling": "1/4", "economy": 4.75}
+    },
+    "fielding": {
+      "TEST": {"catches": 90, "run_outs": null},
+      "ODI": {"catches": 75, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "wi_chris_gayle",
+  "personal_info": {"name": "Chris Gayle", "country": "West Indies", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 103, "innings": 182, "runs": 7214, "highest_score": "333", "average": 42.18, "strike_rate": 60.26, "centuries": 15, "fifties": 37},
+      "ODI": {"matches": 301, "innings": 294, "runs": 10480, "highest_score": "215", "average": 37.83, "strike_rate": 87.19, "centuries": 25, "fifties": 54},
+      "T20": {"matches": 79, "innings": 75, "runs": 1899, "highest_score": "117", "average": 27.92, "strike_rate": 137.50, "centuries": 2, "fifties": 14}
+    },
+    "bowling": {
+      "TEST": {"matches": 103, "wickets": 73, "best_bowling": "5/34", "economy": 2.63},
+      "ODI": {"matches": 301, "wickets": 167, "best_bowling": "5/46", "economy": 4.78},
+      "T20": {"matches": 79, "wickets": 20, "best_bowling": "2/15", "economy": 6.92}
+    },
+    "fielding": {
+      "TEST": {"catches": 96, "run_outs": null},
+      "ODI": {"catches": 124, "run_outs": null},
+      "T20": {"catches": 20, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+
+{
+  "id": "wi_shivnarine_chanderpaul",
+  "personal_info": {
+    "name": "Shivnarine Chanderpaul",
+    "country": "West Indies",
+    "role": "batsman",
+    "batting_style": "Left-hand bat",
+    "bowling_style": "Right-arm legbreak"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST", "ODI", "T20"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 164, "innings": 280, "runs": 11867, "highest_score": "203*", "average": 51.37, "strike_rate": 43.31, "centuries": 30, "fifties": 66},
+      "ODI": {"matches": 268, "innings": 251, "runs": 8778, "highest_score": "150", "average": 41.60, "strike_rate": 70.74, "centuries": 11, "fifties": 59},
+      "T20": {"matches": 22, "innings": 22, "runs": 343, "highest_score": "41", "average": 20.17, "strike_rate": 98.84, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 164, "wickets": 9, "best_bowling": "1/2", "economy": 3.04},
+      "ODI": {"matches": 268, "wickets": 14, "best_bowling": "3/18", "economy": 5.15},
+      "T20": {"matches": 22, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 66, "run_outs": null},
+      "ODI": {"catches": 73, "run_outs": null},
+      "T20": {"catches": 7, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_alvin_kallicharran",
+  "personal_info": {
+    "name": "Alvin Kallicharran",
+    "country": "West Indies",
+    "role": "batsman",
+    "batting_style": "Left-hand bat",
+    "bowling_style": "Right-arm legbreak"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST", "ODI"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 66, "innings": 109, "runs": 4399, "highest_score": "187", "average": 44.43, "strike_rate": null, "centuries": 12, "fifties": 21},
+      "ODI": {"matches": 31, "innings": 28, "runs": 826, "highest_score": "78", "average": 34.41, "strike_rate": 62.15, "centuries": 0, "fifties": 6},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 66, "wickets": 4, "best_bowling": "2/16", "economy": 2.33},
+      "ODI": {"matches": 31, "wickets": 3, "best_bowling": "2/10", "economy": 3.65},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+    },
+    "fielding": {
+      "TEST": {"catches": 51, "run_outs": null},
+      "ODI": {"catches": 8, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_rohan_kanhai",
+  "personal_info": {
+    "name": "Rohan Kanhai",
+    "country": "West Indies",
+    "role": "batsman",
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm medium"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST", "ODI"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 79, "innings": 137, "runs": 6227, "highest_score": "256", "average": 47.53, "strike_rate": null, "centuries": 15, "fifties": 28},
+      "ODI": {"matches": 7, "innings": 5, "runs": 164, "highest_score": "55", "average": 54.66, "strike_rate": 60.07, "centuries": 0, "fifties": 2},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 79, "wickets": 0, "best_bowling": "-", "economy": 2.78},
+      "ODI": {"matches": 7, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+    },
+    "fielding": {
+      "TEST": {"catches": 50, "run_outs": null},
+      "ODI": {"catches": 4, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_everton_weekes",
+  "personal_info": {
+    "name": "Everton Weekes",
+    "country": "West Indies",
+    "role": "batsman",
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm medium"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 48, "innings": 81, "runs": 4455, "highest_score": "207", "average": 58.61, "strike_rate": null, "centuries": 15, "fifties": 19},
+      "ODI": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 48, "wickets": 1, "best_bowling": "1/8", "economy": 3.78},
+      "ODI": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+    },
+    "fielding": {
+      "TEST": {"catches": 49, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_clyde_walcott",
+  "personal_info": {
+    "name": "Clyde Walcott",
+    "country": "West Indies",
+    "role": "wicketkeeper-batsman",
+    "batting_style": "Right-hand bat",
+    "bowling_style": "-"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 44, "innings": 74, "runs": 3798, "highest_score": "220", "average": 56.68, "strike_rate": null, "centuries": 15, "fifties": 14},
+      "ODI": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 44, "wickets": 11, "best_bowling": "3/50", "economy": 2.05},
+      "ODI": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+    },
+    "fielding": {
+      "TEST": {"catches": 53, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_frank_worrell",
+  "personal_info": {
+    "name": "Frank Worrell",
+    "country": "West Indies",
+    "role": "all-rounder",
+    "batting_style": "Left-hand bat",
+    "bowling_style": "Right-arm medium"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 51, "innings": 87, "runs": 3860, "highest_score": "261", "average": 49.48, "strike_rate": null, "centuries": 9, "fifties": 22},
+      "ODI": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 51, "wickets": 69, "best_bowling": "7/70", "economy": 2.24},
+      "ODI": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+    },
+    "fielding": {
+      "TEST": {"catches": 43, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_garry_sobers",
+  "personal_info": {
+    "name": "Garry Sobers",
+    "country": "West Indies",
+    "role": "all-rounder",
+    "batting_style": "Left-hand bat",
+    "bowling_style": "Right-arm medium / left-arm orthodox / left-arm fast-medium"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 93, "innings": 160, "runs": 8032, "highest_score": "365*", "average": 57.78, "strike_rate": null, "centuries": 26, "fifties": 30},
+      "ODI": {"matches": 1, "innings": 1, "runs": 0, "highest_score": "0", "average": 0.00, "strike_rate": 0.00, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 93, "wickets": 235, "best_bowling": "6/73", "economy": 2.22},
+      "ODI": {"matches": 1, "wickets": 1, "best_bowling": "1/31", "economy": 2.95},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+    },
+    "fielding": {
+      "TEST": {"catches": 109, "run_outs": null},
+      "ODI": {"catches": 1, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+
+{
+  "id": "wi_daren_ganga",
+  "personal_info": {
+    "name": "Daren Ganga",
+    "country": "West Indies",
+    "role": "batsman",
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm medium"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST", "ODI", "T20"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 48, "innings": 86, "runs": 2160, "highest_score": "135", "average": 25.71, "strike_rate": 38.87, "centuries": 3, "fifties": 9},
+      "ODI": {"matches": 35, "innings": 34, "runs": 843, "highest_score": "71", "average": 25.54, "strike_rate": 59.61, "centuries": 0, "fifties": 9},
+      "T20": {"matches": 1, "innings": 1, "runs": 26, "highest_score": "26", "average": 26.00, "strike_rate": 83.87, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 48, "wickets": 1, "best_bowling": "1/20", "economy": 3.41},
+      "ODI": {"matches": 35, "wickets": 0, "best_bowling": "-", "economy": 24.00},
+      "T20": {"matches": 1, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 30, "run_outs": null},
+      "ODI": {"catches": 11, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_marlon_samuels",
+  "personal_info": {
+    "name": "Marlon Samuels",
+    "country": "West Indies",
+    "role": "all-rounder",
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm offbreak"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST", "ODI", "T20"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 71, "innings": 127, "runs": 3917, "highest_score": "260", "average": 32.64, "strike_rate": 47.65, "centuries": 7, "fifties": 24},
+      "ODI": {"matches": 207, "innings": 196, "runs": 5606, "highest_score": "133*", "average": 32.97, "strike_rate": 75.11, "centuries": 10, "fifties": 30},
+      "T20": {"matches": 67, "innings": 65, "runs": 1611, "highest_score": "89*", "average": 29.29, "strike_rate": 116.23, "centuries": 0, "fifties": 10}
+    },
+    "bowling": {
+      "TEST": {"matches": 71, "wickets": 41, "best_bowling": "4/13", "economy": 3.34},
+      "ODI": {"matches": 207, "wickets": 89, "best_bowling": "3/12", "economy": 4.86},
+      "T20": {"matches": 67, "wickets": 22, "best_bowling": "3/23", "economy": 7.79}
+    },
+    "fielding": {
+      "TEST": {"catches": 28, "run_outs": null},
+      "ODI": {"catches": 50, "run_outs": null},
+      "T20": {"catches": 12, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_ramnaresh_sarwan",
+  "personal_info": {
+    "name": "Ramnaresh Sarwan",
+    "country": "West Indies",
+    "role": "batsman",
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm medium"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST", "ODI", "T20"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 87, "innings": 154, "runs": 5842, "highest_score": "291", "average": 40.01, "strike_rate": 46.79, "centuries": 15, "fifties": 31},
+      "ODI": {"matches": 181, "innings": 169, "runs": 5804, "highest_score": "120*", "average": 42.67, "strike_rate": 75.74, "centuries": 5, "fifties": 38},
+      "T20": {"matches": 18, "innings": 16, "runs": 298, "highest_score": "59", "average": 22.92, "strike_rate": 104.19, "centuries": 0, "fifties": 2}
+    },
+    "bowling": {
+      "TEST": {"matches": 87, "wickets": 23, "best_bowling": "4/37", "economy": 3.45},
+      "ODI": {"matches": 181, "wickets": 16, "best_bowling": "3/31", "economy": 6.05},
+      "T20": {"matches": 18, "wickets": 2, "best_bowling": "2/10", "economy": 5.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 53, "run_outs": null},
+      "ODI": {"catches": 45, "run_outs": null},
+      "T20": {"catches": 7, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_nicholas_pooran",
+  "personal_info": {
+    "name": "Nicholas Pooran",
+    "country": "West Indies",
+    "role": "wicketkeeper-batsman",
+    "batting_style": "Left-hand bat",
+    "bowling_style": "-"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["ODI", "T20"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 61, "innings": 58, "runs": 1983, "highest_score": "118", "average": 39.66, "strike_rate": 99.15, "centuries": 3, "fifties": 11},
+      "T20": {"matches": 106, "innings": 97, "runs": 2275, "highest_score": "98", "average": 26.14, "strike_rate": 136.39, "centuries": 0, "fifties": 13}
+    },
+    "bowling": {
+      "TEST": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0},
+      "ODI": {"matches": 61, "wickets": 6, "best_bowling": "4/48", "economy": 6.17},
+      "T20": {"matches": 106, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 23, "run_outs": null},
+      "T20": {"catches": 63, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_shai_hope",
+  "personal_info": {
+    "name": "Shai Hope",
+    "country": "West Indies",
+    "role": "wicketkeeper-batsman",
+    "batting_style": "Right-hand bat",
+    "bowling_style": "-"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST", "ODI", "T20"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 46, "innings": 88, "runs": 2260, "highest_score": "147", "average": 26.58, "strike_rate": 43.63, "centuries": 4, "fifties": 6},
+      "ODI": {"matches": 148, "innings": 143, "runs": 6113, "highest_score": "170", "average": 50.52, "strike_rate": 79.81, "centuries": 19, "fifties": 30},
+      "T20": {"matches": 67, "innings": 65, "runs": 1672, "highest_score": "102*", "average": 29.85, "strike_rate": 137.38, "centuries": 1, "fifties": 11}
+    },
+    "bowling": {
+      "TEST": {"matches": 46, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 148, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 67, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 70, "run_outs": null},
+      "ODI": {"catches": 152, "run_outs": null},
+      "T20": {"catches": 27, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_dwayne_bravo",
+  "personal_info": {
+    "name": "Dwayne Bravo",
+    "country": "West Indies",
+    "role": "all-rounder",
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm medium-fast"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST", "ODI", "T20"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 56, "innings": 102, "runs": 3538, "highest_score": "218", "average": 36.47, "strike_rate": 44.86, "centuries": 8, "fifties": 17},
+      "ODI": {"matches": 122, "innings": 117, "runs": 3109, "highest_score": "124", "average": 30.18, "strike_rate": 70.11, "centuries": 4, "fifties": 18},
+      "T20": {"matches": 26, "innings": 22, "runs": 405, "highest_score": "43*", "average": 21.31, "strike_rate": 106.86, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 56, "wickets": 0, "best_bowling": "-", "economy": 2.00},
+      "ODI": {"matches": 122, "wickets": 199, "best_bowling": "6/43", "economy": 5.41},
+      "T20": {"matches": 26, "wickets": 52, "best_bowling": "4/19", "economy": 8.23}
+    },
+    "fielding": {
+      "TEST": {"catches": 51, "run_outs": null},
+      "ODI": {"catches": 35, "run_outs": null},
+      "T20": {"catches": 5, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "wi_kraigg_brathwaite",
+  "personal_info": {
+    "name": "Kraigg Brathwaite",
+    "country": "West Indies",
+    "role": "batsman",
+    "batting_style": "Right-hand bat",
+    "bowling_style": "Right-arm offbreak"
+  },
+  "career": {
+    "debut_year": null,
+    "retirement_year": null,
+    "formats_played": ["TEST", "ODI"]
+  },
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 100, "innings": 193, "runs": 5950, "highest_score": "212", "average": 32.51, "strike_rate": 40.83, "centuries": 12, "fifties": 31},
+      "ODI": {"matches": 10, "innings": 10, "runs": 278, "highest_score": "78", "average": 27.80, "strike_rate": 57.55, "centuries": 0, "fifties": 1},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 100, "wickets": 29, "best_bowling": "6/29", "economy": 3.32},
+      "ODI": {"matches": 10, "wickets": 1, "best_bowling": "1/56", "economy": 5.52},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+    },
+    "fielding": {
+      "TEST": {"catches": 49, "run_outs": null},
+      "ODI": {"catches": 3, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+
+{
+"id": "wi_johnson_charles",
+"personal_info": {
+"name": "Johnson Charles",
+"country": "West Indies",
+"role": "wicketkeeper-batsman",
+"batting_style": "Right-hand bat",
+"bowling_style": "-"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 58, "innings": 58, "runs": 1537, "highest_score": "130", "average": 26.50, "strike_rate": 85.24, "centuries": 2, "fifties": 7},
+"T20": {"matches": 69, "innings": 68, "runs": 1525, "highest_score": "118", "average": 22.42, "strike_rate": 129.01, "centuries": 1, "fifties": 5}
+},
+"bowling": {
+"TEST": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0},
+"ODI": {"matches": 58, "wickets": 0, "best_bowling": "-", "economy": 14.40},
+"T20": {"matches": 69, "wickets": 0, "best_bowling": "-", "economy": null}
+},
+"fielding": {
+"TEST": {"catches": 0, "run_outs": null},
+"ODI": {"catches": 25, "run_outs": null},
+"T20": {"catches": 25, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_denesh_ramdin",
+"personal_info": {
+"name": "Denesh Ramdin",
+"country": "West Indies",
+"role": "wicketkeeper-batsman",
+"batting_style": "Right-hand bat",
+"bowling_style": "-"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 74, "innings": 126, "runs": 2898, "highest_score": "166", "average": 25.87, "strike_rate": 48.74, "centuries": 4, "fifties": 15},
+"ODI": {"matches": 139, "innings": 110, "runs": 2200, "highest_score": "169", "average": 25.00, "strike_rate": 80.35, "centuries": 2, "fifties": 8},
+"T20": {"matches": 71, "innings": 50, "runs": 636, "highest_score": "55*", "average": 18.70, "strike_rate": 115.42, "centuries": 0, "fifties": 1}
+},
+"bowling": {
+"TEST": {"matches": 74, "wickets": 0, "best_bowling": "-", "economy": null},
+"ODI": {"matches": 139, "wickets": 0, "best_bowling": "-", "economy": null},
+"T20": {"matches": 71, "wickets": 0, "best_bowling": "-", "economy": null}
+},
+"fielding": {
+"TEST": {"catches": 205, "run_outs": null},
+"ODI": {"catches": 181, "run_outs": null},
+"T20": {"catches": 43, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_ridley_jacobs",
+"personal_info": {
+"name": "Ridley Jacobs",
+"country": "West Indies",
+"role": "wicketkeeper-batsman",
+"batting_style": "Right-hand bat",
+"bowling_style": "-"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 65, "innings": 112, "runs": 2577, "highest_score": "118", "average": 28.31, "strike_rate": 47.80, "centuries": 3, "fifties": 14},
+"ODI": {"matches": 147, "innings": 112, "runs": 1865, "highest_score": "80*", "average": 23.31, "strike_rate": 70.06, "centuries": 0, "fifties": 9},
+"T20": {"matches": 2, "innings": 2, "runs": 45, "highest_score": "31", "average": 22.50, "strike_rate": 145.16, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 65, "wickets": 0, "best_bowling": "-", "economy": null},
+"ODI": {"matches": 147, "wickets": 0, "best_bowling": "-", "economy": null},
+"T20": {"matches": 2, "wickets": 3, "best_bowling": "3/8", "economy": 8.80}
+},
+"fielding": {
+"TEST": {"catches": 207, "run_outs": null},
+"ODI": {"catches": 160, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_malcolm_marshall",
+"personal_info": {
+"name": "Malcolm Marshall",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 81, "innings": 107, "runs": 1810, "highest_score": "92", "average": 18.85, "strike_rate": null, "centuries": 0, "fifties": 10},
+"ODI": {"matches": 136, "innings": 83, "runs": 955, "highest_score": "66", "average": 14.92, "strike_rate": 76.64, "centuries": 0, "fifties": 2},
+"T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 81, "wickets": 376, "best_bowling": "7/22", "economy": 2.68},
+"ODI": {"matches": 136, "wickets": 157, "best_bowling": "4/18", "economy": 3.53},
+"T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+},
+"fielding": {
+"TEST": {"catches": 25, "run_outs": null},
+"ODI": {"catches": 15, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_curtly_ambrose",
+"personal_info": {
+"name": "Curtly Ambrose",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 98, "innings": 145, "runs": 1439, "highest_score": "53", "average": 12.40, "strike_rate": 46.72, "centuries": 0, "fifties": 1},
+"ODI": {"matches": 176, "innings": 96, "runs": 639, "highest_score": "31*", "average": 10.65, "strike_rate": 64.87, "centuries": 0, "fifties": 0},
+"T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 98, "wickets": 405, "best_bowling": "8/45", "economy": 2.30},
+"ODI": {"matches": 176, "wickets": 225, "best_bowling": "5/17", "economy": 3.48},
+"T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+},
+"fielding": {
+"TEST": {"catches": 18, "run_outs": null},
+"ODI": {"catches": 45, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_courtney_walsh",
+"personal_info": {
+"name": "Courtney Walsh",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 132, "innings": 185, "runs": 936, "highest_score": "30*", "average": 7.54, "strike_rate": 44.82, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 205, "innings": 79, "runs": 321, "highest_score": "30", "average": 6.97, "strike_rate": 71.17, "centuries": 0, "fifties": 0},
+"T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 132, "wickets": 519, "best_bowling": "7/37", "economy": 2.53},
+"ODI": {"matches": 205, "wickets": 227, "best_bowling": "5/1", "economy": 3.83},
+"T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+},
+"fielding": {
+"TEST": {"catches": 29, "run_outs": null},
+"ODI": {"catches": 27, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+
+{
+"id": "wi_johnson_charles",
+"personal_info": {
+"name": "Johnson Charles",
+"country": "West Indies",
+"role": "wicketkeeper-batsman",
+"batting_style": "Right-hand bat",
+"bowling_style": "-"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 58, "innings": 58, "runs": 1537, "highest_score": "130", "average": 26.50, "strike_rate": 85.24, "centuries": 2, "fifties": 7},
+"T20": {"matches": 69, "innings": 68, "runs": 1525, "highest_score": "118", "average": 22.42, "strike_rate": 129.01, "centuries": 1, "fifties": 5}
+},
+"bowling": {
+"TEST": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0},
+"ODI": {"matches": 58, "wickets": 0, "best_bowling": "-", "economy": 14.40},
+"T20": {"matches": 69, "wickets": 0, "best_bowling": "-", "economy": null}
+},
+"fielding": {
+"TEST": {"catches": 0, "run_outs": null},
+"ODI": {"catches": 25, "run_outs": null},
+"T20": {"catches": 25, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_denesh_ramdin",
+"personal_info": {
+"name": "Denesh Ramdin",
+"country": "West Indies",
+"role": "wicketkeeper-batsman",
+"batting_style": "Right-hand bat",
+"bowling_style": "-"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 74, "innings": 126, "runs": 2898, "highest_score": "166", "average": 25.87, "strike_rate": 48.74, "centuries": 4, "fifties": 15},
+"ODI": {"matches": 139, "innings": 110, "runs": 2200, "highest_score": "169", "average": 25.00, "strike_rate": 80.35, "centuries": 2, "fifties": 8},
+"T20": {"matches": 71, "innings": 50, "runs": 636, "highest_score": "55*", "average": 18.70, "strike_rate": 115.42, "centuries": 0, "fifties": 1}
+},
+"bowling": {
+"TEST": {"matches": 74, "wickets": 0, "best_bowling": "-", "economy": null},
+"ODI": {"matches": 139, "wickets": 0, "best_bowling": "-", "economy": null},
+"T20": {"matches": 71, "wickets": 0, "best_bowling": "-", "economy": null}
+},
+"fielding": {
+"TEST": {"catches": 205, "run_outs": null},
+"ODI": {"catches": 181, "run_outs": null},
+"T20": {"catches": 43, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_ridley_jacobs",
+"personal_info": {
+"name": "Ridley Jacobs",
+"country": "West Indies",
+"role": "wicketkeeper-batsman",
+"batting_style": "Right-hand bat",
+"bowling_style": "-"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 65, "innings": 112, "runs": 2577, "highest_score": "118", "average": 28.31, "strike_rate": 47.80, "centuries": 3, "fifties": 14},
+"ODI": {"matches": 147, "innings": 112, "runs": 1865, "highest_score": "80*", "average": 23.31, "strike_rate": 70.06, "centuries": 0, "fifties": 9},
+"T20": {"matches": 2, "innings": 2, "runs": 45, "highest_score": "31", "average": 22.50, "strike_rate": 145.16, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 65, "wickets": 0, "best_bowling": "-", "economy": null},
+"ODI": {"matches": 147, "wickets": 0, "best_bowling": "-", "economy": null},
+"T20": {"matches": 2, "wickets": 3, "best_bowling": "3/8", "economy": 8.80}
+},
+"fielding": {
+"TEST": {"catches": 207, "run_outs": null},
+"ODI": {"catches": 160, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_malcolm_marshall",
+"personal_info": {
+"name": "Malcolm Marshall",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 81, "innings": 107, "runs": 1810, "highest_score": "92", "average": 18.85, "strike_rate": null, "centuries": 0, "fifties": 10},
+"ODI": {"matches": 136, "innings": 83, "runs": 955, "highest_score": "66", "average": 14.92, "strike_rate": 76.64, "centuries": 0, "fifties": 2},
+"T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 81, "wickets": 376, "best_bowling": "7/22", "economy": 2.68},
+"ODI": {"matches": 136, "wickets": 157, "best_bowling": "4/18", "economy": 3.53},
+"T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+},
+"fielding": {
+"TEST": {"catches": 25, "run_outs": null},
+"ODI": {"catches": 15, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_curtly_ambrose",
+"personal_info": {
+"name": "Curtly Ambrose",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Left-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 98, "innings": 145, "runs": 1439, "highest_score": "53", "average": 12.40, "strike_rate": 46.72, "centuries": 0, "fifties": 1},
+"ODI": {"matches": 176, "innings": 96, "runs": 639, "highest_score": "31*", "average": 10.65, "strike_rate": 64.87, "centuries": 0, "fifties": 0},
+"T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 98, "wickets": 405, "best_bowling": "8/45", "economy": 2.30},
+"ODI": {"matches": 176, "wickets": 225, "best_bowling": "5/17", "economy": 3.48},
+"T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+},
+"fielding": {
+"TEST": {"catches": 18, "run_outs": null},
+"ODI": {"catches": 45, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_courtney_walsh",
+"personal_info": {
+"name": "Courtney Walsh",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 132, "innings": 185, "runs": 936, "highest_score": "30*", "average": 7.54, "strike_rate": 44.82, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 205, "innings": 79, "runs": 321, "highest_score": "30", "average": 6.97, "strike_rate": 71.17, "centuries": 0, "fifties": 0},
+"T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 132, "wickets": 519, "best_bowling": "7/37", "economy": 2.53},
+"ODI": {"matches": 205, "wickets": 227, "best_bowling": "5/1", "economy": 3.83},
+"T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+},
+"fielding": {
+"TEST": {"catches": 29, "run_outs": null},
+"ODI": {"catches": 27, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_michael_holding",
+"personal_info": {
+"name": "Michael Holding",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 60, "innings": 76, "runs": 910, "highest_score": "73", "average": 13.78, "strike_rate": null, "centuries": 0, "fifties": 6},
+"ODI": {"matches": 102, "innings": 42, "runs": 282, "highest_score": "64", "average": 9.09, "strike_rate": 74.80, "centuries": 0, "fifties": 2},
+"T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 60, "wickets": 249, "best_bowling": "8/92", "economy": 2.79},
+"ODI": {"matches": 102, "wickets": 142, "best_bowling": "5/26", "economy": 3.32},
+"T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+},
+"fielding": {
+"TEST": {"catches": 22, "run_outs": null},
+"ODI": {"catches": 30, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+
+
+{
+"id": "wi_joel_garner",
+"personal_info": {
+"name": "Joel Garner",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 58, "innings": 68, "runs": 672, "highest_score": "60", "average": 12.44, "strike_rate": null, "centuries": 0, "fifties": 1},
+"ODI": {"matches": 98, "innings": 41, "runs": 239, "highest_score": "37", "average": 9.19, "strike_rate": 66.38, "centuries": 0, "fifties": 0},
+"T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 58, "wickets": 259, "best_bowling": "6/56", "economy": 2.47},
+"ODI": {"matches": 98, "wickets": 146, "best_bowling": "5/31", "economy": 3.09},
+"T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+},
+"fielding": {
+"TEST": {"catches": 42, "run_outs": null},
+"ODI": {"catches": 30, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_andy_roberts",
+"personal_info": {
+"name": "Andy Roberts",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 47, "innings": 62, "runs": 762, "highest_score": "68", "average": 14.94, "strike_rate": null, "centuries": 0, "fifties": 3},
+"ODI": {"matches": 56, "innings": 32, "runs": 231, "highest_score": "37*", "average": 10.04, "strike_rate": 64.70, "centuries": 0, "fifties": 0},
+"T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 47, "wickets": 202, "best_bowling": "7/54", "economy": 2.78},
+"ODI": {"matches": 56, "wickets": 87, "best_bowling": "5/22", "economy": 3.40},
+"T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+},
+"fielding": {
+"TEST": {"catches": 9, "run_outs": null},
+"ODI": {"catches": 6, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_wes_hall",
+"personal_info": {
+"name": "Wes Hall",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 48, "innings": 66, "runs": 818, "highest_score": "50*", "average": 15.73, "strike_rate": null, "centuries": 0, "fifties": 2},
+"ODI": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0},
+"T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 48, "wickets": 192, "best_bowling": "7/69", "economy": 2.91},
+"ODI": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0},
+"T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+},
+"fielding": {
+"TEST": {"catches": 11, "run_outs": null},
+"ODI": {"catches": 0, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_lance_gibbs",
+"personal_info": {
+"name": "Lance Gibbs",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm offbreak"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 79, "innings": 109, "runs": 488, "highest_score": "25", "average": 6.97, "strike_rate": null, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 3, "innings": 1, "runs": 0, "highest_score": "0*", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0},
+"T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 79, "wickets": 309, "best_bowling": "8/38", "economy": 1.98},
+"ODI": {"matches": 3, "wickets": 2, "best_bowling": "1/12", "economy": 2.26},
+"T20": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0}
+},
+"fielding": {
+"TEST": {"catches": 52, "run_outs": null},
+"ODI": {"catches": 0, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_sunil_narine",
+"personal_info": {
+"name": "Sunil Narine",
+"country": "West Indies",
+"role": "all-rounder",
+"batting_style": "Left-hand bat",
+"bowling_style": "Right-arm offbreak"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 6, "innings": 7, "runs": 40, "highest_score": "22*", "average": 8.00, "strike_rate": 43.47, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 65, "innings": 45, "runs": 363, "highest_score": "36", "average": 11.00, "strike_rate": 82.31, "centuries": 0, "fifties": 0},
+"T20": {"matches": 51, "innings": 23, "runs": 155, "highest_score": "30", "average": 10.33, "strike_rate": 112.31, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 6, "wickets": 21, "best_bowling": "6/91", "economy": 3.09},
+"ODI": {"matches": 65, "wickets": 92, "best_bowling": "6/27", "economy": 4.12},
+"T20": {"matches": 51, "wickets": 52, "best_bowling": "4/12", "economy": 6.01}
+},
+"fielding": {
+"TEST": {"catches": 2, "run_outs": null},
+"ODI": {"catches": 14, "run_outs": null},
+"T20": {"catches": 7, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_samuel_badree",
+"personal_info": {
+"name": "Samuel Badree",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm legbreak"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 0, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0},
+"T20": {"matches": 52, "innings": 16, "runs": 43, "highest_score": "14*", "average": 7.16, "strike_rate": 66.15, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0},
+"ODI": {"matches": 0, "wickets": 0, "best_bowling": "-", "economy": 0},
+"T20": {"matches": 52, "wickets": 56, "best_bowling": "4/15", "economy": 6.17}
+},
+"fielding": {
+"TEST": {"catches": 0, "run_outs": null},
+"ODI": {"catches": 0, "run_outs": null},
+"T20": {"catches": 7, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_sulieman_benn",
+"personal_info": {
+"name": "Sulieman Benn",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Left-hand bat",
+"bowling_style": "Left-arm orthodox"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 26, "innings": 39, "runs": 486, "highest_score": "42", "average": 14.29, "strike_rate": 60.59, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 47, "innings": 30, "runs": 182, "highest_score": "31", "average": 7.91, "strike_rate": 75.83, "centuries": 0, "fifties": 0},
+"T20": {"matches": 24, "innings": 7, "runs": 37, "highest_score": "13*", "average": 12.33, "strike_rate": 88.09, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 26, "wickets": 87, "best_bowling": "6/81", "economy": 2.78},
+"ODI": {"matches": 47, "wickets": 39, "best_bowling": "4/18", "economy": 4.80},
+"T20": {"matches": 24, "wickets": 18, "best_bowling": "4/6", "economy": 7.21}
+},
+"fielding": {
+"TEST": {"catches": 14, "run_outs": null},
+"ODI": {"catches": 9, "run_outs": null},
+"T20": {"catches": 10, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+
+{
+"id": "wi_kemar_roach",
+"personal_info": {
+"name": "Kemar Roach",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 88, "innings": 142, "runs": 1363, "highest_score": "58*", "average": 12.27, "strike_rate": 36.42, "centuries": 0, "fifties": 1},
+"ODI": {"matches": 95, "innings": 60, "runs": 308, "highest_score": "34", "average": 12.83, "strike_rate": 51.85, "centuries": 0, "fifties": 0},
+"T20": {"matches": 11, "innings": 1, "runs": 3, "highest_score": "3*", "average": 0, "strike_rate": 150.00, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 88, "wickets": 294, "best_bowling": "6/48", "economy": 3.10},
+"ODI": {"matches": 95, "wickets": 125, "best_bowling": "6/27", "economy": 5.09},
+"T20": {"matches": 11, "wickets": 10, "best_bowling": "2/25", "economy": 7.28}
+},
+"fielding": {
+"TEST": {"catches": 27, "run_outs": null},
+"ODI": {"catches": 22, "run_outs": null},
+"T20": {"catches": 1, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_jerome_taylor",
+"personal_info": {
+"name": "Jerome Taylor",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 46, "innings": 73, "runs": 856, "highest_score": "106", "average": 12.96, "strike_rate": 62.57, "centuries": 1, "fifties": 1},
+"ODI": {"matches": 90, "innings": 42, "runs": 278, "highest_score": "43*", "average": 8.42, "strike_rate": 86.06, "centuries": 0, "fifties": 0},
+"T20": {"matches": 30, "innings": 15, "runs": 118, "highest_score": "21", "average": 13.11, "strike_rate": 128.26, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 46, "wickets": 130, "best_bowling": "6/47", "economy": 3.46},
+"ODI": {"matches": 90, "wickets": 128, "best_bowling": "5/48", "economy": 5.22},
+"T20": {"matches": 30, "wickets": 33, "best_bowling": "3/6", "economy": 8.63}
+},
+"fielding": {
+"TEST": {"catches": 8, "run_outs": null},
+"ODI": {"catches": 20, "run_outs": null},
+"T20": {"catches": 9, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_fidel_edwards",
+"personal_info": {
+"name": "Fidel Edwards",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 55, "innings": 88, "runs": 394, "highest_score": "30", "average": 6.56, "strike_rate": 28.20, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 50, "innings": 22, "runs": 73, "highest_score": "13", "average": 9.12, "strike_rate": 45.62, "centuries": 0, "fifties": 0},
+"T20": {"matches": 26, "innings": 6, "runs": 11, "highest_score": "7*", "average": 5.50, "strike_rate": 78.57, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 55, "wickets": 165, "best_bowling": "7/87", "economy": 3.90},
+"ODI": {"matches": 50, "wickets": 60, "best_bowling": "6/22", "economy": 5.08},
+"T20": {"matches": 26, "wickets": 20, "best_bowling": "3/23", "economy": 8.24}
+},
+"fielding": {
+"TEST": {"catches": 10, "run_outs": null},
+"ODI": {"catches": 4, "run_outs": null},
+"T20": {"catches": 5, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_shannon_gabriel",
+"personal_info": {
+"name": "Shannon Gabriel",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 59, "innings": 88, "runs": 229, "highest_score": "20*", "average": 4.24, "strike_rate": 34.69, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 25, "innings": 16, "runs": 24, "highest_score": "12*", "average": 3.42, "strike_rate": 38.09, "centuries": 0, "fifties": 0},
+"T20": {"matches": 2, "innings": 0, "runs": 0, "highest_score": "-", "average": 0, "strike_rate": 0, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 59, "wickets": 166, "best_bowling": "8/62", "economy": 3.42},
+"ODI": {"matches": 25, "wickets": 33, "best_bowling": "3/17", "economy": 5.92},
+"T20": {"matches": 2, "wickets": 3, "best_bowling": "3/44", "economy": 8.00}
+},
+"fielding": {
+"TEST": {"catches": 16, "run_outs": null},
+"ODI": {"catches": 1, "run_outs": null},
+"T20": {"catches": 1, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_alzarri_joseph",
+"personal_info": {
+"name": "Alzarri Joseph",
+"country": "West Indies",
+"role": "bowler",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 40, "innings": 65, "runs": 770, "highest_score": "86", "average": 12.22, "strike_rate": 56.74, "centuries": 0, "fifties": 2},
+"ODI": {"matches": 81, "innings": 46, "runs": 489, "highest_score": "49", "average": 16.30, "strike_rate": 76.64, "centuries": 0, "fifties": 0},
+"T20": {"matches": 45, "innings": 19, "runs": 129, "highest_score": "21*", "average": 16.12, "strike_rate": 103.20, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 40, "wickets": 124, "best_bowling": "5/27", "economy": 3.69},
+"ODI": {"matches": 81, "wickets": 133, "best_bowling": "5/56", "economy": 5.49},
+"T20": {"matches": 45, "wickets": 62, "best_bowling": "5/40", "economy": 9.24}
+},
+"fielding": {
+"TEST": {"catches": 17, "run_outs": null},
+"ODI": {"catches": 24, "run_outs": null},
+"T20": {"catches": 13, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_jason_holder",
+"personal_info": {
+"name": "Jason Holder",
+"country": "West Indies",
+"role": "all-rounder",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm medium-fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 69, "innings": 123, "runs": 3073, "highest_score": "202*", "average": 29.83, "strike_rate": 54.92, "centuries": 3, "fifties": 14},
+"ODI": {"matches": 138, "innings": 114, "runs": 2237, "highest_score": "99*", "average": 24.85, "strike_rate": 90.23, "centuries": 0, "fifties": 12},
+"T20": {"matches": 96, "innings": 68, "runs": 888, "highest_score": "49", "average": 18.50, "strike_rate": 140.06, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 69, "wickets": 162, "best_bowling": "6/42", "economy": 2.61},
+"ODI": {"matches": 138, "wickets": 159, "best_bowling": "5/27", "economy": 5.50},
+"T20": {"matches": 96, "wickets": 108, "best_bowling": "5/27", "economy": 8.70}
+},
+"fielding": {
+"TEST": {"catches": 71, "run_outs": null},
+"ODI": {"catches": 65, "run_outs": null},
+"T20": {"catches": 51, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+"id": "wi_dwayne_bravo",
+"personal_info": {
+"name": "Dwayne Bravo",
+"country": "West Indies",
+"role": "all-rounder",
+"batting_style": "Right-hand bat",
+"bowling_style": "Right-arm medium-fast"
+},
+"career": {
+"debut_year": null,
+"retirement_year": null,
+"formats_played": ["TEST", "ODI", "T20"]
+},
+"stats": {
+"batting": {
+"TEST": {"matches": 40, "innings": 71, "runs": 2200, "highest_score": "113", "average": 31.42, "strike_rate": 48.59, "centuries": 3, "fifties": 13},
+"ODI": {"matches": 164, "innings": 141, "runs": 2968, "highest_score": "112*", "average": 25.36, "strike_rate": 82.30, "centuries": 2, "fifties": 10},
+"T20": {"matches": 91, "innings": 74, "runs": 1255, "highest_score": "66*", "average": 22.01, "strike_rate": 115.03, "centuries": 0, "fifties": 4}
+},
+"bowling": {
+"TEST": {"matches": 40, "wickets": 86, "best_bowling": "6/55", "economy": 3.17},
+"ODI": {"matches": 164, "wickets": 199, "best_bowling": "6/43", "economy": 5.41},
+"T20": {"matches": 91, "wickets": 78, "best_bowling": "4/19", "economy": 8.11}
+},
+"fielding": {
+"TEST": {"catches": 41, "run_outs": null},
+"ODI": {"catches": 73, "run_outs": null},
+"T20": {"catches": 44, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+
+{
+"id": "wi_kesrick_williams",
+"personal_info": {"name": "Kesrick Williams", "country": "West Indies", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+"stats": {
+"batting": {
+"ODI": {"matches": 8, "innings": 5, "runs": 19, "highest_score": "16*", "average": 19.00, "strike_rate": 70.37, "centuries": 0, "fifties": 0},
+"T20": {"matches": 26, "innings": 7, "runs": 19, "highest_score": "13*", "average": 6.33, "strike_rate": 111.76, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"ODI": {"matches": 8, "wickets": 9, "best_bowling": "4/43", "economy": 5.32},
+"T20": {"matches": 26, "wickets": 41, "best_bowling": "4/28", "economy": 8.76}
+},
+"fielding": {
+"ODI": {"catches": 0, "run_outs": null},
+"T20": {"catches": 8, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+}
+
+
+]

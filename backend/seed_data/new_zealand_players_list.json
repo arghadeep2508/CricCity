@@ -1,0 +1,1108 @@
+[
+    {
+  "id": "nz_richard_hadlee",
+  "personal_info": {"name": "Richard Hadlee", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": 1990, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 86, "innings": 134, "runs": 3124, "highest_score": "151*", "average": 27.16, "strike_rate": null, "centuries": 2, "fifties": 15},
+      "ODI": {"matches": 115, "innings": 98, "runs": 1751, "highest_score": "79", "average": 21.61, "strike_rate": 75.50, "centuries": 0, "fifties": 4}
+    },
+    "bowling": {
+      "TEST": {"matches": 86, "wickets": 431, "best_bowling": "9/52", "economy": 2.63},
+      "ODI": {"matches": 115, "wickets": 158, "best_bowling": "5/25", "economy": 3.30}
+    },
+    "fielding": {
+      "TEST": {"catches": 39, "run_outs": null},
+      "ODI": {"catches": 27, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_martin_crowe",
+  "personal_info": {"name": "Martin Crowe", "country": "New Zealand", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 1995, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 77, "innings": 131, "runs": 5444, "highest_score": "299", "average": 45.36, "strike_rate": 44.65, "centuries": 17, "fifties": 18},
+      "ODI": {"matches": 143, "innings": 140, "runs": 4704, "highest_score": "107*", "average": 38.55, "strike_rate": 72.63, "centuries": 4, "fifties": 34}
+    },
+    "bowling": {
+      "TEST": {"matches": 77, "wickets": 14, "best_bowling": "2/25", "economy": 2.94},
+      "ODI": {"matches": 143, "wickets": 29, "best_bowling": "2/9", "economy": 4.41}
+    },
+    "fielding": {
+      "TEST": {"catches": 71, "run_outs": null},
+      "ODI": {"catches": 66, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_stephen_fleming",
+  "personal_info": {"name": "Stephen Fleming", "country": "New Zealand", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2008, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 111, "innings": 189, "runs": 7172, "highest_score": "274*", "average": 40.06, "strike_rate": 45.82, "centuries": 9, "fifties": 46},
+      "ODI": {"matches": 280, "innings": 269, "runs": 8037, "highest_score": "134*", "average": 32.40, "strike_rate": 71.49, "centuries": 8, "fifties": 49},
+      "T20": {"matches": 5, "innings": 5, "runs": 110, "highest_score": "38", "average": 22.00, "strike_rate": 129.41, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 111, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 280, "wickets": 1, "best_bowling": "1/8", "economy": 5.79},
+      "T20": {"matches": 5, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 171, "run_outs": null},
+      "ODI": {"catches": 133, "run_outs": null},
+      "T20": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_kane_williamson",
+  "personal_info": {"name": "Kane Williamson", "country": "New Zealand", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 108, "innings": 192, "runs": 9461, "highest_score": "251", "average": 54.68, "strike_rate": 51.98, "centuries": 33, "fifties": 38},
+      "ODI": {"matches": 175, "innings": 167, "runs": 7256, "highest_score": "148", "average": 48.69, "strike_rate": 81.59, "centuries": 15, "fifties": 47},
+      "T20": {"matches": 93, "innings": 90, "runs": 2575, "highest_score": "95", "average": 33.44, "strike_rate": 123.08, "centuries": 0, "fifties": 18}
+    },
+    "bowling": {
+      "TEST": {"matches": 108, "wickets": 30, "best_bowling": "4/44", "economy": 3.36},
+      "ODI": {"matches": 175, "wickets": 37, "best_bowling": "4/22", "economy": 5.35},
+      "T20": {"matches": 93, "wickets": 6, "best_bowling": "2/16", "economy": 8.33}
+    },
+    "fielding": {
+      "TEST": {"catches": 92, "run_outs": null},
+      "ODI": {"catches": 76, "run_outs": null},
+      "T20": {"catches": 45, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_ross_taylor",
+  "personal_info": {"name": "Ross Taylor", "country": "New Zealand", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2022, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 112, "innings": 196, "runs": 7683, "highest_score": "290", "average": 44.66, "strike_rate": 59.29, "centuries": 19, "fifties": 35},
+      "ODI": {"matches": 236, "innings": 220, "runs": 8607, "highest_score": "181*", "average": 47.55, "strike_rate": 83.32, "centuries": 21, "fifties": 51},
+      "T20": {"matches": 106, "innings": 97, "runs": 1954, "highest_score": "63", "average": 26.05, "strike_rate": 121.29, "centuries": 0, "fifties": 7}
+    },
+    "bowling": {
+      "TEST": {"matches": 112, "wickets": 3, "best_bowling": "2/4", "economy": 2.90},
+      "ODI": {"matches": 236, "wickets": 0, "best_bowling": "-", "economy": 5.00},
+      "T20": {"matches": 106, "wickets": 8, "best_bowling": "3/28", "economy": 9.03}
+    },
+    "fielding": {
+      "TEST": {"catches": 163, "run_outs": null},
+      "ODI": {"catches": 142, "run_outs": null},
+      "T20": {"catches": 49, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_brendon_mccullum",
+  "personal_info": {"name": "Brendon McCullum", "country": "New Zealand", "role": "wicketkeeper-batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": 2016, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 101, "innings": 176, "runs": 6453, "highest_score": "302", "average": 38.64, "strike_rate": 64.60, "centuries": 12, "fifties": 31},
+      "ODI": {"matches": 260, "innings": 228, "runs": 6083, "highest_score": "166", "average": 30.41, "strike_rate": 96.37, "centuries": 5, "fifties": 32},
+      "T20": {"matches": 71, "innings": 70, "runs": 2140, "highest_score": "123", "average": 35.66, "strike_rate": 136.21, "centuries": 2, "fifties": 13}
+    },
+    "bowling": {
+      "TEST": {"matches": 101, "wickets": 1, "best_bowling": "1/1", "economy": 3.01},
+      "ODI": {"matches": 260, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 71, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 198, "run_outs": null},
+      "ODI": {"catches": 262, "run_outs": null},
+      "T20": {"catches": 36, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_daniel_vettori",
+  "personal_info": {"name": "Daniel Vettori", "country": "New Zealand", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": 2015, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 113, "innings": 174, "runs": 4531, "highest_score": "140", "average": 30.00, "strike_rate": 58.18, "centuries": 6, "fifties": 23},
+      "ODI": {"matches": 295, "innings": 187, "runs": 2253, "highest_score": "83", "average": 17.33, "strike_rate": 82.98, "centuries": 0, "fifties": 4},
+      "T20": {"matches": 34, "innings": 22, "runs": 205, "highest_score": "38", "average": 12.81, "strike_rate": 107.89, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 113, "wickets": 362, "best_bowling": "7/87", "economy": 2.59},
+      "ODI": {"matches": 295, "wickets": 305, "best_bowling": "5/7", "economy": 4.12},
+      "T20": {"matches": 34, "wickets": 38, "best_bowling": "4/20", "economy": 5.70}
+    },
+    "fielding": {
+      "TEST": {"catches": 58, "run_outs": null},
+      "ODI": {"catches": 88, "run_outs": null},
+      "T20": {"catches": 9, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "nz_tim_southee",
+  "personal_info": {"name": "Tim Southee", "country": "New Zealand", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 107, "innings": 156, "runs": 2245, "highest_score": "77*", "average": 15.48, "strike_rate": 82.68, "centuries": 0, "fifties": 7},
+      "ODI": {"matches": 161, "innings": 96, "runs": 740, "highest_score": "55", "average": 12.13, "strike_rate": 95.97, "centuries": 0, "fifties": 1},
+      "T20": {"matches": 126, "innings": 50, "runs": 303, "highest_score": "39", "average": 11.22, "strike_rate": 138.99, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 107, "wickets": 391, "best_bowling": "7/64", "economy": 3.02},
+      "ODI": {"matches": 161, "wickets": 221, "best_bowling": "7/33", "economy": 5.53},
+      "T20": {"matches": 126, "wickets": 164, "best_bowling": "5/18", "economy": 8.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 86, "run_outs": null},
+      "ODI": {"catches": 44, "run_outs": null},
+      "T20": {"catches": 65, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_trent_boult",
+  "personal_info": {"name": "Trent Boult", "country": "New Zealand", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 78, "innings": 94, "runs": 759, "highest_score": "52*", "average": 15.81, "strike_rate": 60.00, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 114, "innings": 52, "runs": 216, "highest_score": "21*", "average": 9.00, "strike_rate": 77.41, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 61, "innings": 15, "runs": 58, "highest_score": "16", "average": 8.28, "strike_rate": 90.62, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 78, "wickets": 317, "best_bowling": "6/30", "economy": 3.00},
+      "ODI": {"matches": 114, "wickets": 211, "best_bowling": "7/34", "economy": 4.99},
+      "T20": {"matches": 61, "wickets": 83, "best_bowling": "4/13", "economy": 7.68}
+    },
+    "fielding": {
+      "TEST": {"catches": 43, "run_outs": null},
+      "ODI": {"catches": 43, "run_outs": null},
+      "T20": {"catches": 22, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_neil_wagner",
+  "personal_info": {"name": "Neil Wagner", "country": "New Zealand", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": 2024, "formats_played": ["TEST"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 64, "innings": 84, "runs": 875, "highest_score": "66*", "average": 14.58, "strike_rate": 51.86, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 64, "wickets": 260, "best_bowling": "7/39", "economy": 3.13}
+    },
+    "fielding": {
+      "TEST": {"catches": 19, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_bj_watling",
+  "personal_info": {"name": "BJ Watling", "country": "New Zealand", "role": "wicketkeeper-batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": 2021, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 75, "innings": 117, "runs": 3790, "highest_score": "205", "average": 37.52, "strike_rate": 42.61, "centuries": 8, "fifties": 19},
+      "ODI": {"matches": 28, "innings": 25, "runs": 573, "highest_score": "96*", "average": 24.91, "strike_rate": 68.37, "centuries": 0, "fifties": 5},
+      "T20": {"matches": 5, "innings": 4, "runs": 38, "highest_score": "22", "average": 9.50, "strike_rate": 65.51, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 75, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 28, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 5, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 267, "run_outs": null},
+      "ODI": {"catches": 20, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_tom_latham",
+  "personal_info": {"name": "Tom Latham", "country": "New Zealand", "role": "wicketkeeper-batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 91, "innings": 164, "runs": 6261, "highest_score": "264*", "average": 39.62, "strike_rate": 47.92, "centuries": 16, "fifties": 31},
+      "ODI": {"matches": 163, "innings": 150, "runs": 4464, "highest_score": "145*", "average": 34.07, "strike_rate": 85.40, "centuries": 8, "fifties": 26},
+      "T20": {"matches": 29, "innings": 26, "runs": 597, "highest_score": "65*", "average": 27.13, "strike_rate": 109.54, "centuries": 0, "fifties": 4}
+    },
+    "bowling": {
+      "TEST": {"matches": 91, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 163, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 29, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 111, "run_outs": null},
+      "ODI": {"catches": 142, "run_outs": null},
+      "T20": {"catches": 18, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_devon_conway",
+  "personal_info": {"name": "Devon Conway", "country": "New Zealand", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 32, "innings": 60, "runs": 2533, "highest_score": "227", "average": 43.67, "strike_rate": 53.88, "centuries": 7, "fifties": 13},
+      "ODI": {"matches": 43, "innings": 42, "runs": 1692, "highest_score": "152*", "average": 43.38, "strike_rate": 87.85, "centuries": 5, "fifties": 6},
+      "T20": {"matches": 69, "innings": 63, "runs": 1839, "highest_score": "99*", "average": 35.36, "strike_rate": 128.60, "centuries": 0, "fifties": 13}
+    },
+    "bowling": {
+      "TEST": {"matches": 32, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 43, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 69, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 15, "run_outs": null},
+      "ODI": {"catches": 20, "run_outs": null},
+      "T20": {"catches": 44, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_henry_nicholls",
+  "personal_info": {"name": "Henry Nicholls", "country": "New Zealand", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 58, "innings": 90, "runs": 3161, "highest_score": "200*", "average": 39.02, "strike_rate": 50.77, "centuries": 10, "fifties": 12},
+      "ODI": {"matches": 84, "innings": 82, "runs": 2252, "highest_score": "124*", "average": 34.12, "strike_rate": 80.22, "centuries": 1, "fifties": 16},
+      "T20": {"matches": 10, "innings": 9, "runs": 100, "highest_score": "36*", "average": 12.50, "strike_rate": 89.28, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 58, "wickets": 0, "best_bowling": "-", "economy": null},
+      "ODI": {"matches": 84, "wickets": 0, "best_bowling": "-", "economy": null},
+      "T20": {"matches": 10, "wickets": 0, "best_bowling": "-", "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 36, "run_outs": null},
+      "ODI": {"catches": 33, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "nz_daryl_mitchell",
+  "personal_info": {"name": "Daryl Mitchell", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 35, "innings": 55, "runs": 2175, "highest_score": "190", "average": 43.50, "strike_rate": 53.59, "centuries": 5, "fifties": 15},
+      "ODI": {"matches": 59, "innings": 54, "runs": 2690, "highest_score": "137", "average": 58.47, "strike_rate": 95.72, "centuries": 9, "fifties": 12},
+      "T20": {"matches": 104, "innings": 90, "runs": 1879, "highest_score": "72*", "average": 26.84, "strike_rate": 140.53, "centuries": 0, "fifties": 8}
+    },
+    "bowling": {
+      "TEST": {"matches": 35, "wickets": 4, "best_bowling": "1/7", "economy": 3.08},
+      "ODI": {"matches": 59, "wickets": 14, "best_bowling": "3/25", "economy": 5.92},
+      "T20": {"matches": 104, "wickets": 9, "best_bowling": "2/27", "economy": 11.06}
+    },
+    "fielding": {
+      "TEST": {"catches": 50, "run_outs": null},
+      "ODI": {"catches": 41, "run_outs": null},
+      "T20": {"catches": 55, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_glenn_phillips",
+  "personal_info": {"name": "Glenn Phillips", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 17, "innings": 29, "runs": 775, "highest_score": "87", "average": 32.29, "strike_rate": 71.69, "centuries": 0, "fifties": 5},
+      "ODI": {"matches": 47, "innings": 39, "runs": 1262, "highest_score": "106*", "average": 42.06, "strike_rate": 103.18, "centuries": 2, "fifties": 5},
+      "T20": {"matches": 97, "innings": 85, "runs": 2286, "highest_score": "108", "average": 31.75, "strike_rate": 142.69, "centuries": 2, "fifties": 12}
+    },
+    "bowling": {
+      "TEST": {"matches": 17, "wickets": 33, "best_bowling": "5/45", "economy": 3.56},
+      "ODI": {"matches": 47, "wickets": 16, "best_bowling": "3/37", "economy": 6.06},
+      "T20": {"matches": 97, "wickets": 9, "best_bowling": "3/6", "economy": 8.53}
+    },
+    "fielding": {
+      "TEST": {"catches": 18, "run_outs": null},
+      "ODI": {"catches": 29, "run_outs": null},
+      "T20": {"catches": 63, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_mitchell_santner",
+  "personal_info": {"name": "Mitchell Santner", "country": "New Zealand", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 32, "innings": 44, "runs": 1085, "highest_score": "126", "average": 25.83, "strike_rate": 47.17, "centuries": 1, "fifties": 4},
+      "ODI": {"matches": 124, "innings": 92, "runs": 1580, "highest_score": "67", "average": 26.77, "strike_rate": 93.54, "centuries": 0, "fifties": 3},
+      "T20": {"matches": 138, "innings": 92, "runs": 1108, "highest_score": "77*", "average": 20.51, "strike_rate": 130.66, "centuries": 0, "fifties": 2}
+    },
+    "bowling": {
+      "TEST": {"matches": 32, "wickets": 78, "best_bowling": "7/53", "economy": 2.81},
+      "ODI": {"matches": 124, "wickets": 133, "best_bowling": "5/50", "economy": 4.81},
+      "T20": {"matches": 138, "wickets": 142, "best_bowling": "4/11", "economy": 7.17}
+    },
+    "fielding": {
+      "TEST": {"catches": 26, "run_outs": null},
+      "ODI": {"catches": 53, "run_outs": null},
+      "T20": {"catches": 49, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_jacob_oram",
+  "personal_info": {"name": "Jacob Oram", "country": "New Zealand", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": 2014, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 33, "innings": 59, "runs": 1780, "highest_score": "133", "average": 36.32, "strike_rate": 50.38, "centuries": 5, "fifties": 6},
+      "ODI": {"matches": 160, "innings": 116, "runs": 2434, "highest_score": "101*", "average": 24.09, "strike_rate": 86.61, "centuries": 1, "fifties": 13},
+      "T20": {"matches": 36, "innings": 30, "runs": 474, "highest_score": "66*", "average": 20.60, "strike_rate": 139.82, "centuries": 0, "fifties": 2}
+    },
+    "bowling": {
+      "TEST": {"matches": 33, "wickets": 60, "best_bowling": "4/41", "economy": 2.39},
+      "ODI": {"matches": 160, "wickets": 173, "best_bowling": "5/26", "economy": 4.38},
+      "T20": {"matches": 36, "wickets": 19, "best_bowling": "3/33", "economy": 8.71}
+    },
+    "fielding": {
+      "TEST": {"catches": 15, "run_outs": null},
+      "ODI": {"catches": 51, "run_outs": null},
+      "T20": {"catches": 12, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_chris_cairns",
+  "personal_info": {"name": "Chris Cairns", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": 2006, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 62, "innings": 104, "runs": 3320, "highest_score": "158", "average": 33.53, "strike_rate": 57.09, "centuries": 5, "fifties": 22},
+      "ODI": {"matches": 215, "innings": 193, "runs": 4950, "highest_score": "115", "average": 29.46, "strike_rate": 84.26, "centuries": 4, "fifties": 26},
+      "T20": {"matches": 2, "innings": 2, "runs": 3, "highest_score": "2", "average": 1.50, "strike_rate": 23.07, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 62, "wickets": 218, "best_bowling": "7/27", "economy": 3.28},
+      "ODI": {"matches": 215, "wickets": 201, "best_bowling": "5/42", "economy": 4.84},
+      "T20": {"matches": 2, "wickets": 1, "best_bowling": "1/28", "economy": 6.50}
+    },
+    "fielding": {
+      "TEST": {"catches": 14, "run_outs": null},
+      "ODI": {"catches": 66, "run_outs": null},
+      "T20": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_scott_styris",
+  "personal_info": {"name": "Scott Styris", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2012, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 29, "innings": 48, "runs": 1586, "highest_score": "170", "average": 36.04, "strike_rate": 51.34, "centuries": 5, "fifties": 6},
+      "ODI": {"matches": 188, "innings": 161, "runs": 4483, "highest_score": "141", "average": 32.48, "strike_rate": 79.41, "centuries": 4, "fifties": 28},
+      "T20": {"matches": 31, "innings": 29, "runs": 578, "highest_score": "66", "average": 21.40, "strike_rate": 119.66, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 29, "wickets": 20, "best_bowling": "3/28", "economy": 3.10},
+      "ODI": {"matches": 188, "wickets": 137, "best_bowling": "6/25", "economy": 4.74},
+      "T20": {"matches": 31, "wickets": 18, "best_bowling": "3/5", "economy": 6.77}
+    },
+    "fielding": {
+      "TEST": {"catches": 23, "run_outs": null},
+      "ODI": {"catches": 73, "run_outs": null},
+      "T20": {"catches": 8, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_shane_bond",
+  "personal_info": {"name": "Shane Bond", "country": "New Zealand", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": 2010, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 18, "innings": 20, "runs": 168, "highest_score": "41*", "average": 12.92, "strike_rate": 38.88, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 82, "innings": 40, "runs": 292, "highest_score": "31*", "average": 16.22, "strike_rate": 76.04, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 20, "innings": 8, "runs": 21, "highest_score": "8*", "average": 4.20, "strike_rate": 100.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 18, "wickets": 87, "best_bowling": "6/51", "economy": 3.41},
+      "ODI": {"matches": 82, "wickets": 147, "best_bowling": "6/19", "economy": 4.28},
+      "T20": {"matches": 20, "wickets": 25, "best_bowling": "3/18", "economy": 7.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 8, "run_outs": null},
+      "ODI": {"catches": 15, "run_outs": null},
+      "T20": {"catches": 4, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "nz_kyle_mills",
+  "personal_info": {"name": "Kyle Mills", "country": "New Zealand", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": 2015, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 19, "innings": 30, "runs": 289, "highest_score": "57", "average": 11.56, "strike_rate": 38.58, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 170, "innings": 101, "runs": 1047, "highest_score": "54", "average": 15.62, "strike_rate": 81.66, "centuries": 0, "fifties": 2},
+      "T20": {"matches": 42, "innings": 19, "runs": 137, "highest_score": "33*", "average": 11.41, "strike_rate": 111.38, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 19, "wickets": 44, "best_bowling": "4/16", "economy": 3.00},
+      "ODI": {"matches": 170, "wickets": 240, "best_bowling": "5/25", "economy": 4.72},
+      "T20": {"matches": 42, "wickets": 43, "best_bowling": "3/26", "economy": 8.21}
+    },
+    "fielding": {
+      "TEST": {"catches": 4, "run_outs": null},
+      "ODI": {"catches": 42, "run_outs": null},
+      "T20": {"catches": 8, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_chris_martin",
+  "personal_info": {"name": "Chris Martin", "country": "New Zealand", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": 2013, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 71, "innings": 104, "runs": 123, "highest_score": "12*", "average": 2.36, "strike_rate": 20.00, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 20, "innings": 7, "runs": 8, "highest_score": "3", "average": 1.60, "strike_rate": 29.62, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 6, "innings": 1, "runs": 5, "highest_score": "5*", "average": null, "strike_rate": 83.33, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 71, "wickets": 233, "best_bowling": "6/26", "economy": 3.37},
+      "ODI": {"matches": 20, "wickets": 18, "best_bowling": "3/62", "economy": 5.08},
+      "T20": {"matches": 6, "wickets": 7, "best_bowling": "2/14", "economy": 8.39}
+    },
+    "fielding": {
+      "TEST": {"catches": 14, "run_outs": null},
+      "ODI": {"catches": 7, "run_outs": null},
+      "T20": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_danny_morrison",
+  "personal_info": {"name": "Danny Morrison", "country": "New Zealand", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": 1997, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 48, "innings": 71, "runs": 379, "highest_score": "42", "average": 8.42, "strike_rate": 22.34, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 96, "innings": 43, "runs": 171, "highest_score": "20*", "average": 9.00, "strike_rate": 42.75, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 48, "wickets": 160, "best_bowling": "7/89", "economy": 3.30},
+      "ODI": {"matches": 96, "wickets": 126, "best_bowling": "5/34", "economy": 4.53}
+    },
+    "fielding": {
+      "TEST": {"catches": 14, "run_outs": null},
+      "ODI": {"catches": 19, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_lance_cairns",
+  "personal_info": {"name": "Lance Cairns", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": 1985, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 43, "innings": 65, "runs": 928, "highest_score": "64", "average": 16.28, "strike_rate": null, "centuries": 0, "fifties": 2},
+      "ODI": {"matches": 78, "innings": 65, "runs": 987, "highest_score": "60", "average": 16.72, "strike_rate": 104.88, "centuries": 0, "fifties": 2}
+    },
+    "bowling": {
+      "TEST": {"matches": 43, "wickets": 130, "best_bowling": "7/74", "economy": 2.41},
+      "ODI": {"matches": 78, "wickets": 89, "best_bowling": "5/28", "economy": 4.06}
+    },
+    "fielding": {
+      "TEST": {"catches": 30, "run_outs": null},
+      "ODI": {"catches": 19, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_john_wright",
+  "personal_info": {"name": "John Wright", "country": "New Zealand", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 1993, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 82, "innings": 148, "runs": 5334, "highest_score": "185", "average": 37.82, "strike_rate": null, "centuries": 12, "fifties": 23},
+      "ODI": {"matches": 149, "innings": 148, "runs": 3891, "highest_score": "101", "average": 26.46, "strike_rate": 57.18, "centuries": 1, "fifties": 24}
+    },
+    "bowling": {
+      "TEST": {"matches": 82, "wickets": 0, "best_bowling": null, "economy": 1.00},
+      "ODI": {"matches": 149, "wickets": 0, "best_bowling": null, "economy": 2.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 38, "run_outs": null},
+      "ODI": {"catches": 51, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_geoff_howarth",
+  "personal_info": {"name": "Geoff Howarth", "country": "New Zealand", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 1985, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 47, "innings": 83, "runs": 2531, "highest_score": "147", "average": 32.44, "strike_rate": null, "centuries": 6, "fifties": 11},
+      "ODI": {"matches": 70, "innings": 65, "runs": 1384, "highest_score": "76", "average": 23.06, "strike_rate": 60.14, "centuries": 0, "fifties": 6}
+    },
+    "bowling": {
+      "TEST": {"matches": 47, "wickets": 3, "best_bowling": "1/13", "economy": 2.64},
+      "ODI": {"matches": 70, "wickets": 3, "best_bowling": "1/4", "economy": 4.53}
+    },
+    "fielding": {
+      "TEST": {"catches": 29, "run_outs": null},
+      "ODI": {"catches": 16, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_jeremy_coney",
+  "personal_info": {"name": "Jeremy Coney", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 1987, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 52, "innings": 85, "runs": 2668, "highest_score": "174*", "average": 37.57, "strike_rate": null, "centuries": 3, "fifties": 16},
+      "ODI": {"matches": 88, "innings": 80, "runs": 1874, "highest_score": "66*", "average": 30.72, "strike_rate": 64.95, "centuries": 0, "fifties": 8}
+    },
+    "bowling": {
+      "TEST": {"matches": 52, "wickets": 27, "best_bowling": "3/28", "economy": 2.04},
+      "ODI": {"matches": 88, "wickets": 54, "best_bowling": "4/46", "economy": 4.17}
+    },
+    "fielding": {
+      "TEST": {"catches": 64, "run_outs": null},
+      "ODI": {"catches": 40, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "nz_craig_mcmillan",
+  "personal_info": {"name": "Craig McMillan", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2007, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 55, "innings": 91, "runs": 3116, "highest_score": "142", "average": 38.46, "strike_rate": 54.95, "centuries": 6, "fifties": 19},
+      "ODI": {"matches": 197, "innings": 183, "runs": 4707, "highest_score": "117", "average": 28.18, "strike_rate": 75.94, "centuries": 3, "fifties": 28},
+      "T20": {"matches": 8, "innings": 7, "runs": 187, "highest_score": "57", "average": 31.16, "strike_rate": 159.82, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 55, "wickets": 28, "best_bowling": "3/48", "economy": 3.01},
+      "ODI": {"matches": 197, "wickets": 49, "best_bowling": "3/20", "economy": 5.48},
+      "T20": {"matches": 8, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 22, "run_outs": null},
+      "ODI": {"catches": 44, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_lou_vincent",
+  "personal_info": {"name": "Lou Vincent", "country": "New Zealand", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": 2007, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 23, "innings": 40, "runs": 1332, "highest_score": "224", "average": 34.15, "strike_rate": 47.11, "centuries": 3, "fifties": 9},
+      "ODI": {"matches": 102, "innings": 99, "runs": 2413, "highest_score": "172", "average": 27.11, "strike_rate": 69.88, "centuries": 3, "fifties": 11},
+      "T20": {"matches": 9, "innings": 9, "runs": 174, "highest_score": "42", "average": 19.33, "strike_rate": 100.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 23, "wickets": 0, "best_bowling": null, "economy": 2.00},
+      "ODI": {"matches": 102, "wickets": 1, "best_bowling": "1/0", "economy": 7.50},
+      "T20": {"matches": 9, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 19, "run_outs": null},
+      "ODI": {"catches": 41, "run_outs": null},
+      "T20": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_jesse_ryder",
+  "personal_info": {"name": "Jesse Ryder", "country": "New Zealand", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2014, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 18, "innings": 33, "runs": 1269, "highest_score": "201", "average": 40.93, "strike_rate": 55.19, "centuries": 3, "fifties": 6},
+      "ODI": {"matches": 48, "innings": 42, "runs": 1362, "highest_score": "107", "average": 33.21, "strike_rate": 95.31, "centuries": 3, "fifties": 6},
+      "T20": {"matches": 22, "innings": 21, "runs": 457, "highest_score": "62", "average": 22.85, "strike_rate": 127.65, "centuries": 0, "fifties": 3}
+    },
+    "bowling": {
+      "TEST": {"matches": 18, "wickets": 5, "best_bowling": "2/7", "economy": 3.41},
+      "ODI": {"matches": 48, "wickets": 12, "best_bowling": "3/29", "economy": 6.07},
+      "T20": {"matches": 22, "wickets": 2, "best_bowling": "1/2", "economy": 6.80}
+    },
+    "fielding": {
+      "TEST": {"catches": 12, "run_outs": null},
+      "ODI": {"catches": 15, "run_outs": null},
+      "T20": {"catches": 7, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_grant_elliott",
+  "personal_info": {"name": "Grant Elliott", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2017, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 5, "innings": 9, "runs": 86, "highest_score": "25", "average": 10.75, "strike_rate": 26.70, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 83, "innings": 69, "runs": 1976, "highest_score": "115", "average": 34.06, "strike_rate": 81.78, "centuries": 2, "fifties": 11},
+      "T20": {"matches": 17, "innings": 15, "runs": 171, "highest_score": "27", "average": 15.54, "strike_rate": 108.91, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 5, "wickets": 4, "best_bowling": "2/8", "economy": 2.97},
+      "ODI": {"matches": 83, "wickets": 39, "best_bowling": "4/31", "economy": 5.43},
+      "T20": {"matches": 17, "wickets": 14, "best_bowling": "4/22", "economy": 7.34}
+    },
+    "fielding": {
+      "TEST": {"catches": 2, "run_outs": null},
+      "ODI": {"catches": 17, "run_outs": null},
+      "T20": {"catches": 4, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_corey_anderson",
+  "personal_info": {"name": "Corey Anderson", "country": "New Zealand", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Left-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 13, "innings": 22, "runs": 683, "highest_score": "116", "average": 32.52, "strike_rate": 56.86, "centuries": 1, "fifties": 4},
+      "ODI": {"matches": 49, "innings": 45, "runs": 1109, "highest_score": "131*", "average": 27.72, "strike_rate": 108.72, "centuries": 1, "fifties": 4},
+      "T20": {"matches": 42, "innings": 34, "runs": 697, "highest_score": "94*", "average": 24.89, "strike_rate": 126.03, "centuries": 0, "fifties": 3}
+    },
+    "bowling": {
+      "TEST": {"matches": 13, "wickets": 16, "best_bowling": "3/47", "economy": 3.03},
+      "ODI": {"matches": 49, "wickets": 60, "best_bowling": "5/63", "economy": 6.06},
+      "T20": {"matches": 42, "wickets": 16, "best_bowling": "2/17", "economy": 8.12}
+    },
+    "fielding": {
+      "TEST": {"catches": 7, "run_outs": null},
+      "ODI": {"catches": 11, "run_outs": null},
+      "T20": {"catches": 21, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_luke_ronchi",
+  "personal_info": {"name": "Luke Ronchi", "country": "New Zealand", "role": "wicket-keeper", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": 2017, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 4, "innings": 8, "runs": 319, "highest_score": "88", "average": 39.87, "strike_rate": 73.84, "centuries": 0, "fifties": 2},
+      "ODI": {"matches": 85, "innings": 68, "runs": 1397, "highest_score": "170*", "average": 23.67, "strike_rate": 114.50, "centuries": 1, "fifties": 4},
+      "T20": {"matches": 33, "innings": 26, "runs": 359, "highest_score": "51*", "average": 17.95, "strike_rate": 140.23, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 4, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 85, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 33, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 5, "run_outs": null},
+      "ODI": {"catches": 105, "run_outs": null},
+      "T20": {"catches": 24, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "nz_nathan_astle",
+  "personal_info": {"name": "Nathan Astle", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2007, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 81, "innings": 137, "runs": 4702, "highest_score": "222", "average": 37.02, "strike_rate": 49.60, "centuries": 11, "fifties": 24},
+      "ODI": {"matches": 223, "innings": 217, "runs": 7090, "highest_score": "145*", "average": 34.92, "strike_rate": 72.64, "centuries": 16, "fifties": 41},
+      "T20": {"matches": 4, "innings": 4, "runs": 74, "highest_score": "40*", "average": 24.66, "strike_rate": 110.44, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 81, "wickets": 51, "best_bowling": "3/27", "economy": 2.26},
+      "ODI": {"matches": 223, "wickets": 99, "best_bowling": "4/43", "economy": 4.71},
+      "T20": {"matches": 4, "wickets": 4, "best_bowling": "3/20", "economy": 7.31}
+    },
+    "fielding": {
+      "TEST": {"catches": 70, "run_outs": null},
+      "ODI": {"catches": 83, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_adam_parore",
+  "personal_info": {"name": "Adam Parore", "country": "New Zealand", "role": "wicket-keeper", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": 2002, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 78, "innings": 128, "runs": 2865, "highest_score": "110", "average": 26.28, "strike_rate": 38.72, "centuries": 2, "fifties": 14},
+      "ODI": {"matches": 179, "innings": 161, "runs": 3314, "highest_score": "108", "average": 25.68, "strike_rate": 68.09, "centuries": 1, "fifties": 14},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 78, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 179, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 197, "run_outs": null},
+      "ODI": {"catches": 116, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_ian_smith",
+  "personal_info": {"name": "Ian Smith", "country": "New Zealand", "role": "wicket-keeper", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": 1992, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 63, "innings": 88, "runs": 1815, "highest_score": "173", "average": 25.56, "strike_rate": 63.17, "centuries": 2, "fifties": 6},
+      "ODI": {"matches": 98, "innings": 77, "runs": 1055, "highest_score": "62*", "average": 17.29, "strike_rate": 99.43, "centuries": 0, "fifties": 3},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 63, "wickets": 0, "best_bowling": null, "economy": 1.66},
+      "ODI": {"matches": 98, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 168, "run_outs": null},
+      "ODI": {"catches": 81, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_bruce_edgar",
+  "personal_info": {"name": "Bruce Edgar", "country": "New Zealand", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 1987, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 39, "innings": 68, "runs": 1958, "highest_score": "161", "average": 30.59, "strike_rate": null, "centuries": 3, "fifties": 12},
+      "ODI": {"matches": 64, "innings": 64, "runs": 1814, "highest_score": "102*", "average": 30.74, "strike_rate": 49.22, "centuries": 1, "fifties": 10},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 39, "wickets": 0, "best_bowling": null, "economy": 1.00},
+      "ODI": {"matches": 64, "wickets": 0, "best_bowling": null, "economy": 2.50},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 14, "run_outs": null},
+      "ODI": {"catches": 12, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_mark_richardson",
+  "personal_info": {"name": "Mark Richardson", "country": "New Zealand", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2004, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 38, "innings": 65, "runs": 2776, "highest_score": "145", "average": 44.77, "strike_rate": 37.66, "centuries": 4, "fifties": 19},
+      "ODI": {"matches": 4, "innings": 4, "runs": 42, "highest_score": "26", "average": 10.50, "strike_rate": 43.29, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 38, "wickets": 1, "best_bowling": "1/16", "economy": 1.90},
+      "ODI": {"matches": 4, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 26, "run_outs": null},
+      "ODI": {"catches": 1, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_hamish_rutherford",
+  "personal_info": {"name": "Hamish Rutherford", "country": "New Zealand", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 16, "innings": 29, "runs": 755, "highest_score": "171", "average": 26.96, "strike_rate": 56.42, "centuries": 1, "fifties": 1},
+      "ODI": {"matches": 4, "innings": 4, "runs": 15, "highest_score": "11", "average": 3.75, "strike_rate": 26.78, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 8, "innings": 7, "runs": 151, "highest_score": "62", "average": 21.57, "strike_rate": 143.80, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 16, "wickets": 0, "best_bowling": null, "economy": 2.00},
+      "ODI": {"matches": 4, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 8, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 11, "run_outs": null},
+      "ODI": {"catches": 2, "run_outs": null},
+      "T20": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_james_neesham",
+  "personal_info": {"name": "James Neesham", "country": "New Zealand", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 12, "innings": 22, "runs": 709, "highest_score": "137*", "average": 33.76, "strike_rate": 66.32, "centuries": 2, "fifties": 4},
+      "ODI": {"matches": 76, "innings": 65, "runs": 1495, "highest_score": "97*", "average": 28.20, "strike_rate": 99.93, "centuries": 0, "fifties": 7},
+      "T20": {"matches": 105, "innings": 77, "runs": 1105, "highest_score": "48*", "average": 20.09, "strike_rate": 145.20, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 12, "wickets": 14, "best_bowling": "3/42", "economy": 3.76},
+      "ODI": {"matches": 76, "wickets": 71, "best_bowling": "5/27", "economy": 6.26},
+      "T20": {"matches": 105, "wickets": 64, "best_bowling": "5/22", "economy": 9.19}
+    },
+    "fielding": {
+      "TEST": {"catches": 12, "run_outs": null},
+      "ODI": {"catches": 27, "run_outs": null},
+      "T20": {"catches": 50, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_colin_munro",
+  "personal_info": {"name": "Colin Munro", "country": "New Zealand", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 15, "highest_score": "15", "average": 7.50, "strike_rate": 57.69, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 57, "innings": 53, "runs": 1271, "highest_score": "87", "average": 24.92, "strike_rate": 104.69, "centuries": 0, "fifties": 8},
+      "T20": {"matches": 65, "innings": 62, "runs": 1724, "highest_score": "109*", "average": 31.34, "strike_rate": 156.44, "centuries": 3, "fifties": 11}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 2, "best_bowling": "2/40", "economy": 2.22},
+      "ODI": {"matches": 57, "wickets": 7, "best_bowling": "2/10", "economy": 5.22},
+      "T20": {"matches": 65, "wickets": 4, "best_bowling": "1/12", "economy": 9.45}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 22, "run_outs": null},
+      "T20": {"catches": 19, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+
+{
+  "id": "nz_lockie_ferguson",
+  "personal_info": {"name": "Lockie Ferguson", "country": "New Zealand", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 1, "innings": 2, "runs": 1, "highest_score": "1*", "average": null, "strike_rate": 11.11, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 65, "innings": 30, "runs": 122, "highest_score": "19", "average": 7.17, "strike_rate": 51.69, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 54, "innings": 17, "runs": 38, "highest_score": "14", "average": 4.22, "strike_rate": 80.85, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": 4.27},
+      "ODI": {"matches": 65, "wickets": 99, "best_bowling": "5/45", "economy": 5.68},
+      "T20": {"matches": 54, "wickets": 76, "best_bowling": "5/21", "economy": 7.33}
+    },
+    "fielding": {
+      "TEST": {"catches": 0, "run_outs": null},
+      "ODI": {"catches": 14, "run_outs": null},
+      "T20": {"catches": 17, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_matt_henry",
+  "personal_info": {"name": "Matt Henry", "country": "New Zealand", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 33, "innings": 45, "runs": 670, "highest_score": "72", "average": 17.17, "strike_rate": 78.36, "centuries": 0, "fifties": 4},
+      "ODI": {"matches": 95, "innings": 38, "runs": 270, "highest_score": "48*", "average": 10.38, "strike_rate": 93.10, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 43, "innings": 14, "runs": 47, "highest_score": "12", "average": 5.87, "strike_rate": 94.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 33, "wickets": 140, "best_bowling": "7/23", "economy": 3.12},
+      "ODI": {"matches": 95, "wickets": 172, "best_bowling": "5/30", "economy": 5.21},
+      "T20": {"matches": 43, "wickets": 53, "best_bowling": "3/26", "economy": 8.50}
+    },
+    "fielding": {
+      "TEST": {"catches": 13, "run_outs": null},
+      "ODI": {"catches": 32, "run_outs": null},
+      "T20": {"catches": 10, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_doug_bracewell",
+  "personal_info": {"name": "Doug Bracewell", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 28, "innings": 45, "runs": 568, "highest_score": "47", "average": 13.85, "strike_rate": 46.36, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 21, "innings": 14, "runs": 221, "highest_score": "57", "average": 18.41, "strike_rate": 80.65, "centuries": 0, "fifties": 1},
+      "T20": {"matches": 20, "innings": 11, "runs": 126, "highest_score": "44", "average": 21.00, "strike_rate": 140.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 28, "wickets": 74, "best_bowling": "6/40", "economy": 3.33},
+      "ODI": {"matches": 21, "wickets": 26, "best_bowling": "4/55", "economy": 4.99},
+      "T20": {"matches": 20, "wickets": 20, "best_bowling": "3/25", "economy": 9.09}
+    },
+    "fielding": {
+      "TEST": {"catches": 11, "run_outs": null},
+      "ODI": {"catches": 5, "run_outs": null},
+      "T20": {"catches": 7, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_ish_sodhi",
+  "personal_info": {"name": "Ish Sodhi", "country": "New Zealand", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 21, "innings": 31, "runs": 561, "highest_score": "65", "average": 20.77, "strike_rate": 46.98, "centuries": 0, "fifties": 4},
+      "ODI": {"matches": 54, "innings": 26, "runs": 210, "highest_score": "35", "average": 9.54, "strike_rate": 72.66, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 140, "innings": 43, "runs": 243, "highest_score": "33", "average": 8.67, "strike_rate": 108.96, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 21, "wickets": 58, "best_bowling": "6/86", "economy": 3.71},
+      "ODI": {"matches": 54, "wickets": 64, "best_bowling": "6/39", "economy": 5.51},
+      "T20": {"matches": 140, "wickets": 162, "best_bowling": "4/12", "economy": 8.15}
+    },
+    "fielding": {
+      "TEST": {"catches": 11, "run_outs": null},
+      "ODI": {"catches": 14, "run_outs": null},
+      "T20": {"catches": 40, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_ajaz_patel",
+  "personal_info": {"name": "Ajaz Patel", "country": "New Zealand", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 22, "innings": 32, "runs": 219, "highest_score": "35", "average": 11.52, "strike_rate": 38.08, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 7, "innings": 2, "runs": 7, "highest_score": "4", "average": 3.50, "strike_rate": 50.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 22, "wickets": 91, "best_bowling": "10/119", "economy": 3.13},
+      "ODI": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 7, "wickets": 11, "best_bowling": "4/16", "economy": 4.53}
+    },
+    "fielding": {
+      "TEST": {"catches": 10, "run_outs": null},
+      "ODI": {"catches": 0, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_jeetan_patel",
+  "personal_info": {"name": "Jeetan Patel", "country": "New Zealand", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2016, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 24, "innings": 38, "runs": 381, "highest_score": "47", "average": 12.70, "strike_rate": 51.62, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 43, "innings": 15, "runs": 95, "highest_score": "34", "average": 13.57, "strike_rate": 58.64, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 11, "innings": 4, "runs": 9, "highest_score": "5", "average": 3.00, "strike_rate": 64.28, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 24, "wickets": 65, "best_bowling": "5/110", "economy": 3.16},
+      "ODI": {"matches": 43, "wickets": 49, "best_bowling": "3/11", "economy": 5.03},
+      "T20": {"matches": 11, "wickets": 16, "best_bowling": "3/20", "economy": 8.11}
+    },
+    "fielding": {
+      "TEST": {"catches": 13, "run_outs": null},
+      "ODI": {"catches": 13, "run_outs": null},
+      "T20": {"catches": 4, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+},
+{
+  "id": "nz_blair_tickner",
+  "personal_info": {"name": "Blair Tickner", "country": "New Zealand", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 4, "innings": 3, "runs": 13, "highest_score": "8", "average": 13.00, "strike_rate": 22.41, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 16, "innings": 8, "runs": 34, "highest_score": "18*", "average": 17.00, "strike_rate": 70.83, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 18, "innings": 4, "runs": 11, "highest_score": "5*", "average": 5.50, "strike_rate": 47.82, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 4, "wickets": 16, "best_bowling": "4/32", "economy": 3.83},
+      "ODI": {"matches": 16, "wickets": 25, "best_bowling": "4/34", "economy": 6.55},
+      "T20": {"matches": 18, "wickets": 19, "best_bowling": "4/27", "economy": 9.43}
+    },
+    "fielding": {
+      "TEST": {"catches": 1, "run_outs": null},
+      "ODI": {"catches": 6, "run_outs": null},
+      "T20": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-28", "source": "manual_verified"}
+}
+]

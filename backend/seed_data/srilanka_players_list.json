@@ -1,0 +1,1138 @@
+[
+    {
+  "id": "sl_kumar_sangakkara",
+  "personal_info": {"name": "Kumar Sangakkara", "country": "Sri Lanka", "role": "wicketkeeper-batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": 2015, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 134, "innings": 233, "runs": 12400, "highest_score": "319", "average": 57.40, "strike_rate": 54.19, "centuries": 38, "fifties": 52},
+      "ODI": {"matches": 404, "innings": 380, "runs": 14234, "highest_score": "169", "average": 41.98, "strike_rate": 78.86, "centuries": 25, "fifties": 93},
+      "T20": {"matches": 56, "innings": 53, "runs": 1382, "highest_score": "78", "average": 31.40, "strike_rate": 119.55, "centuries": 0, "fifties": 8}
+    },
+    "bowling": {
+      "TEST": {"matches": 134, "wickets": 0, "best_bowling": null, "economy": 3.50},
+      "ODI": {"matches": 404, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 56, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 182, "run_outs": null},
+      "ODI": {"catches": 402, "run_outs": null},
+      "T20": {"catches": 25, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_mahela_jayawardene",
+  "personal_info": {"name": "Mahela Jayawardene", "country": "Sri Lanka", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": 2015, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 149, "innings": 252, "runs": 11814, "highest_score": "374", "average": 49.84, "strike_rate": 51.45, "centuries": 34, "fifties": 50},
+      "ODI": {"matches": 448, "innings": 418, "runs": 12650, "highest_score": "144", "average": 33.37, "strike_rate": 78.96, "centuries": 19, "fifties": 77},
+      "T20": {"matches": 55, "innings": 55, "runs": 1493, "highest_score": "100", "average": 31.76, "strike_rate": 133.18, "centuries": 1, "fifties": 9}
+    },
+    "bowling": {
+      "TEST": {"matches": 149, "wickets": 6, "best_bowling": "2/32", "economy": 3.15},
+      "ODI": {"matches": 448, "wickets": 8, "best_bowling": "2/56", "economy": 5.69},
+      "T20": {"matches": 55, "wickets": 0, "best_bowling": null, "economy": 8.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 205, "run_outs": null},
+      "ODI": {"catches": 218, "run_outs": null},
+      "T20": {"catches": 17, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_sanath_jayasuriya",
+  "personal_info": {"name": "Sanath Jayasuriya", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": 2011, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 110, "innings": 188, "runs": 6973, "highest_score": "340", "average": 40.07, "strike_rate": 65.18, "centuries": 14, "fifties": 31},
+      "ODI": {"matches": 445, "innings": 433, "runs": 13430, "highest_score": "189", "average": 32.36, "strike_rate": 91.20, "centuries": 28, "fifties": 68},
+      "T20": {"matches": 31, "innings": 30, "runs": 629, "highest_score": "88", "average": 23.29, "strike_rate": 129.15, "centuries": 0, "fifties": 4}
+    },
+    "bowling": {
+      "TEST": {"matches": 110, "wickets": 98, "best_bowling": "5/34", "economy": 2.46},
+      "ODI": {"matches": 445, "wickets": 323, "best_bowling": "6/29", "economy": 4.78},
+      "T20": {"matches": 31, "wickets": 19, "best_bowling": "3/21", "economy": 7.37}
+    },
+    "fielding": {
+      "TEST": {"catches": 78, "run_outs": null},
+      "ODI": {"catches": 123, "run_outs": null},
+      "T20": {"catches": 4, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_aravinda_de_silva",
+  "personal_info": {"name": "Aravinda de Silva", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2003, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 93, "innings": 159, "runs": 6361, "highest_score": "267", "average": 42.97, "strike_rate": null, "centuries": 20, "fifties": 22},
+      "ODI": {"matches": 308, "innings": 296, "runs": 9284, "highest_score": "145", "average": 34.90, "strike_rate": 81.13, "centuries": 11, "fifties": 64},
+      "T20": {"matches": 0, "innings": 0, "runs": 0, "highest_score": null, "average": null, "strike_rate": null, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 93, "wickets": 29, "best_bowling": "3/30", "economy": 2.79},
+      "ODI": {"matches": 308, "wickets": 106, "best_bowling": "4/30", "economy": 4.86},
+      "T20": {"matches": 0, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 43, "run_outs": null},
+      "ODI": {"catches": 95, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_angelo_mathews",
+  "personal_info": {"name": "Angelo Mathews", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 119, "innings": 212, "runs": 8214, "highest_score": "200*", "average": 44.40, "strike_rate": 48.40, "centuries": 16, "fifties": 45},
+      "ODI": {"matches": 226, "innings": 195, "runs": 5916, "highest_score": "139*", "average": 40.24, "strike_rate": 82.90, "centuries": 3, "fifties": 40},
+      "T20": {"matches": 90, "innings": 73, "runs": 1416, "highest_score": "81*", "average": 27.76, "strike_rate": 120.51, "centuries": 0, "fifties": 6}
+    },
+    "bowling": {
+      "TEST": {"matches": 119, "wickets": 33, "best_bowling": "4/44", "economy": 2.71},
+      "ODI": {"matches": 226, "wickets": 126, "best_bowling": "6/20", "economy": 4.63},
+      "T20": {"matches": 90, "wickets": 45, "best_bowling": "3/16", "economy": 7.12}
+    },
+    "fielding": {
+      "TEST": {"catches": 78, "run_outs": null},
+      "ODI": {"catches": 53, "run_outs": null},
+      "T20": {"catches": 27, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_dimuth_karunaratne",
+  "personal_info": {"name": "Dimuth Karunaratne", "country": "Sri Lanka", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 100, "innings": 191, "runs": 7222, "highest_score": "244", "average": 39.25, "strike_rate": 51.49, "centuries": 16, "fifties": 39},
+      "ODI": {"matches": 50, "innings": 46, "runs": 1316, "highest_score": "103", "average": 31.33, "strike_rate": 79.56, "centuries": 1, "fifties": 11},
+      "T20": {"matches": 34, "innings": 33, "runs": 543, "highest_score": "80", "average": 16.96, "strike_rate": 108.81, "centuries": 0, "fifties": 3}
+    },
+    "bowling": {
+      "TEST": {"matches": 100, "wickets": 2, "best_bowling": "1/12", "economy": 3.88},
+      "ODI": {"matches": 50, "wickets": 0, "best_bowling": null, "economy": 6.75},
+      "T20": {"matches": 34, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 62, "run_outs": null},
+      "ODI": {"catches": 17, "run_outs": null},
+      "T20": {"catches": 17, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_dinesh_chandimal",
+  "personal_info": {"name": "Dinesh Chandimal", "country": "Sri Lanka", "role": "wicketkeeper-batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 90, "innings": 161, "runs": 6361, "highest_score": "206*", "average": 43.56, "strike_rate": 50.07, "centuries": 16, "fifties": 34},
+      "ODI": {"matches": 157, "innings": 142, "runs": 3854, "highest_score": "111", "average": 31.85, "strike_rate": 74.24, "centuries": 4, "fifties": 24},
+      "T20": {"matches": 69, "innings": 62, "runs": 1066, "highest_score": "66*", "average": 19.38, "strike_rate": 103.49, "centuries": 0, "fifties": 6}
+    },
+    "bowling": {
+      "TEST": {"matches": 90, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 157, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 69, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 95, "run_outs": null},
+      "ODI": {"catches": 62, "run_outs": null},
+      "T20": {"catches": 37, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+
+{
+  "id": "sl_kusal_perera",
+  "personal_info": {"name": "Kusal Perera", "country": "Sri Lanka", "role": "wicketkeeper-batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 22, "innings": 41, "runs": 1177, "highest_score": "153*", "average": 30.97, "strike_rate": 72.25, "centuries": 2, "fifties": 7},
+      "ODI": {"matches": 116, "innings": 111, "runs": 3237, "highest_score": "135", "average": 30.53, "strike_rate": 92.88, "centuries": 6, "fifties": 17},
+      "T20": {"matches": 95, "innings": 93, "runs": 2335, "highest_score": "101", "average": 26.23, "strike_rate": 132.89, "centuries": 1, "fifties": 16}
+    },
+    "bowling": {
+      "TEST": {"matches": 22, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 116, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 95, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 19, "run_outs": null},
+      "ODI": {"catches": 50, "run_outs": null},
+      "T20": {"catches": 30, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_kusal_mendis",
+  "personal_info": {"name": "Kusal Mendis", "country": "Sri Lanka", "role": "wicketkeeper-batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 73, "innings": 135, "runs": 4757, "highest_score": "245", "average": 36.87, "strike_rate": 58.61, "centuries": 10, "fifties": 22},
+      "ODI": {"matches": 154, "innings": 151, "runs": 4890, "highest_score": "143", "average": 35.43, "strike_rate": 87.46, "centuries": 6, "fifties": 35},
+      "T20": {"matches": 106, "innings": 106, "runs": 2622, "highest_score": "86", "average": 26.22, "strike_rate": 129.67, "centuries": 0, "fifties": 20}
+    },
+    "bowling": {
+      "TEST": {"matches": 73, "wickets": 1, "best_bowling": "1/10", "economy": 5.36},
+      "ODI": {"matches": 154, "wickets": 0, "best_bowling": null, "economy": 8.40},
+      "T20": {"matches": 106, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 114, "run_outs": null},
+      "ODI": {"catches": 100, "run_outs": null},
+      "T20": {"catches": 42, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_pathum_nissanka",
+  "personal_info": {"name": "Pathum Nissanka", "country": "Sri Lanka", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 18, "innings": 31, "runs": 1305, "highest_score": "187", "average": 45.00, "strike_rate": 56.76, "centuries": 4, "fifties": 7},
+      "ODI": {"matches": 77, "innings": 77, "runs": 2920, "highest_score": "210*", "average": 40.55, "strike_rate": 89.48, "centuries": 7, "fifties": 18},
+      "T20": {"matches": 91, "innings": 90, "runs": 2648, "highest_score": "107", "average": 31.15, "strike_rate": 128.66, "centuries": 2, "fifties": 19}
+    },
+    "bowling": {
+      "TEST": {"matches": 18, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 77, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 91, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 12, "run_outs": null},
+      "ODI": {"catches": 24, "run_outs": null},
+      "T20": {"catches": 21, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_charith_asalanka",
+  "personal_info": {"name": "Charith Asalanka", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 3, "innings": 6, "runs": 88, "highest_score": "29", "average": 14.66, "strike_rate": 51.46, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 83, "innings": 75, "runs": 2734, "highest_score": "127", "average": 42.06, "strike_rate": 90.49, "centuries": 5, "fifties": 17},
+      "T20": {"matches": 76, "innings": 74, "runs": 1456, "highest_score": "80*", "average": 22.40, "strike_rate": 125.95, "centuries": 0, "fifties": 6}
+    },
+    "bowling": {
+      "TEST": {"matches": 3, "wickets": 0, "best_bowling": null, "economy": 3.84},
+      "ODI": {"matches": 83, "wickets": 18, "best_bowling": "4/18", "economy": 5.00},
+      "T20": {"matches": 76, "wickets": 7, "best_bowling": "3/50", "economy": 7.79}
+    },
+    "fielding": {
+      "TEST": {"catches": 1, "run_outs": null},
+      "ODI": {"catches": 21, "run_outs": null},
+      "T20": {"catches": 22, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_lahiru_thirimanne",
+  "personal_info": {"name": "Lahiru Thirimanne", "country": "Sri Lanka", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 44, "innings": 85, "runs": 2088, "highest_score": "155*", "average": 26.43, "strike_rate": 39.44, "centuries": 3, "fifties": 10},
+      "ODI": {"matches": 127, "innings": 106, "runs": 3194, "highest_score": "139*", "average": 34.71, "strike_rate": 72.27, "centuries": 4, "fifties": 21},
+      "T20": {"matches": 26, "innings": 20, "runs": 291, "highest_score": "44", "average": 16.16, "strike_rate": 108.98, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 44, "wickets": 0, "best_bowling": null, "economy": 3.64},
+      "ODI": {"matches": 127, "wickets": 3, "best_bowling": "2/36", "economy": 5.42},
+      "T20": {"matches": 26, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 36, "run_outs": null},
+      "ODI": {"catches": 38, "run_outs": null},
+      "T20": {"catches": 8, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_upul_tharanga",
+  "personal_info": {"name": "Upul Tharanga", "country": "Sri Lanka", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": 2021, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 31, "innings": 58, "runs": 1754, "highest_score": "165", "average": 31.89, "strike_rate": 54.60, "centuries": 3, "fifties": 8},
+      "ODI": {"matches": 235, "innings": 223, "runs": 6951, "highest_score": "174*", "average": 33.74, "strike_rate": 75.92, "centuries": 15, "fifties": 37},
+      "T20": {"matches": 26, "innings": 26, "runs": 407, "highest_score": "47", "average": 16.28, "strike_rate": 123.33, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 31, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 235, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 26, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 24, "run_outs": null},
+      "ODI": {"catches": 50, "run_outs": null},
+      "T20": {"catches": 2, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_tillakaratne_dilshan",
+  "personal_info": {"name": "Tillakaratne Dilshan", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": 2016, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 87, "innings": 145, "runs": 5492, "highest_score": "193", "average": 40.98, "strike_rate": 65.54, "centuries": 16, "fifties": 23},
+      "ODI": {"matches": 330, "innings": 303, "runs": 10290, "highest_score": "161*", "average": 39.27, "strike_rate": 86.23, "centuries": 22, "fifties": 47},
+      "T20": {"matches": 80, "innings": 79, "runs": 1889, "highest_score": "104*", "average": 28.19, "strike_rate": 120.54, "centuries": 1, "fifties": 13}
+    },
+    "bowling": {
+      "TEST": {"matches": 87, "wickets": 39, "best_bowling": "4/10", "economy": 3.03},
+      "ODI": {"matches": 330, "wickets": 106, "best_bowling": "4/4", "economy": 4.87},
+      "T20": {"matches": 80, "wickets": 9, "best_bowling": "2/4", "economy": 7.27}
+    },
+    "fielding": {
+      "TEST": {"catches": 88, "run_outs": null},
+      "ODI": {"catches": 123, "run_outs": null},
+      "T20": {"catches": 31, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+
+
+
+{
+  "id": "sl_roshan_mahanama",
+  "personal_info": {"name": "Roshan Mahanama", "country": "Sri Lanka", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 52, "innings": 89, "runs": 2576, "highest_score": "225", "average": 29.27, "strike_rate": null, "centuries": 4, "fifties": 11},
+      "ODI": {"matches": 213, "innings": 198, "runs": 5162, "highest_score": "119*", "average": 29.49, "strike_rate": 60.57, "centuries": 4, "fifties": 35}
+    },
+    "bowling": {
+      "TEST": {"matches": 52, "wickets": 0, "best_bowling": null, "economy": 5.00},
+      "ODI": {"matches": 213, "wickets": 0, "best_bowling": null, "economy": 21.00}
+    },
+    "fielding": {
+      "TEST": {"catches": 56, "run_outs": null},
+      "ODI": {"catches": 109, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_marvan_atapattu",
+  "personal_info": {"name": "Marvan Atapattu", "country": "Sri Lanka", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 90, "innings": 156, "runs": 5502, "highest_score": "249", "average": 39.02, "strike_rate": null, "centuries": 16, "fifties": 17},
+      "ODI": {"matches": 268, "innings": 259, "runs": 8529, "highest_score": "132*", "average": 37.57, "strike_rate": 67.72, "centuries": 11, "fifties": 59},
+      "T20": {"matches": 2, "innings": 1, "runs": 5, "highest_score": "5", "average": 5.00, "strike_rate": 62.50, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 90, "wickets": 1, "best_bowling": "1/9", "economy": 3.00},
+      "ODI": {"matches": 268, "wickets": 0, "best_bowling": null, "economy": 4.82},
+      "T20": {"matches": 2, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 58, "run_outs": null},
+      "ODI": {"catches": 70, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_hashan_tillakaratne",
+  "personal_info": {"name": "Hashan Tillakaratne", "country": "Sri Lanka", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 83, "innings": 131, "runs": 4545, "highest_score": "204*", "average": 42.87, "strike_rate": null, "centuries": 11, "fifties": 20},
+      "ODI": {"matches": 200, "innings": 168, "runs": 3789, "highest_score": "104", "average": 29.60, "strike_rate": 57.51, "centuries": 2, "fifties": 13}
+    },
+    "bowling": {
+      "TEST": {"matches": 83, "wickets": 0, "best_bowling": null, "economy": 1.97},
+      "ODI": {"matches": 200, "wickets": 6, "best_bowling": "1/3", "economy": 4.70}
+    },
+    "fielding": {
+      "TEST": {"catches": 122, "run_outs": null},
+      "ODI": {"catches": 89, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_niroshan_dickwella",
+  "personal_info": {"name": "Niroshan Dickwella", "country": "Sri Lanka", "role": "wicketkeeper-batsman", "batting_style": "Left-hand bat", "bowling_style": null},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 54, "innings": 96, "runs": 2757, "highest_score": "96", "average": 30.97, "strike_rate": 66.46, "centuries": 0, "fifties": 22},
+      "ODI": {"matches": 55, "innings": 52, "runs": 1604, "highest_score": "116", "average": 31.45, "strike_rate": 93.41, "centuries": 2, "fifties": 9},
+      "T20": {"matches": 28, "innings": 27, "runs": 480, "highest_score": "68", "average": 18.46, "strike_rate": 131.14, "centuries": 0, "fifties": 1}
+    },
+    "bowling": {
+      "TEST": {"matches": 54, "wickets": 0, "best_bowling": null, "economy": null},
+      "ODI": {"matches": 55, "wickets": 0, "best_bowling": null, "economy": null},
+      "T20": {"matches": 28, "wickets": 0, "best_bowling": null, "economy": null}
+    },
+    "fielding": {
+      "TEST": {"catches": 134, "run_outs": null},
+      "ODI": {"catches": 41, "run_outs": null},
+      "T20": {"catches": 12, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_kamindu_mendis",
+  "personal_info": {"name": "Kamindu Mendis", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Ambidextrous"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 14, "innings": 24, "runs": 1316, "highest_score": "182*", "average": 62.66, "strike_rate": 63.79, "centuries": 5, "fifties": 5},
+      "ODI": {"matches": 27, "innings": 26, "runs": 527, "highest_score": "64", "average": 26.35, "strike_rate": 80.70, "centuries": 0, "fifties": 3},
+      "T20": {"matches": 43, "innings": 38, "runs": 671, "highest_score": "65*", "average": 19.73, "strike_rate": 130.29, "centuries": 0, "fifties": 3}
+    },
+    "bowling": {
+      "TEST": {"matches": 14, "wickets": 3, "best_bowling": "3/32", "economy": 5.33},
+      "ODI": {"matches": 27, "wickets": 6, "best_bowling": "3/19", "economy": 6.52},
+      "T20": {"matches": 43, "wickets": 5, "best_bowling": "1/10", "economy": 8.20}
+    },
+    "fielding": {
+      "TEST": {"catches": 14, "run_outs": null},
+      "ODI": {"catches": 10, "run_outs": null},
+      "T20": {"catches": 20, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_dasun_shanaka",
+  "personal_info": {"name": "Dasun Shanaka", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 6, "innings": 12, "runs": 140, "highest_score": "66*", "average": 14.00, "strike_rate": 50.72, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 71, "innings": 63, "runs": 1299, "highest_score": "108*", "average": 22.39, "strike_rate": 91.47, "centuries": 2, "fifties": 4},
+      "T20": {"matches": 131, "innings": 118, "runs": 1912, "highest_score": "76*", "average": 20.55, "strike_rate": 128.40, "centuries": 0, "fifties": 8}
+    },
+    "bowling": {
+      "TEST": {"matches": 6, "wickets": 13, "best_bowling": "3/46", "economy": 3.39},
+      "ODI": {"matches": 71, "wickets": 27, "best_bowling": "5/43", "economy": 5.67},
+      "T20": {"matches": 131, "wickets": 46, "best_bowling": "3/16", "economy": 8.24}
+    },
+    "fielding": {
+      "TEST": {"catches": 4, "run_outs": null},
+      "ODI": {"catches": 18, "run_outs": null},
+      "T20": {"catches": 52, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_chaminda_vaas",
+  "personal_info": {"name": "Chaminda Vaas", "country": "Sri Lanka", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Left-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 111, "innings": 162, "runs": 3089, "highest_score": "100*", "average": 24.32, "strike_rate": 43.92, "centuries": 1, "fifties": 13},
+      "ODI": {"matches": 322, "innings": 220, "runs": 2025, "highest_score": "50*", "average": 13.68, "strike_rate": 72.42, "centuries": 0, "fifties": 1},
+      "T20": {"matches": 6, "innings": 2, "runs": 33, "highest_score": "21", "average": 33.00, "strike_rate": 80.48, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 111, "wickets": 355, "best_bowling": "7/71", "economy": 2.68},
+      "ODI": {"matches": 322, "wickets": 400, "best_bowling": "8/19", "economy": 4.18},
+      "T20": {"matches": 6, "wickets": 6, "best_bowling": "2/14", "economy": 5.81}
+    },
+    "fielding": {
+      "TEST": {"catches": 31, "run_outs": null},
+      "ODI": {"catches": 60, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+
+
+
+{
+  "id": "sl_lasith_malinga",
+  "personal_info": {"name": "Lasith Malinga", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 30, "innings": 37, "runs": 275, "highest_score": "64", "average": 11.45, "strike_rate": 44.42, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 226, "innings": 119, "runs": 567, "highest_score": "56", "average": 6.83, "strike_rate": 74.50, "centuries": 0, "fifties": 1},
+      "T20": {"matches": 84, "innings": 33, "runs": 136, "highest_score": "27", "average": 6.47, "strike_rate": 84.47, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 30, "wickets": 101, "best_bowling": "5/50", "economy": 3.85},
+      "ODI": {"matches": 226, "wickets": 338, "best_bowling": "6/38", "economy": 5.35},
+      "T20": {"matches": 84, "wickets": 107, "best_bowling": "5/6", "economy": 7.42}
+    },
+    "fielding": {
+      "TEST": {"catches": 7, "run_outs": null},
+      "ODI": {"catches": 31, "run_outs": null},
+      "T20": {"catches": 21, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_muttiah_muralitharan",
+  "personal_info": {"name": "Muttiah Muralitharan", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 133, "innings": 164, "runs": 1261, "highest_score": "67", "average": 11.67, "strike_rate": 70.28, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 350, "innings": 162, "runs": 674, "highest_score": "33*", "average": 6.80, "strike_rate": 77.56, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 12, "innings": 2, "runs": 1, "highest_score": "1", "average": 0.50, "strike_rate": 20.00, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 133, "wickets": 800, "best_bowling": "9/51", "economy": 2.47},
+      "ODI": {"matches": 350, "wickets": 534, "best_bowling": "7/30", "economy": 3.93},
+      "T20": {"matches": 12, "wickets": 13, "best_bowling": "3/29", "economy": 6.31}
+    },
+    "fielding": {
+      "TEST": {"catches": 72, "run_outs": null},
+      "ODI": {"catches": 130, "run_outs": null},
+      "T20": {"catches": 1, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_rangana_herath",
+  "personal_info": {"name": "Rangana Herath", "country": "Sri Lanka", "role": "bowler", "batting_style": "Left-hand bat", "bowling_style": "Slow left-arm orthodox"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 93, "innings": 144, "runs": 1699, "highest_score": "80*", "average": 14.64, "strike_rate": 49.89, "centuries": 0, "fifties": 3},
+      "ODI": {"matches": 71, "innings": 30, "runs": 140, "highest_score": "17*", "average": 9.33, "strike_rate": 64.51, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 17, "innings": 6, "runs": 8, "highest_score": "3", "average": 2.66, "strike_rate": 66.66, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 93, "wickets": 433, "best_bowling": "9/127", "economy": 2.80},
+      "ODI": {"matches": 71, "wickets": 74, "best_bowling": "4/20", "economy": 4.37},
+      "T20": {"matches": 17, "wickets": 18, "best_bowling": "5/3", "economy": 6.13}
+    },
+    "fielding": {
+      "TEST": {"catches": 24, "run_outs": null},
+      "ODI": {"catches": 14, "run_outs": null},
+      "T20": {"catches": 0, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_suranga_lakmal",
+  "personal_info": {"name": "Suranga Lakmal", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 70, "innings": 109, "runs": 934, "highest_score": "42", "average": 11.11, "strike_rate": 48.24, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 86, "innings": 48, "runs": 244, "highest_score": "26", "average": 9.38, "strike_rate": 60.39, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 11, "innings": 6, "runs": 7, "highest_score": "5*", "average": 2.33, "strike_rate": 63.63, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 70, "wickets": 171, "best_bowling": "5/47", "economy": 3.00},
+      "ODI": {"matches": 86, "wickets": 109, "best_bowling": "4/13", "economy": 5.46},
+      "T20": {"matches": 11, "wickets": 8, "best_bowling": "2/26", "economy": 9.51}
+    },
+    "fielding": {
+      "TEST": {"catches": 22, "run_outs": null},
+      "ODI": {"catches": 20, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_nuwan_kulasekara",
+  "personal_info": {"name": "Nuwan Kulasekara", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 21, "innings": 28, "runs": 391, "highest_score": "64", "average": 14.48, "strike_rate": 42.04, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 184, "innings": 123, "runs": 1327, "highest_score": "73", "average": 15.43, "strike_rate": 81.46, "centuries": 0, "fifties": 4},
+      "T20": {"matches": 58, "innings": 30, "runs": 215, "highest_score": "31", "average": 10.23, "strike_rate": 116.84, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 21, "wickets": 48, "best_bowling": "4/21", "economy": 3.01},
+      "ODI": {"matches": 184, "wickets": 199, "best_bowling": "5/22", "economy": 4.90},
+      "T20": {"matches": 58, "wickets": 66, "best_bowling": "4/31", "economy": 7.45}
+    },
+    "fielding": {
+      "TEST": {"catches": 8, "run_outs": null},
+      "ODI": {"catches": 46, "run_outs": null},
+      "T20": {"catches": 17, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_dilhara_fernando",
+  "personal_info": {"name": "Dilhara Fernando", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 40, "innings": 47, "runs": 249, "highest_score": "39*", "average": 8.30, "strike_rate": 35.11, "centuries": 0, "fifties": 0},
+      "ODI": {"matches": 147, "innings": 61, "runs": 239, "highest_score": "20", "average": 9.19, "strike_rate": 60.96, "centuries": 0, "fifties": 0},
+      "T20": {"matches": 18, "innings": 7, "runs": 25, "highest_score": "21", "average": 5.00, "strike_rate": 92.59, "centuries": 0, "fifties": 0}
+    },
+    "bowling": {
+      "TEST": {"matches": 40, "wickets": 100, "best_bowling": "5/42", "economy": 3.67},
+      "ODI": {"matches": 147, "wickets": 187, "best_bowling": "6/27", "economy": 5.20},
+      "T20": {"matches": 18, "wickets": 18, "best_bowling": "3/19", "economy": 7.36}
+    },
+    "fielding": {
+      "TEST": {"catches": 10, "run_outs": null},
+      "ODI": {"catches": 27, "run_outs": null},
+      "T20": {"catches": 3, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+  "id": "sl_thisara_perera",
+  "personal_info": {"name": "Thisara Perera", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium-fast"},
+  "career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+  "stats": {
+    "batting": {
+      "TEST": {"matches": 6, "innings": 10, "runs": 203, "highest_score": "75", "average": 20.30, "strike_rate": 73.02, "centuries": 0, "fifties": 1},
+      "ODI": {"matches": 166, "innings": 133, "runs": 2338, "highest_score": "140", "average": 19.98, "strike_rate": 112.08, "centuries": 1, "fifties": 10},
+      "T20": {"matches": 84, "innings": 74, "runs": 1204, "highest_score": "61", "average": 23.15, "strike_rate": 151.63, "centuries": 0, "fifties": 3}
+    },
+    "bowling": {
+      "TEST": {"matches": 6, "wickets": 11, "best_bowling": "4/63", "economy": 4.10},
+      "ODI": {"matches": 166, "wickets": 175, "best_bowling": "6/44", "economy": 5.83},
+      "T20": {"matches": 84, "wickets": 51, "best_bowling": "3/24", "economy": 9.34}
+    },
+    "fielding": {
+      "TEST": {"catches": 1, "run_outs": null},
+      "ODI": {"catches": 62, "run_outs": null},
+      "T20": {"catches": 30, "run_outs": null}
+    }
+  },
+  "meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+
+
+
+{
+"id": "sl_farveez_maharoof",
+"personal_info": {"name": "Farveez Maharoof", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 22, "innings": 34, "runs": 556, "highest_score": "72", "average": 18.53, "strike_rate": 39.60, "centuries": 0, "fifties": 3},
+"ODI": {"matches": 109, "innings": 75, "runs": 1113, "highest_score": "69*", "average": 19.52, "strike_rate": 86.01, "centuries": 0, "fifties": 2},
+"T20": {"matches": 8, "innings": 5, "runs": 33, "highest_score": "13*", "average": 8.25, "strike_rate": 76.74, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 22, "wickets": 25, "best_bowling": "4/52", "economy": 3.32},
+"ODI": {"matches": 109, "wickets": 135, "best_bowling": "6/14", "economy": 4.89},
+"T20": {"matches": 8, "wickets": 7, "best_bowling": "2/18", "economy": 7.37}
+},
+"fielding": {
+"TEST": {"catches": 7, "run_outs": null},
+"ODI": {"catches": 26, "run_outs": null},
+"T20": {"catches": 2, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_angelo_perera",
+"personal_info": {"name": "Angelo Perera", "country": "Sri Lanka", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+"stats": {
+"batting": {
+"ODI": {"matches": 6, "innings": 4, "runs": 52, "highest_score": "31", "average": 13.00, "strike_rate": 62.65, "centuries": 0, "fifties": 0},
+"T20": {"matches": 6, "innings": 5, "runs": 59, "highest_score": "16", "average": 11.80, "strike_rate": 90.76, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"ODI": {"matches": 6, "wickets": 0, "best_bowling": null, "economy": 5.50},
+"T20": {"matches": 6, "wickets": 0, "best_bowling": null, "economy": 17.00}
+},
+"fielding": {
+"ODI": {"catches": 1, "run_outs": null},
+"T20": {"catches": 1, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_akila_dananjaya",
+"personal_info": {"name": "Akila Dananjaya", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 6, "innings": 10, "runs": 135, "highest_score": "43*", "average": 16.87, "strike_rate": 53.14, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 42, "innings": 32, "runs": 323, "highest_score": "50*", "average": 12.42, "strike_rate": 71.61, "centuries": 0, "fifties": 1},
+"T20": {"matches": 33, "innings": 16, "runs": 65, "highest_score": "11*", "average": 8.12, "strike_rate": 90.27, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 6, "wickets": 33, "best_bowling": "6/115", "economy": 3.54},
+"ODI": {"matches": 42, "wickets": 59, "best_bowling": "6/29", "economy": 5.13},
+"T20": {"matches": 33, "wickets": 30, "best_bowling": "3/36", "economy": 8.25}
+},
+"fielding": {
+"TEST": {"catches": 1, "run_outs": null},
+"ODI": {"catches": 14, "run_outs": null},
+"T20": {"catches": 7, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_ajantha_mendis",
+"personal_info": {"name": "Ajantha Mendis", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 19, "innings": 19, "runs": 213, "highest_score": "78", "average": 16.38, "strike_rate": 46.81, "centuries": 0, "fifties": 1},
+"ODI": {"matches": 87, "innings": 42, "runs": 188, "highest_score": "21*", "average": 8.17, "strike_rate": 71.48, "centuries": 0, "fifties": 0},
+"T20": {"matches": 39, "innings": 8, "runs": 8, "highest_score": "4*", "average": 2.66, "strike_rate": 47.05, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 19, "wickets": 70, "best_bowling": "6/99", "economy": 3.08},
+"ODI": {"matches": 87, "wickets": 152, "best_bowling": "6/13", "economy": 4.80},
+"T20": {"matches": 39, "wickets": 66, "best_bowling": "6/8", "economy": 6.45}
+},
+"fielding": {
+"TEST": {"catches": 2, "run_outs": null},
+"ODI": {"catches": 15, "run_outs": null},
+"T20": {"catches": 6, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_wanindu_hasaranga",
+"personal_info": {"name": "Wanindu Hasaranga", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 4, "innings": 7, "runs": 196, "highest_score": "59", "average": 28.00, "strike_rate": 86.34, "centuries": 0, "fifties": 1},
+"ODI": {"matches": 69, "innings": 57, "runs": 1135, "highest_score": "80*", "average": 23.64, "strike_rate": 109.66, "centuries": 0, "fifties": 5},
+"T20": {"matches": 95, "innings": 77, "runs": 807, "highest_score": "71", "average": 13.45, "strike_rate": 126.29, "centuries": 0, "fifties": 2}
+},
+"bowling": {
+"TEST": {"matches": 4, "wickets": 4, "best_bowling": "4/171", "economy": 3.58},
+"ODI": {"matches": 69, "wickets": 112, "best_bowling": "7/19", "economy": 5.11},
+"T20": {"matches": 95, "wickets": 154, "best_bowling": "4/9", "economy": 7.02}
+},
+"fielding": {
+"TEST": {"catches": 2, "run_outs": null},
+"ODI": {"catches": 19, "run_outs": null},
+"T20": {"catches": 37, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_maheesh_theekshana",
+"personal_info": {"name": "Maheesh Theekshana", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 2, "innings": 3, "runs": 59, "highest_score": "38", "average": 19.66, "strike_rate": 39.59, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 59, "innings": 33, "runs": 344, "highest_score": "38*", "average": 16.38, "strike_rate": 55.12, "centuries": 0, "fifties": 0},
+"T20": {"matches": 83, "innings": 38, "runs": 107, "highest_score": "14", "average": 4.45, "strike_rate": 61.84, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 2, "wickets": 5, "best_bowling": "2/28", "economy": 3.09},
+"ODI": {"matches": 59, "wickets": 79, "best_bowling": "4/25", "economy": 4.60},
+"T20": {"matches": 83, "wickets": 82, "best_bowling": "3/17", "economy": 7.08}
+},
+"fielding": {
+"TEST": {"catches": 1, "run_outs": null},
+"ODI": {"catches": 13, "run_outs": null},
+"T20": {"catches": 21, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_dilruwan_perera",
+"personal_info": {"name": "Dilruwan Perera", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 43, "innings": 77, "runs": 1303, "highest_score": "95", "average": 18.88, "strike_rate": 46.88, "centuries": 0, "fifties": 7},
+"ODI": {"matches": 13, "innings": 12, "runs": 152, "highest_score": "30", "average": 12.66, "strike_rate": 76.38, "centuries": 0, "fifties": 0},
+"T20": {"matches": 3, "innings": 2, "runs": 1, "highest_score": "1", "average": 0.50, "strike_rate": 16.66, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 43, "wickets": 161, "best_bowling": "6/32", "economy": 3.20},
+"ODI": {"matches": 13, "wickets": 13, "best_bowling": "3/48", "economy": 5.38},
+"T20": {"matches": 3, "wickets": 3, "best_bowling": "3/26", "economy": 7.20}
+},
+"fielding": {
+"TEST": {"catches": 19, "run_outs": null},
+"ODI": {"catches": 2, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+
+
+{
+"id": "sl_seekkuge_prasanna",
+"personal_info": {"name": "Seekkuge Prasanna", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 1, "innings": 1, "runs": 5, "highest_score": "5", "average": 5.00, "strike_rate": 41.66, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 40, "innings": 37, "runs": 421, "highest_score": "95", "average": 12.38, "strike_rate": 94.60, "centuries": 0, "fifties": 2},
+"T20": {"matches": 20, "innings": 20, "runs": 214, "highest_score": "37*", "average": 15.28, "strike_rate": 132.91, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 1, "wickets": 0, "best_bowling": null, "economy": 3.47},
+"ODI": {"matches": 40, "wickets": 32, "best_bowling": "3/32", "economy": 5.45},
+"T20": {"matches": 20, "wickets": 10, "best_bowling": "2/45", "economy": 7.18}
+},
+"fielding": {
+"TEST": {"catches": 0, "run_outs": null},
+"ODI": {"catches": 7, "run_outs": null},
+"T20": {"catches": 4, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_isuru_udana",
+"personal_info": {"name": "Isuru Udana", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Left-hand bat", "bowling_style": "Left-arm medium-fast"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+"stats": {
+"batting": {
+"ODI": {"matches": 21, "innings": 18, "runs": 237, "highest_score": "78", "average": 16.92, "strike_rate": 95.18, "centuries": 0, "fifties": 1},
+"T20": {"matches": 35, "innings": 25, "runs": 256, "highest_score": "84*", "average": 18.28, "strike_rate": 137.63, "centuries": 0, "fifties": 1}
+},
+"bowling": {
+"ODI": {"matches": 21, "wickets": 18, "best_bowling": "3/82", "economy": 6.27},
+"T20": {"matches": 35, "wickets": 27, "best_bowling": "3/11", "economy": 8.70}
+},
+"fielding": {
+"ODI": {"catches": 6, "run_outs": null},
+"T20": {"catches": 4, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_lahiru_kumara",
+"personal_info": {"name": "Lahiru Kumara", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 34, "innings": 50, "runs": 135, "highest_score": "13*", "average": 4.65, "strike_rate": 29.47, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 32, "innings": 19, "runs": 62, "highest_score": "10", "average": 5.63, "strike_rate": 44.28, "centuries": 0, "fifties": 0},
+"T20": {"matches": 26, "innings": 6, "runs": 10, "highest_score": "4", "average": 3.33, "strike_rate": 90.90, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 34, "wickets": 104, "best_bowling": "6/122", "economy": 3.87},
+"ODI": {"matches": 32, "wickets": 42, "best_bowling": "4/48", "economy": 6.48},
+"T20": {"matches": 26, "wickets": 33, "best_bowling": "3/7", "economy": 8.32}
+},
+"fielding": {
+"TEST": {"catches": 11, "run_outs": null},
+"ODI": {"catches": 6, "run_outs": null},
+"T20": {"catches": 2, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_dushmantha_chameera",
+"personal_info": {"name": "Dushmantha Chameera", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 12, "innings": 21, "runs": 104, "highest_score": "22", "average": 5.47, "strike_rate": 30.40, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 58, "innings": 39, "runs": 296, "highest_score": "29", "average": 11.38, "strike_rate": 59.43, "centuries": 0, "fifties": 0},
+"T20": {"matches": 77, "innings": 36, "runs": 116, "highest_score": "24*", "average": 5.27, "strike_rate": 76.31, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 12, "wickets": 32, "best_bowling": "5/47", "economy": 3.91},
+"ODI": {"matches": 58, "wickets": 65, "best_bowling": "5/16", "economy": 5.49},
+"T20": {"matches": 77, "wickets": 93, "best_bowling": "5/24", "economy": 8.03}
+},
+"fielding": {
+"TEST": {"catches": 5, "run_outs": null},
+"ODI": {"catches": 10, "run_outs": null},
+"T20": {"catches": 16, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_kasun_rajitha",
+"personal_info": {"name": "Kasun Rajitha", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm medium-fast"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 18, "innings": 24, "runs": 133, "highest_score": "22", "average": 7.00, "strike_rate": 24.13, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 34, "innings": 19, "runs": 117, "highest_score": "33", "average": 9.75, "strike_rate": 63.58, "centuries": 0, "fifties": 0},
+"T20": {"matches": 18, "innings": 8, "runs": 31, "highest_score": "9*", "average": 10.33, "strike_rate": 58.49, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 18, "wickets": 55, "best_bowling": "5/56", "economy": 3.25},
+"ODI": {"matches": 34, "wickets": 43, "best_bowling": "4/50", "economy": 6.10},
+"T20": {"matches": 18, "wickets": 17, "best_bowling": "3/29", "economy": 9.31}
+},
+"fielding": {
+"TEST": {"catches": 8, "run_outs": null},
+"ODI": {"catches": 5, "run_outs": null},
+"T20": {"catches": 1, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_pramodya_wickramasinghe",
+"personal_info": {"name": "Pramodya Wickramasinghe", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 40, "innings": 64, "runs": 555, "highest_score": "51", "average": 9.40, "strike_rate": 50.22, "centuries": 0, "fifties": 1},
+"ODI": {"matches": 134, "innings": 64, "runs": 344, "highest_score": "32", "average": 8.60, "strike_rate": 63.35, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 40, "wickets": 85, "best_bowling": "6/60", "economy": 2.94},
+"ODI": {"matches": 134, "wickets": 109, "best_bowling": "4/48", "economy": 4.53}
+},
+"fielding": {
+"TEST": {"catches": 18, "run_outs": null},
+"ODI": {"catches": 26, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_rumesh_ratnayake",
+"personal_info": {"name": "Rumesh Ratnayake", "country": "Sri Lanka", "role": "bowler", "batting_style": "Right-hand bat", "bowling_style": "Right-arm fast-medium"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 23, "innings": 36, "runs": 433, "highest_score": "56", "average": 14.43, "strike_rate": null, "centuries": 0, "fifties": 2},
+"ODI": {"matches": 70, "innings": 55, "runs": 612, "highest_score": "33*", "average": 16.54, "strike_rate": 86.80, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 23, "wickets": 73, "best_bowling": "6/66", "economy": 3.09},
+"ODI": {"matches": 70, "wickets": 76, "best_bowling": "5/32", "economy": 4.55}
+},
+"fielding": {
+"TEST": {"catches": 9, "run_outs": null},
+"ODI": {"catches": 11, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+
+
+{
+"id": "sl_upul_chandana",
+"personal_info": {"name": "Upul Chandana", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm legbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 16, "innings": 24, "runs": 616, "highest_score": "92", "average": 26.78, "strike_rate": 50.61, "centuries": 0, "fifties": 2},
+"ODI": {"matches": 147, "innings": 111, "runs": 1627, "highest_score": "89", "average": 17.30, "strike_rate": 72.99, "centuries": 0, "fifties": 5},
+"T20": {"matches": 12, "innings": 11, "runs": 157, "highest_score": "36", "average": 19.62, "strike_rate": 123.62, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 16, "wickets": 37, "best_bowling": "6/179", "economy": 3.43},
+"ODI": {"matches": 147, "wickets": 151, "best_bowling": "5/61", "economy": 4.70},
+"T20": {"matches": 12, "wickets": 16, "best_bowling": "4/17", "economy": 6.45}
+},
+"fielding": {
+"TEST": {"catches": 7, "run_outs": null},
+"ODI": {"catches": 79, "run_outs": null},
+"T20": {"catches": 4, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_jehan_mubarak",
+"personal_info": {"name": "Jehan Mubarak", "country": "Sri Lanka", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm offbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 13, "innings": 23, "runs": 385, "highest_score": "49", "average": 17.50, "strike_rate": 43.50, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 40, "innings": 37, "runs": 704, "highest_score": "72", "average": 22.70, "strike_rate": 63.13, "centuries": 0, "fifties": 4},
+"T20": {"matches": 16, "innings": 15, "runs": 238, "highest_score": "46*", "average": 21.63, "strike_rate": 126.59, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 13, "wickets": 0, "best_bowling": null, "economy": 3.84},
+"ODI": {"matches": 40, "wickets": 2, "best_bowling": "1/10", "economy": 4.41},
+"T20": {"matches": 16, "wickets": 1, "best_bowling": "1/9", "economy": 12.75}
+},
+"fielding": {
+"TEST": {"catches": 15, "run_outs": null},
+"ODI": {"catches": 12, "run_outs": null},
+"T20": {"catches": 9, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_thilan_samaraweera",
+"personal_info": {"name": "Thilan Samaraweera", "country": "Sri Lanka", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 81, "innings": 132, "runs": 5462, "highest_score": "231", "average": 48.76, "strike_rate": 46.92, "centuries": 14, "fifties": 30},
+"ODI": {"matches": 53, "innings": 42, "runs": 862, "highest_score": "105*", "average": 27.80, "strike_rate": 69.29, "centuries": 2, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 81, "wickets": 15, "best_bowling": "4/49", "economy": 3.11},
+"ODI": {"matches": 53, "wickets": 11, "best_bowling": "3/34", "economy": 4.63}
+},
+"fielding": {
+"TEST": {"catches": 45, "run_outs": null},
+"ODI": {"catches": 17, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_chamara_silva",
+"personal_info": {"name": "Chamara Silva", "country": "Sri Lanka", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 11, "innings": 17, "runs": 537, "highest_score": "152*", "average": 33.56, "strike_rate": 62.88, "centuries": 1, "fifties": 2},
+"ODI": {"matches": 75, "innings": 62, "runs": 1587, "highest_score": "107*", "average": 28.85, "strike_rate": 70.40, "centuries": 1, "fifties": 13},
+"T20": {"matches": 16, "innings": 15, "runs": 175, "highest_score": "38", "average": 13.46, "strike_rate": 98.87, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 11, "wickets": 1, "best_bowling": "1/57", "economy": 3.82},
+"ODI": {"matches": 75, "wickets": 1, "best_bowling": "1/21", "economy": 4.71},
+"T20": {"matches": 16, "wickets": 1, "best_bowling": "1/4", "economy": 5.00}
+},
+"fielding": {
+"TEST": {"catches": 7, "run_outs": null},
+"ODI": {"catches": 20, "run_outs": null},
+"T20": {"catches": 5, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_ashan_priyanjan",
+"personal_info": {"name": "Ashan Priyanjan", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+"stats": {
+"batting": {
+"ODI": {"matches": 23, "innings": 20, "runs": 420, "highest_score": "74", "average": 23.33, "strike_rate": 80.45, "centuries": 0, "fifties": 2},
+"T20": {"matches": 3, "innings": 3, "runs": 54, "highest_score": "40*", "average": 54.00, "strike_rate": 87.09, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"ODI": {"matches": 23, "wickets": 5, "best_bowling": "2/11", "economy": 5.27},
+"T20": {"matches": 3, "wickets": 0, "best_bowling": null, "economy": null}
+},
+"fielding": {
+"ODI": {"catches": 7, "run_outs": null},
+"T20": {"catches": 0, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_avishka_fernando",
+"personal_info": {"name": "Avishka Fernando", "country": "Sri Lanka", "role": "batsman", "batting_style": "Right-hand bat", "bowling_style": null},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+"stats": {
+"batting": {
+"ODI": {"matches": 51, "innings": 50, "runs": 1589, "highest_score": "127", "average": 31.78, "strike_rate": 88.91, "centuries": 4, "fifties": 9},
+"T20": {"matches": 39, "innings": 37, "runs": 376, "highest_score": "37", "average": 11.05, "strike_rate": 92.15, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"ODI": {"matches": 51, "wickets": 0, "best_bowling": null, "economy": null},
+"T20": {"matches": 39, "wickets": 0, "best_bowling": null, "economy": null}
+},
+"fielding": {
+"ODI": {"catches": 20, "run_outs": null},
+"T20": {"catches": 8, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_bhanuka_rajapaksa",
+"personal_info": {"name": "Bhanuka Rajapaksa", "country": "Sri Lanka", "role": "batsman", "batting_style": "Left-hand bat", "bowling_style": "Right-arm medium"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["ODI", "T20"]},
+"stats": {
+"batting": {
+"ODI": {"matches": 5, "innings": 5, "runs": 89, "highest_score": "65", "average": 17.80, "strike_rate": 104.70, "centuries": 0, "fifties": 1},
+"T20": {"matches": 45, "innings": 40, "runs": 744, "highest_score": "77", "average": 22.54, "strike_rate": 130.52, "centuries": 0, "fifties": 3}
+},
+"bowling": {
+"ODI": {"matches": 5, "wickets": 0, "best_bowling": null, "economy": null},
+"T20": {"matches": 45, "wickets": 0, "best_bowling": null, "economy": null}
+},
+"fielding": {
+"ODI": {"catches": 0, "run_outs": null},
+"T20": {"catches": 10, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+},
+{
+"id": "sl_ramesh_mendis",
+"personal_info": {"name": "Ramesh Mendis", "country": "Sri Lanka", "role": "all-rounder", "batting_style": "Right-hand bat", "bowling_style": "Right-arm offbreak"},
+"career": {"debut_year": null, "retirement_year": null, "formats_played": ["TEST", "ODI", "T20"]},
+"stats": {
+"batting": {
+"TEST": {"matches": 16, "innings": 24, "runs": 408, "highest_score": "45*", "average": 17.73, "strike_rate": 43.91, "centuries": 0, "fifties": 0},
+"ODI": {"matches": 4, "innings": 4, "runs": 50, "highest_score": "26", "average": 25.00, "strike_rate": 100.00, "centuries": 0, "fifties": 0},
+"T20": {"matches": 4, "innings": 3, "runs": 17, "highest_score": "12", "average": 5.66, "strike_rate": 80.95, "centuries": 0, "fifties": 0}
+},
+"bowling": {
+"TEST": {"matches": 16, "wickets": 71, "best_bowling": "6/70", "economy": 3.18},
+"ODI": {"matches": 4, "wickets": 4, "best_bowling": "2/26", "economy": 6.16},
+"T20": {"matches": 4, "wickets": 2, "best_bowling": "1/13", "economy": 6.85}
+},
+"fielding": {
+"TEST": {"catches": 6, "run_outs": null},
+"ODI": {"catches": 1, "run_outs": null},
+"T20": {"catches": 1, "run_outs": null}
+}
+},
+"meta": {"last_updated": "2026-03-29", "source": "manual_verified"}
+}
+
+
+]
