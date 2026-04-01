@@ -49,25 +49,37 @@ const PAD    = 20
    Building heights use TEST(40%) + ODI(35%) + T20(25%)
    weighted across runs, average, strike-rate, wickets, eco
 ══════════════════════════════════════════════════════ */
+type Format = 'test' | 'odi' | 't20'
+
 type AllMax = {
-  runs:Record<string,number>; wkts:Record<string,number>
-  avg:Record<string,number>;  sr:Record<string,number>; eco:Record<string,number>
+  runs: Record<Format, number>;
+  wkts: Record<Format, number>;
+  avg: Record<Format, number>;
+  sr: Record<Format, number>;
+  eco: Record<Format, number>;
 }
 
-function computeAllMax(players:any[]): AllMax {
-  const runs={test:1,odi:1,t20:1}, wkts={test:1,odi:1,t20:1}
-  const avg ={test:1,odi:1,t20:1}, sr  ={test:1,odi:1,t20:1}, eco={test:0.01,odi:0.01,t20:0.01}
+function computeAllMax(players: any[]): AllMax {
+  const runs: Record<Format, number> = { test: 1, odi: 1, t20: 1 }
+  const wkts: Record<Format, number> = { test: 1, odi: 1, t20: 1 }
+  const avg: Record<Format, number> = { test: 1, odi: 1, t20: 1 }
+  const sr: Record<Format, number> = { test: 1, odi: 1, t20: 1 }
+  const eco: Record<Format, number> = { test: 0.01, odi: 0.01, t20: 0.01 }
+
   players.forEach(p => {
-    (['test','odi','t20'] as const).forEach((f) => {
-      const b=p.stats?.batting?.[f]??{}, w=p.stats?.bowling?.[f]??{}
-      runs[f]=Math.max(runs[f], b.runs||0)
-      wkts[f]=Math.max(wkts[f], w.wickets||0)
-      avg[f] =Math.max(avg[f],  b.average||0)
-      sr[f]  =Math.max(sr[f],   b.strike_rate||0)
-      eco[f] =Math.max(eco[f],  w.economy||0)
+    (['test', 'odi', 't20'] as Format[]).forEach((f) => {
+      const b = p.stats?.batting?.[f] ?? { runs: 0, average: 0, strike_rate: 0 }
+      const w = p.stats?.bowling?.[f] ?? { wickets: 0, economy: 0 }
+
+      runs[f] = Math.max(runs[f], b.runs)
+      wkts[f] = Math.max(wkts[f], w.wickets)
+      avg[f] = Math.max(avg[f], b.average)
+      sr[f] = Math.max(sr[f], b.strike_rate)
+      eco[f] = Math.max(eco[f], w.economy)
     })
   })
-  return {runs,wkts,avg,sr,eco}
+
+  return { runs, wkts, avg, sr, eco }
 }
 
 function fmtScore(p:any, f:string, mx:AllMax): number {
