@@ -58,7 +58,7 @@ function computeAllMax(players:any[]): AllMax {
   const runs={test:1,odi:1,t20:1}, wkts={test:1,odi:1,t20:1}
   const avg ={test:1,odi:1,t20:1}, sr  ={test:1,odi:1,t20:1}, eco={test:0.01,odi:0.01,t20:0.01}
   players.forEach(p => {
-    ['test','odi','t20'].forEach(f => {
+    (['test','odi','t20'] as const).forEach((f) => {
       const b=p.stats?.batting?.[f]??{}, w=p.stats?.bowling?.[f]??{}
       runs[f]=Math.max(runs[f], b.runs||0)
       wkts[f]=Math.max(wkts[f], w.wickets||0)
