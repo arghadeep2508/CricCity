@@ -760,9 +760,35 @@ export default function CricCity(){
       )}
 
       {/* ③ DRONE CONTROLS */}
-      <button onClick={toggleDrone} style={{position:'absolute',top:20,right:droneMode?'unset':20,left:droneMode?'50%':undefined,transform:droneMode?'translateX(-50%)':undefined,bottom:droneMode?100:undefined,top:droneMode?undefined:20,zIndex:15,fontFamily:'"Courier New",monospace',fontSize:'0.65rem',fontWeight:700,letterSpacing:'0.15em',padding:'8px 18px',borderRadius:5,cursor:'pointer',background:droneMode?'rgba(251,191,36,0.2)':'rgba(56,189,248,0.12)',border:`1px solid ${droneMode?'#fbbf24':'#38bdf8'}`,color:droneMode?'#fbbf24':'#7dd3fc',boxShadow:droneMode?'0 0 20px rgba(251,191,36,0.4)':'none'}}>
-        {droneMode?'✕ EXIT DRONE':'🚁 DRONE MODE'}
-      </button>
+      <button
+  onClick={toggleDrone}
+  style={{
+    position: 'absolute',
+    right: droneMode ? undefined : 20,
+    left: droneMode ? '50%' : undefined,
+    transform: droneMode ? 'translateX(-50%)' : undefined,
+    bottom: droneMode ? 100 : undefined,
+    top: droneMode ? undefined : 20,
+    zIndex: 15,
+    fontFamily: '"Courier New",monospace',
+    fontSize: '0.65rem',
+    fontWeight: 700,
+    letterSpacing: '0.15em',
+    padding: '8px 18px',
+    borderRadius: 5,
+    cursor: 'pointer',
+    background: droneMode
+      ? 'rgba(251,191,36,0.2)'
+      : 'rgba(56,189,248,0.12)',
+    border: `1px solid ${droneMode ? '#fbbf24' : '#38bdf8'}`,
+    color: droneMode ? '#fbbf24' : '#7dd3fc',
+    boxShadow: droneMode
+      ? '0 0 20px rgba(251,191,36,0.4)'
+      : 'none',
+  }}
+>
+  {droneMode ? '✕ EXIT DRONE' : '🚁 DRONE MODE'}
+</button>
 
       {droneMode&&(
         <div style={{position:'absolute',bottom:40,left:'50%',transform:'translateX(-50%)',zIndex:15,display:'flex',flexDirection:'column',alignItems:'center',gap:8}}>
