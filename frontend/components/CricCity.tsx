@@ -82,20 +82,57 @@ function computeAllMax(players: any[]): AllMax {
   return { runs, wkts, avg, sr, eco }
 }
 
-function fmtScore(p:any, f:string, mx:AllMax): number {
-  const role=(p.personal_info?.role||'').toLowerCase()
-  const b=p.stats?.batting?.[f]??{}, w=p.stats?.bowling?.[f]??{}
-  const bR=(b.runs||0)/mx.runs[f], bAv=(b.average||0)/mx.avg[f], bSR=(b.strike_rate||0)/mx.sr[f]
-  const wW=(w.wickets||0)/mx.wkts[f]
-  const wE=w.economy>0 ? Math.min(1,(mx.eco[f]*0.4)/w.economy) : 0
+function fmtScore(p: any, f: Format, mx: AllMax): number {
+  const role = (p.personal_info?.role || '').toLowerCase()
 
-  if (role.includes('bowl')) return f==='t20'?wW*0.45+wE*0.55:f==='odi'?wW*0.52+wE*0.48:wW*0.65+wE*0.35
-  if (role.includes('all')) {
-    const bs=f==='t20'?bR*0.3+bAv*0.35+bSR*0.35:f==='odi'?bR*0.4+bAv*0.35+bSR*0.25:bR*0.4+bAv*0.6
-    const ws=f==='t20'?wW*0.45+wE*0.55:f==='odi'?wW*0.52+wE*0.48:wW*0.65+wE*0.35
-    return (bs+ws)/2
+  const b = p.stats?.batting?.[f] ?? {
+    runs: 0,
+    average: 0,
+    strike_rate: 0,
   }
-  return f==='t20'?bR*0.3+bAv*0.35+bSR*0.35:f==='odi'?bR*0.4+bAv*0.35+bSR*0.25:bR*0.4+bAv*0.6
+
+  const w = p.stats?.bowling?.[f] ?? {
+    wickets: 0,
+    economy: 0,
+  }
+
+  const bR = b.runs / mx.runs[f]
+  const bAv = b.average / mx.avg[f]
+  const bSR = b.strike_rate / mx.sr[f]
+
+  const wW = w.wickets / mx.wkts[f]
+  const wE =
+    w.economy > 0
+      ? Math.min(1, (mx.eco[f] * 0.4) / w.economy)
+      : 0
+
+  if (role.includes('bowl')) {
+    if (f === 't20') return wW * 0.45 + wE * 0.55
+    if (f === 'odi') return wW * 0.52 + wE * 0.48
+    return wW * 0.65 + wE * 0.35
+  }
+
+  if (role.includes('all')) {
+    const bs =
+      f === 't20'
+        ? bR * 0.3 + bAv * 0.35 + bSR * 0.35
+        : f === 'odi'
+        ? bR * 0.4 + bAv * 0.35 + bSR * 0.25
+        : bR * 0.4 + bAv * 0.6
+
+    const ws =
+      f === 't20'
+        ? wW * 0.45 + wE * 0.55
+        : f === 'odi'
+        ? wW * 0.52 + wE * 0.48
+        : wW * 0.65 + wE * 0.35
+
+    return (bs + ws) / 2
+  }
+
+  if (f === 't20') return bR * 0.3 + bAv * 0.35 + bSR * 0.35
+  if (f === 'odi') return bR * 0.4 + bAv * 0.35 + bSR * 0.25
+  return bR * 0.4 + bAv * 0.6
 }
 
 function allFormatScore(p:any, mx:AllMax): number {
