@@ -20,39 +20,53 @@ export interface Player {
 }
 
 /**
- * ✅ Smart BASE URL
- * - Uses deployed backend in production
- * - Uses localhost in development
+ * ✅ Smart BASE URL (bulletproof)
+ *
+ * Priority:
+ * 1. Env variable (production)
+ * 2. Local backend (development)
  */
 const BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL ||
-  "http://127.0.0.1:8000";
+  process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") || // remove trailing slash
+  "http://127.0.0.1:8000"
+
+/**
+ * ✅ Helper to build full endpoint safely
+ */
+function buildUrl(path: string) {
+  return `${BASE_URL}${path}`
+}
 
 /**
  * ✅ Fetch players (CricCity standard)
  */
-export async function fetchPlayers(format: string = "TEST"): Promise<Player[]> {
+export async function fetchPlayers(format: string = "test"): Promise<Player[]> {
   try {
-    const res = await fetch(
-      `${BASE_URL}/api/players?format=${format}`,
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        cache: "no-store", // always fresh data
-      }
-    );
+    const url = buildUrl(`/api/players?format=${format.toLowerCase()}`)
+
+    const res = await fetch(url, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      cache: "no-store",
+    })
 
     if (!res.ok) {
-      throw new Error(`Failed to fetch players: ${res.status}`);
+      throw new Error(`HTTP ${res.status} → ${res.statusText}`)
     }
 
-    const data = await res.json();
+    const json = await res.json()
 
-    return data?.data || [];
+    // ✅ Strict validation (prevents silent frontend break)
+    if (!json || !Array.isArray(json.data)) {
+      console.error("❌ Invalid API structure:", json)
+      return []
+    }
+
+    return json.data
   } catch (err) {
-    console.error("❌ API Error:", err);
-    return [];
+    console.error("❌ API Error:", err)
+    return []
   }
 }
