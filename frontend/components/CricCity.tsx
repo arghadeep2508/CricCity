@@ -760,7 +760,7 @@ export default function CricCity(){
       )}
 
       {/* ③ DRONE CONTROLS */}
-      <button
+<button
   onClick={toggleDrone}
   style={{
     position: 'absolute',
@@ -770,21 +770,18 @@ export default function CricCity(){
     bottom: droneMode ? 100 : undefined,
     top: droneMode ? undefined : 20,
     zIndex: 15,
-    fontFamily: '"Courier New",monospace',
+    fontFamily: '"Courier New", monospace',
     fontSize: '0.65rem',
     fontWeight: 700,
     letterSpacing: '0.15em',
     padding: '8px 18px',
     borderRadius: 5,
     cursor: 'pointer',
-    background: droneMode
-      ? 'rgba(251,191,36,0.2)'
-      : 'rgba(56,189,248,0.12)',
+
+    background: droneMode ? 'rgba(251,191,36,0.2)' : 'rgba(56,189,248,0.12)',
     border: `1px solid ${droneMode ? '#fbbf24' : '#38bdf8'}`,
     color: droneMode ? '#fbbf24' : '#7dd3fc',
-    boxShadow: droneMode
-      ? '0 0 20px rgba(251,191,36,0.4)'
-      : 'none',
+    boxShadow: droneMode ? '0 0 20px rgba(251,191,36,0.4)' : 'none',
   }}
 >
   {droneMode ? '✕ EXIT DRONE' : '🚁 DRONE MODE'}
