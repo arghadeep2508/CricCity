@@ -184,18 +184,39 @@ function centerOut(cols:number,rows:number):[number,number][]{
 /* ══════════════════════════════════════════════════════
    COUNTRY NORMALISER
 ══════════════════════════════════════════════════════ */
-function normalizeCountry(p:any):string{
-  const raw=(p.country??p.team??p.personal_info?.country??p.personal_info?.team??p.nationality??'').toString().toLowerCase().trim()
-  if(!raw) return 'world'
-  if(raw.includes('india')||raw==='ind')                         return 'india'
-  if(raw.includes('eng')||raw==='eng')                           return 'england'
-  if(raw.includes('aus')||raw==='aus')                           return 'australia'
-  if(raw.includes('south')||raw==='sa'||raw==='rsa')             return 'south africa'
-  if(raw.includes('zealand')||raw.includes('nz')||raw==='nzl')  return 'new zealand'
-  if(raw.includes('afghan')||raw==='afg')                        return 'afghanistan'
-  if(raw.includes('sri')||raw==='slc'||raw==='sl')               return 'sri lanka'
-  if(raw.includes('west')||raw.includes('windies')||raw==='wi')  return 'west indies'
+function normalizeCountry(p: any): string {
+  const raw = (
+    p.country ||
+    p.team ||
+    p.personal_info?.country ||
+    p.personal_info?.team ||
+    p.nationality ||
+    ''
+  )
+    .toString()
+    .toLowerCase()
+    .trim()
+
+  if (!raw) return 'world'
+
+  if (raw.includes('india') || raw === 'ind') return 'india'
+  if (raw.includes('eng') || raw === 'eng') return 'england'
+  if (raw.includes('aus') || raw === 'aus') return 'australia'
+  if (raw.includes('south') || raw === 'sa' || raw === 'rsa') return 'south africa'
+  if (raw.includes('zealand') || raw.includes('nz') || raw === 'nzl') return 'new zealand'
+  if (raw.includes('afghan') || raw === 'afg') return 'afghanistan'
+  if (raw.includes('sri') || raw === 'slc' || raw === 'sl') return 'sri lanka'
+  if (raw.includes('west') || raw.includes('windies') || raw === 'wi') return 'west indies'
+
   return 'world'
+}
+
+function getRole(p: any): string {
+  return (
+    p.role ||
+    p.personal_info?.role ||
+    ''
+  ).toLowerCase()
 }
 
 /* ══════════════════════════════════════════════════════
