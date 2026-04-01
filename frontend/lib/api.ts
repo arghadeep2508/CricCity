@@ -19,22 +19,40 @@ export interface Player {
   }
 }
 
-const BASE_URL = "http://127.0.0.1:8000/api"
+/**
+ * ✅ Smart BASE URL
+ * - Uses deployed backend in production
+ * - Uses localhost in development
+ */
+const BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL ||
+  "http://127.0.0.1:8000";
 
-// ✅ THIS is what your CricCity uses
+/**
+ * ✅ Fetch players (CricCity standard)
+ */
 export async function fetchPlayers(format: string = "TEST"): Promise<Player[]> {
   try {
-    const res = await fetch(`${BASE_URL}/players?format=${format}`)
+    const res = await fetch(
+      `${BASE_URL}/api/players?format=${format}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        cache: "no-store", // always fresh data
+      }
+    );
 
     if (!res.ok) {
-      throw new Error("Failed to fetch players")
+      throw new Error(`Failed to fetch players: ${res.status}`);
     }
 
-    const data = await res.json()
+    const data = await res.json();
 
-    return data.data || []
+    return data?.data || [];
   } catch (err) {
-    console.error("API Error:", err)
-    return []
+    console.error("❌ API Error:", err);
+    return [];
   }
 }
