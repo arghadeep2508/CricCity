@@ -1,12 +1,9 @@
 import os
 import json
 
-# 📁 Path to your JSON folder
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA_DIR = os.path.join(BASE_DIR, "seed_data")
 
-
-# 🎯 TEAM LIMITS
 TEAM_LIMITS = {
     "india": 100,
     "australia": 100,
@@ -18,8 +15,6 @@ TEAM_LIMITS = {
     "sri lanka": 50,
 }
 
-
-# 🔧 NORMALIZE COUNTRY (must match frontend)
 def normalize_country(p):
     raw = (
         p.get("country")
@@ -49,8 +44,6 @@ def normalize_country(p):
 
     return "world"
 
-
-# 📦 LOAD ALL JSON FILES
 def load_all_players():
     all_players = []
 
@@ -62,23 +55,19 @@ def load_all_players():
                 with open(path, "r", encoding="utf-8") as f:
                     data = json.load(f)
 
-                    # handle both list and dict formats
                     if isinstance(data, list):
                         all_players.extend(data)
                     elif isinstance(data, dict):
                         all_players.append(data)
 
             except Exception as e:
-                print(f"Error loading {file}: {e}")
+                raise Exception(f"Failed to load {file}: {e}")
 
     return all_players
 
-
-# 🎯 APPLY LIMITS
 def get_limited_players(players):
     grouped = {}
 
-    # group players
     for p in players:
         team = normalize_country(p)
 
@@ -87,19 +76,19 @@ def get_limited_players(players):
 
         grouped[team].append(p)
 
-    # debug (important)
-    print("TEAM COUNTS BEFORE LIMIT:")
-    print({k: len(v) for k, v in grouped.items()})
-
     final_players = []
 
     for team, plist in grouped.items():
         limit = TEAM_LIMITS.get(team, 30)
 
-        # sort by performance (runs priority)
         sorted_players = sorted(
             plist,
-            key=lambda x: x.get("stats", {}).get("batting", {}).get("test", {}).get("runs", 0),
+            key=lambda x: int(
+                x.get("stats", {})
+                 .get("batting", {})
+                 .get("test", {})
+                 .get("runs", 0) or 0
+            ),
             reverse=True
         )
 
@@ -107,12 +96,7 @@ def get_limited_players(players):
 
     return final_players
 
-
-# 🚀 MAIN FUNCTION (THIS IS USED BY API)
-def get_players(format: str = "TEST"):
+def get_players():
     players = load_all_players()
     players = get_limited_players(players)
-
-    print(f"TOTAL PLAYERS AFTER LIMIT: {len(players)}")
-
     return players
