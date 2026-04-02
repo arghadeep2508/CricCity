@@ -10,24 +10,24 @@ app = FastAPI(
     version="1.0.0",
 )
 
-# ✅ Safe CORS handling (robust for dev + prod)
+print("🔥 MAIN.PY LOADED")
+
+# ✅ CORS CONFIG (PRODUCTION SAFE)
 
 allowed_origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://cric-city.vercel.app",  # 🔥 your frontend (IMPORTANT)
 ]
 
-# 🔥 ALWAYS add your deployed frontend (IMPORTANT)
-allowed_origins.append("https://cric-city.vercel.app")
-
-# Optional: dynamic env support (kept your system)
+# Optional: dynamic env support (keeps your system intact)
 if hasattr(settings, "FRONTEND_URL") and settings.FRONTEND_URL:
     if settings.FRONTEND_URL not in allowed_origins:
         allowed_origins.append(settings.FRONTEND_URL)
 
-# 🔥 DEBUG (optional - remove later)
-print("CORS ALLOWED ORIGINS:", allowed_origins)
+print("🔥 CORS ALLOWED ORIGINS:", allowed_origins)
 
+# ✅ Apply CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
@@ -46,3 +46,8 @@ def root():
         "message": "CricCity API is live 🏏",
         "docs": "/docs"
     }
+
+# ✅ Health check (VERY useful for deployment debugging)
+@app.get("/health")
+def health():
+    return {"status": "ok"}
