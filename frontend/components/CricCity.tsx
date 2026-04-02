@@ -697,11 +697,30 @@ export default function CricCity(){
           if(idx>=slots.length) return
           const [col,row]=slots[idx], {x:gx,z:gz}=slotXZ(col,row)
           const posX=gx-halfX, posZ=gz-halfZ
-          const ns=(teamScores[idx]-sMin)/sRange
+          const rawScore = teamScores[idx] ?? 0
+          const safeScore = isNaN(rawScore) ? 0 : rawScore
+          const ns = sRange > 0 ? (safeScore - sMin) / sRange : 0
           const isLegend=idx===0
-          const role=(player.personal_info?.role||'').toLowerCase()
-          const h=calcHeight(role,ns,isLegend)
-          const {w,d}=calcWidth(role,ns,isLegend)
+          let role = (
+            player.role ||
+            player.personal_info?.role ||
+            ''
+          ).toLowerCase()
+
+          if (role.includes("bat")) role = "batsman"
+          else if (role.includes("bowl")) role = "bowler"
+          else if (role.includes("all")) role = "all-rounder"
+          else if (role.includes("keeper")) role = "wicketkeeper"
+          else role = "batsman"
+          const safeNs = isNaN(ns) ? 0 : ns
+
+          let h = calcHeight(role, safeNs, isLegend)
+          let { w, d } = calcWidth(role, safeNs, isLegend)
+
+          // 🚨 FINAL SAFETY (THIS STOPS THE CRASH)
+          h = isNaN(h) || h <= 0 ? 5 : h
+          w = isNaN(w) || w <= 0 ? 2 : w
+          d = isNaN(d) || d <= 0 ? 2 : d
 
           if(isLegend){
             // Legend tower
