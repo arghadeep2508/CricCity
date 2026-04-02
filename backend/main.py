@@ -10,14 +10,23 @@ app = FastAPI(
     version="1.0.0",
 )
 
-# ✅ Safe CORS handling (prevents crash if env missing)
+# ✅ Safe CORS handling (robust for dev + prod)
+
 allowed_origins = [
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
 ]
 
-# Add frontend URL only if exists
+# 🔥 ALWAYS add your deployed frontend (IMPORTANT)
+allowed_origins.append("https://cric-city.vercel.app")
+
+# Optional: dynamic env support (kept your system)
 if hasattr(settings, "FRONTEND_URL") and settings.FRONTEND_URL:
-    allowed_origins.append(settings.FRONTEND_URL)
+    if settings.FRONTEND_URL not in allowed_origins:
+        allowed_origins.append(settings.FRONTEND_URL)
+
+# 🔥 DEBUG (optional - remove later)
+print("CORS ALLOWED ORIGINS:", allowed_origins)
 
 app.add_middleware(
     CORSMiddleware,
