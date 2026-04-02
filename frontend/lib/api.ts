@@ -21,13 +21,9 @@ export interface Player {
 
 /**
  * ✅ Smart BASE URL (bulletproof)
- *
- * Priority:
- * 1. Env variable (production)
- * 2. Local backend (development)
  */
 const BASE_URL =
-  process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") || // remove trailing slash
+  process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") ||
   "http://127.0.0.1:8000"
 
 /**
@@ -38,11 +34,11 @@ function buildUrl(path: string) {
 }
 
 /**
- * ✅ Fetch players (CricCity standard)
+ * ✅ Fetch players (FINAL STABLE VERSION)
  */
 export async function fetchPlayers(format: string = "test"): Promise<Player[]> {
   try {
-    const url = buildUrl(`/api/players?format=${format.toLowerCase()}`)
+    const url = buildUrl(`/api/players/?format=${format.toLowerCase()}`) // ✅ FIXED
 
     const res = await fetch(url, {
       method: "GET",
@@ -58,13 +54,18 @@ export async function fetchPlayers(format: string = "test"): Promise<Player[]> {
 
     const json = await res.json()
 
-    // ✅ Strict validation (prevents silent frontend break)
-    if (!json || !Array.isArray(json.data)) {
-      console.error("❌ Invalid API structure:", json)
-      return []
+    // ✅ Handle both API formats safely
+    if (Array.isArray(json)) {
+      return json
     }
 
-    return json.data
+    if (json && Array.isArray(json.data)) {
+      return json.data
+    }
+
+    console.error("❌ Invalid API structure:", json)
+    return []
+
   } catch (err) {
     console.error("❌ API Error:", err)
     return []
