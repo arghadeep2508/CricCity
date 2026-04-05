@@ -441,12 +441,12 @@ function addBorder(parent: THREE.Group, w: number, d: number, color: number) {
   const glowMat  = new THREE.MeshStandardMaterial({color,emissive:c,emissiveIntensity:6.0})
   const pilMat   = new THREE.MeshStandardMaterial({color:0x050c18,emissive:c,emissiveIntensity:3.5})
   ;[d/2,-d/2].forEach(z => {
-    parent.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(w+WT,WH,WT),wallMat),{position:new THREE.Vector3(0,WH/2,z)}))
-    parent.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(w+WT,0.65,WT*0.9),glowMat),{position:new THREE.Vector3(0,WH+0.33,z)}))
+    const w1=new THREE.Mesh(new THREE.BoxGeometry(w+WT,WH,WT),wallMat); w1.position.set(0,WH/2,z); parent.add(w1)
+    const g1=new THREE.Mesh(new THREE.BoxGeometry(w+WT,0.65,WT*0.9),glowMat); g1.position.set(0,WH+0.33,z); parent.add(g1)
   })
   ;[w/2,-w/2].forEach(x => {
-    parent.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(WT,WH,d+WT),wallMat),{position:new THREE.Vector3(x,WH/2,0)}))
-    parent.add(Object.assign(new THREE.Mesh(new THREE.BoxGeometry(WT*0.9,0.65,d+WT),glowMat),{position:new THREE.Vector3(x,WH+0.33,0)}))
+    const w2=new THREE.Mesh(new THREE.BoxGeometry(WT,WH,d+WT),wallMat); w2.position.set(x,WH/2,0); parent.add(w2)
+    const g2=new THREE.Mesh(new THREE.BoxGeometry(WT*0.9,0.65,d+WT),glowMat); g2.position.set(x,WH+0.33,0); parent.add(g2)
   })
   ;[[w/2,d/2],[w/2,-d/2],[-w/2,d/2],[-w/2,-d/2]].forEach(([x,z]) => {
     const pil = new THREE.Mesh(new THREE.BoxGeometry(4,WH*3.2,4),pilMat); pil.position.set(x,WH*1.6,z); parent.add(pil)
@@ -698,8 +698,8 @@ export default function CricCity() {
     // Lights
     scene.add(new THREE.AmbientLight(0x0d1f40,2.8))
     const dir=new THREE.DirectionalLight(0x3366ff,1.8); dir.position.set(100,300,100); scene.add(dir)
-    scene.add(Object.assign(new THREE.PointLight(0xff4400,0.35,1600),{position:new THREE.Vector3(0,-10,0)}))
-    scene.add(Object.assign(new THREE.PointLight(0x38bdf8,1.6,1000),{position:new THREE.Vector3(0,60,0)}))
+    const warmLight=new THREE.PointLight(0xff4400,0.35,1600); warmLight.position.set(0,-10,0); scene.add(warmLight)
+    const centerLight=new THREE.PointLight(0x38bdf8,1.6,1000); centerLight.position.set(0,60,0); scene.add(centerLight)
 
     // Ground + grid
     const gnd=new THREE.Mesh(new THREE.PlaneGeometry(16000,16000),new THREE.MeshStandardMaterial({color:0x010810}))
@@ -910,7 +910,7 @@ export default function CricCity() {
               const ring=new THREE.Mesh(new THREE.RingGeometry(w*0.9,w*1.35,36),rMat)
               ring.rotation.x=-Math.PI/2; ring.position.set(px,h*0.46,pz); dg.add(ring)
               const nm=(pl.name||pl.full_name||'').toUpperCase()||'LEGEND'
-              dg.add(Object.assign(mkLabel(`★ ${nm}`,0xffd700,0.74),{position:new THREE.Vector3(px,h+30,pz)}))
+              const ll=mkLabel(`★ ${nm}`,0xffd700,0.74); ll.position.set(px,h+30,pz); dg.add(ll)
               const hb=new THREE.Mesh(new THREE.BoxGeometry(w*1.5,h,w*1.5),new THREE.MeshBasicMaterial({visible:false}))
               hb.position.set(px,h/2,pz); hb.userData.halfH=h/2; dg.add(hb)
               hitMap.current.set(hb,{player:pl,team:key})
