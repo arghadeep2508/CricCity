@@ -42,13 +42,13 @@ const FLAG: Record<string,string> = {
 }
 
 /* district geometry */
-const DDIST   = 195   // centre→district (closer = bigger-looking)
-const RLEN    = 160   // road length
-const BSLOT   = 6.0   // slot per building (wider = more city feel)
+const DDIST   = 165   // centre→district (closer = bigger-looking)
+const RLEN    = 145   // road length
+const BSLOT   = 7.0   // slot per building (wider = more city feel)
 const BBLK    = 4     // buildings per block
-const BSTR    = 7.0   // street width
+const BSTR    = 8.0   // street width
 const IROAD   = 5     // half-width inner cross roads
-const DPAD    = 20    // platform padding
+const DPAD    = 18    // platform padding
 
 /* ═══════════════════════════════════════════════════════
    FIX #5  SCORING — best-format bonus so Sachin > Virat in TEST
@@ -133,48 +133,53 @@ function pickShape(role: string, idx: number, ns: number): BldShape {
 
 function buildingGroup(shape: BldShape, w: number, h: number, mat: THREE.Material): THREE.Group {
   const g  = new THREE.Group()
-  const sw = Math.min(w, 4.6)  // hard cap prevents overlap between 5.2-unit slots
+  const sw = Math.min(w, 5.8)  // slot is 6.0 — 0.2 gap each side
   switch (shape) {
     case 'tower': {
-      const s = new THREE.Mesh(new THREE.BoxGeometry(sw*0.52, h*0.76, sw*0.52), mat)
-      s.position.y = h*0.38; g.add(s)
-      const m = new THREE.Mesh(new THREE.BoxGeometry(sw*0.30, h*0.18, sw*0.30), mat)
-      m.position.y = h*0.76+h*0.09; g.add(m)
-      const tip = new THREE.Mesh(new THREE.ConeGeometry(sw*0.08, h*0.13, 4), mat)
-      tip.position.y = h*0.94+h*0.065; g.add(tip)
+      // Thick central shaft + narrower setback + spire tip
+      const s = new THREE.Mesh(new THREE.BoxGeometry(sw*0.88, h*0.72, sw*0.88), mat)
+      s.position.y = h*0.36; g.add(s)
+      const m = new THREE.Mesh(new THREE.BoxGeometry(sw*0.55, h*0.20, sw*0.55), mat)
+      m.position.y = h*0.72+h*0.10; g.add(m)
+      const tip = new THREE.Mesh(new THREE.ConeGeometry(sw*0.16, h*0.14, 6), mat)
+      tip.position.y = h*0.92+h*0.07; g.add(tip)
       break
     }
     case 'stepped': {
-      [[1.00,0.48,0.00],[0.68,0.30,0.48],[0.40,0.22,0.78]].forEach(([wf,hf,yb]) => {
+      // 3 wide tiers stepping inward — Empire State style
+      [[1.00,0.45,0.00],[0.75,0.32,0.45],[0.50,0.23,0.77]].forEach(([wf,hf,yb]) => {
         const m = new THREE.Mesh(new THREE.BoxGeometry(sw*wf, h*hf, sw*wf), mat)
         m.position.y = h*yb + h*hf/2; g.add(m)
       })
       break
     }
     case 'cylinder': {
-      const b = new THREE.Mesh(new THREE.CylinderGeometry(sw*0.38, sw*0.44, h*0.86, 8), mat)
-      b.position.y = h*0.43; g.add(b)
-      const d = new THREE.Mesh(new THREE.SphereGeometry(sw*0.38, 8, 6, 0, Math.PI*2, 0, Math.PI/2), mat)
-      d.position.y = h*0.86; g.add(d)
+      // Fat cylinder body + dome top
+      const b = new THREE.Mesh(new THREE.CylinderGeometry(sw*0.46, sw*0.48, h*0.85, 10), mat)
+      b.position.y = h*0.425; g.add(b)
+      const d = new THREE.Mesh(new THREE.SphereGeometry(sw*0.46, 10, 6, 0, Math.PI*2, 0, Math.PI/2), mat)
+      d.position.y = h*0.85; g.add(d)
       break
     }
     case 'slab': {
-      // wide & low — great for bowlers
-      const body = new THREE.Mesh(new THREE.BoxGeometry(sw, h*0.55, sw*0.80), mat)
-      body.position.y = h*0.275; g.add(body)
-      const top = new THREE.Mesh(new THREE.CylinderGeometry(sw*0.28, sw*0.34, h*0.38, 6), mat)
-      top.position.y = h*0.55+h*0.19; g.add(top)
+      // Wide block body + cylindrical tower on top
+      const body = new THREE.Mesh(new THREE.BoxGeometry(sw, h*0.52, sw*0.90), mat)
+      body.position.y = h*0.26; g.add(body)
+      const top = new THREE.Mesh(new THREE.CylinderGeometry(sw*0.36, sw*0.40, h*0.44, 8), mat)
+      top.position.y = h*0.52+h*0.22; g.add(top)
       break
     }
     case 'cruciform': {
-      const hz = new THREE.Mesh(new THREE.BoxGeometry(sw, h, sw*0.38), mat)
+      // Plus-shaped floor plan — wide arms
+      const hz = new THREE.Mesh(new THREE.BoxGeometry(sw, h, sw*0.70), mat)
       hz.position.y = h/2; g.add(hz)
-      const vt = new THREE.Mesh(new THREE.BoxGeometry(sw*0.38, h, sw), mat)
+      const vt = new THREE.Mesh(new THREE.BoxGeometry(sw*0.70, h, sw), mat)
       vt.position.y = h/2; g.add(vt)
       break
     }
     case 'pyramid': {
-      const body = new THREE.Mesh(new THREE.CylinderGeometry(sw*0.16, sw*0.46, h, 6), mat)
+      // Tapered obelisk
+      const body = new THREE.Mesh(new THREE.CylinderGeometry(sw*0.28, sw*0.48, h, 6), mat)
       body.position.y = h/2; g.add(body)
       break
     }
@@ -634,8 +639,8 @@ export default function CricCity() {
   const hitMap        = useRef<Map<THREE.Object3D,{player:any;team:string}>>(new Map())
   const droneGroupRef = useRef<THREE.Group|null>(null)
   const droneRotors   = useRef<THREE.Mesh[]>([])
-  const distRef       = useRef(245)
-  const tDistRef      = useRef(245)
+  const distRef       = useRef(185)
+  const tDistRef      = useRef(185)
   const droneModeRef  = useRef(false)
   const droneYawRef   = useRef(Math.PI)
   const keysRef       = useRef<Set<string>>(new Set())
@@ -882,26 +887,27 @@ export default function CricCity() {
             const role=(pl.personal_info?.role||pl.role||'').toLowerCase()
             const shape=pickShape(role,origIdx,ns)
 
-            // Building height — dramatic cyberpunk scale
-            let h = 8
+            // ══ BUILDING HEIGHT — edit numbers below to tune city scale ══
+            // ns = 0.0 (worst player in team) → 1.0 (best player in team)
+            let h = 12
             if (isLeg) {
-              h = 260 + ns*80          // legend: 260-340 — towers over EVERYTHING
+              h = 420 + ns*120         // LEGEND height → 420 to 540  (LINE ~893)
             } else if (role.includes('bowl')) {
-              h = 22 + Math.pow(ns,1.5)*110
+              h = 40 + Math.pow(ns,1.4)*200   // BOWLER height → 40 to 240  (LINE ~895)
             } else if (role.includes('all')) {
-              h = 30 + Math.pow(ns,1.2)*140
+              h = 55 + Math.pow(ns,1.1)*250   // ALL-ROUNDER height → 55 to 305  (LINE ~897)
             } else {
-              if (ns>0.85)     h=190+ns*70   // ~190-260
-              else if(ns>0.65) h=120+ns*65   // ~120-185
-              else if(ns>0.40) h=65+ns*55    // ~65-120
-              else if(ns>0.20) h=28+ns*40    // ~28-65
-              else             h=10+ns*22    // ~10-28
+              if (ns>0.85)     h=300+ns*120   // TOP batsmen   → 300-420  (LINE ~899)
+              else if(ns>0.65) h=190+ns*105   // GOOD batsmen  → 190-295  (LINE ~900)
+              else if(ns>0.40) h=100+ns*90    // MID batsmen   → 100-190  (LINE ~901)
+              else if(ns>0.20) h=45 +ns*55    // LOW batsmen   → 45-100   (LINE ~902)
+              else             h=14 +ns*35    // WEAK batsmen  → 14-45    (LINE ~903)
             }
-            h=(!isFinite(h)||h<=0)?10:h
+            h=(!isFinite(h)||h<=0)?14:h
 
-            // Width — max 5.5 in a 6.0-unit slot (0.5 gap = no overlap)
-            const wBase=isLeg?5.2:role.includes('bowl')?4.2+ns*0.8:role.includes('all')?4.0+ns*1.0:3.0+ns*2.0
-            const w=Math.min(wBase,5.5)
+            // Width — max 6.4 in a 7.0-unit slot (0.6 gap = no overlap)
+            const wBase=isLeg?6.0:role.includes('bowl')?5.0+ns*0.8:role.includes('all')?4.8+ns*1.0:3.5+ns*2.2
+            const w=Math.min(wBase,6.4)
 
             if (isLeg) {
               const gMat=new THREE.MeshStandardMaterial({map:goldTex,emissiveMap:goldTex,emissive:new THREE.Color(0xffaa00),emissiveIntensity:2.8})
@@ -954,7 +960,7 @@ export default function CricCity() {
         droneGroupRef.current.traverse(c=>{if((c as THREE.Mesh).isMesh)(c as THREE.Mesh).geometry.dispose()})
         droneGroupRef.current=null; droneRotors.current=[]
       }
-      distRef.current=245; tDistRef.current=245
+      distRef.current=185; tDistRef.current=185
     }
   }
 
