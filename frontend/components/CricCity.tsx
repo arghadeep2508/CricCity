@@ -390,8 +390,8 @@ function buildOuterRing(scene: THREE.Scene) {
     const a = (i/PC)*Math.PI*2
     const px = Math.cos(a)*R, pz = Math.sin(a)*R
     const isMajor = i%4===0, isMid = i%2===0
-    const hh = isMajor ? 88 : isMid ? 56 : 36
-    const tw = isMajor ? 5.5 : isMid ? 3.5 : 2.2
+    const hh = isMajor ? 42 : isMid ? 26 : 16
+    const tw = isMajor ? 4.0 : isMid ? 2.5 : 1.6
 
     const pylMat = new THREE.MeshStandardMaterial({
       color:0x060e24, emissive:isMajor?0x38bdf8:isMid?0x1e3a5f:0x0d1f40,
@@ -426,7 +426,7 @@ function buildOuterRing(scene: THREE.Scene) {
       // Cone tip
       const tip = new THREE.Mesh(new THREE.ConeGeometry(2.0,16,4),
         new THREE.MeshStandardMaterial({color:0xffd700,emissive:0xffaa00,emissiveIntensity:4}))
-      tip.position.set(px, hh+12, pz); scene.add(tip)
+      tip.position.set(px, hh+6, pz); scene.add(tip)
     }
   }
 }
@@ -634,8 +634,8 @@ export default function CricCity() {
   const hitMap        = useRef<Map<THREE.Object3D,{player:any;team:string}>>(new Map())
   const droneGroupRef = useRef<THREE.Group|null>(null)
   const droneRotors   = useRef<THREE.Mesh[]>([])
-  const distRef       = useRef(370)
-  const tDistRef      = useRef(370)
+  const distRef       = useRef(300)
+  const tDistRef      = useRef(300)
   const droneModeRef  = useRef(false)
   const droneYawRef   = useRef(Math.PI)
   const keysRef       = useRef<Set<string>>(new Set())
@@ -731,10 +731,10 @@ export default function CricCity() {
         drone.rotation.x=(keys.has('w')||keys.has('arrowup')||btns.fwd)?-0.10:0
         // Spin rotors
         droneRotors.current.forEach(r=>{r.rotation.y+=0.42})
-        // 3rd-person cam: behind + above drone
-        const behind=new THREE.Vector3(Math.sin(yaw)*28,14,Math.cos(yaw)*28)
-        camera.position.lerp(drone.position.clone().add(behind),0.14)
-        camera.lookAt(drone.position.clone().add(new THREE.Vector3(0,3,0)))
+        // 3rd-person cam: 30 units back so drone is fully visible in frame
+        const behind=new THREE.Vector3(Math.sin(yaw)*30, 10, Math.cos(yaw)*30)
+        camera.position.lerp(drone.position.clone().add(behind), 0.12)
+        camera.lookAt(drone.position.clone().add(new THREE.Vector3(0, 1, 0)))
       } else {
         distRef.current+=(tDistRef.current-distRef.current)*0.12; camUpdate()
       }
@@ -882,26 +882,26 @@ export default function CricCity() {
             const role=(pl.personal_info?.role||pl.role||'').toLowerCase()
             const shape=pickShape(role,origIdx,ns)
 
-            // Building height — dramatic curve
+            // Building height — dramatic curve, tall enough to read from overview
             let h = 5
             if (isLeg) {
-              h = 140 + ns*45
+              h = 180 + ns*60
             } else if (role.includes('bowl')) {
-              h = 7 + Math.pow(ns,1.7)*42
+              h = 12 + Math.pow(ns,1.6)*70
             } else if (role.includes('all')) {
-              h = 10 + Math.pow(ns,1.3)*54
+              h = 16 + Math.pow(ns,1.2)*85
             } else {
-              if (ns>0.85)     h=90+ns*30
-              else if(ns>0.65) h=50+ns*32
-              else if(ns>0.40) h=20+ns*26
-              else if(ns>0.20) h=9 +ns*18
-              else             h=3 +ns*10
+              if (ns>0.85)     h=130+ns*45
+              else if(ns>0.65) h=80+ns*50
+              else if(ns>0.40) h=36+ns*40
+              else if(ns>0.20) h=16+ns*28
+              else             h=6 +ns*18
             }
-            h=(!isFinite(h)||h<=0)?5:h
+            h=(!isFinite(h)||h<=0)?8:h
 
-            // Width — capped to prevent slot overlap
-            const wBase=isLeg?4.2:role.includes('bowl')?3.0+ns*1.3:role.includes('all')?2.8+ns*1.2:1.8+ns*1.7
-            const w=Math.min(wBase,4.5)
+            // Width — capped to prevent slot overlap (slot = 5.2 units)
+            const wBase=isLeg?4.6:role.includes('bowl')?3.8+ns*0.6:role.includes('all')?3.5+ns*0.8:2.5+ns*1.8
+            const w=Math.min(wBase,4.8)
 
             if (isLeg) {
               const gMat=new THREE.MeshStandardMaterial({map:goldTex,emissiveMap:goldTex,emissive:new THREE.Color(0xffaa00),emissiveIntensity:2.8})
@@ -944,7 +944,7 @@ export default function CricCity() {
       const {group,rotors}=buildDroneMesh()
       group.position.copy(camera.position)
       group.position.y=Math.max(14,camera.position.y)
-      group.scale.setScalar(3.2)  // visible scale
+      group.scale.setScalar(0.4)  // small proportional drone
       droneYawRef.current=Math.PI
       group.userData.city=true
       droneGroupRef.current=group; droneRotors.current=rotors; scene.add(group)
@@ -954,7 +954,7 @@ export default function CricCity() {
         droneGroupRef.current.traverse(c=>{if((c as THREE.Mesh).isMesh)(c as THREE.Mesh).geometry.dispose()})
         droneGroupRef.current=null; droneRotors.current=[]
       }
-      distRef.current=370; tDistRef.current=370
+      distRef.current=300; tDistRef.current=300
     }
   }
 
