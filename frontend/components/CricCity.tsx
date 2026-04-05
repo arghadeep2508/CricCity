@@ -42,13 +42,13 @@ const FLAG: Record<string,string> = {
 }
 
 /* district geometry */
-const DDIST   = 220   // centre→district
-const RLEN    = 178   // road length
-const BSLOT   = 5.2   // slot per building
+const DDIST   = 195   // centre→district (closer = bigger-looking)
+const RLEN    = 160   // road length
+const BSLOT   = 6.0   // slot per building (wider = more city feel)
 const BBLK    = 4     // buildings per block
-const BSTR    = 6.5   // street width
-const IROAD   = 6     // half-width inner cross roads
-const DPAD    = 26    // platform padding
+const BSTR    = 7.0   // street width
+const IROAD   = 5     // half-width inner cross roads
+const DPAD    = 20    // platform padding
 
 /* ═══════════════════════════════════════════════════════
    FIX #5  SCORING — best-format bonus so Sachin > Virat in TEST
@@ -390,8 +390,8 @@ function buildOuterRing(scene: THREE.Scene) {
     const a = (i/PC)*Math.PI*2
     const px = Math.cos(a)*R, pz = Math.sin(a)*R
     const isMajor = i%4===0, isMid = i%2===0
-    const hh = isMajor ? 42 : isMid ? 26 : 16
-    const tw = isMajor ? 4.0 : isMid ? 2.5 : 1.6
+    const hh = isMajor ? 32 : isMid ? 20 : 12
+    const tw = isMajor ? 3.5 : isMid ? 2.2 : 1.4
 
     const pylMat = new THREE.MeshStandardMaterial({
       color:0x060e24, emissive:isMajor?0x38bdf8:isMid?0x1e3a5f:0x0d1f40,
@@ -409,10 +409,10 @@ function buildOuterRing(scene: THREE.Scene) {
 
     if (isMajor) {
       // Cross arm
-      const arm = new THREE.Mesh(new THREE.BoxGeometry(22,1.0,1.0),
+      const arm = new THREE.Mesh(new THREE.BoxGeometry(16,0.8,0.8),
         new THREE.MeshStandardMaterial({color:0x0d1f40,emissive:0x38bdf8,emissiveIntensity:4.0}))
       arm.position.set(px, hh-8, pz); arm.rotation.y=a; scene.add(arm)
-      ;[-9.5,9.5].forEach(off => {
+      ;[-6.5,6.5].forEach(off => {
         const eo = new THREE.Mesh(new THREE.SphereGeometry(1.0,6,6),orbMat)
         const bp = new THREE.Vector3(off,0,0).applyAxisAngle(new THREE.Vector3(0,1,0),a)
         eo.position.set(px+bp.x, hh-8, pz+bp.z); scene.add(eo)
@@ -436,7 +436,7 @@ function buildOuterRing(scene: THREE.Scene) {
 ═══════════════════════════════════════════════════════ */
 function addBorder(parent: THREE.Group, w: number, d: number, color: number) {
   const c = new THREE.Color(color)
-  const WH=9, WT=2.0
+  const WH=14, WT=2.4
   const wallMat  = new THREE.MeshStandardMaterial({color:0x0a1020,emissive:c,emissiveIntensity:2.2})
   const glowMat  = new THREE.MeshStandardMaterial({color,emissive:c,emissiveIntensity:6.0})
   const pilMat   = new THREE.MeshStandardMaterial({color:0x050c18,emissive:c,emissiveIntensity:3.5})
@@ -514,15 +514,15 @@ function addInnerCross(parent: THREE.Group, platW: number, platD: number, color:
   })
   // Central fountain
   const fm = new THREE.MeshStandardMaterial({color:0x080e22,emissive:c,emissiveIntensity:0.8})
-  ;[{r:8,h:1.2,y:0.6},{r:4.8,h:1.8,y:2.1},{r:2.5,h:2.4,y:4.2},{r:1.1,h:2.0,y:6.4}].forEach(({r,h,y}) => {
+  ;[{r:10,h:1.6,y:0.8},{r:6.2,h:2.4,y:2.8},{r:3.2,h:3.2,y:5.6},{r:1.4,h:2.6,y:8.8}].forEach(({r,h,y}) => {
     const tier = new THREE.Mesh(new THREE.CylinderGeometry(r, r+1, h, 8), fm)
     tier.position.y=y; parent.add(tier)
   })
-  const topOrb = new THREE.Mesh(new THREE.SphereGeometry(1.4,8,8),
-    new THREE.MeshStandardMaterial({color:0xffffff,emissive:c,emissiveIntensity:11}))
-  topOrb.position.y=8.8; parent.add(topOrb)
-  const ring = new THREE.Mesh(new THREE.TorusGeometry(6,0.5,8,40),
-    new THREE.MeshStandardMaterial({color,emissive:c,emissiveIntensity:5.5}))
+  const topOrb = new THREE.Mesh(new THREE.SphereGeometry(1.8,8,8),
+    new THREE.MeshStandardMaterial({color:0xffffff,emissive:c,emissiveIntensity:12}))
+  topOrb.position.y=12.2; parent.add(topOrb)
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(7.5,0.6,8,40),
+    new THREE.MeshStandardMaterial({color,emissive:c,emissiveIntensity:6}))
   ring.rotation.x=Math.PI/2; ring.position.y=2.6; parent.add(ring)
   ;[[platW/2-5,0],[-(platW/2-5),0],[0,platD/2-5],[0,-(platD/2-5)]].forEach(([lx,lz]) => {
     const jl=new THREE.Mesh(new THREE.SphereGeometry(0.9,6,6),
@@ -634,8 +634,8 @@ export default function CricCity() {
   const hitMap        = useRef<Map<THREE.Object3D,{player:any;team:string}>>(new Map())
   const droneGroupRef = useRef<THREE.Group|null>(null)
   const droneRotors   = useRef<THREE.Mesh[]>([])
-  const distRef       = useRef(300)
-  const tDistRef      = useRef(300)
+  const distRef       = useRef(245)
+  const tDistRef      = useRef(245)
   const droneModeRef  = useRef(false)
   const droneYawRef   = useRef(Math.PI)
   const keysRef       = useRef<Set<string>>(new Set())
@@ -856,7 +856,7 @@ export default function CricCity() {
         addInnerCross(dg,platW2,platD2,p.border)
 
         const lbl=mkLabel(`${label}  (${n})`,p.border)
-        lbl.position.set(0,42,-(platD2/2+18)); dg.add(lbl)
+        lbl.position.set(0,55,-(platD2/2+20)); dg.add(lbl)
 
         if (n===0) return
 
@@ -882,26 +882,26 @@ export default function CricCity() {
             const role=(pl.personal_info?.role||pl.role||'').toLowerCase()
             const shape=pickShape(role,origIdx,ns)
 
-            // Building height — dramatic curve, tall enough to read from overview
-            let h = 5
+            // Building height — dramatic cyberpunk scale
+            let h = 8
             if (isLeg) {
-              h = 180 + ns*60
+              h = 260 + ns*80          // legend: 260-340 — towers over EVERYTHING
             } else if (role.includes('bowl')) {
-              h = 12 + Math.pow(ns,1.6)*70
+              h = 22 + Math.pow(ns,1.5)*110
             } else if (role.includes('all')) {
-              h = 16 + Math.pow(ns,1.2)*85
+              h = 30 + Math.pow(ns,1.2)*140
             } else {
-              if (ns>0.85)     h=130+ns*45
-              else if(ns>0.65) h=80+ns*50
-              else if(ns>0.40) h=36+ns*40
-              else if(ns>0.20) h=16+ns*28
-              else             h=6 +ns*18
+              if (ns>0.85)     h=190+ns*70   // ~190-260
+              else if(ns>0.65) h=120+ns*65   // ~120-185
+              else if(ns>0.40) h=65+ns*55    // ~65-120
+              else if(ns>0.20) h=28+ns*40    // ~28-65
+              else             h=10+ns*22    // ~10-28
             }
-            h=(!isFinite(h)||h<=0)?8:h
+            h=(!isFinite(h)||h<=0)?10:h
 
-            // Width — capped to prevent slot overlap (slot = 5.2 units)
-            const wBase=isLeg?4.6:role.includes('bowl')?3.8+ns*0.6:role.includes('all')?3.5+ns*0.8:2.5+ns*1.8
-            const w=Math.min(wBase,4.8)
+            // Width — max 5.5 in a 6.0-unit slot (0.5 gap = no overlap)
+            const wBase=isLeg?5.2:role.includes('bowl')?4.2+ns*0.8:role.includes('all')?4.0+ns*1.0:3.0+ns*2.0
+            const w=Math.min(wBase,5.5)
 
             if (isLeg) {
               const gMat=new THREE.MeshStandardMaterial({map:goldTex,emissiveMap:goldTex,emissive:new THREE.Color(0xffaa00),emissiveIntensity:2.8})
@@ -910,7 +910,7 @@ export default function CricCity() {
               const ring=new THREE.Mesh(new THREE.RingGeometry(w*0.9,w*1.35,36),rMat)
               ring.rotation.x=-Math.PI/2; ring.position.set(px,h*0.46,pz); dg.add(ring)
               const nm=(pl.name||pl.full_name||'').toUpperCase()||'LEGEND'
-              const ll=mkLabel(`★ ${nm}`,0xffd700,0.74); ll.position.set(px,h+30,pz); dg.add(ll)
+              const ll=mkLabel(`★ ${nm}`,0xffd700,0.74); ll.position.set(px,h+42,pz); dg.add(ll)
               const hb=new THREE.Mesh(new THREE.BoxGeometry(w*1.5,h,w*1.5),new THREE.MeshBasicMaterial({visible:false}))
               hb.position.set(px,h/2,pz); hb.userData.halfH=h/2; dg.add(hb)
               hitMap.current.set(hb,{player:pl,team:key})
@@ -954,7 +954,7 @@ export default function CricCity() {
         droneGroupRef.current.traverse(c=>{if((c as THREE.Mesh).isMesh)(c as THREE.Mesh).geometry.dispose()})
         droneGroupRef.current=null; droneRotors.current=[]
       }
-      distRef.current=300; tDistRef.current=300
+      distRef.current=245; tDistRef.current=245
     }
   }
 
