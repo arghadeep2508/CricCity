@@ -42,13 +42,13 @@ const FLAG: Record<string,string> = {
 }
 
 /* district geometry — CITY SCALE (increase DDIST/RLEN to spread city wider) */
-const DDIST   = 420   // centre→district: BIGGER = wider city spread
-const RLEN    = 370   // road spoke length
-const BSLOT   = 8.0   // slot per building
+const DDIST   = 900   // centre→district: BIGGER = wider city spread
+const RLEN    = 750   // road spoke length
+const BSLOT   = 10.0  // slot per building
 const BBLK    = 4     // buildings per block
-const BSTR    = 9.0   // street width
-const IROAD   = 6     // inner cross road half-width
-const DPAD    = 22    // platform padding
+const BSTR    = 12.0  // street width
+const IROAD   = 8     // inner cross road half-width
+const DPAD    = 30    // platform padding
 
 /* ═══════════════════════════════════════════════════════
    FIX #5  SCORING — best-format bonus so Sachin > Virat in TEST
@@ -414,86 +414,89 @@ function buildHQ(
    Big enough to feel like a city wall when you fly drones
 ═══════════════════════════════════════════════════════ */
 function buildOuterRing(scene: THREE.Scene) {
-  const R = 620  // HUGE outer ring radius — real city scale
+  const R = 1400  // MASSIVE outer ring — city wall visible from drone altitude
 
-  // ── Multiple ground ring tracks (runway feel) ──
-  ;[{r:R,     t:5.5, e:1.6, y:3.0, col:0x00e5ff},
-    {r:R-35,  t:2.5, e:0.5, y:1.4, col:0x9b00ff},
-    {r:R+35,  t:1.8, e:0.3, y:1.8, col:0xff00aa},
-    {r:R-70,  t:1.2, e:0.2, y:0.8, col:0x00e5ff},
-    {r:R+70,  t:1.0, e:0.2, y:1.0, col:0x9b00ff},
+  // ── 5 concentric ring tracks (city highway feel) ──
+  ;[{r:R,     t:10.0, e:2.2, y:5.0, col:0x00e5ff},
+    {r:R-80,  t:5.0,  e:0.7, y:2.0, col:0x9b00ff},
+    {r:R+80,  t:3.5,  e:0.5, y:2.5, col:0xff00aa},
+    {r:R-160, t:2.5,  e:0.2, y:1.0, col:0x00e5ff},
+    {r:R+160, t:2.0,  e:0.2, y:1.2, col:0x9b00ff},
   ].forEach(({r,t,e,y,col}) => {
-    const torus = new THREE.Mesh(new THREE.TorusGeometry(r,t,12,128),
+    const torus = new THREE.Mesh(new THREE.TorusGeometry(r,t,12,200),
       new THREE.MeshStandardMaterial({color:col,emissive:new THREE.Color(col),emissiveIntensity:e}))
     torus.rotation.x=Math.PI/2; torus.position.y=y; scene.add(torus)
   })
 
   // ── Wide ground glow band ──
-  const glow = new THREE.Mesh(new THREE.RingGeometry(R-90,R+90,128),
-    new THREE.MeshStandardMaterial({color:0x020820,emissive:0x00e5ff,emissiveIntensity:0.18,side:THREE.DoubleSide}))
+  const glow = new THREE.Mesh(new THREE.RingGeometry(R-220,R+220,200),
+    new THREE.MeshStandardMaterial({color:0x020820,emissive:0x00e5ff,emissiveIntensity:0.12,side:THREE.DoubleSide}))
   glow.rotation.x=-Math.PI/2; glow.position.y=0.3; scene.add(glow)
 
-  // ── 48 industrial pylons — mix of heavy columns and thin antennas ──
-  const PC = 48
+  // ── 64 industrial cyberpunk pylons ringing the city ──
+  const PC = 64
   for (let i=0; i<PC; i++) {
     const a = (i/PC)*Math.PI*2
     const px = Math.cos(a)*R, pz = Math.sin(a)*R
-    const isMajor = i%6===0   // every 6th = heavy industrial tower
-    const isMid   = i%3===0   // every 3rd = medium column
-    const hh = isMajor ? 55 : isMid ? 32 : 18
-    const tw = isMajor ? 7 : isMid ? 4 : 2.2
+    const isMajor = i%8===0   // 8 giant towers
+    const isMid   = i%4===0   // 16 medium towers
+    const hh = isMajor ? 260 : isMid ? 160 : 80
+    const tw = isMajor ? 18   : isMid ? 11  : 6
     const neon = isMajor ? 0x00e5ff : isMid ? 0x9b00ff : 0xff00aa
 
-    // Main structural column
-    const pylMat = new THREE.MeshStandardMaterial({color:0x0a0e18,emissive:new THREE.Color(neon),emissiveIntensity:isMajor?0.6:0.25,roughness:0.7,metalness:0.9})
-    const pylon = new THREE.Mesh(new THREE.BoxGeometry(tw, hh, tw), pylMat)
-    pylon.position.set(px, hh/2, pz); scene.add(pylon)
+    const pylMat = new THREE.MeshStandardMaterial({color:0x0a0e18,emissive:new THREE.Color(neon),emissiveIntensity:isMajor?0.9:0.3,roughness:0.7,metalness:0.9})
+    // Stepped body (3 tiers like HQ)
+    const pBase = new THREE.Mesh(new THREE.BoxGeometry(tw*1.8, hh*0.3, tw*1.8), pylMat)
+    pBase.position.set(px, hh*0.15, pz); scene.add(pBase)
+    const pMid = new THREE.Mesh(new THREE.BoxGeometry(tw*1.3, hh*0.42, tw*1.3), pylMat)
+    pMid.position.set(px, hh*0.3+hh*0.21, pz); scene.add(pMid)
+    const pTop = new THREE.Mesh(new THREE.BoxGeometry(tw, hh*0.32, tw), pylMat)
+    pTop.position.set(px, hh*0.72+hh*0.16, pz); scene.add(pTop)
+
+    // Neon rim at each step junction
+    ;[hh*0.3, hh*0.72].forEach(hy => {
+      const rim = new THREE.Mesh(new THREE.TorusGeometry(tw*0.9, 0.9, 6, 28),
+        new THREE.MeshStandardMaterial({color:neon,emissive:new THREE.Color(neon),emissiveIntensity:5}))
+      rim.rotation.x=Math.PI/2; rim.position.set(px, hy, pz); scene.add(rim)
+    })
 
     // Glowing orb on top
-    const orbMat = new THREE.MeshStandardMaterial({color:0xffffff,emissive:new THREE.Color(neon),emissiveIntensity:isMajor?14:isMid?8:4})
-    const orb = new THREE.Mesh(new THREE.SphereGeometry(isMajor?3.5:isMid?2.0:1.1,8,8), orbMat)
-    orb.position.set(px, hh+3.5, pz); scene.add(orb)
+    const orbMat = new THREE.MeshStandardMaterial({color:0xffffff,emissive:new THREE.Color(neon),emissiveIntensity:isMajor?18:isMid?12:6})
+    const orb = new THREE.Mesh(new THREE.SphereGeometry(isMajor?9:isMid?5.5:2.5,8,8), orbMat)
+    orb.position.set(px, hh+9, pz); scene.add(orb)
 
     if (isMajor) {
-      // Horizontal cross-arm (industrial beam)
-      const arm = new THREE.Mesh(new THREE.BoxGeometry(28, 2, 2),
-        new THREE.MeshStandardMaterial({color:0x0a0e18,emissive:new THREE.Color(neon),emissiveIntensity:3,roughness:0.5,metalness:1}))
-      arm.position.set(px, hh-10, pz); arm.rotation.y=a; scene.add(arm)
-      // Arm tip lights
-      ;[-12,12].forEach(off => {
+      // Wide crossarm
+      const arm = new THREE.Mesh(new THREE.BoxGeometry(100, 5, 5),
+        new THREE.MeshStandardMaterial({color:0x0a0e18,emissive:new THREE.Color(neon),emissiveIntensity:4,roughness:0.5,metalness:1}))
+      arm.position.set(px, hh-35, pz); arm.rotation.y=a; scene.add(arm)
+      ;[-40,40].forEach(off => {
         const bp = new THREE.Vector3(off,0,0).applyAxisAngle(new THREE.Vector3(0,1,0),a)
-        const el = new THREE.Mesh(new THREE.SphereGeometry(1.4,6,6), orbMat)
-        el.position.set(px+bp.x, hh-10, pz+bp.z); scene.add(el)
+        const el = new THREE.Mesh(new THREE.SphereGeometry(5,6,6), orbMat)
+        el.position.set(px+bp.x, hh-35, pz+bp.z); scene.add(el)
       })
-      // Neon vertical strips on sides
-      ;[-3.5,3.5].forEach(d => {
-        const strip = new THREE.Mesh(new THREE.BoxGeometry(0.5,hh,0.5),
-          new THREE.MeshStandardMaterial({color:neon,emissive:new THREE.Color(neon),emissiveIntensity:3.5}))
+      // Vertical neon strips
+      ;[-8,8].forEach(d => {
+        const strip = new THREE.Mesh(new THREE.BoxGeometry(1.2,hh,1.2),
+          new THREE.MeshStandardMaterial({color:neon,emissive:new THREE.Color(neon),emissiveIntensity:4}))
         strip.position.set(px+Math.cos(a+Math.PI/2)*d, hh/2, pz+Math.sin(a+Math.PI/2)*d); scene.add(strip)
       })
-      // Industrial stepped cap
-      const cap1 = new THREE.Mesh(new THREE.BoxGeometry(tw+4, 3, tw+4), pylMat)
-      cap1.position.set(px, hh+1.5, pz); scene.add(cap1)
-      const cap2 = new THREE.Mesh(new THREE.BoxGeometry(tw+8, 2, tw+8), pylMat)
-      cap2.position.set(px, hh-2, pz); scene.add(cap2)
-      // Gold cone tip
-      const tip = new THREE.Mesh(new THREE.ConeGeometry(3, 12, 4),
-        new THREE.MeshStandardMaterial({color:0xffd700,emissive:0xffaa00,emissiveIntensity:5}))
-      tip.position.set(px, hh+8, pz); scene.add(tip)
-    } else if (isMid) {
-      // Stepped cap for medium pylons
-      const cap = new THREE.Mesh(new THREE.BoxGeometry(tw+3, 2, tw+3), pylMat)
-      cap.position.set(px, hh+1, pz); scene.add(cap)
+      // Gold spire tip
+      const tip = new THREE.Mesh(new THREE.ConeGeometry(10, 50, 4),
+        new THREE.MeshStandardMaterial({color:0xffd700,emissive:0xffaa00,emissiveIntensity:6}))
+      tip.position.set(px, hh+36, pz); scene.add(tip)
+      // Massive search beam
+      const beam = new THREE.Mesh(new THREE.CylinderGeometry(1.5,15,800,6),
+        new THREE.MeshStandardMaterial({color:0x00e5ff,emissive:0x00e5ff,emissiveIntensity:3,transparent:true,opacity:0.04}))
+      beam.position.set(px, hh+400, pz); scene.add(beam)
     }
   }
 
-  // ── Connecting infrastructure between major pylons ──
-  for (let i=0; i<PC; i+=6) {
-    const a1=(i/PC)*Math.PI*2, a2=((i+6)/PC)*Math.PI*2
-    const mx=(Math.cos(a1)+Math.cos(a2))*0.5*R, mz=(Math.sin(a1)+Math.sin(a2))*0.5*R
-    const neonBar = new THREE.Mesh(new THREE.TorusGeometry(R, 0.8, 6, 8, Math.PI/4),
-      new THREE.MeshStandardMaterial({color:0x00e5ff,emissive:0x00e5ff,emissiveIntensity:2.5}))
-    neonBar.rotation.x=Math.PI/2; neonBar.rotation.z=a1; neonBar.position.y=28; scene.add(neonBar)
+  // ── Arc neon bars connecting major pylons at altitude ──
+  for (let i=0; i<PC; i+=8) {
+    const neonBar = new THREE.Mesh(new THREE.TorusGeometry(R, 2.5, 6, 8, Math.PI/4),
+      new THREE.MeshStandardMaterial({color:0x00e5ff,emissive:0x00e5ff,emissiveIntensity:3}))
+    neonBar.rotation.x=Math.PI/2; neonBar.rotation.z=(i/PC)*Math.PI*2; neonBar.position.y=130; scene.add(neonBar)
   }
 }
 
@@ -700,8 +703,8 @@ export default function CricCity() {
   const hitMap        = useRef<Map<THREE.Object3D,{player:any;team:string}>>(new Map())
   const droneGroupRef = useRef<THREE.Group|null>(null)
   const droneRotors   = useRef<THREE.Mesh[]>([])
-  const distRef       = useRef(680)
-  const tDistRef      = useRef(680)
+  const distRef       = useRef(1300)
+  const tDistRef      = useRef(1300)
   const droneModeRef  = useRef(false)
   const droneYawRef   = useRef(Math.PI)
   const keysRef       = useRef<Set<string>>(new Set())
@@ -720,7 +723,7 @@ export default function CricCity() {
     if (!mountRef.current) return
     const scene = new THREE.Scene()
     scene.background = new THREE.Color(0x000810)
-    scene.fog = new THREE.FogExp2(0x00060e, 0.00028)
+    scene.fog = new THREE.FogExp2(0x00060e, 0.000055)
     sceneRef.current = scene
     const camera = new THREE.PerspectiveCamera(55,window.innerWidth/window.innerHeight,0.1,30000)
     cameraRef.current = camera
@@ -749,9 +752,9 @@ export default function CricCity() {
     const onWheel = (e: WheelEvent) => {
       e.preventDefault()
       if (droneModeRef.current) {
-        if (droneGroupRef.current) droneGroupRef.current.position.y = Math.max(3, Math.min(280, droneGroupRef.current.position.y+e.deltaY*0.04))
+        if (droneGroupRef.current) droneGroupRef.current.position.y = Math.max(3, Math.min(1200, droneGroupRef.current.position.y+e.deltaY*0.08))
       } else {
-        tDistRef.current = Math.max(15, Math.min(6000, tDistRef.current*Math.exp(e.deltaY*0.001)))
+        tDistRef.current = Math.max(15, Math.min(10000, tDistRef.current*Math.exp(e.deltaY*0.001)))
       }
     }
     const onKD = (e: KeyboardEvent) => keysRef.current.add(e.key.toLowerCase())
@@ -782,17 +785,17 @@ export default function CricCity() {
 
       if (droneModeRef.current && droneGroupRef.current) {
         const drone=droneGroupRef.current, keys=keysRef.current, btns=btnsRef.current
-        const SPEED=4.5, YAW=0.018   // fast enough to traverse the big city
+        const SPEED=18.0, YAW=0.018   // fast enough to traverse the big city
         const yaw=droneYawRef.current
         if (keys.has('a')||keys.has('arrowleft') ||btns.left)  droneYawRef.current-=YAW
         if (keys.has('d')||keys.has('arrowright')||btns.right) droneYawRef.current+=YAW
         const fwd=new THREE.Vector3(-Math.sin(yaw),0,-Math.cos(yaw))
         if (keys.has('w')||keys.has('arrowup')  ||btns.fwd)  drone.position.addScaledVector(fwd,SPEED)
         if (keys.has('s')||keys.has('arrowdown')||btns.back) drone.position.addScaledVector(fwd,-SPEED*0.6)
-        if (keys.has('q')||btns.up)   drone.position.y=Math.min(1000,drone.position.y+SPEED*0.7)
+        if (keys.has('q')||btns.up)   drone.position.y=Math.min(1200,drone.position.y+SPEED*0.7)
         if (keys.has('e')||btns.down) drone.position.y=Math.max(3,   drone.position.y-SPEED*0.7)
-        drone.position.x=THREE.MathUtils.clamp(drone.position.x,-1800,1800)
-        drone.position.z=THREE.MathUtils.clamp(drone.position.z,-1800,1800)
+        drone.position.x=THREE.MathUtils.clamp(drone.position.x,-4000,4000)
+        drone.position.z=THREE.MathUtils.clamp(drone.position.z,-4000,4000)
         drone.rotation.y=yaw
         drone.rotation.x=(keys.has('w')||keys.has('arrowup')||btns.fwd)?-0.10:0
         // Spin rotors
@@ -966,9 +969,9 @@ export default function CricCity() {
             }
             h=(!isFinite(h)||h<=0)?22:h
 
-            // Width — max 7.2 in a 8.0-unit slot (0.8 gap = no overlap)
-            const wBase=isLeg?7.0:role.includes('bowl')?5.8+ns*1.0:role.includes('all')?5.5+ns*1.2:4.0+ns*2.8
-            const w=Math.min(wBase,7.2)
+            // Width — max 9.0 in a 10.0-unit slot (1.0 gap = no overlap)
+            const wBase=isLeg?8.5:role.includes('bowl')?7.0+ns*1.2:role.includes('all')?6.8+ns*1.5:5.0+ns*3.2
+            const w=Math.min(wBase,9.0)
 
             if (isLeg) {
               const gMat=new THREE.MeshStandardMaterial({map:goldTex,emissiveMap:goldTex,emissive:new THREE.Color(0xffaa00),emissiveIntensity:2.8})
@@ -1021,7 +1024,7 @@ export default function CricCity() {
         droneGroupRef.current.traverse(c=>{if((c as THREE.Mesh).isMesh)(c as THREE.Mesh).geometry.dispose()})
         droneGroupRef.current=null; droneRotors.current=[]
       }
-      distRef.current=680; tDistRef.current=680
+      distRef.current=1300; tDistRef.current=1300
     }
   }
 
