@@ -226,16 +226,19 @@ function mkGoldTex(): THREE.CanvasTexture {
 }
 
 function mkLabel(text: string, colorHex: number, sz = 1): THREE.Sprite {
-  const cv = document.createElement('canvas'); cv.width=480; cv.height=88
+  const cv = document.createElement('canvas'); cv.width=960; cv.height=176
   const cx = cv.getContext('2d')!
   const hex = '#'+new THREE.Color(colorHex).getHexString()
-  cx.clearRect(0,0,480,88)
-  cx.fillStyle='rgba(0,4,18,0.93)'; cx.beginPath(); cx.roundRect(2,4,476,80,10); cx.fill()
-  cx.strokeStyle=hex; cx.lineWidth=2.5; cx.beginPath(); cx.roundRect(2,4,476,80,10); cx.stroke()
-  cx.fillStyle=hex; cx.font='bold 26px "Courier New",monospace'; cx.textAlign='center'; cx.textBaseline='middle'
-  cx.fillText(text, 240, 46)
+  cx.clearRect(0,0,960,176)
+  cx.fillStyle='rgba(0,4,18,0.95)'; cx.beginPath(); cx.roundRect(4,8,952,160,16); cx.fill()
+  cx.strokeStyle=hex; cx.lineWidth=5; cx.beginPath(); cx.roundRect(4,8,952,160,16); cx.stroke()
+  // Glow effect — double stroke
+  cx.strokeStyle=hex.replace(')',', 0.35)').replace('rgb','rgba'); cx.lineWidth=14
+  cx.beginPath(); cx.roundRect(4,8,952,160,16); cx.stroke()
+  cx.fillStyle=hex; cx.font='bold 56px "Courier New",monospace'; cx.textAlign='center'; cx.textBaseline='middle'
+  cx.shadowColor=hex; cx.shadowBlur=20; cx.fillText(text, 480, 92); cx.shadowBlur=0
   const spr = new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cv), transparent:true, depthTest:false}))
-  spr.scale.set(28*sz, 7*sz, 1); return spr
+  spr.scale.set(280*sz, 70*sz, 1); return spr
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -777,7 +780,7 @@ export default function CricCity() {
 
       if (droneModeRef.current && droneGroupRef.current) {
         const drone=droneGroupRef.current, keys=keysRef.current, btns=btnsRef.current
-        const SPEED=18.0, YAW=0.018   // fast enough to traverse the big city
+        const SPEED=4.5, YAW=0.016   // smooth city cruise speed
         const yaw=droneYawRef.current
         if (keys.has('a')||keys.has('arrowleft') ||btns.left)  droneYawRef.current-=YAW
         if (keys.has('d')||keys.has('arrowright')||btns.right) droneYawRef.current+=YAW
@@ -916,8 +919,8 @@ export default function CricCity() {
         addBorder(dg,platW2,platD2,p.border)
         addInnerCross(dg,platW2,platD2,p.border)
 
-        const lbl=mkLabel(`${label}  (${n})`,p.border)
-        lbl.position.set(0,160,-(platD2/2+30)); dg.add(lbl)
+        const lbl=mkLabel(`${FLAG[key]||'🏏'} ${label}  (${n})`,p.border, 1.4)
+        lbl.position.set(0,280,-(platD2/2+60)); dg.add(lbl)
 
         if (n===0) return
 
@@ -973,7 +976,7 @@ export default function CricCity() {
               const ring=new THREE.Mesh(new THREE.RingGeometry(w*0.9,w*1.35,36),rMat)
               ring.rotation.x=-Math.PI/2; ring.position.set(px,h*0.46,pz); dg.add(ring)
               const nm=(pl.name||pl.full_name||'').toUpperCase()||'LEGEND'
-              const ll=mkLabel(`★ ${nm}`,0xffd700,0.74); ll.position.set(px,h+80,pz); dg.add(ll)
+              const ll=mkLabel(`★ ${nm}`,0xffd700,1.2); ll.position.set(px,h+160,pz); dg.add(ll)
               const hb=new THREE.Mesh(new THREE.BoxGeometry(w*1.5,h,w*1.5),new THREE.MeshBasicMaterial({visible:false}))
               hb.position.set(px,h/2,pz); hb.userData.halfH=h/2; dg.add(hb)
               hitMap.current.set(hb,{player:pl,team:key})
