@@ -100,6 +100,12 @@ CricCity turns numbers into **space, structure, and interaction**.
 
 ---
 
+## 📸 Preview
+
+![CricCity Preview](https://via.placeholder.com/1200x600?text=CricCity+3D+City+Preview)
+
+---
+
 ## 🧑‍💻 Author
 
 **Arghadeep Das**  
