@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, type MutableRefObject } from 'react'
 import * as THREE from 'three'
 import { fetchPlayers } from '@/lib/api'
 
@@ -13,14 +13,14 @@ type Pal      = { border:number; emissive:number; ground:number; batsman:number;
 type AllMax   = { runs:Record<Format,number>; wkts:Record<Format,number>; avg:Record<Format,number>; sr:Record<Format,number>; eco:Record<Format,number> }
 
 const TEAM_LAYOUT = [
-  { key:'sri lanka',    angle: Math.PI/2,         label:'SRI LANKA'    },
-  { key:'afghanistan', angle: Math.PI/4,          label:'AFGHANISTAN'  },
-  { key:'england',     angle: 0,                  label:'ENGLAND'      },
-  { key:'australia',   angle:-Math.PI/4,          label:'AUSTRALIA'    },
-  { key:'india',       angle:-Math.PI/2,          label:'INDIA'        },
-  { key:'south africa',angle:-(3*Math.PI)/4,      label:'SOUTH AFRICA' },
-  { key:'west indies', angle: Math.PI,            label:'WEST INDIES'  },
-  { key:'new zealand', angle: (3*Math.PI)/4,      label:'NEW ZEALAND'  },
+  { key:'sri lanka',    angle: Math.PI/2,        label:'SRI LANKA'    },
+  { key:'afghanistan', angle: Math.PI/4,         label:'AFGHANISTAN'  },
+  { key:'england',     angle: 0,                 label:'ENGLAND'      },
+  { key:'australia',   angle:-Math.PI/4,         label:'AUSTRALIA'    },
+  { key:'india',       angle:-Math.PI/2,         label:'INDIA'        },
+  { key:'south africa',angle:-(3*Math.PI)/4,     label:'SOUTH AFRICA' },
+  { key:'west indies', angle: Math.PI,           label:'WEST INDIES'  },
+  { key:'new zealand', angle: (3*Math.PI)/4,     label:'NEW ZEALAND'  },
 ] as const
 
 const PALETTE: Record<string,Pal> = {
@@ -34,26 +34,26 @@ const PALETTE: Record<string,Pal> = {
   'west indies': {border:0xf472b6,emissive:0x9d174d,ground:0x130010,batsman:0xf472b6,bowler:0xfb923c,allrounder:0xa78bfa},
 }
 const FALLBACK: Pal = {border:0x60a5fa,emissive:0x1e40af,ground:0x050d1a,batsman:0x60a5fa,bowler:0xf97316,allrounder:0x34d399}
-const getPal = (t: string): Pal => PALETTE[t] ?? FALLBACK
+const getPal = (t:string): Pal => PALETTE[t] ?? FALLBACK
 
 const FLAG: Record<string,string> = {
   india:'🇮🇳', australia:'🇦🇺', england:'🏴󠁧󠁢󠁥󠁮󠁧󠁿', 'south africa':'🇿🇦',
   'new zealand':'🇳🇿', afghanistan:'🇦🇫', 'sri lanka':'🇱🇰', 'west indies':'🏝️',
 }
 
-/* district geometry — CITY SCALE (increase DDIST/RLEN to spread city wider) */
-const DDIST   = 900   // centre→district: BIGGER = wider city spread
-const RLEN    = 750   // road spoke length
-const BSLOT   = 30.0  // slot per building — wide enough for chunky blocks
-const BBLK    = 3     // buildings per block
-const BSTR    = 20.0  // street width between blocks
-const IROAD   = 12    // inner cross road half-width
-const DPAD    = 40    // platform padding
+/* district geometry */
+const DDIST  = 900
+const RLEN   = 750
+const BSLOT  = 30.0
+const BBLK   = 3
+const BSTR   = 20.0
+const IROAD  = 12
+const DPAD   = 40
 
 /* ═══════════════════════════════════════════════════════
-   FIX #5  SCORING — best-format bonus so Sachin > Virat in TEST
+   SCORING
 ═══════════════════════════════════════════════════════ */
-function computeAllMax(players: any[]): AllMax {
+function computeAllMax(players:any[]): AllMax {
   const r: AllMax = {
     runs:{test:1,odi:1,t20:1}, wkts:{test:1,odi:1,t20:1},
     avg:{test:1,odi:1,t20:1},  sr:{test:1,odi:1,t20:1}, eco:{test:0.01,odi:0.01,t20:0.01}
@@ -71,7 +71,7 @@ function computeAllMax(players: any[]): AllMax {
   return r
 }
 
-function fmtScore(p: any, f: Format, mx: AllMax): number {
+function fmtScore(p:any, f:Format, mx:AllMax): number {
   const role = (p.personal_info?.role || p.role || '').toLowerCase()
   const b = p.stats?.batting?.[f]  ?? {}
   const w = p.stats?.bowling?.[f]  ?? {}
@@ -79,102 +79,84 @@ function fmtScore(p: any, f: Format, mx: AllMax): number {
   const bAv = (b.average       || 0) / mx.avg[f]
   const bSR = (b.strike_rate   || 0) / mx.sr[f]
   const wW  = (w.wickets       || 0) / mx.wkts[f]
-  const wE  = w.economy > 0 ? Math.min(1, (mx.eco[f] * 0.4) / w.economy) : 0
+  const wE  = w.economy > 0 ? Math.min(1,(mx.eco[f]*0.4)/w.economy) : 0
   if (role.includes('bowl'))
     return f==='t20'?wW*0.45+wE*0.55:f==='odi'?wW*0.52+wE*0.48:wW*0.65+wE*0.35
   if (role.includes('all')) {
     const bs = f==='t20'?bR*0.30+bAv*0.35+bSR*0.35:f==='odi'?bR*0.40+bAv*0.35+bSR*0.25:bR*0.40+bAv*0.60
     const ws = f==='t20'?wW*0.45+wE*0.55:f==='odi'?wW*0.52+wE*0.48:wW*0.65+wE*0.35
-    return (bs + ws) / 2
+    return (bs+ws)/2
   }
   return f==='t20'?bR*0.30+bAv*0.35+bSR*0.35:f==='odi'?bR*0.40+bAv*0.35+bSR*0.25:bR*0.40+bAv*0.60
 }
 
-// Career height = weighted average + 40% weight on best single format → Sachin dominates TEST view
-function careerScore(p: any, mx: AllMax): number {
-  const t = fmtScore(p,'test',mx), o = fmtScore(p,'odi',mx), t20 = fmtScore(p,'t20',mx)
-  const weighted = t*0.40 + o*0.35 + t20*0.25
-  const best     = Math.max(t, o, t20)
-  return weighted * 0.60 + best * 0.40
+function careerScore(p:any, mx:AllMax): number {
+  const t=fmtScore(p,'test',mx), o=fmtScore(p,'odi',mx), t2=fmtScore(p,'t20',mx)
+  return (t*0.40+o*0.35+t2*0.25)*0.60 + Math.max(t,o,t2)*0.40
 }
 
 /* ═══════════════════════════════════════════════════════
    COUNTRY NORMALISER
 ═══════════════════════════════════════════════════════ */
-function normalizeCountry(p: any): string {
-  const raw = (p.country||p.team||p.personal_info?.country||p.personal_info?.team||p.nationality||'')
+function normalizeCountry(p:any): string {
+  const raw=(p.country||p.team||p.personal_info?.country||p.personal_info?.team||p.nationality||'')
     .toString().toLowerCase().trim()
   if (!raw) return 'world'
-  if (raw.includes('india')  ||raw==='ind')                       return 'india'
-  if (raw.includes('eng')    ||raw==='eng')                       return 'england'
-  if (raw.includes('aus')    ||raw==='aus')                       return 'australia'
-  if (raw.includes('south')  ||raw==='sa'||raw==='rsa')           return 'south africa'
-  if (raw.includes('zealand')||raw.includes('nz')||raw==='nzl')  return 'new zealand'
-  if (raw.includes('afghan') ||raw==='afg')                       return 'afghanistan'
-  if (raw.includes('sri')    ||raw==='slc'||raw==='sl')           return 'sri lanka'
-  if (raw.includes('west')   ||raw.includes('windies')||raw==='wi')return 'west indies'
+  if (raw.includes('india')   || raw==='ind')                      return 'india'
+  if (raw.includes('eng')     || raw==='eng')                      return 'england'
+  if (raw.includes('aus')     || raw==='aus')                      return 'australia'
+  if (raw.includes('south')   || raw==='sa' || raw==='rsa')        return 'south africa'
+  if (raw.includes('zealand') || raw.includes('nz')||raw==='nzl')  return 'new zealand'
+  if (raw.includes('afghan')  || raw==='afg')                      return 'afghanistan'
+  if (raw.includes('sri')     || raw==='slc'||raw==='sl')          return 'sri lanka'
+  if (raw.includes('west')    || raw.includes('windies')||raw==='wi') return 'west indies'
   return 'world'
 }
 
 /* ═══════════════════════════════════════════════════════
-   FIX #3  BUILDING SHAPES — variety, no overlap
-   Each slot = 5.2 units. Building width capped at 4.6.
+   BUILDING SHAPES
 ═══════════════════════════════════════════════════════ */
-function pickShape(role: string, idx: number, ns: number): BldShape {
-  const seed = (idx * 137 + ~~(ns * 89)) % 6
-  if (role.includes('bowl'))
-    return (['cylinder','slab','pyramid'] as BldShape[])[seed % 3]
-  if (role.includes('all'))
-    return (['cruciform','stepped','slab'] as BldShape[])[seed % 3]
-  if (ns > 0.75) return seed < 3 ? 'tower' : 'stepped'
-  if (ns > 0.50) return seed < 3 ? 'stepped' : 'tower'
-  return (['cylinder','slab','pyramid','tower'] as BldShape[])[seed % 4]
+function pickShape(role:string, idx:number, ns:number): BldShape {
+  const seed = (idx*137 + ~~(ns*89)) % 6
+  if (role.includes('bowl')) return (['cylinder','slab','pyramid'] as BldShape[])[seed%3]
+  if (role.includes('all'))  return (['cruciform','stepped','slab'] as BldShape[])[seed%3]
+  if (ns>0.75) return seed<3?'tower':'stepped'
+  if (ns>0.50) return seed<3?'stepped':'tower'
+  return (['cylinder','slab','pyramid','tower'] as BldShape[])[seed%4]
 }
 
-function buildingGroup(shape: BldShape, w: number, h: number, mat: THREE.Material): THREE.Group {
-  const g  = new THREE.Group()
-  const sw = w  // NO artificial cap — caller already limits to slot size
-  switch (shape) {
+function buildingGroup(shape:BldShape, w:number, h:number, mat:THREE.Material): THREE.Group {
+  const g = new THREE.Group()
+  const sw = w
+  switch(shape) {
     case 'tower': {
-      const s = new THREE.Mesh(new THREE.BoxGeometry(sw*0.90, h*0.70, sw*0.90), mat)
-      s.position.y = h*0.35; g.add(s)
-      const m = new THREE.Mesh(new THREE.BoxGeometry(sw*0.60, h*0.22, sw*0.60), mat)
-      m.position.y = h*0.70+h*0.11; g.add(m)
-      const tip = new THREE.Mesh(new THREE.ConeGeometry(sw*0.18, h*0.12, 6), mat)
-      tip.position.y = h*0.92+h*0.06; g.add(tip)
+      const s=new THREE.Mesh(new THREE.BoxGeometry(sw*0.90,h*0.70,sw*0.90),mat); s.position.y=h*0.35; g.add(s)
+      const m=new THREE.Mesh(new THREE.BoxGeometry(sw*0.60,h*0.22,sw*0.60),mat); m.position.y=h*0.70+h*0.11; g.add(m)
+      const tip=new THREE.Mesh(new THREE.ConeGeometry(sw*0.18,h*0.12,6),mat); tip.position.y=h*0.92+h*0.06; g.add(tip)
       break
     }
     case 'stepped': {
-      [[1.00,0.46,0.00],[0.76,0.32,0.46],[0.52,0.22,0.78]].forEach(([wf,hf,yb]) => {
-        const m = new THREE.Mesh(new THREE.BoxGeometry(sw*wf, h*hf, sw*wf), mat)
-        m.position.y = h*yb + h*hf/2; g.add(m)
-      })
-      break
+      [[1.00,0.46,0.00],[0.76,0.32,0.46],[0.52,0.22,0.78]].forEach(([wf,hf,yb])=>{
+        const m=new THREE.Mesh(new THREE.BoxGeometry(sw*wf,h*hf,sw*wf),mat); m.position.y=h*yb+h*hf/2; g.add(m)
+      }); break
     }
     case 'cylinder': {
-      const b = new THREE.Mesh(new THREE.CylinderGeometry(sw*0.48, sw*0.50, h*0.86, 10), mat)
-      b.position.y = h*0.43; g.add(b)
-      const d = new THREE.Mesh(new THREE.SphereGeometry(sw*0.48, 10, 6, 0, Math.PI*2, 0, Math.PI/2), mat)
-      d.position.y = h*0.86; g.add(d)
+      const b=new THREE.Mesh(new THREE.CylinderGeometry(sw*0.48,sw*0.50,h*0.86,10),mat); b.position.y=h*0.43; g.add(b)
+      const d=new THREE.Mesh(new THREE.SphereGeometry(sw*0.48,10,6,0,Math.PI*2,0,Math.PI/2),mat); d.position.y=h*0.86; g.add(d)
       break
     }
     case 'slab': {
-      const body = new THREE.Mesh(new THREE.BoxGeometry(sw, h*0.55, sw*0.92), mat)
-      body.position.y = h*0.275; g.add(body)
-      const top = new THREE.Mesh(new THREE.CylinderGeometry(sw*0.38, sw*0.42, h*0.42, 8), mat)
-      top.position.y = h*0.55+h*0.21; g.add(top)
+      const body=new THREE.Mesh(new THREE.BoxGeometry(sw,h*0.55,sw*0.92),mat); body.position.y=h*0.275; g.add(body)
+      const top=new THREE.Mesh(new THREE.CylinderGeometry(sw*0.38,sw*0.42,h*0.42,8),mat); top.position.y=h*0.55+h*0.21; g.add(top)
       break
     }
     case 'cruciform': {
-      const hz = new THREE.Mesh(new THREE.BoxGeometry(sw, h, sw*0.72), mat)
-      hz.position.y = h/2; g.add(hz)
-      const vt = new THREE.Mesh(new THREE.BoxGeometry(sw*0.72, h, sw), mat)
-      vt.position.y = h/2; g.add(vt)
+      const hz=new THREE.Mesh(new THREE.BoxGeometry(sw,h,sw*0.72),mat); hz.position.y=h/2; g.add(hz)
+      const vt=new THREE.Mesh(new THREE.BoxGeometry(sw*0.72,h,sw),mat); vt.position.y=h/2; g.add(vt)
       break
     }
     case 'pyramid': {
-      const body = new THREE.Mesh(new THREE.CylinderGeometry(sw*0.30, sw*0.50, h, 6), mat)
-      body.position.y = h/2; g.add(body)
+      const body=new THREE.Mesh(new THREE.CylinderGeometry(sw*0.30,sw*0.50,h,6),mat); body.position.y=h/2; g.add(body)
       break
     }
   }
@@ -184,341 +166,272 @@ function buildingGroup(shape: BldShape, w: number, h: number, mat: THREE.Materia
 /* ═══════════════════════════════════════════════════════
    GRID HELPERS
 ═══════════════════════════════════════════════════════ */
-function slotPos(col: number, row: number) {
-  return { x: col*BSLOT + Math.floor(col/BBLK)*BSTR, z: row*BSLOT + Math.floor(row/BBLK)*BSTR }
+function slotPos(col:number, row:number) {
+  return {x:col*BSLOT+Math.floor(col/BBLK)*BSTR, z:row*BSLOT+Math.floor(row/BBLK)*BSTR}
 }
-function axisSpan(n: number) {
-  if (n <= 0) return 0
-  return (n-1)*BSLOT + Math.max(0, Math.ceil(n/BBLK)-1)*BSTR
+function axisSpan(n:number) {
+  if(n<=0) return 0
+  return (n-1)*BSLOT+Math.max(0,Math.ceil(n/BBLK)-1)*BSTR
 }
 
 /* ═══════════════════════════════════════════════════════
    TEXTURES
 ═══════════════════════════════════════════════════════ */
-function mkWinTex(hex: number): THREE.CanvasTexture {
-  const cv = document.createElement('canvas'); cv.width=128; cv.height=256
-  const cx = cv.getContext('2d')!
+function mkWinTex(hex:number): THREE.CanvasTexture {
+  const cv=document.createElement('canvas'); cv.width=128; cv.height=256
+  const cx=cv.getContext('2d')!
   cx.fillStyle='#010810'; cx.fillRect(0,0,128,256)
-  const c = new THREE.Color(hex), rgb = `${~~(c.r*255)},${~~(c.g*255)},${~~(c.b*255)}`
-  for (let ci=0; ci<4; ci++) for (let ri=0; ri<14; ri++) {
-    const r = Math.random()
-    if (r > 0.28) {
-      cx.fillStyle = r>0.90?'#ffffff':r>0.65?`rgba(${rgb},0.9)`:`rgba(${rgb},0.42)`
-      cx.fillRect(ci*32+2, ri*18+2, 28, 14)
-    }
+  const c=new THREE.Color(hex), rgb=`${~~(c.r*255)},${~~(c.g*255)},${~~(c.b*255)}`
+  for(let ci=0;ci<4;ci++) for(let ri=0;ri<14;ri++){
+    const r=Math.random()
+    if(r>0.28){cx.fillStyle=r>0.90?'#ffffff':r>0.65?`rgba(${rgb},0.9)`:`rgba(${rgb},0.42)`;cx.fillRect(ci*32+2,ri*18+2,28,14)}
   }
-  const t = new THREE.CanvasTexture(cv); t.wrapS=t.wrapT=THREE.RepeatWrapping; t.repeat.set(1,2); return t
+  const t=new THREE.CanvasTexture(cv); t.wrapS=t.wrapT=THREE.RepeatWrapping; t.repeat.set(1,2); return t
 }
 
 function mkGoldTex(): THREE.CanvasTexture {
-  const cv = document.createElement('canvas'); cv.width=128; cv.height=256
-  const cx = cv.getContext('2d')!
+  const cv=document.createElement('canvas'); cv.width=128; cv.height=256
+  const cx=cv.getContext('2d')!
   cx.fillStyle='#080400'; cx.fillRect(0,0,128,256)
-  for (let ci=0; ci<4; ci++) for (let ri=0; ri<14; ri++) {
-    const r = Math.random()
-    if (r > 0.22) {
-      const rr = ~~(200+Math.random()*55), gg = ~~(130+Math.random()*80)
-      cx.fillStyle = r>0.90?'#ffffff':r>0.60?`rgb(${rr},${gg},0)`:`rgba(255,165,0,0.5)`
-      cx.fillRect(ci*32+2, ri*18+2, 28, 14)
-    }
+  for(let ci=0;ci<4;ci++) for(let ri=0;ri<14;ri++){
+    const r=Math.random()
+    if(r>0.22){const rr=~~(200+Math.random()*55),gg=~~(130+Math.random()*80);cx.fillStyle=r>0.90?'#ffffff':r>0.60?`rgb(${rr},${gg},0)`:`rgba(255,165,0,0.5)`;cx.fillRect(ci*32+2,ri*18+2,28,14)}
   }
-  const t = new THREE.CanvasTexture(cv); t.wrapS=t.wrapT=THREE.RepeatWrapping; t.repeat.set(1,3); return t
+  const t=new THREE.CanvasTexture(cv); t.wrapS=t.wrapT=THREE.RepeatWrapping; t.repeat.set(1,3); return t
 }
 
-function mkLabel(text: string, colorHex: number, sz = 1): THREE.Sprite {
-  const cv = document.createElement('canvas'); cv.width=960; cv.height=176
-  const cx = cv.getContext('2d')!
-  const hex = '#'+new THREE.Color(colorHex).getHexString()
+/* FIX: mkLabel — was using hex.replace() which fails on #rrggbb format, crashing canvas silently */
+function mkLabel(text:string, colorHex:number, sz=1): THREE.Sprite {
+  const cv=document.createElement('canvas'); cv.width=960; cv.height=176
+  const cx=cv.getContext('2d')!
+  const c=new THREE.Color(colorHex)
+  const hexStr='#'+c.getHexString()
+  const rgbaStr=`rgba(${~~(c.r*255)},${~~(c.g*255)},${~~(c.b*255)},0.35)`
   cx.clearRect(0,0,960,176)
   cx.fillStyle='rgba(0,4,18,0.95)'; cx.beginPath(); cx.roundRect(4,8,952,160,16); cx.fill()
-  cx.strokeStyle=hex; cx.lineWidth=5; cx.beginPath(); cx.roundRect(4,8,952,160,16); cx.stroke()
-  // Glow effect — double stroke
-  cx.strokeStyle=hex.replace(')',', 0.35)').replace('rgb','rgba'); cx.lineWidth=14
-  cx.beginPath(); cx.roundRect(4,8,952,160,16); cx.stroke()
-  cx.fillStyle=hex; cx.font='bold 56px "Courier New",monospace'; cx.textAlign='center'; cx.textBaseline='middle'
-  cx.shadowColor=hex; cx.shadowBlur=20; cx.fillText(text, 480, 92); cx.shadowBlur=0
-  const spr = new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cv), transparent:true, depthTest:false}))
-  spr.scale.set(280*sz, 70*sz, 1); return spr
+  cx.strokeStyle=hexStr; cx.lineWidth=5; cx.beginPath(); cx.roundRect(4,8,952,160,16); cx.stroke()
+  // Glow effect — correctly built rgba string
+  cx.strokeStyle=rgbaStr; cx.lineWidth=14; cx.beginPath(); cx.roundRect(4,8,952,160,16); cx.stroke()
+  cx.fillStyle=hexStr; cx.font='bold 56px "Courier New",monospace'; cx.textAlign='center'; cx.textBaseline='middle'
+  cx.shadowColor=hexStr; cx.shadowBlur=20; cx.fillText(text,480,92); cx.shadowBlur=0
+  const spr=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cv),transparent:true,depthTest:false}))
+  spr.scale.set(280*sz,70*sz,1); return spr
 }
 
 /* ═══════════════════════════════════════════════════════
-   CYBERPUNK INDUSTRIAL HEADQUARTER — ICC Command Tower
-   Inspired by: dark metallic stepped tiers, neon accents,
-   protruding platforms, industrial pipes, billboard screen
+   CYBERPUNK INDUSTRIAL HEADQUARTER
 ═══════════════════════════════════════════════════════ */
 function buildHQ(
-  diamondRef: React.MutableRefObject<THREE.Mesh|null>,
-  hqHitRef:   React.MutableRefObject<THREE.Mesh|null>
+  diamondRef: MutableRefObject<THREE.Mesh|null>,  /* FIX: was React.MutableRefObject — React not imported as default */
+  hqHitRef:   MutableRefObject<THREE.Mesh|null>
 ): THREE.Group {
-  const g = new THREE.Group()
+  const g=new THREE.Group()
+  const darkMat =new THREE.MeshStandardMaterial({color:0x0a0e18,emissive:0x1a2040,emissiveIntensity:0.4,roughness:0.7,metalness:0.8})
+  const darkMat2=new THREE.MeshStandardMaterial({color:0x0d1220,emissive:0x0d1f40,emissiveIntensity:0.3,roughness:0.6,metalness:0.9})
+  const goldMat =new THREE.MeshStandardMaterial({color:0xffd700,emissive:0xffaa00,emissiveIntensity:3.5})
+  const glassMat=new THREE.MeshStandardMaterial({color:0x001830,emissive:0x00e5ff,emissiveIntensity:0.8,transparent:true,opacity:0.55})
+  const pipeMat =new THREE.MeshStandardMaterial({color:0x1a1a2e,emissive:0x9b00ff,emissiveIntensity:0.6,roughness:0.4,metalness:1.0})
+  const neonFn  = (col:number, ei=4) => new THREE.MeshStandardMaterial({color:col,emissive:new THREE.Color(col),emissiveIntensity:ei})
 
-  // ── Material palette — dark industrial + neon ──
-  const darkMat  = new THREE.MeshStandardMaterial({color:0x0a0e18,emissive:0x1a2040,emissiveIntensity:0.4,roughness:0.7,metalness:0.8})
-  const darkMat2 = new THREE.MeshStandardMaterial({color:0x0d1220,emissive:0x0d1f40,emissiveIntensity:0.3,roughness:0.6,metalness:0.9})
-  const cyanMat  = new THREE.MeshStandardMaterial({color:0x00e5ff,emissive:0x00e5ff,emissiveIntensity:3.5})
-  const pinkMat  = new THREE.MeshStandardMaterial({color:0xff00aa,emissive:0xff00aa,emissiveIntensity:3.0})
-  const purpMat  = new THREE.MeshStandardMaterial({color:0x9b00ff,emissive:0x9b00ff,emissiveIntensity:2.8})
-  const goldMat  = new THREE.MeshStandardMaterial({color:0xffd700,emissive:0xffaa00,emissiveIntensity:3.5})
-  const glassMat = new THREE.MeshStandardMaterial({color:0x001830,emissive:0x00e5ff,emissiveIntensity:0.8,transparent:true,opacity:0.55})
-  const whiteMat = new THREE.MeshStandardMaterial({color:0xffffff,emissive:0x00e5ff,emissiveIntensity:10,transparent:true,opacity:0.9})
-  const pipeMat  = new THREE.MeshStandardMaterial({color:0x1a1a2e,emissive:0x9b00ff,emissiveIntensity:0.6,roughness:0.4,metalness:1.0})
-
-  // ── TIER 0: Massive industrial base platform ──
-  const base = new THREE.Mesh(new THREE.CylinderGeometry(360, 410, 40, 8), darkMat2)
-  base.position.y = 20; g.add(base)
-  // Base ring neon strips
-  for (let i=0; i<8; i++) {
-    const a = (i/8)*Math.PI*2
-    const strip = new THREE.Mesh(new THREE.BoxGeometry(4, 42, 80),
-      new THREE.MeshStandardMaterial({color:0x00e5ff,emissive:0x00e5ff,emissiveIntensity:4}))
-    strip.position.set(Math.cos(a)*370, 20, Math.sin(a)*370); strip.rotation.y=a; g.add(strip)
+  // Base platform
+  const base=new THREE.Mesh(new THREE.CylinderGeometry(360,410,40,8),darkMat2); base.position.y=20; g.add(base)
+  for(let i=0;i<8;i++){
+    const a=(i/8)*Math.PI*2
+    const strip=new THREE.Mesh(new THREE.BoxGeometry(4,42,80),neonFn(0x00e5ff))
+    strip.position.set(Math.cos(a)*370,20,Math.sin(a)*370); strip.rotation.y=a; g.add(strip)
   }
 
-  // ── TIERS 1–5: Stepped industrial blocks with setbacks ──
-  const tiers = [
-    {w:280, h:110, y:40,   neon:0x00e5ff, platforms:true},
-    {w:220, h:130, y:155,  neon:0xff00aa, platforms:true},
-    {w:170, h:150, y:290,  neon:0x9b00ff, platforms:true},
-    {w:130, h:140, y:445,  neon:0x00e5ff, platforms:false},
-    {w:90,  h:160, y:590,  neon:0xff00aa, platforms:false},
+  // 5 stepped tiers
+  const tiers=[
+    {w:280,h:110,y:40,  neon:0x00e5ff,plat:true},
+    {w:220,h:130,y:155, neon:0xff00aa,plat:true},
+    {w:170,h:150,y:290, neon:0x9b00ff,plat:true},
+    {w:130,h:140,y:445, neon:0x00e5ff,plat:false},
+    {w:90, h:160,y:590, neon:0xff00aa,plat:false},
   ]
-  tiers.forEach(({w,h,y,neon,platforms}) => {
-    // Main block
-    const block = new THREE.Mesh(new THREE.BoxGeometry(w, h, w), darkMat)
-    block.position.y = y+h/2; g.add(block)
-    // Window texture grid on all 4 faces
-    for (let face=0; face<4; face++) {
-      const a = (face/4)*Math.PI*2
-      const wPanel = new THREE.Mesh(new THREE.PlaneGeometry(w*0.85, h*0.75),
+  tiers.forEach(({w,h,y,neon,plat})=>{
+    const block=new THREE.Mesh(new THREE.BoxGeometry(w,h,w),darkMat); block.position.y=y+h/2; g.add(block)
+    for(let face=0;face<4;face++){
+      const a=(face/4)*Math.PI*2
+      const wp=new THREE.Mesh(new THREE.PlaneGeometry(w*0.85,h*0.75),
         new THREE.MeshStandardMaterial({color:neon,emissive:new THREE.Color(neon),emissiveIntensity:0.25,transparent:true,opacity:0.4}))
-      wPanel.rotation.y = a; wPanel.position.set(Math.cos(a)*(w/2+0.1), y+h/2, Math.sin(a)*(w/2+0.1)); g.add(wPanel)
+      wp.rotation.y=a; wp.position.set(Math.cos(a)*(w/2+0.1),y+h/2,Math.sin(a)*(w/2+0.1)); g.add(wp)
     }
-    // Neon edge strips (top rim of each tier)
-    const rim = new THREE.Mesh(new THREE.TorusGeometry(w*0.72, 0.8, 6, 36),
-      new THREE.MeshStandardMaterial({color:neon,emissive:new THREE.Color(neon),emissiveIntensity:6}))
+    const rim=new THREE.Mesh(new THREE.TorusGeometry(w*0.72,0.8,6,36),neonFn(neon,6))
     rim.rotation.x=Math.PI/2; rim.position.y=y+h; g.add(rim)
-    // Protruding platforms / balconies
-    if (platforms) {
-      for (let i=0; i<4; i++) {
-        const pa = (i/4)*Math.PI*2 + Math.PI/8
-        const pDist = w/2 + 40
-        const plat = new THREE.Mesh(new THREE.BoxGeometry(60, 10, 35), darkMat2)
-        plat.position.set(Math.cos(pa)*pDist, y+h-15, Math.sin(pa)*pDist)
-        plat.rotation.y = pa; g.add(plat)
-        const rail = new THREE.Mesh(new THREE.BoxGeometry(60, 15, 2),
-          new THREE.MeshStandardMaterial({color:neon,emissive:new THREE.Color(neon),emissiveIntensity:5}))
-        rail.position.set(Math.cos(pa)*(pDist+20), y+h-7, Math.sin(pa)*(pDist+20))
-        rail.rotation.y = pa; g.add(rail)
+    if(plat){
+      for(let i=0;i<4;i++){
+        const pa=(i/4)*Math.PI*2+Math.PI/8, pDist=w/2+40
+        const plat2=new THREE.Mesh(new THREE.BoxGeometry(60,10,35),darkMat2)
+        plat2.position.set(Math.cos(pa)*pDist,y+h-15,Math.sin(pa)*pDist); plat2.rotation.y=pa; g.add(plat2)
+        const rail=new THREE.Mesh(new THREE.BoxGeometry(60,15,2),neonFn(neon,5))
+        rail.position.set(Math.cos(pa)*(pDist+20),y+h-7,Math.sin(pa)*(pDist+20)); rail.rotation.y=pa; g.add(rail)
       }
     }
-    // Vertical pipe bundles at corners
-    ;[[1,1],[1,-1],[-1,1],[-1,-1]].forEach(([sx,sz]) => {
-      const pipe = new THREE.Mesh(new THREE.CylinderGeometry(6, 6, h+30, 6), pipeMat)
-      pipe.position.set(sx*(w/2+12), y+h/2, sz*(w/2+12)); g.add(pipe)
+    ;[[1,1],[1,-1],[-1,1],[-1,-1]].forEach(([sx,sz])=>{
+      const pipe=new THREE.Mesh(new THREE.CylinderGeometry(6,6,h+30,6),pipeMat)
+      pipe.position.set(sx*(w/2+12),y+h/2,sz*(w/2+12)); g.add(pipe)
     })
   })
 
-  // ── Upper glass shaft ──
-  const shaft = new THREE.Mesh(new THREE.BoxGeometry(70, 400, 70), glassMat)
-  shaft.position.y = 950; g.add(shaft)
-  // Glowing vertical strips on shaft
-  for (let i=0; i<4; i++) {
-    const a = (i/4)*Math.PI*2
-    const vStrip = new THREE.Mesh(new THREE.BoxGeometry(6, 400, 6),
-      new THREE.MeshStandardMaterial({color:0x00e5ff,emissive:0x00e5ff,emissiveIntensity:5}))
-    vStrip.position.set(Math.cos(a)*40, 950, Math.sin(a)*40); g.add(vStrip)
+  // Upper shaft
+  const shaft=new THREE.Mesh(new THREE.BoxGeometry(70,400,70),glassMat); shaft.position.y=950; g.add(shaft)
+  for(let i=0;i<4;i++){
+    const a=(i/4)*Math.PI*2
+    const vs=new THREE.Mesh(new THREE.BoxGeometry(6,400,6),neonFn(0x00e5ff,5))
+    vs.position.set(Math.cos(a)*40,950,Math.sin(a)*40); g.add(vs)
   }
 
-  // ── BILLBOARD / Radar dish platform at top of main body ──
-  const rooftop = new THREE.Mesh(new THREE.BoxGeometry(150, 15, 150), darkMat2)
-  rooftop.position.y = 755; g.add(rooftop)
-  // Billboard screen facing front
-  const screenMat = new THREE.MeshStandardMaterial({color:0x003344,emissive:0x00e5ff,emissiveIntensity:1.5,transparent:true,opacity:0.9})
-  const screen = new THREE.Mesh(new THREE.BoxGeometry(100, 50, 4), screenMat)
-  screen.position.set(0, 790, 70); g.add(screen)
-  const sBorder = new THREE.Mesh(new THREE.BoxGeometry(105, 55, 2),
-    new THREE.MeshStandardMaterial({color:0x00e5ff,emissive:0x00e5ff,emissiveIntensity:6}))
-  sBorder.position.set(0, 790, 68); g.add(sBorder)
-  // Satellite dish
-  const dishBase = new THREE.Mesh(new THREE.CylinderGeometry(3,3,30,6),pipeMat)
-  dishBase.position.set(55, 773, -40); g.add(dishBase)
-  const dish = new THREE.Mesh(new THREE.ConeGeometry(25, 15, 12, 1, true),
+  // Rooftop billboard
+  const rooftop=new THREE.Mesh(new THREE.BoxGeometry(150,15,150),darkMat2); rooftop.position.y=755; g.add(rooftop)
+  const screen=new THREE.Mesh(new THREE.BoxGeometry(100,50,4),
+    new THREE.MeshStandardMaterial({color:0x003344,emissive:0x00e5ff,emissiveIntensity:1.5,transparent:true,opacity:0.9}))
+  screen.position.set(0,790,70); g.add(screen)
+  const sBorder=new THREE.Mesh(new THREE.BoxGeometry(105,55,2),neonFn(0x00e5ff,6))
+  sBorder.position.set(0,790,68); g.add(sBorder)
+  const dishBase=new THREE.Mesh(new THREE.CylinderGeometry(3,3,30,6),pipeMat); dishBase.position.set(55,773,-40); g.add(dishBase)
+  const dish=new THREE.Mesh(new THREE.ConeGeometry(25,15,12,1,true),
     new THREE.MeshStandardMaterial({color:0x1a1a2e,emissive:0x9b00ff,emissiveIntensity:1.5,side:THREE.DoubleSide}))
-  dish.rotation.x = -Math.PI/3; dish.position.set(55, 795, -40); g.add(dish)
-  // Antenna array
-  ;[[-50,770,50],[-60,765,-25],[50,768,-50]].forEach(([x,y,z]) => {
-    const ant = new THREE.Mesh(new THREE.CylinderGeometry(1.5,1.5,40,4),pipeMat)
-    ant.position.set(x,y+20,z); g.add(ant)
+  dish.rotation.x=-Math.PI/3; dish.position.set(55,795,-40); g.add(dish)
+  ;[[-50,770,50],[-60,765,-25],[50,768,-50]].forEach(([x,y,z])=>{
+    const ant=new THREE.Mesh(new THREE.CylinderGeometry(1.5,1.5,40,4),pipeMat); ant.position.set(x,y+20,z); g.add(ant)
   })
 
-  // ── Tall needle spire ──
-  const spire1 = new THREE.Mesh(new THREE.CylinderGeometry(12,25,250,8), darkMat2)
-  spire1.position.y = 1275; g.add(spire1)
-  const spire2 = new THREE.Mesh(new THREE.CylinderGeometry(4,12,175,6),
+  // Spires
+  const spire1=new THREE.Mesh(new THREE.CylinderGeometry(12,25,250,8),darkMat2); spire1.position.y=1275; g.add(spire1)
+  const spire2=new THREE.Mesh(new THREE.CylinderGeometry(4,12,175,6),
     new THREE.MeshStandardMaterial({color:0x0a0e18,emissive:0x9b00ff,emissiveIntensity:2}))
-  spire2.position.y = 1487; g.add(spire2)
-  const spireNeedle = new THREE.Mesh(new THREE.ConeGeometry(4,125,6), goldMat)
-  spireNeedle.position.y = 1636; g.add(spireNeedle)
+  spire2.position.y=1487; g.add(spire2)
+  const needle=new THREE.Mesh(new THREE.ConeGeometry(4,125,6),goldMat); needle.position.y=1636; g.add(needle)
 
-  // ── Neon ring accents at tier junctions ──
-  ;[{y:150,c:0x00e5ff},{y:280,c:0xff00aa},{y:440,c:0x9b00ff},{y:580,c:0x00e5ff},{y:750,c:0xff00aa}].forEach(({y,c}) => {
-    const ring = new THREE.Mesh(new THREE.TorusGeometry(160, 7, 8, 64),
-      new THREE.MeshStandardMaterial({color:c,emissive:new THREE.Color(c),emissiveIntensity:4.5}))
+  // Neon rings at tier junctions
+  ;[{y:150,c:0x00e5ff},{y:280,c:0xff00aa},{y:440,c:0x9b00ff},{y:580,c:0x00e5ff},{y:750,c:0xff00aa}].forEach(({y,c})=>{
+    const ring=new THREE.Mesh(new THREE.TorusGeometry(160,7,8,64),neonFn(c,4.5))
     ring.rotation.x=Math.PI/2; ring.position.y=y; g.add(ring)
   })
 
-  // ── 8 ground searchlight beams ──
-  ;[[200,200],[200,-200],[-200,200],[-200,-200],[275,0],[-275,0],[0,275],[0,-275]].forEach(([x,z]) => {
-    const beam = new THREE.Mesh(new THREE.CylinderGeometry(2.5,20,1000,6),
+  // Searchlight beams
+  ;[[200,200],[200,-200],[-200,200],[-200,-200],[275,0],[-275,0],[0,275],[0,-275]].forEach(([x,z])=>{
+    const beam=new THREE.Mesh(new THREE.CylinderGeometry(2.5,20,1000,6),
       new THREE.MeshStandardMaterial({color:0x9b00ff,emissive:0x9b00ff,emissiveIntensity:2.5,transparent:true,opacity:0.05}))
-    beam.position.set(x, 500, z); g.add(beam)
+    beam.position.set(x,500,z); g.add(beam)
   })
 
-  // ── Animated diamond / orb topper ──
-  const diamond = new THREE.Mesh(new THREE.OctahedronGeometry(50,0),
+  // Diamond topper
+  const diamond=new THREE.Mesh(new THREE.OctahedronGeometry(50,0),
     new THREE.MeshStandardMaterial({color:0xffffff,emissive:0x00e5ff,emissiveIntensity:12,transparent:true,opacity:0.9}))
-  diamond.position.y = 1730; g.add(diamond); diamondRef.current = diamond
+  diamond.position.y=1730; g.add(diamond); diamondRef.current=diamond
 
-  // ── Nameplate ──
-  const sc = document.createElement('canvas'); sc.width=1000; sc.height=160
-  const sx = sc.getContext('2d')!
+  // Nameplate
+  const sc=document.createElement('canvas'); sc.width=1000; sc.height=160
+  const sx=sc.getContext('2d')!
   sx.fillStyle='rgba(0,8,22,0.95)'; sx.fillRect(0,0,1000,160)
   sx.shadowColor='#00e5ff'; sx.shadowBlur=40
   sx.strokeStyle='#00e5ff'; sx.lineWidth=3; sx.strokeRect(8,8,984,144)
   sx.strokeStyle='rgba(0,229,255,0.2)'; sx.lineWidth=18; sx.strokeRect(8,8,984,144)
   sx.shadowBlur=0
-  ;[[8,8],[956,8],[8,116],[956,116]].forEach(([cx,cy]) => {
+  ;[[8,8],[956,8],[8,116],[956,116]].forEach(([cx,cy])=>{
     sx.strokeStyle='#ff00aa'; sx.lineWidth=3; sx.strokeRect(cx,cy,36,36)
     sx.fillStyle='#ff00aa'; sx.fillRect(cx+12,cy+12,12,12)
   })
   sx.fillStyle='#e0f9ff'; sx.font='bold 72px "Courier New",monospace'; sx.textAlign='center'; sx.textBaseline='middle'
   sx.shadowColor='#00e5ff'; sx.shadowBlur=30; sx.fillText('HEADQUARTER',500,58); sx.shadowBlur=0
   sx.fillStyle='rgba(0,229,255,0.6)'; sx.font='16px "Courier New",monospace'
-  sx.fillText('ICC  ·  INTERNATIONAL CRICKET COUNCIL  ·  EST. 1909', 500, 112)
-  const sSpr = new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(sc),transparent:true,depthTest:false}))
+  sx.fillText('ICC  ·  INTERNATIONAL CRICKET COUNCIL  ·  EST. 1909',500,112)
+  const sSpr=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(sc),transparent:true,depthTest:false}))
   sSpr.scale.set(360,60,1); sSpr.position.set(0,340,0); g.add(sSpr)
 
-  // Invisible hitbox
-  const hb = new THREE.Mesh(new THREE.BoxGeometry(420,1800,420),new THREE.MeshBasicMaterial({visible:false}))
-  hb.position.y = 900; g.add(hb); hqHitRef.current = hb
+  const hb=new THREE.Mesh(new THREE.BoxGeometry(420,1800,420),new THREE.MeshBasicMaterial({visible:false}))
+  hb.position.y=900; g.add(hb); hqHitRef.current=hb
   return g
 }
 
 /* ═══════════════════════════════════════════════════════
-   INDUSTRIAL OUTER RING — matches HQ cyberpunk aesthetic
-   Big enough to feel like a city wall when you fly drones
+   OUTER RING
 ═══════════════════════════════════════════════════════ */
-function buildOuterRing(scene: THREE.Scene) {
-  const R = 1400  // MASSIVE outer ring — city wall visible from drone altitude
-
-  // ── 5 concentric ring tracks (city highway feel) ──
-  ;[{r:R,     t:10.0, e:2.2, y:5.0, col:0x00e5ff},
-    {r:R-80,  t:5.0,  e:0.7, y:2.0, col:0x9b00ff},
-    {r:R+80,  t:3.5,  e:0.5, y:2.5, col:0xff00aa},
-    {r:R-160, t:2.5,  e:0.2, y:1.0, col:0x00e5ff},
-    {r:R+160, t:2.0,  e:0.2, y:1.2, col:0x9b00ff},
-  ].forEach(({r,t,e,y,col}) => {
-    const torus = new THREE.Mesh(new THREE.TorusGeometry(r,t,12,200),
+function buildOuterRing(scene:THREE.Scene) {
+  const R=1400
+  ;[{r:R,t:10.0,e:2.2,y:5.0,col:0x00e5ff},{r:R-80,t:5.0,e:0.7,y:2.0,col:0x9b00ff},
+    {r:R+80,t:3.5,e:0.5,y:2.5,col:0xff00aa},{r:R-160,t:2.5,e:0.2,y:1.0,col:0x00e5ff},
+    {r:R+160,t:2.0,e:0.2,y:1.2,col:0x9b00ff}].forEach(({r,t,e,y,col})=>{
+    const torus=new THREE.Mesh(new THREE.TorusGeometry(r,t,12,200),
       new THREE.MeshStandardMaterial({color:col,emissive:new THREE.Color(col),emissiveIntensity:e}))
     torus.rotation.x=Math.PI/2; torus.position.y=y; scene.add(torus)
   })
-
-  // ── Wide ground glow band ──
-  const glow = new THREE.Mesh(new THREE.RingGeometry(R-220,R+220,200),
+  const glow=new THREE.Mesh(new THREE.RingGeometry(R-220,R+220,200),
     new THREE.MeshStandardMaterial({color:0x020820,emissive:0x00e5ff,emissiveIntensity:0.12,side:THREE.DoubleSide}))
   glow.rotation.x=-Math.PI/2; glow.position.y=0.3; scene.add(glow)
 
-  // ── 64 industrial cyberpunk pylons ringing the city ──
-  const PC = 64
-  for (let i=0; i<PC; i++) {
-    const a = (i/PC)*Math.PI*2
-    const px = Math.cos(a)*R, pz = Math.sin(a)*R
-    const isMajor = i%8===0   // 8 giant towers
-    const isMid   = i%4===0   // 16 medium towers
-    const hh = isMajor ? 260 : isMid ? 160 : 80
-    const tw = isMajor ? 18   : isMid ? 11  : 6
-    const neon = isMajor ? 0x00e5ff : isMid ? 0x9b00ff : 0xff00aa
-
-    const pylMat = new THREE.MeshStandardMaterial({color:0x0a0e18,emissive:new THREE.Color(neon),emissiveIntensity:isMajor?0.9:0.3,roughness:0.7,metalness:0.9})
-    // Stepped body (3 tiers like HQ)
-    const pBase = new THREE.Mesh(new THREE.BoxGeometry(tw*1.8, hh*0.3, tw*1.8), pylMat)
-    pBase.position.set(px, hh*0.15, pz); scene.add(pBase)
-    const pMid = new THREE.Mesh(new THREE.BoxGeometry(tw*1.3, hh*0.42, tw*1.3), pylMat)
-    pMid.position.set(px, hh*0.3+hh*0.21, pz); scene.add(pMid)
-    const pTop = new THREE.Mesh(new THREE.BoxGeometry(tw, hh*0.32, tw), pylMat)
-    pTop.position.set(px, hh*0.72+hh*0.16, pz); scene.add(pTop)
-
-    // Neon rim at each step junction
-    ;[hh*0.3, hh*0.72].forEach(hy => {
-      const rim = new THREE.Mesh(new THREE.TorusGeometry(tw*0.9, 0.9, 6, 28),
+  const PC=64
+  for(let i=0;i<PC;i++){
+    const a=(i/PC)*Math.PI*2, px=Math.cos(a)*R, pz=Math.sin(a)*R
+    const isMajor=i%8===0, isMid=i%4===0
+    const hh=isMajor?260:isMid?160:80, tw=isMajor?18:isMid?11:6
+    const neon=isMajor?0x00e5ff:isMid?0x9b00ff:0xff00aa
+    const pylMat=new THREE.MeshStandardMaterial({color:0x0a0e18,emissive:new THREE.Color(neon),emissiveIntensity:isMajor?0.9:0.3,roughness:0.7,metalness:0.9})
+    const pBase=new THREE.Mesh(new THREE.BoxGeometry(tw*1.8,hh*0.3,tw*1.8),pylMat); pBase.position.set(px,hh*0.15,pz); scene.add(pBase)
+    const pMid=new THREE.Mesh(new THREE.BoxGeometry(tw*1.3,hh*0.42,tw*1.3),pylMat); pMid.position.set(px,hh*0.3+hh*0.21,pz); scene.add(pMid)
+    const pTop=new THREE.Mesh(new THREE.BoxGeometry(tw,hh*0.32,tw),pylMat); pTop.position.set(px,hh*0.72+hh*0.16,pz); scene.add(pTop)
+    ;[hh*0.3,hh*0.72].forEach(hy=>{
+      const rim=new THREE.Mesh(new THREE.TorusGeometry(tw*0.9,0.9,6,28),
         new THREE.MeshStandardMaterial({color:neon,emissive:new THREE.Color(neon),emissiveIntensity:5}))
-      rim.rotation.x=Math.PI/2; rim.position.set(px, hy, pz); scene.add(rim)
+      rim.rotation.x=Math.PI/2; rim.position.set(px,hy,pz); scene.add(rim)
     })
-
-    // Glowing orb on top
-    const orbMat = new THREE.MeshStandardMaterial({color:0xffffff,emissive:new THREE.Color(neon),emissiveIntensity:isMajor?18:isMid?12:6})
-    const orb = new THREE.Mesh(new THREE.SphereGeometry(isMajor?9:isMid?5.5:2.5,8,8), orbMat)
-    orb.position.set(px, hh+9, pz); scene.add(orb)
-
-    if (isMajor) {
-      // Wide crossarm
-      const arm = new THREE.Mesh(new THREE.BoxGeometry(100, 5, 5),
+    const orbMat=new THREE.MeshStandardMaterial({color:0xffffff,emissive:new THREE.Color(neon),emissiveIntensity:isMajor?18:isMid?12:6})
+    const orb=new THREE.Mesh(new THREE.SphereGeometry(isMajor?9:isMid?5.5:2.5,8,8),orbMat); orb.position.set(px,hh+9,pz); scene.add(orb)
+    if(isMajor){
+      const arm=new THREE.Mesh(new THREE.BoxGeometry(100,5,5),
         new THREE.MeshStandardMaterial({color:0x0a0e18,emissive:new THREE.Color(neon),emissiveIntensity:4,roughness:0.5,metalness:1}))
-      arm.position.set(px, hh-35, pz); arm.rotation.y=a; scene.add(arm)
-      ;[-40,40].forEach(off => {
-        const bp = new THREE.Vector3(off,0,0).applyAxisAngle(new THREE.Vector3(0,1,0),a)
-        const el = new THREE.Mesh(new THREE.SphereGeometry(5,6,6), orbMat)
-        el.position.set(px+bp.x, hh-35, pz+bp.z); scene.add(el)
+      arm.position.set(px,hh-35,pz); arm.rotation.y=a; scene.add(arm)
+      ;[-40,40].forEach(off=>{
+        const bp=new THREE.Vector3(off,0,0).applyAxisAngle(new THREE.Vector3(0,1,0),a)
+        const el=new THREE.Mesh(new THREE.SphereGeometry(5,6,6),orbMat); el.position.set(px+bp.x,hh-35,pz+bp.z); scene.add(el)
       })
-      // Vertical neon strips
-      ;[-8,8].forEach(d => {
-        const strip = new THREE.Mesh(new THREE.BoxGeometry(1.2,hh,1.2),
+      ;[-8,8].forEach(d=>{
+        const strip=new THREE.Mesh(new THREE.BoxGeometry(1.2,hh,1.2),
           new THREE.MeshStandardMaterial({color:neon,emissive:new THREE.Color(neon),emissiveIntensity:4}))
-        strip.position.set(px+Math.cos(a+Math.PI/2)*d, hh/2, pz+Math.sin(a+Math.PI/2)*d); scene.add(strip)
+        strip.position.set(px+Math.cos(a+Math.PI/2)*d,hh/2,pz+Math.sin(a+Math.PI/2)*d); scene.add(strip)
       })
-      // Gold spire tip
-      const tip = new THREE.Mesh(new THREE.ConeGeometry(10, 50, 4),
+      const tip=new THREE.Mesh(new THREE.ConeGeometry(10,50,4),
         new THREE.MeshStandardMaterial({color:0xffd700,emissive:0xffaa00,emissiveIntensity:6}))
-      tip.position.set(px, hh+36, pz); scene.add(tip)
-      // Massive search beam
-      const beam = new THREE.Mesh(new THREE.CylinderGeometry(1.5,15,800,6),
+      tip.position.set(px,hh+36,pz); scene.add(tip)
+      const beam=new THREE.Mesh(new THREE.CylinderGeometry(1.5,15,800,6),
         new THREE.MeshStandardMaterial({color:0x00e5ff,emissive:0x00e5ff,emissiveIntensity:3,transparent:true,opacity:0.04}))
-      beam.position.set(px, hh+400, pz); scene.add(beam)
+      beam.position.set(px,hh+400,pz); scene.add(beam)
     }
   }
-
-  // ── Arc neon bars connecting major pylons at altitude ──
-  for (let i=0; i<PC; i+=8) {
-    const neonBar = new THREE.Mesh(new THREE.TorusGeometry(R, 2.5, 6, 8, Math.PI/4),
+  for(let i=0;i<PC;i+=8){
+    const neonBar=new THREE.Mesh(new THREE.TorusGeometry(R,2.5,6,8,Math.PI/4),
       new THREE.MeshStandardMaterial({color:0x00e5ff,emissive:0x00e5ff,emissiveIntensity:3}))
     neonBar.rotation.x=Math.PI/2; neonBar.rotation.z=(i/PC)*Math.PI*2; neonBar.position.y=130; scene.add(neonBar)
   }
 }
 
 /* ═══════════════════════════════════════════════════════
-   CYBERPUNK DISTRICT BORDER
+   DISTRICT BORDER
 ═══════════════════════════════════════════════════════ */
-function addBorder(parent: THREE.Group, w: number, d: number, color: number) {
-  const c = new THREE.Color(color)
+function addBorder(parent:THREE.Group, w:number, d:number, color:number) {
+  const c=new THREE.Color(color)
   const WH=14, WT=2.4
-  const wallMat  = new THREE.MeshStandardMaterial({color:0x0a1020,emissive:c,emissiveIntensity:2.2})
-  const glowMat  = new THREE.MeshStandardMaterial({color,emissive:c,emissiveIntensity:6.0})
-  const pilMat   = new THREE.MeshStandardMaterial({color:0x050c18,emissive:c,emissiveIntensity:3.5})
-  ;[d/2,-d/2].forEach(z => {
+  const wallMat=new THREE.MeshStandardMaterial({color:0x0a1020,emissive:c,emissiveIntensity:2.2})
+  const glowMat=new THREE.MeshStandardMaterial({color,emissive:c,emissiveIntensity:6.0})
+  const pilMat =new THREE.MeshStandardMaterial({color:0x050c18,emissive:c,emissiveIntensity:3.5})
+  ;[d/2,-d/2].forEach(z=>{
     const w1=new THREE.Mesh(new THREE.BoxGeometry(w+WT,WH,WT),wallMat); w1.position.set(0,WH/2,z); parent.add(w1)
     const g1=new THREE.Mesh(new THREE.BoxGeometry(w+WT,0.65,WT*0.9),glowMat); g1.position.set(0,WH+0.33,z); parent.add(g1)
   })
-  ;[w/2,-w/2].forEach(x => {
+  ;[w/2,-w/2].forEach(x=>{
     const w2=new THREE.Mesh(new THREE.BoxGeometry(WT,WH,d+WT),wallMat); w2.position.set(x,WH/2,0); parent.add(w2)
     const g2=new THREE.Mesh(new THREE.BoxGeometry(WT*0.9,0.65,d+WT),glowMat); g2.position.set(x,WH+0.33,0); parent.add(g2)
   })
-  ;[[w/2,d/2],[w/2,-d/2],[-w/2,d/2],[-w/2,-d/2]].forEach(([x,z]) => {
-    const pil = new THREE.Mesh(new THREE.BoxGeometry(4,WH*3.2,4),pilMat); pil.position.set(x,WH*1.6,z); parent.add(pil)
-    const cap = new THREE.Mesh(new THREE.CylinderGeometry(3,3,2,8),glowMat); cap.position.set(x,WH*3.2+1,z); parent.add(cap)
-    const orb = new THREE.Mesh(new THREE.SphereGeometry(2.2,10,10),new THREE.MeshStandardMaterial({color:0xffffff,emissive:c,emissiveIntensity:9}))
+  ;[[w/2,d/2],[w/2,-d/2],[-w/2,d/2],[-w/2,-d/2]].forEach(([x,z])=>{
+    const pil=new THREE.Mesh(new THREE.BoxGeometry(4,WH*3.2,4),pilMat); pil.position.set(x,WH*1.6,z); parent.add(pil)
+    const cap=new THREE.Mesh(new THREE.CylinderGeometry(3,3,2,8),glowMat); cap.position.set(x,WH*3.2+1,z); parent.add(cap)
+    const orb=new THREE.Mesh(new THREE.SphereGeometry(2.2,10,10),
+      new THREE.MeshStandardMaterial({color:0xffffff,emissive:c,emissiveIntensity:9}))
     orb.position.set(x,WH*3.2+3.2,z); parent.add(orb)
-    ;[[-2,0],[2,0],[0,-2],[0,2]].forEach(([dx,dz]) => {
-      const s = new THREE.Mesh(new THREE.BoxGeometry(0.35,WH*3.2,0.35),glowMat); s.position.set(x+dx,WH*1.6,z+dz); parent.add(s)
+    ;[[-2,0],[2,0],[0,-2],[0,2]].forEach(([dx,dz])=>{
+      const s=new THREE.Mesh(new THREE.BoxGeometry(0.35,WH*3.2,0.35),glowMat); s.position.set(x+dx,WH*1.6,z+dz); parent.add(s)
     })
   })
 }
@@ -526,30 +439,27 @@ function addBorder(parent: THREE.Group, w: number, d: number, color: number) {
 /* ═══════════════════════════════════════════════════════
    ROAD SPOKE
 ═══════════════════════════════════════════════════════ */
-function buildRoad(scene: THREE.Scene, angle: number, len: number, color: number) {
-  const rg = new THREE.Group(); rg.rotation.y=-angle; rg.userData.city=true
+function buildRoad(scene:THREE.Scene, angle:number, len:number, color:number) {
+  const rg=new THREE.Group(); rg.rotation.y=-angle; rg.userData.city=true
   const W=18, midX=30+len/2
-  const pl = (w: number, d: number, mat: THREE.Material) => {
-    const m = new THREE.Mesh(new THREE.PlaneGeometry(w,d),mat); m.rotation.x=-Math.PI/2; return m
-  }
-  const rm  = new THREE.MeshStandardMaterial({color:0x020a18,emissive:new THREE.Color(color),emissiveIntensity:0.14})
-  const em  = new THREE.MeshStandardMaterial({color,emissive:new THREE.Color(color),emissiveIntensity:7})
-  const im  = new THREE.MeshStandardMaterial({color:0x1e3a5f,emissive:0x1e3a5f,emissiveIntensity:1.8})
-  const dm  = new THREE.MeshStandardMaterial({color:0xffffff,emissive:0xffffff,emissiveIntensity:2.5})
+  const pl=(w:number,d:number,mat:THREE.Material)=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(w,d),mat);m.rotation.x=-Math.PI/2;return m}
+  const rm=new THREE.MeshStandardMaterial({color:0x020a18,emissive:new THREE.Color(color),emissiveIntensity:0.14})
+  const em=new THREE.MeshStandardMaterial({color,emissive:new THREE.Color(color),emissiveIntensity:7})
+  const im=new THREE.MeshStandardMaterial({color:0x1e3a5f,emissive:0x1e3a5f,emissiveIntensity:1.8})
+  const dm=new THREE.MeshStandardMaterial({color:0xffffff,emissive:0xffffff,emissiveIntensity:2.5})
   const road=pl(len,W,rm); road.position.set(midX,0.15,0); rg.add(road)
-  ;[-(W/2-0.5),(W/2-0.5)].forEach(z=>{ const e=pl(len,1.0,em); e.position.set(midX,0.17,z); rg.add(e) })
-  ;[-3,3].forEach(z=>{ const il=pl(len,0.4,im); il.position.set(midX,0.16,z); rg.add(il) })
-  for (let i=0; i<14; i++) {
-    const d=pl((len/14)*0.42,0.5,dm); d.position.set(30+(i+0.5)*(len/14),0.18,0); rg.add(d)
-  }
-  for (let i=1; i<=6; i++) {
+  ;[-(W/2-0.5),(W/2-0.5)].forEach(z=>{const e=pl(len,1.0,em);e.position.set(midX,0.17,z);rg.add(e)})
+  ;[-3,3].forEach(z=>{const il=pl(len,0.4,im);il.position.set(midX,0.16,z);rg.add(il)})
+  for(let i=0;i<14;i++){const d=pl((len/14)*0.42,0.5,dm);d.position.set(30+(i+0.5)*(len/14),0.18,0);rg.add(d)}
+  for(let i=1;i<=6;i++){
     const lx=30+i*(len/7)
     ;[-(W/2+1),(W/2+1)].forEach(z=>{
       const pole=new THREE.Mesh(new THREE.CylinderGeometry(0.22,0.28,14,8),new THREE.MeshStandardMaterial({color:0x1e293b}))
       pole.position.set(lx,7,z); rg.add(pole)
       const arm=new THREE.Mesh(new THREE.BoxGeometry(4,0.25,0.25),new THREE.MeshStandardMaterial({color:0x1e293b}))
       arm.position.set(lx+(z>0?-2:2),14,z); rg.add(arm)
-      const bulb=new THREE.Mesh(new THREE.SphereGeometry(0.85,8,8),new THREE.MeshStandardMaterial({color:0xffffff,emissive:new THREE.Color(color),emissiveIntensity:9}))
+      const bulb=new THREE.Mesh(new THREE.SphereGeometry(0.85,8,8),
+        new THREE.MeshStandardMaterial({color:0xffffff,emissive:new THREE.Color(color),emissiveIntensity:9}))
       bulb.position.set(lx+(z>0?-4:4),14,z); rg.add(bulb)
     })
   }
@@ -557,38 +467,31 @@ function buildRoad(scene: THREE.Scene, angle: number, len: number, color: number
 }
 
 /* ═══════════════════════════════════════════════════════
-   FIX #3 — INNER CROSS ROADS + CENTRAL PLAZA FOUNTAIN
+   INNER CROSS + FOUNTAIN
 ═══════════════════════════════════════════════════════ */
-function addInnerCross(parent: THREE.Group, platW: number, platD: number, color: number) {
-  const c = new THREE.Color(color)
-  const rm = new THREE.MeshStandardMaterial({color:0x020b18,emissive:c,emissiveIntensity:0.25})
-  const lm = new THREE.MeshStandardMaterial({color,emissive:c,emissiveIntensity:5.5})
-  // EW road
-  const ew = new THREE.Mesh(new THREE.PlaneGeometry(platW, IROAD*2), rm)
-  ew.rotation.x=-Math.PI/2; ew.position.y=0.17; parent.add(ew)
-  // NS road
-  const ns = new THREE.Mesh(new THREE.PlaneGeometry(IROAD*2, platD), rm)
-  ns.rotation.x=-Math.PI/2; ns.position.y=0.17; parent.add(ns)
-  // Lane lines
-  ;[0.45,-0.45].forEach(off => {
-    ;[true,false].forEach(isEW => {
-      const lp = new THREE.Mesh(new THREE.PlaneGeometry(isEW?platW:0.45,isEW?0.45:platD), lm)
+function addInnerCross(parent:THREE.Group, platW:number, platD:number, color:number) {
+  const c=new THREE.Color(color)
+  const rm=new THREE.MeshStandardMaterial({color:0x020b18,emissive:c,emissiveIntensity:0.25})
+  const lm=new THREE.MeshStandardMaterial({color,emissive:c,emissiveIntensity:5.5})
+  const ew=new THREE.Mesh(new THREE.PlaneGeometry(platW,IROAD*2),rm); ew.rotation.x=-Math.PI/2; ew.position.y=0.17; parent.add(ew)
+  const ns=new THREE.Mesh(new THREE.PlaneGeometry(IROAD*2,platD),rm); ns.rotation.x=-Math.PI/2; ns.position.y=0.17; parent.add(ns)
+  ;[0.45,-0.45].forEach(off=>{
+    ;[true,false].forEach(isEW=>{
+      const lp=new THREE.Mesh(new THREE.PlaneGeometry(isEW?platW:0.45,isEW?0.45:platD),lm)
       lp.rotation.x=-Math.PI/2; lp.position.set(isEW?0:off,0.19,isEW?off:0); parent.add(lp)
     })
   })
-  // Central fountain
-  const fm = new THREE.MeshStandardMaterial({color:0x080e22,emissive:c,emissiveIntensity:0.8})
-  ;[{r:10,h:1.6,y:0.8},{r:6.2,h:2.4,y:2.8},{r:3.2,h:3.2,y:5.6},{r:1.4,h:2.6,y:8.8}].forEach(({r,h,y}) => {
-    const tier = new THREE.Mesh(new THREE.CylinderGeometry(r, r+1, h, 8), fm)
-    tier.position.y=y; parent.add(tier)
+  const fm=new THREE.MeshStandardMaterial({color:0x080e22,emissive:c,emissiveIntensity:0.8})
+  ;[{r:10,h:1.6,y:0.8},{r:6.2,h:2.4,y:2.8},{r:3.2,h:3.2,y:5.6},{r:1.4,h:2.6,y:8.8}].forEach(({r,h,y})=>{
+    const tier=new THREE.Mesh(new THREE.CylinderGeometry(r,r+1,h,8),fm); tier.position.y=y; parent.add(tier)
   })
-  const topOrb = new THREE.Mesh(new THREE.SphereGeometry(1.8,8,8),
+  const topOrb=new THREE.Mesh(new THREE.SphereGeometry(1.8,8,8),
     new THREE.MeshStandardMaterial({color:0xffffff,emissive:c,emissiveIntensity:12}))
   topOrb.position.y=12.2; parent.add(topOrb)
-  const ring = new THREE.Mesh(new THREE.TorusGeometry(7.5,0.6,8,40),
+  const ring=new THREE.Mesh(new THREE.TorusGeometry(7.5,0.6,8,40),
     new THREE.MeshStandardMaterial({color,emissive:c,emissiveIntensity:6}))
   ring.rotation.x=Math.PI/2; ring.position.y=2.6; parent.add(ring)
-  ;[[platW/2-5,0],[-(platW/2-5),0],[0,platD/2-5],[0,-(platD/2-5)]].forEach(([lx,lz]) => {
+  ;[[platW/2-5,0],[-(platW/2-5),0],[0,platD/2-5],[0,-(platD/2-5)]].forEach(([lx,lz])=>{
     const jl=new THREE.Mesh(new THREE.SphereGeometry(0.9,6,6),
       new THREE.MeshStandardMaterial({color:0xffffff,emissive:c,emissiveIntensity:8}))
     jl.position.set(lx,3,lz); parent.add(jl)
@@ -596,89 +499,61 @@ function addInnerCross(parent: THREE.Group, platW: number, platD: number, color:
 }
 
 /* ═══════════════════════════════════════════════════════
-   FIX #4 — VISIBLE QUADCOPTER DRONE MESH (DJI-inspired)
+   DRONE MESH
 ═══════════════════════════════════════════════════════ */
 function buildDroneMesh(): {group:THREE.Group; rotors:THREE.Mesh[]} {
-  const g = new THREE.Group()
-  const rotors: THREE.Mesh[] = []
-
-  const bodyMat  = new THREE.MeshStandardMaterial({color:0x111827,emissive:0x1e40af,emissiveIntensity:0.5,roughness:0.35,metalness:0.6})
-  const armMat   = new THREE.MeshStandardMaterial({color:0x1f2937,roughness:0.55,metalness:0.5})
-  const rotorMat = new THREE.MeshStandardMaterial({color:0x374151,transparent:true,opacity:0.75,roughness:0.3})
-  const motorMat = new THREE.MeshStandardMaterial({color:0xb45309,emissive:0x92400e,emissiveIntensity:0.7,metalness:0.8})
-  const ledBlue  = new THREE.MeshStandardMaterial({color:0x38bdf8,emissive:0x38bdf8,emissiveIntensity:14})
-  const ledRed   = new THREE.MeshStandardMaterial({color:0xef4444,emissive:0xef4444,emissiveIntensity:14})
-
-  // Main aerodynamic body
-  const body = new THREE.Mesh(new THREE.BoxGeometry(6.0,1.6,4.2),bodyMat); body.position.y=0; g.add(body)
-  // Rounded nose
-  const nose = new THREE.Mesh(new THREE.SphereGeometry(2.0,8,6,0,Math.PI*2,0,Math.PI/2),bodyMat)
-  nose.rotation.x=Math.PI/2; nose.position.set(2.6,0,0); g.add(nose)
-  // Top hump / battery cover
-  const hump = new THREE.Mesh(new THREE.CylinderGeometry(1.3,1.6,0.9,8),bodyMat); hump.position.set(0,1.1,0); g.add(hump)
-  // Camera gimbal
-  const gimbal = new THREE.Mesh(new THREE.SphereGeometry(0.8,8,6),
+  const g=new THREE.Group(), rotors:THREE.Mesh[]=[]
+  const bodyMat =new THREE.MeshStandardMaterial({color:0x111827,emissive:0x1e40af,emissiveIntensity:0.5,roughness:0.35,metalness:0.6})
+  const armMat  =new THREE.MeshStandardMaterial({color:0x1f2937,roughness:0.55,metalness:0.5})
+  const rotorMat=new THREE.MeshStandardMaterial({color:0x374151,transparent:true,opacity:0.75,roughness:0.3})
+  const motorMat=new THREE.MeshStandardMaterial({color:0xb45309,emissive:0x92400e,emissiveIntensity:0.7,metalness:0.8})
+  const ledBlue =new THREE.MeshStandardMaterial({color:0x38bdf8,emissive:0x38bdf8,emissiveIntensity:14})
+  const ledRed  =new THREE.MeshStandardMaterial({color:0xef4444,emissive:0xef4444,emissiveIntensity:14})
+  const body=new THREE.Mesh(new THREE.BoxGeometry(6.0,1.6,4.2),bodyMat); body.position.y=0; g.add(body)
+  const nose=new THREE.Mesh(new THREE.SphereGeometry(2.0,8,6,0,Math.PI*2,0,Math.PI/2),bodyMat); nose.rotation.x=Math.PI/2; nose.position.set(2.6,0,0); g.add(nose)
+  const hump=new THREE.Mesh(new THREE.CylinderGeometry(1.3,1.6,0.9,8),bodyMat); hump.position.set(0,1.1,0); g.add(hump)
+  const gimbal=new THREE.Mesh(new THREE.SphereGeometry(0.8,8,6),
     new THREE.MeshStandardMaterial({color:0x000000,emissive:0x60a5fa,emissiveIntensity:6}))
   gimbal.position.set(2.8,-0.3,0); g.add(gimbal)
-  // Status LED on top
-  const statusLed = new THREE.Mesh(new THREE.SphereGeometry(0.38,6,6),ledBlue)
-  statusLed.position.set(0,1.65,0); g.add(statusLed)
-
-  // 4 diagonal arms
-  const armAngles = [Math.PI*0.25, Math.PI*0.75, Math.PI*1.25, Math.PI*1.75]
-  armAngles.forEach((ang, i) => {
-    // Folding arm
-    const arm = new THREE.Mesh(new THREE.BoxGeometry(5.6,0.5,1.1),armMat)
-    arm.position.set(Math.cos(ang)*2.0, 0.1, Math.sin(ang)*2.0)
-    arm.rotation.y = ang+Math.PI/2; g.add(arm)
-
-    // Motor housing at tip
-    const mx = Math.cos(ang)*5.4, mz = Math.sin(ang)*5.4
-    const motor = new THREE.Mesh(new THREE.CylinderGeometry(0.8,0.7,0.9,8),motorMat)
-    motor.position.set(mx, 0.7, mz); g.add(motor)
-
-    // Two crossed blades
-    ;[0, Math.PI/2].forEach(ba => {
-      const blade = new THREE.Mesh(new THREE.BoxGeometry(5.0,0.12,0.65),rotorMat)
-      blade.position.set(mx, 1.2, mz); blade.rotation.y = ba; g.add(blade); rotors.push(blade)
+  const statusLed=new THREE.Mesh(new THREE.SphereGeometry(0.38,6,6),ledBlue); statusLed.position.set(0,1.65,0); g.add(statusLed)
+  ;[Math.PI*0.25,Math.PI*0.75,Math.PI*1.25,Math.PI*1.75].forEach((ang,i)=>{
+    const arm=new THREE.Mesh(new THREE.BoxGeometry(5.6,0.5,1.1),armMat)
+    arm.position.set(Math.cos(ang)*2.0,0.1,Math.sin(ang)*2.0); arm.rotation.y=ang+Math.PI/2; g.add(arm)
+    const mx=Math.cos(ang)*5.4, mz=Math.sin(ang)*5.4
+    const motor=new THREE.Mesh(new THREE.CylinderGeometry(0.8,0.7,0.9,8),motorMat); motor.position.set(mx,0.7,mz); g.add(motor)
+    ;[0,Math.PI/2].forEach(ba=>{
+      const blade=new THREE.Mesh(new THREE.BoxGeometry(5.0,0.12,0.65),rotorMat)
+      blade.position.set(mx,1.2,mz); blade.rotation.y=ba; g.add(blade); rotors.push(blade)
     })
-    // Blade guard ring
-    const guard = new THREE.Mesh(new THREE.TorusGeometry(2.7,0.2,6,28),
+    const guard=new THREE.Mesh(new THREE.TorusGeometry(2.7,0.2,6,28),
       new THREE.MeshStandardMaterial({color:0x1f2937,roughness:0.6}))
-    guard.rotation.x=Math.PI/2; guard.position.set(mx, 1.2, mz); g.add(guard)
-    // Position LEDs: blue front (0,1), red rear (2,3)
-    const led = new THREE.Mesh(new THREE.SphereGeometry(0.38,6,6), i<2?ledBlue:ledRed)
-    led.position.set(mx, 0.3, mz); g.add(led)
+    guard.rotation.x=Math.PI/2; guard.position.set(mx,1.2,mz); g.add(guard)
+    const led=new THREE.Mesh(new THREE.SphereGeometry(0.38,6,6),i<2?ledBlue:ledRed); led.position.set(mx,0.3,mz); g.add(led)
   })
-
-  // Landing skids
-  ;[[3,1.6],[3,-1.6],[-3,1.6],[-3,-1.6]].forEach(([lx,lz]) => {
-    const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.16,0.16,1.6,6),armMat)
-    leg.position.set(lx,-1.2,lz); g.add(leg)
-    const foot = new THREE.Mesh(new THREE.BoxGeometry(1.4,0.2,0.2),armMat)
-    foot.position.set(lx,-2.0,lz); g.add(foot)
+  ;[[3,1.6],[3,-1.6],[-3,1.6],[-3,-1.6]].forEach(([lx,lz])=>{
+    const leg=new THREE.Mesh(new THREE.CylinderGeometry(0.16,0.16,1.6,6),armMat); leg.position.set(lx,-1.2,lz); g.add(leg)
+    const foot=new THREE.Mesh(new THREE.BoxGeometry(1.4,0.2,0.2),armMat); foot.position.set(lx,-2.0,lz); g.add(foot)
   })
-
   return {group:g, rotors}
 }
 
 /* ═══════════════════════════════════════════════════════
    DISPOSE
 ═══════════════════════════════════════════════════════ */
-function disposeCity(scene: THREE.Scene) {
-  scene.children.filter(o=>o.userData.city).forEach(obj => {
-    obj.traverse(child => {
-      const mesh = child as THREE.Mesh
-      if (!mesh.isMesh && !(child as any).isSprite) return
-      const mats = Array.isArray(mesh.material)?mesh.material:[mesh.material]
-      mats.forEach(m => {
-        if (!m) return
+function disposeCity(scene:THREE.Scene) {
+  scene.children.filter(o=>o.userData.city).forEach(obj=>{
+    obj.traverse(child=>{
+      const mesh=child as THREE.Mesh
+      if(!mesh.isMesh&&!(child as any).isSprite) return
+      const mats=Array.isArray(mesh.material)?mesh.material:[mesh.material]
+      mats.forEach(m=>{
+        if(!m) return
         ;['map','emissiveMap','normalMap','roughnessMap','alphaMap'].forEach(k=>{
-          const t=(m as any)[k]; if (t instanceof THREE.Texture) t.dispose()
+          const tex=(m as any)[k]; if(tex instanceof THREE.Texture) tex.dispose()
         })
         m.dispose()
       })
-      if (mesh.geometry) mesh.geometry.dispose()
+      if(mesh.geometry) mesh.geometry.dispose()
     })
     scene.remove(obj)
   })
@@ -712,99 +587,92 @@ export default function CricCity() {
   const [counts,    setCounts   ] = useState<Record<string,number>>({})
   const [droneMode, setDroneMode] = useState(false)
   const [allMx,     setAllMx    ] = useState<AllMax|null>(null)
+  const [loadErr,   setLoadErr  ] = useState<string|null>(null)
 
   /* ── SCENE INIT ──────────────────────────────────── */
-  useEffect(() => {
-    if (!mountRef.current) return
-    const scene = new THREE.Scene()
-    scene.background = new THREE.Color(0x000810)
-    scene.fog = new THREE.FogExp2(0x00060e, 0.000055)
-    sceneRef.current = scene
-    const camera = new THREE.PerspectiveCamera(55,window.innerWidth/window.innerHeight,0.1,30000)
-    cameraRef.current = camera
-    const renderer = new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'})
+  useEffect(()=>{
+    if(!mountRef.current) return
+    const scene=new THREE.Scene()
+    scene.background=new THREE.Color(0x000810)
+    scene.fog=new THREE.FogExp2(0x00060e,0.000055)
+    sceneRef.current=scene
+    const camera=new THREE.PerspectiveCamera(55,window.innerWidth/window.innerHeight,0.1,30000)
+    cameraRef.current=camera
+    const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'high-performance'})
     renderer.setSize(window.innerWidth,window.innerHeight)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio,2))
-    rendererRef.current = renderer
+    rendererRef.current=renderer
     mountRef.current.appendChild(renderer.domElement)
 
     let theta=0.85, phi=0.34, drag=false, lx=0, ly=0
-    const camUpdate = () => {
-      if (droneModeRef.current) return
-      const d = distRef.current
-      camera.position.set(d*Math.sin(theta)*Math.cos(phi), d*Math.sin(phi), d*Math.cos(theta)*Math.cos(phi))
+    const camUpdate=()=>{
+      if(droneModeRef.current) return
+      const d=distRef.current
+      camera.position.set(d*Math.sin(theta)*Math.cos(phi),d*Math.sin(phi),d*Math.cos(theta)*Math.cos(phi))
       camera.lookAt(0,0,0)
     }
     camUpdate()
 
-    const onDown  = (e: PointerEvent) => { if (droneModeRef.current) return; drag=true; lx=e.clientX; ly=e.clientY }
-    const onMove  = (e: PointerEvent) => {
-      if (!drag||droneModeRef.current) return
-      theta -= (e.clientX-lx)*0.004; phi = Math.max(0.05,Math.min(1.48,phi-(e.clientY-ly)*0.004))
+    const onDown =(e:PointerEvent)=>{ if(droneModeRef.current) return; drag=true; lx=e.clientX; ly=e.clientY }
+    const onMove =(e:PointerEvent)=>{
+      if(!drag||droneModeRef.current) return
+      theta-=(e.clientX-lx)*0.004; phi=Math.max(0.05,Math.min(1.48,phi-(e.clientY-ly)*0.004))
       lx=e.clientX; ly=e.clientY
     }
-    const onUp    = () => { drag=false }
-    const onWheel = (e: WheelEvent) => {
+    const onUp=()=>{drag=false}
+    const onWheel=(e:WheelEvent)=>{
       e.preventDefault()
-      if (droneModeRef.current) {
-        if (droneGroupRef.current) droneGroupRef.current.position.y = Math.max(3, Math.min(1200, droneGroupRef.current.position.y+e.deltaY*0.08))
+      if(droneModeRef.current){
+        if(droneGroupRef.current) droneGroupRef.current.position.y=Math.max(3,Math.min(1200,droneGroupRef.current.position.y+e.deltaY*0.08))
       } else {
-        tDistRef.current = Math.max(15, Math.min(10000, tDistRef.current*Math.exp(e.deltaY*0.001)))
+        tDistRef.current=Math.max(15,Math.min(10000,tDistRef.current*Math.exp(e.deltaY*0.001)))
       }
     }
-    const onKD = (e: KeyboardEvent) => keysRef.current.add(e.key.toLowerCase())
-    const onKU = (e: KeyboardEvent) => keysRef.current.delete(e.key.toLowerCase())
+    const onKD=(e:KeyboardEvent)=>keysRef.current.add(e.key.toLowerCase())
+    const onKU=(e:KeyboardEvent)=>keysRef.current.delete(e.key.toLowerCase())
 
     window.addEventListener('pointerdown',onDown); window.addEventListener('pointermove',onMove)
     window.addEventListener('pointerup',onUp); window.addEventListener('keydown',onKD); window.addEventListener('keyup',onKU)
     renderer.domElement.addEventListener('wheel',onWheel,{passive:false})
 
-    // Lights
     scene.add(new THREE.AmbientLight(0x0d1f40,2.8))
     const dir=new THREE.DirectionalLight(0x3366ff,1.8); dir.position.set(100,300,100); scene.add(dir)
-    const warmLight=new THREE.PointLight(0xff4400,0.35,1600); warmLight.position.set(0,-10,0); scene.add(warmLight)
-    const centerLight=new THREE.PointLight(0x38bdf8,1.6,1000); centerLight.position.set(0,60,0); scene.add(centerLight)
+    const wl=new THREE.PointLight(0xff4400,0.35,1600); wl.position.set(0,-10,0); scene.add(wl)
+    const cl=new THREE.PointLight(0x38bdf8,1.6,1000); cl.position.set(0,60,0); scene.add(cl)
 
-    // Ground + grid
     const gnd=new THREE.Mesh(new THREE.PlaneGeometry(50000,50000),new THREE.MeshStandardMaterial({color:0x010810}))
     gnd.rotation.x=-Math.PI/2; scene.add(gnd)
     const grid=new THREE.Mesh(new THREE.PlaneGeometry(8000,8000,160,160),new THREE.MeshBasicMaterial({color:0x091830,wireframe:true}))
     grid.rotation.x=-Math.PI/2; grid.position.y=0.07; scene.add(grid)
 
-    // Outer ring (not city-tagged so survives format changes)
     buildOuterRing(scene)
 
-    let animId: number
-    const animate = () => {
-      animId = requestAnimationFrame(animate)
-
-      if (droneModeRef.current && droneGroupRef.current) {
-        const drone=droneGroupRef.current, keys=keysRef.current, btns=btnsRef.current
-        const SPEED=4.5, YAW=0.016   // smooth city cruise speed
-        const yaw=droneYawRef.current
-        if (keys.has('a')||keys.has('arrowleft') ||btns.left)  droneYawRef.current-=YAW
-        if (keys.has('d')||keys.has('arrowright')||btns.right) droneYawRef.current+=YAW
+    let animId:number
+    const animate=()=>{
+      animId=requestAnimationFrame(animate)
+      if(droneModeRef.current&&droneGroupRef.current){
+        const drone=droneGroupRef.current,keys=keysRef.current,btns=btnsRef.current
+        const SPEED=4.5,YAW=0.016, yaw=droneYawRef.current
+        if(keys.has('a')||keys.has('arrowleft') ||btns.left)  droneYawRef.current-=YAW
+        if(keys.has('d')||keys.has('arrowright')||btns.right) droneYawRef.current+=YAW
         const fwd=new THREE.Vector3(-Math.sin(yaw),0,-Math.cos(yaw))
-        if (keys.has('w')||keys.has('arrowup')  ||btns.fwd)  drone.position.addScaledVector(fwd,SPEED)
-        if (keys.has('s')||keys.has('arrowdown')||btns.back) drone.position.addScaledVector(fwd,-SPEED*0.6)
-        if (keys.has('q')||btns.up)   drone.position.y=Math.min(1200,drone.position.y+SPEED*0.7)
-        if (keys.has('e')||btns.down) drone.position.y=Math.max(3,   drone.position.y-SPEED*0.7)
+        if(keys.has('w')||keys.has('arrowup')  ||btns.fwd)  drone.position.addScaledVector(fwd,SPEED)
+        if(keys.has('s')||keys.has('arrowdown')||btns.back) drone.position.addScaledVector(fwd,-SPEED*0.6)
+        if(keys.has('q')||btns.up)   drone.position.y=Math.min(1200,drone.position.y+SPEED*0.7)
+        if(keys.has('e')||btns.down) drone.position.y=Math.max(3,drone.position.y-SPEED*0.7)
         drone.position.x=THREE.MathUtils.clamp(drone.position.x,-4000,4000)
         drone.position.z=THREE.MathUtils.clamp(drone.position.z,-4000,4000)
         drone.rotation.y=yaw
         drone.rotation.x=(keys.has('w')||keys.has('arrowup')||btns.fwd)?-0.10:0
-        // Spin rotors
         droneRotors.current.forEach(r=>{r.rotation.y+=0.42})
-        // 3rd-person cam: 30 units back so drone is fully visible in frame
-        const behind=new THREE.Vector3(Math.sin(yaw)*30, 10, Math.cos(yaw)*30)
-        camera.position.lerp(drone.position.clone().add(behind), 0.12)
-        camera.lookAt(drone.position.clone().add(new THREE.Vector3(0, 1, 0)))
+        const behind=new THREE.Vector3(Math.sin(yaw)*30,10,Math.cos(yaw)*30)
+        camera.position.lerp(drone.position.clone().add(behind),0.12)
+        camera.lookAt(drone.position.clone().add(new THREE.Vector3(0,1,0)))
       } else {
         distRef.current+=(tDistRef.current-distRef.current)*0.12; camUpdate()
       }
-
-      if (diamondRef.current)   diamondRef.current.rotation.y+=0.012
-      if (indicatorRef.current) indicatorRef.current.rotation.y+=0.026
+      if(diamondRef.current)   diamondRef.current.rotation.y+=0.012
+      if(indicatorRef.current) indicatorRef.current.rotation.y+=0.026
       renderer.render(scene,camera)
     }
     animate()
@@ -812,7 +680,7 @@ export default function CricCity() {
     const onResize=()=>{camera.aspect=window.innerWidth/window.innerHeight;camera.updateProjectionMatrix();renderer.setSize(window.innerWidth,window.innerHeight)}
     window.addEventListener('resize',onResize)
 
-    return () => {
+    return ()=>{
       cancelAnimationFrame(animId)
       window.removeEventListener('pointerdown',onDown); window.removeEventListener('pointermove',onMove)
       window.removeEventListener('pointerup',onUp); window.removeEventListener('keydown',onKD)
@@ -824,23 +692,20 @@ export default function CricCity() {
   },[])
 
   /* ── CLICK ───────────────────────────────────────── */
-  useEffect(() => {
-    const renderer=rendererRef.current, camera=cameraRef.current, scene=sceneRef.current
-    if (!renderer||!camera||!scene) return
-    const rc=new THREE.Raycaster(), mo=new THREE.Vector2()
-    const onClick = (e: MouseEvent) => {
-      if (droneModeRef.current) return
+  useEffect(()=>{
+    const renderer=rendererRef.current,camera=cameraRef.current,scene=sceneRef.current
+    if(!renderer||!camera||!scene) return
+    const rc=new THREE.Raycaster(),mo=new THREE.Vector2()
+    const onClick=(e:MouseEvent)=>{
+      if(droneModeRef.current) return
       mo.x=(e.clientX/window.innerWidth)*2-1; mo.y=-(e.clientY/window.innerHeight)*2+1
       rc.setFromCamera(mo,camera)
-      if (hqHitRef.current) {
-        const h=rc.intersectObject(hqHitRef.current,false)
-        if (h.length>0){setHqOpen(true);setSelected(null);return}
-      }
+      if(hqHitRef.current){const h=rc.intersectObject(hqHitRef.current,false);if(h.length>0){setHqOpen(true);setSelected(null);return}}
       const hits=rc.intersectObjects(Array.from(hitMap.current.keys()),false)
-      if (hits.length>0) {
-        const obj=hits[0].object, data=hitMap.current.get(obj); if (!data) return
+      if(hits.length>0){
+        const obj=hits[0].object,data=hitMap.current.get(obj);if(!data) return
         setSelected({...data.player,_team:data.team}); setHqOpen(false)
-        if (indicatorRef.current) scene.remove(indicatorRef.current)
+        if(indicatorRef.current) scene.remove(indicatorRef.current)
         const ind=new THREE.Mesh(new THREE.OctahedronGeometry(3.5,0),
           new THREE.MeshStandardMaterial({color:0xffffff,emissive:0x7dd3fc,emissiveIntensity:9}))
         const wp=new THREE.Vector3(); obj.getWorldPosition(wp)
@@ -848,7 +713,7 @@ export default function CricCity() {
         ind.userData.city=true; indicatorRef.current=ind; scene.add(ind)
       } else {
         setSelected(null); setHqOpen(false)
-        if (indicatorRef.current){scene.remove(indicatorRef.current);indicatorRef.current=null}
+        if(indicatorRef.current){scene.remove(indicatorRef.current);indicatorRef.current=null}
       }
     }
     renderer.domElement.addEventListener('click',onClick)
@@ -857,41 +722,47 @@ export default function CricCity() {
 
   /* ── BUILD CITY ──────────────────────────────────── */
   useEffect(()=>{
-    async function build() {
-      const scene=sceneRef.current; if (!scene) return
-      setLoading(true); setSelected(null); setHqOpen(false)
+    async function build(){
+      const scene=sceneRef.current; if(!scene) return
+      setLoading(true); setSelected(null); setHqOpen(false); setLoadErr(null)
       hitMap.current.clear()
-      if (indicatorRef.current){scene.remove(indicatorRef.current);indicatorRef.current=null}
+      if(indicatorRef.current){scene.remove(indicatorRef.current);indicatorRef.current=null}
       disposeCity(scene)
 
-      const players: any[] = await fetchPlayers(fmt)
-      const mx = computeAllMax(players)
+      let players:any[]=[]
+      try {
+        players=await fetchPlayers(fmt)
+        if(!Array.isArray(players)) players=[]
+      } catch(err) {
+        console.error('[CricCity] fetchPlayers error:',err)
+        setLoadErr('Failed to load player data. Please refresh.')
+        setLoading(false); return
+      }
+
+      const mx=computeAllMax(players)
       setAllMx(mx)
 
-      const grouped: Record<string,any[]>={}
+      const grouped:Record<string,any[]>={}
       players.forEach(p=>{const k=normalizeCountry(p);if(!grouped[k])grouped[k]=[];grouped[k].push(p)})
-      const snap: Record<string,number>={}
+      const snap:Record<string,number>={}
       Object.entries(grouped).forEach(([k,v])=>{snap[k]=v.length}); setCounts(snap)
 
-      // HQ + hub
       const hq=buildHQ(diamondRef,hqHitRef); hq.userData.city=true; scene.add(hq)
       const hub=new THREE.Mesh(new THREE.CylinderGeometry(420,420,8,8),
         new THREE.MeshStandardMaterial({color:0x0a1628,emissive:0x1d4ed8,emissiveIntensity:0.6}))
       hub.position.y=0.8; hub.userData.city=true; scene.add(hub)
 
-      const goldTex = mkGoldTex()
-      const fmtLower = fmt.toLowerCase() as Format
+      const goldTex=mkGoldTex()
+      const fmtLower=fmt.toLowerCase() as Format
 
       TEAM_LAYOUT.forEach(({key,angle,label})=>{
-        const p = getPal(key)
+        const p=getPal(key)
         buildRoad(scene,angle,RLEN,p.border)
 
-        const raw = grouped[key]||[]
-        // FIX #5: sort by ACTIVE FORMAT score → Sachin leads in TEST, Virat in T20
+        const raw=grouped[key]||[]
         const sorted=[...raw].sort((a,b)=>fmtScore(b,fmtLower,mx)-fmtScore(a,fmtLower,mx))
         const n=sorted.length
 
-        // Career scores for building height (so Sachin's building is still tall in T20 view)
         const cScores=sorted.map(pl=>careerScore(pl,mx))
         const sMax=cScores.length>0?Math.max(...cScores):1
         const sMin=cScores.length>0?Math.min(...cScores):0
@@ -900,18 +771,14 @@ export default function CricCity() {
         const cx=Math.cos(angle)*DDIST, cz=Math.sin(angle)*DDIST
         const dg=new THREE.Group(); dg.position.set(cx,0,cz); dg.rotation.y=-angle; dg.userData.city=true; scene.add(dg)
 
-        // Quadrant layout: split n players into 4 quadrants around central fountain
-        const perQ  = Math.max(1, Math.ceil(n/4))
-        const qC    = Math.max(2, Math.ceil(Math.sqrt(perQ)))
-        const qR    = Math.max(2, Math.ceil(perQ/qC))
-        const startOff = IROAD + 4  // distance from centre to first building
-        const qSpanX = axisSpan(qC)+BSLOT
-        const qSpanZ = axisSpan(qR)+BSLOT
-        const platHW = startOff + qSpanX + DPAD/2
-        const platHD = startOff + qSpanZ + DPAD/2
+        const perQ=Math.max(1,Math.ceil(n/4))
+        const qC=Math.max(2,Math.ceil(Math.sqrt(perQ)))
+        const qR=Math.max(2,Math.ceil(perQ/qC))
+        const startOff=IROAD+4
+        const qSpanX=axisSpan(qC)+BSLOT, qSpanZ=axisSpan(qR)+BSLOT
+        const platHW=startOff+qSpanX+DPAD/2, platHD=startOff+qSpanZ+DPAD/2
         const platW2=platHW*2, platD2=platHD*2
 
-        // Ground plate
         const plate=new THREE.Mesh(new THREE.PlaneGeometry(platW2,platD2),
           new THREE.MeshStandardMaterial({color:new THREE.Color(p.ground),emissive:new THREE.Color(p.border),emissiveIntensity:n>0?0.10:0.02}))
         plate.rotation.x=-Math.PI/2; plate.position.y=0.1; dg.add(plate)
@@ -919,57 +786,47 @@ export default function CricCity() {
         addBorder(dg,platW2,platD2,p.border)
         addInnerCross(dg,platW2,platD2,p.border)
 
-        const lbl=mkLabel(`${FLAG[key]||'🏏'} ${label}  (${n})`,p.border, 1.4)
+        const lbl=mkLabel(`${FLAG[key]||'🏏'} ${label}  (${n})`,p.border,1.4)
         lbl.position.set(0,280,-(platD2/2+60)); dg.add(lbl)
 
-        if (n===0) return
+        if(n===0) return
 
-        const texBat=mkWinTex(p.batsman), texBow=mkWinTex(p.bowler), texAll=mkWinTex(p.allrounder)
-
-        // Distribute players into 4 quadrants round-robin (best → Q0)
-        const quads: Array<{pl:any;origIdx:number}[]>=[[],[],[],[]]
+        const texBat=mkWinTex(p.batsman),texBow=mkWinTex(p.bowler),texAll=mkWinTex(p.allrounder)
+        const quads:Array<{pl:any;origIdx:number}[]>=[[],[],[],[]]
         sorted.forEach((pl,i)=>quads[i%4].push({pl,origIdx:i}))
-        // Q signs: [+x+z, -x+z, -x-z, +x-z]
         const qSigns=[[1,1],[-1,1],[-1,-1],[1,-1]]
 
         quads.forEach((qArr,qi)=>{
           const [sx,sz]=qSigns[qi]
           qArr.forEach(({pl,origIdx},ii)=>{
-            const col=ii%qC, row=Math.floor(ii/qC)
+            const col=ii%qC,row=Math.floor(ii/qC)
             const {x:gx,z:gz}=slotPos(col,row)
-            const px=sx*(startOff+gx+BSLOT*0.5)
-            const pz=sz*(startOff+gz+BSLOT*0.5)
+            const px=sx*(startOff+gx+BSLOT*0.5), pz=sz*(startOff+gz+BSLOT*0.5)
 
             const cs=cScores[origIdx]??0
             const ns=isNaN(cs)?0:sRange>0?(cs-sMin)/sRange:0
-            const isLeg=(origIdx===0)  // #1 in CURRENT FORMAT = gold legend
+            const isLeg=(origIdx===0)
             const role=(pl.personal_info?.role||pl.role||'').toLowerCase()
             const shape=pickShape(role,origIdx,ns)
 
-            // ══ BUILDING HEIGHT — edit numbers below to tune city scale ══
-            // ns = 0.0 (worst player in team) → 1.0 (best player in team)
-            let h = 18
-            if (isLeg) {
-              h = 700 + ns*200         // LEGEND height → 700 to 900
-            } else if (role.includes('bowl')) {
-              h = 80 + Math.pow(ns,1.3)*380   // BOWLER height → 80 to 460
-            } else if (role.includes('all')) {
-              h = 100 + Math.pow(ns,1.1)*420  // ALL-ROUNDER height → 100 to 520
+            // BUILDING HEIGHT (ns = 0 worst → 1 best in team)
+            let h=18
+            if(isLeg) { h=700+ns*200
+            } else if(role.includes('bowl')) { h=80+Math.pow(ns,1.3)*380
+            } else if(role.includes('all'))  { h=100+Math.pow(ns,1.1)*420
             } else {
-              if (ns>0.85)     h=520+ns*190   // TOP batsmen   → 520-710
-              else if(ns>0.65) h=330+ns*175   // GOOD batsmen  → 330-505
-              else if(ns>0.40) h=170+ns*145   // MID batsmen   → 170-315
-              else if(ns>0.20) h=75 +ns*90    // LOW batsmen   → 75-165
-              else             h=22 +ns*55    // WEAK batsmen  → 22-77
+              if(ns>0.85) h=520+ns*190
+              else if(ns>0.65) h=330+ns*175
+              else if(ns>0.40) h=170+ns*145
+              else if(ns>0.20) h=75+ns*90
+              else h=22+ns*55
             }
             h=(!isFinite(h)||h<=0)?22:h
 
-            // Width — CHUNKY CITY BLOCKS (slot=10 but we push wider for density)
-            // Minimum 18 wide so even worst player has a real building, not a stick
             const wBase=isLeg?28:role.includes('bowl')?20+ns*6:role.includes('all')?19+ns*7:18+ns*9
-            const w=wBase  // no artificial cap — buildings should fill their space
+            const w=wBase
 
-            if (isLeg) {
+            if(isLeg){
               const gMat=new THREE.MeshStandardMaterial({map:goldTex,emissiveMap:goldTex,emissive:new THREE.Color(0xffaa00),emissiveIntensity:2.8})
               const bldg=buildingGroup('tower',w,h,gMat); bldg.position.set(px,0,pz); dg.add(bldg)
               const rMat=new THREE.MeshStandardMaterial({color:0xffaa00,emissive:0xffaa00,emissiveIntensity:5.0,side:THREE.DoubleSide})
@@ -981,10 +838,10 @@ export default function CricCity() {
               hb.position.set(px,h/2,pz); hb.userData.halfH=h/2; dg.add(hb)
               hitMap.current.set(hb,{player:pl,team:key})
             } else {
-              let tex: THREE.CanvasTexture, emCol: number, emInt: number
-              if (role.includes('bowl'))     {tex=texBow;emCol=p.bowler;    emInt=0.36+ns*1.1}
-              else if(role.includes('all'))  {tex=texAll;emCol=p.allrounder;emInt=0.34+ns*1.0}
-              else                           {tex=texBat;emCol=p.batsman;   emInt=0.34+ns*1.2}
+              let tex:THREE.CanvasTexture,emCol:number,emInt:number
+              if(role.includes('bowl'))    {tex=texBow;emCol=p.bowler;    emInt=0.36+ns*1.1}
+              else if(role.includes('all')){tex=texAll;emCol=p.allrounder;emInt=0.34+ns*1.0}
+              else                         {tex=texBat;emCol=p.batsman;   emInt=0.34+ns*1.2}
               const mat=new THREE.MeshStandardMaterial({map:tex,emissiveMap:tex,emissive:new THREE.Color(emCol),emissiveIntensity:emInt})
               const bldg=buildingGroup(shape,w,h,mat); bldg.position.set(px,0,pz); dg.add(bldg)
               const hb=new THREE.Mesh(new THREE.BoxGeometry(w*1.3,h,w*1.3),new THREE.MeshBasicMaterial({visible:false}))
@@ -1000,22 +857,18 @@ export default function CricCity() {
   },[fmt])
 
   /* ── DRONE TOGGLE ────────────────────────────────── */
-  const toggleDrone = () => {
-    const next=!droneMode
-    droneModeRef.current=next
+  const toggleDrone=()=>{
+    const next=!droneMode; droneModeRef.current=next
     setDroneMode(next); setSelected(null); setHqOpen(false)
-    const scene=sceneRef.current, camera=cameraRef.current
-    if (!scene||!camera) return
-    if (next) {
+    const scene=sceneRef.current,camera=cameraRef.current
+    if(!scene||!camera) return
+    if(next){
       const {group,rotors}=buildDroneMesh()
-      group.position.copy(camera.position)
-      group.position.y=Math.max(14,camera.position.y)
-      group.scale.setScalar(0.4)  // small proportional drone
-      droneYawRef.current=Math.PI
-      group.userData.city=true
+      group.position.copy(camera.position); group.position.y=Math.max(14,camera.position.y)
+      group.scale.setScalar(0.4); droneYawRef.current=Math.PI; group.userData.city=true
       droneGroupRef.current=group; droneRotors.current=rotors; scene.add(group)
     } else {
-      if (droneGroupRef.current) {
+      if(droneGroupRef.current){
         scene.remove(droneGroupRef.current)
         droneGroupRef.current.traverse(c=>{if((c as THREE.Mesh).isMesh)(c as THREE.Mesh).geometry.dispose()})
         droneGroupRef.current=null; droneRotors.current=[]
@@ -1024,21 +877,19 @@ export default function CricCity() {
     }
   }
 
-  const FMTS = ['TEST','ODI','T20'] as const
-  const S    = (x: any, fb: any='—') => x!=null?String(x):fb
+  const FMTS=['TEST','ODI','T20'] as const
+  const S=(x:any,fb:any='—')=>x!=null?String(x):fb
 
   /* ── JSX ─────────────────────────────────────────── */
-  return (
+  return(
     <div style={{width:'100vw',height:'100vh',background:'#000',position:'relative',overflow:'hidden',userSelect:'none'}}>
       <div ref={mountRef} style={{width:'100%',height:'100%'}}/>
 
-      {/* FIX #6: CricCity branding */}
       <div style={{position:'absolute',top:20,left:24,zIndex:10,pointerEvents:'none'}}>
         <div style={{fontFamily:'"Courier New",monospace',fontSize:'1.65rem',fontWeight:700,letterSpacing:'0.18em',color:'#38bdf8',textShadow:'0 0 32px rgba(56,189,248,0.96)'}}>CricCity</div>
         <div style={{fontFamily:'"Courier New",monospace',fontSize:'0.57rem',letterSpacing:'0.30em',color:'#1d4ed8',marginTop:4,textTransform:'uppercase'}}>Cricket City · 3D Visualization</div>
       </div>
 
-      {/* Format tabs */}
       <div style={{position:'absolute',top:20,left:'50%',transform:'translateX(-50%)',zIndex:10,display:'flex',gap:8}}>
         {FMTS.map(f=>(
           <button key={f} onClick={()=>setFmt(f)} style={{fontFamily:'"Courier New",monospace',fontSize:'0.7rem',fontWeight:700,letterSpacing:'0.2em',padding:'8px 22px',borderRadius:5,cursor:'pointer',transition:'all .2s',background:fmt===f?'rgba(56,189,248,0.14)':'rgba(0,6,22,0.72)',border:`1px solid ${fmt===f?'#38bdf8':'#1e3a5f'}`,color:fmt===f?'#7dd3fc':'#1e4d8c',boxShadow:fmt===f?'0 0 20px rgba(56,189,248,0.32)':'none'}}>
@@ -1047,23 +898,19 @@ export default function CricCity() {
         ))}
       </div>
 
-      {/* Team count pills */}
       {Object.keys(counts).length>0&&(
         <div style={{position:'absolute',top:70,left:'50%',transform:'translateX(-50%)',zIndex:10,display:'flex',flexWrap:'wrap',gap:6,justifyContent:'center',maxWidth:660,pointerEvents:'none'}}>
           {TEAM_LAYOUT.map(({key,label})=>{
-            const cnt=counts[key]??0
-            const hex='#'+new THREE.Color(getPal(key).border).getHexString()
+            const cnt=counts[key]??0, hex='#'+new THREE.Color(getPal(key).border).getHexString()
             return <span key={key} style={{fontFamily:'"Courier New",monospace',fontSize:'0.52rem',letterSpacing:'0.12em',padding:'2px 9px',borderRadius:3,border:`1px solid ${hex}`,color:hex,background:'rgba(0,4,18,0.75)',opacity:cnt>0?1:0.22}}>{label.slice(0,3)}&nbsp;{cnt}</span>
           })}
         </div>
       )}
 
-      {/* Drone toggle */}
       <button onClick={toggleDrone} style={{position:'absolute',top:20,right:20,zIndex:15,fontFamily:'"Courier New",monospace',fontSize:'0.65rem',fontWeight:700,letterSpacing:'0.15em',padding:'9px 18px',borderRadius:6,cursor:'pointer',background:droneMode?'rgba(251,191,36,0.2)':'rgba(56,189,248,0.12)',border:`1px solid ${droneMode?'#fbbf24':'#38bdf8'}`,color:droneMode?'#fbbf24':'#7dd3fc',boxShadow:droneMode?'0 0 22px rgba(251,191,36,0.45)':'none'}}>
         {droneMode?'✕ EXIT DRONE':'🚁 DRONE MODE'}
       </button>
 
-      {/* Drone controls */}
       {droneMode&&(
         <div style={{position:'absolute',bottom:28,right:24,zIndex:15,display:'flex',flexDirection:'column',alignItems:'center',gap:6,background:'rgba(0,6,22,0.92)',border:'1px solid rgba(251,191,36,0.45)',borderRadius:12,padding:'14px 18px'}}>
           <div style={{fontFamily:'"Courier New",monospace',fontSize:'0.52rem',color:'#fbbf24',letterSpacing:'0.15em',marginBottom:4}}>DRONE CONTROLS</div>
@@ -1081,7 +928,6 @@ export default function CricCity() {
         </div>
       )}
 
-      {/* Legend key */}
       <div style={{position:'absolute',bottom:52,left:24,zIndex:10,pointerEvents:'none',background:'rgba(0,4,18,0.87)',border:'1px solid #1e3a5f',borderRadius:8,padding:'10px 14px'}}>
         {[{c:'#60a5fa',t:'BATSMAN   · Tower / Stepped'},{c:'#f87171',t:'BOWLER    · Slab / Cylinder'},{c:'#4ade80',t:'ALL-ROUND · Cruciform'},{c:'#ffd700',t:'★ LEGEND  · Format Leader'}].map(({c,t})=>(
           <div key={t} style={{display:'flex',alignItems:'center',gap:7,marginBottom:4,fontFamily:'"Courier New",monospace',fontSize:'0.5rem',letterSpacing:'0.08em',color:c}}>
@@ -1090,24 +936,26 @@ export default function CricCity() {
         ))}
       </div>
 
-      {/* Controls hint */}
       <div style={{position:'absolute',bottom:20,left:24,zIndex:10,pointerEvents:'none'}}>
         <div style={{fontFamily:'"Courier New",monospace',fontSize:'0.52rem',letterSpacing:'0.18em',color:'#1e3a5f'}}>
           {droneMode?'WASD/ARROWS · MOVE · Q↑ E↓ · SCROLL HEIGHT':'DRAG · ROTATE  |  SCROLL · ZOOM  |  CLICK · STATS  |  CLICK HQ · INFO'}
         </div>
       </div>
 
-      {/* Loading */}
       {loading&&(
         <div style={{position:'absolute',inset:0,zIndex:20,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',background:'rgba(0,4,16,0.82)',backdropFilter:'blur(6px)'}}>
           <div style={{fontFamily:'"Courier New",monospace',fontSize:'1rem',letterSpacing:'0.32em',color:'#38bdf8',animation:'cwP 1.2s infinite'}}>BUILDING CITY...</div>
-          <div style={{display:'flex',gap:6,marginTop:18}}>
-            {[0,1,2,3,4].map(i=><div key={i} style={{width:6,height:6,background:'#38bdf8',borderRadius:'50%',animation:`cwB 0.8s ${i*0.12}s infinite`}}/>)}
-          </div>
+          <div style={{display:'flex',gap:6,marginTop:18}}>{[0,1,2,3,4].map(i=><div key={i} style={{width:6,height:6,background:'#38bdf8',borderRadius:'50%',animation:`cwB 0.8s ${i*0.12}s infinite`}}/>)}</div>
         </div>
       )}
 
-      {/* HQ Info card */}
+      {loadErr&&!loading&&(
+        <div style={{position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)',zIndex:20,textAlign:'center'}}>
+          <div style={{fontFamily:'"Courier New",monospace',fontSize:'0.9rem',color:'#f87171',marginBottom:16}}>{loadErr}</div>
+          <button onClick={()=>setFmt(f=>f)} style={{fontFamily:'"Courier New",monospace',fontSize:'0.7rem',color:'#38bdf8',background:'rgba(56,189,248,0.12)',border:'1px solid #38bdf8',borderRadius:6,padding:'8px 20px',cursor:'pointer'}}>RETRY</button>
+        </div>
+      )}
+
       {hqOpen&&(
         <div style={{position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)',zIndex:15,width:440,borderRadius:14,overflow:'hidden',background:'linear-gradient(135deg,rgba(0,8,32,0.97),rgba(0,20,60,0.97))',border:'1px solid #38bdf8',boxShadow:'0 0 70px rgba(56,189,248,0.45)',backdropFilter:'blur(18px)'}}>
           <div style={{background:'linear-gradient(90deg,rgba(56,189,248,0.15),rgba(29,78,216,0.30))',padding:'18px 22px',borderBottom:'1px solid rgba(56,189,248,0.2)',display:'flex',justifyContent:'space-between',alignItems:'center'}}>
@@ -1149,10 +997,8 @@ export default function CricCity() {
         </div>
       )}
 
-      {/* Player card */}
       {selected&&(()=>{
-        const p=getPal(selected._team)
-        const thx='#'+new THREE.Color(p.border).getHexString()
+        const p=getPal(selected._team), thx='#'+new THREE.Color(p.border).getHexString()
         const role=(selected.personal_info?.role||selected.role||'batsman').toLowerCase()
         const roleLabel=role.includes('bowl')?'BOWLER':role.includes('all')?'ALL-ROUNDER':'BATSMAN'
         const roleColor=role.includes('bowl')?'#f87171':role.includes('all')?'#4ade80':'#60a5fa'
@@ -1225,13 +1071,9 @@ export default function CricCity() {
   )
 }
 
-/* ═══════════════════════════════════════════════════════
-   DRONE BUTTON
-═══════════════════════════════════════════════════════ */
 function DroneBtn({onPress,label,wide=false,title}:{onPress:(v:boolean)=>void;label:string;wide?:boolean;title?:string}) {
-  return (
-    <button
-      title={title}
+  return(
+    <button title={title}
       onPointerDown={()=>onPress(true)} onPointerUp={()=>onPress(false)} onPointerLeave={()=>onPress(false)}
       style={{width:wide?88:48,height:48,background:'rgba(251,191,36,0.12)',border:'1px solid rgba(251,191,36,0.45)',borderRadius:7,color:'#fbbf24',fontSize:wide?'0.62rem':'1.05rem',fontFamily:'"Courier New",monospace',fontWeight:700,cursor:'pointer',display:'flex',alignItems:'center',justifyContent:'center',userSelect:'none',touchAction:'none',letterSpacing:wide?'0.1em':'0',transition:'background .1s'}}
     >{label}</button>
