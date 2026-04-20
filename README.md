@@ -8,7 +8,7 @@
 ## 🌐 Live Demo  
 👉 https://cric-city.vercel.app/
 
-## 💻 GitHub  
+## 💻 GitHub   
 👉 https://github.com/arghadeep2508/CricCity.git
 
 ---
