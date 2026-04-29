@@ -1,3 +1,4 @@
+
 export interface BuildingData {
   player_id: string
   name: string
